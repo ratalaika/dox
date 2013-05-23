@@ -47,14 +47,14 @@ abstract interface in an untyped manner. Use with care.</p></div>
 <a name="hasField"></a><h3><code><span class="k">function</span> <span class="i">hasField</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
 <div class="doc"><p>Tells if structure <code>o</code> has a field named <code>field</code>.</p>
 <p>This is only guaranteed to work for anonymous structures. Refer to
-[Type.getInstanceFields()] for a function supporting class instances.</p>
+<code><a href="/dox/Type.html#getInstanceFields">Type.getInstanceFields</a></code> for a function supporting class instances.</p>
 <p>If <code>o</code> or <code>field</code> are null, the result is unspecified.</p></div>
 <a name="field"></a><h3><code><span class="k">function</span> <span class="i">field</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
 <div class="doc"><p>Returns the value of the field named <code>field</code> on object <code>o</code>.</p>
 <p>If <code>o</code> is not an object or has no field named <code>field</code>, the result is
 null.</p>
 <p>If the field is defined as a property, its accessors are ignored. Refer
-to [Reflect.getProperty()] for a function supporting property accessors.</p>
+to <code><a href="/dox/Reflect.html#getProperty">Reflect.getProperty</a></code> for a function supporting property accessors.</p>
 <p>If <code>field</code> is null, the result is unspecified.</p></div>
 <a name="setField"></a><h3><code><span class="k">function</span> <span class="i">setField</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>, <span class="i">value</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p>Sets the field named <code>field</code> of object <code>o</code> to value <code>value</code>.</p>
@@ -89,7 +89,7 @@ property setter functions into account.</p>
 <code>a</code>, the result is positive. If <code>a</code> and <code>b</code> are equal, the result is 0.</p>
 <p>This function is only defined if <code>a</code> and <code>b</code> are of the same type.</p>
 <p>If that type is a function, the result is unspecified and
-[Type.compareMethods()] should be used instead.</p>
+<code><a href="/dox/Reflect.html#compareMethods">Reflect.compareMethods</a></code> should be used instead.</p>
 <p>For all other types, the result is 0 if <code>a</code> and <code>b</code> are equal. If they
 are not equal, the result depends on the type and is negative if:</p>
 <pre><code>Numeric types: a is less than b

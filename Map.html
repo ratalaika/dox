@@ -55,15 +55,10 @@ will then determine the type parameters from the usage.</p>
 <a name="_new"></a><h3><code><span class="k">function</span> <span class="i">_new</span>():<a href="/dox/IMap.html">IMap</a>&lt;<a href="/dox/Map/K.html">K</a>, <a href="/dox/Map/V.html">V</a>&gt;</code></h3>
 <div class="doc"><p>Creates a new Map.</p>
 <p>This becomes a constructor call to one of the specialization types in
-the output. The rules for that are as follows:</p>
-<pre><code>1. if K is a String, haxe.ds.StringMap is used
-2. if K is an Int, haxe.ds.IntMap is used
-3. if K is an enum, haxe.ds.EnumValueMap is used
-4. if K is any other class or structure, haxe.ds.ObjectMap is used
-5. if K is any other type, it causes a compile-time error
+the output. The rules for that are as follows:</p><ol><li>if K is a String, haxe.ds.StringMap is used</li><li>if K is an Int, haxe.ds.IntMap is used</li><li>if K is an enum, haxe.ds.EnumValueMap is used</li><li>if K is any other class or structure, haxe.ds.ObjectMap is used</li><li>
+<p>if K is any other type, it causes a compile-time error
 
-</code></pre>
-<p>(Cpp) Map does not use weak keys on ObjectMap by default.</p></div>
+(Cpp) Map does not use weak keys on ObjectMap by default.</p></li></ol></div>
 <a name="set"></a><h3><code><span class="k">function</span> <span class="i">set</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>, <span class="i">value</span>:<a href="/dox/Map/V.html">V</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p>Maps <code>key</code> to <code>value</code>.</p>
 <p>If <code>key</code> already has a mapping, the previous value disappears.</p>
@@ -71,10 +66,7 @@ the output. The rules for that are as follows:</p>
 <a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Map/V.html">V</a>&gt;</code></h3>
 <div class="doc"><p>Returns the current mapping of <code>key</code>.</p>
 <p>If no such mapping exists, null is returned.</p>
-<p>Note that a check like map.get(key) == null can hold for two reasons:</p>
-<pre><code>1. the map has no mapping for <code>key</code>
-2. the map has a mapping with a value of null
-</code></pre>
+<p>Note that a check like map.get(key) == null can hold for two reasons:</p><ol><li>the map has no mapping for <code>key</code></li><li>the map has a mapping with a value of null</li></ol>
 <p>If it is important to distinguish these cases, exists() should be used.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
 <a name="exists"></a><h3><code><span class="k">function</span> <span class="i">exists</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
