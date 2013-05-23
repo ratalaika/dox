@@ -55,11 +55,11 @@ directory1\directory2\filename.excention
 <p>If <code><a href="#path">path</a></code> is null, the result is unspecified.</p></div>
 <a name="directory"></a><h3><code><span class="k">function</span> <span class="i">directory</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns the directory of <code><a href="#path">path</a></code>.</p>
-<p>If the directory is null, the empty String  is returned.</p>
+<p>If the directory is null, the empty String "" is returned.</p>
 <p>If <code><a href="#path">path</a></code> is null, the result is unspecified.</p></div>
 <a name="extension"></a><h3><code><span class="k">function</span> <span class="i">extension</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns the extension of <code><a href="#path">path</a></code>.</p>
-<p>If the extension is null, the empty String  is returned.</p>
+<p>If the extension is null, the empty String "" is returned.</p>
 <p>If <code><a href="#path">path</a></code> is null, the result is unspecified.</p></div>
 <a name="withExtension"></a><h3><code><span class="k">function</span> <span class="i">withExtension</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>, <span class="i">ext</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns a String representation of <code><a href="#path">path</a></code> where the extension is <code><a href="#ext">ext</a></code>.</p>
@@ -71,7 +71,7 @@ directory1\directory2\filename.excention
 <code><a href="#path">path</a></code>.</p>
 <p>If the last slash in <code><a href="#path">path</a></code> is a slash, or if no slash is found, a slash
 is appended to <code><a href="#path">path</a></code>. In particular, this applies to the empty String
-.</p>
+"".</p>
 <p>If <code><a href="#path">path</a></code> is null, the result is unspecified.</p></div>
 <h2>Instance Fields</h2>
 <a name="dir"></a><h3><code><span class="k">var</span> <span class="i">dir</span>:<a href="/dox/String.html">String</a></code></h3>
@@ -83,8 +83,8 @@ and the extension.</p>
 <a name="file"></a><h3><code><span class="k">var</span> <span class="i">file</span>:<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>The file name.</p>
 <p>This is the part of the part between the directory and the extension.</p>
-<p>If there is no file name, e.g. for .htaccess or /dir/, the value
-is the empty String .</p></div>
+<p>If there is no file name, e.g. for ".htaccess" or "/dir/", the value
+is the empty String "".</p></div>
 <a name="ext"></a><h3><code><span class="k">var</span> <span class="i">ext</span>:<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>The file extension.</p>
 <p>It is separated from the file name by a dot. This dot is not part of
@@ -98,7 +98,7 @@ the extension.</p>
 otherwise slash is used. This only affects the separator between
 <code><a href="#this">this</a></code>.dir and <code><a href="#this">this</a></code>.file.</p>
 <p>If <code><a href="#this">this</a></code>.directory or <code><a href="#this">this</a></code>.extension is null, their representation
-is the empty String .</p></div>
+is the empty String "".</p></div>
 </div>
 			</div>
 		</div>
