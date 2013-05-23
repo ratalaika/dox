@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/Math.html">Math</a></h1>
+<div class="doc"><p>This class defines mathematical functions and constants.</p></div>
+<h2>Class Fields</h2>
+<a name="PI"></a><h3><code><span class="k">var</span> <span class="i">PI</span>:<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="NEGATIVE_INFINITY"></a><h3><code><span class="k">var</span> <span class="i">NEGATIVE_INFINITY</span>:<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>A special Float constant which denotes negative infinity.</p>
+<p>For example, this is the result of -1.0 / 0.0.</p>
+<p>Operations with NEGATIVE<em>INFINITY as an operand may result in
+Operations with NEGATIVE</em>INFINITY as an operand may result in
+NEGATIVE<em>INFINITY, POSITIVE</em>INFINITY or NaN. For detailed information,
+see ...</p>
+<p>If this constant is converted to an Int, e.g. through Std.int(), the
+result is unspecified.</p></div>
+<a name="POSITIVE_INFINITY"></a><h3><code><span class="k">var</span> <span class="i">POSITIVE_INFINITY</span>:<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>A special Float constant which denotes negative infinity.</p>
+<p>For example, this is the result of 1.0 / 0.0.</p>
+<p>Operations with POSITIVE<em>INFINITY as an operand may result in
+NEGATIVE</em>INFINITY, POSITIVE_INFINITY or NaN. For detailed information,
+see ...</p>
+<p>If this constant is converted to an Int, e.g. through Std.int(), the
+result is unspecified.</p></div>
+<a name="NaN"></a><h3><code><span class="k">var</span> <span class="i">NaN</span>:<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>A special Float constant which denotes an invalid number.</p>
+<p>NaN stands for "Not a Number". It occurs when a mathematically incorrect
+operation is executed, such as taking the square root of a negative
+number: Math.sqrt(-1).</p>
+<p>All further operations with NaN as an operand will result in NaN.</p>
+<p>If this constant is converted to an Int, e.g. through Std.int(), the
+result is unspecified.</p>
+<p>In order to test if a value is NaN, you should use Math.isNaN() function.</p>
+<p>(Php) In PHP versions prior to 5.3.1 VC 9 there may be unexpected
+results when performing arithmetic operations with NaN on Windows, see:</p>
+<pre><code>https://bugs.php.net/bug.php?id=42143
+</code></pre></div>
+<a name="abs"></a><h3><code><span class="k">function</span> <span class="i">abs</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the absolute value of <code><a href="#v">v</a></code>.</p>
+<p>If <code><a href="#v">v</a></code> is positive or 0, the result is unchanged. Otherwise the result
+is -<code><a href="#v">v</a></code>.</p>
+<p>If <code><a href="#v">v</a></code> is NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is
+POSITIVE_INFINITY.</p>
+<p>If <code><a href="#v">v</a></code> is NaN, the result is NaN.</p></div>
+<a name="min"></a><h3><code><span class="k">function</span> <span class="i">min</span>(<span class="i">a</span>:<a href="/Float.html">Float</a>, <span class="i">b</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the smaller of values <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code>.</p>
+<p>If <code><a href="#a">a</a></code> or <code><a href="#b">b</a></code> are NaN, the result is NaN.</p>
+<p>If <code><a href="#a">a</a></code> or <code><a href="#b">b</a></code> are NEGATIVE<em>INFINITY, the result is NEGATIVE</em>INFINITY.</p>
+<p>If <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are POSITIVE<em>INFINITY, the result is POSITIVE</em>INFINITY.</p></div>
+<a name="max"></a><h3><code><span class="k">function</span> <span class="i">max</span>(<span class="i">a</span>:<a href="/Float.html">Float</a>, <span class="i">b</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the greater of values <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code>.</p>
+<p>If <code><a href="#a">a</a></code> or <code><a href="#b">b</a></code> are NaN, the result is NaN.</p>
+<p>If <code><a href="#a">a</a></code> or <code><a href="#b">b</a></code> are POSITIVE<em>INFINITY, the result is POSITIVE</em>INFINITY.</p>
+<p>If <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are NEGATIVE<em>INFINITY, the result is NEGATIVE</em>INFINITY.</p></div>
+<a name="sin"></a><h3><code><span class="k">function</span> <span class="i">sin</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the trigonometric sine of <code><a href="#v">v</a></code>.</p>
+<p>The unit of <code><a href="#v">v</a></code> is radians.</p>
+<p>If <code><a href="#v">v</a></code> is NaN or infinite, the result is NaN.</p></div>
+<a name="cos"></a><h3><code><span class="k">function</span> <span class="i">cos</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the trigonometric cosine of <code><a href="#v">v</a></code>.</p>
+<p>The unit of <code><a href="#v">v</a></code> is radians.</p>
+<p>If <code><a href="#v">v</a></code> is NaN or infinite, the result is NaN.</p></div>
+<a name="tan"></a><h3><code><span class="k">function</span> <span class="i">tan</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="asin"></a><h3><code><span class="k">function</span> <span class="i">asin</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="acos"></a><h3><code><span class="k">function</span> <span class="i">acos</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="atan"></a><h3><code><span class="k">function</span> <span class="i">atan</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="atan2"></a><h3><code><span class="k">function</span> <span class="i">atan2</span>(<span class="i">y</span>:<a href="/Float.html">Float</a>, <span class="i">x</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="exp"></a><h3><code><span class="k">function</span> <span class="i">exp</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns Euler's number, raised to the power of <code><a href="#v">v</a></code>.</p>
+<p>exp(1.0) is approximately 2.718281828459.</p>
+<p>If <code><a href="#v">v</a></code> is POSITIVE<em>INFINITY, the result is POSITIVE</em>INFINITY.</p>
+<p>If <code><a href="#v">v</a></code> is NEGATIVE_INFINITY, the result is 0.0.</p>
+<p>If <code><a href="#v">v</a></code> is NaN, the result is NaN.</p></div>
+<a name="log"></a><h3><code><span class="k">function</span> <span class="i">log</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the natural logarithm of <code><a href="#v">v</a></code>.</p>
+<p>If <code><a href="#v">v</a></code> is negative (including NEGATIVE_INFINITY) or NaN, the result is
+NaN.</p>
+<p>If <code><a href="#v">v</a></code> is POSITIVE<em>INFINITY, the result is POSITIVE</em>INFINITY.</p>
+<p>If <code><a href="#v">v</a></code> is 0.0, the result is NEGATIVE_INFINITY.</p>
+<p>This is the inverse operation of exp, i.e. log(exp(v)) == v always
+holds.</p></div>
+<a name="pow"></a><h3><code><span class="k">function</span> <span class="i">pow</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>, <span class="i">exp</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="sqrt"></a><h3><code><span class="k">function</span> <span class="i">sqrt</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns the square root of <code><a href="#v">v</a></code>.</p>
+<p>If <code><a href="#v">v</a></code> is negative (including NEGATIVE_INFINITY) or NaN, the result is
+NaN.</p>
+<p>If <code><a href="#v">v</a></code> is POSITIVE<em>INFINITY, the result is POSITIVE</em>INFINITY.</p>
+<p>If <code><a href="#v">v</a></code> is 0.0, the result is 0.0.</p></div>
+<a name="round"></a><h3><code><span class="k">function</span> <span class="i">round</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Rounds <code><a href="#v">v</a></code> to the nearest Int value.</p>
+<p>If v is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.</p>
+<p>TODO: need spec</p></div>
+<a name="floor"></a><h3><code><span class="k">function</span> <span class="i">floor</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Returns the largest Int value that is not greater than <code><a href="#v">v</a></code>.</p>
+<p>If v is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.		</p>
+<p>TODO: need spec</p></div>
+<a name="ceil"></a><h3><code><span class="k">function</span> <span class="i">ceil</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Returns the smallest Int value that is not less than <code><a href="#v">v</a></code>.</p>
+<p>If v is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.</p>
+<p>TODO: need spec</p></div>
+<a name="random"></a><h3><code><span class="k">function</span> <span class="i">random</span>():<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>Returns a pseudo-random number which is greater than or equal to 0.0,
+and less than 1.0.</p></div>
+<a name="ffloor"></a><h3><code><span class="k">function</span> <span class="i">ffloor</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fceil"></a><h3><code><span class="k">function</span> <span class="i">fceil</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fround"></a><h3><code><span class="k">function</span> <span class="i">fround</span>(<span class="i">v</span>:<a href="/Float.html">Float</a>):<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="isFinite"></a><h3><code><span class="k">function</span> <span class="i">isFinite</span>(<span class="i">f</span>:<a href="/Float.html">Float</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if <code><a href="#f">f</a></code> is a finite number.</p>
+<p>If <code><a href="#f">f</a></code> is POSITIVE<em>INFINITY, NEGATIVE</em>INFINITY or NaN, the result is
+false.</p>
+<p>Otherwise the result is true.</p></div>
+<a name="isNaN"></a><h3><code><span class="k">function</span> <span class="i">isNaN</span>(<span class="i">f</span>:<a href="/Float.html">Float</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if <code><a href="#f">f</a></code> is not a valid number.</p>
+<p>If <code><a href="#f">f</a></code> is NaN, the result is true.</p>
+<p>Otherwise the result is false. In particular, both POSITIVE<em>INFINITY and
+NEGATIVE</em>INFINITY are not considered NaN.</p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

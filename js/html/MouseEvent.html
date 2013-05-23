@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/MouseEvent.html">MouseEvent</a></h1>
+<div>extends <a href="/js/html/UIEvent.html">UIEvent</a></div>
+<table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Direct Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/js/html/WheelEvent.html">WheelEvent</a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/js/html/WheelEvent.html">WheelEvent</a></td><td><p></p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><p>The DOM&nbsp;&lt;code>MouseEvent&lt;/code> represents events that occur due to the user interacting with a pointing device (such as a mouse). It's represented by the &lt;code>&lt;a rel="internal" href="https://developer.mozilla.org/Article<em>not</em>found?uri=en/XPCOM<em>Interface</em>Reference/nsINSDOMMouseEvent&amp;ident=nsINSDOMMouseEvent" class="new">nsINSDOMMouseEvent&lt;/a>&lt;/code>
+&nbsp;interface, which extends the &lt;code>&lt;a rel="internal" href="https://developer.mozilla.org/Article<em>not</em>found?uri=en/XPCOM<em>Interface</em>Reference/nsIDOMMouseEvent&amp;ident=nsIDOMMouseEvent" class="new">nsIDOMMouseEvent&lt;/a>&lt;/code>
+interface.&lt;br>&lt;br>
+Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/DOM/MouseEvent">MDN&lt;/a>.</p></div>
+<h2>Instance Fields</h2>
+<a name="altKey"></a><h3><code><span class="k">var</span> <span class="i">altKey</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><code>true</code> if the alt key was down when the mouse event was fired. <strong>Read only.</strong></div>
+<a name="button"></a><h3><code><span class="k">var</span> <span class="i">button</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The button number that was pressed when the mouse event was fired:&nbsp;Left button=0, middle button=1 (if present), right button=2. For mice configured for left handed use in which the button actions are reversed the values are instead read from right to left. &lt;strong>Read only.&lt;/strong></p></div>
+<a name="clientX"></a><h3><code><span class="k">var</span> <span class="i">clientX</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The X coordinate of the mouse pointer in local (DOM content)&nbsp;coordinates. &lt;strong>Read only.&lt;/strong></p></div>
+<a name="clientY"></a><h3><code><span class="k">var</span> <span class="i">clientY</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The Y coordinate of the mouse pointer in local (DOM content)&nbsp;coordinates. &lt;strong>Read only.&lt;/strong></p></div>
+<a name="ctrlKey"></a><h3><code><span class="k">var</span> <span class="i">ctrlKey</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><code>true</code> if the control key was down when the mouse event was fired. <strong>Read only.</strong></div>
+<a name="dataTransfer"></a><h3><code><span class="k">var</span> <span class="i">dataTransfer</span>:<a href="/js/html/Clipboard.html">Clipboard</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fromElement"></a><h3><code><span class="k">var</span> <span class="i">fromElement</span>:<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="metaKey"></a><h3><code><span class="k">var</span> <span class="i">metaKey</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><code>true</code> if the meta key was down when the mouse event was fired. <strong>Read only.</strong></div>
+<a name="movementX"></a><h3><code><span class="k">var</span> <span class="i">movementX</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="movementY"></a><h3><code><span class="k">var</span> <span class="i">movementY</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="offsetX"></a><h3><code><span class="k">var</span> <span class="i">offsetX</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="offsetY"></a><h3><code><span class="k">var</span> <span class="i">offsetY</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="relatedTarget"></a><h3><code><span class="k">var</span> <span class="i">relatedTarget</span>:<a href="/js/html/EventTarget.html">EventTarget</a></code></h3>
+<div class="doc"><p>The target to which the event applies. &lt;strong>Read only.&lt;/strong></p></div>
+<a name="screenX"></a><h3><code><span class="k">var</span> <span class="i">screenX</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The X coordinate of the mouse pointer in global (screen)&nbsp;coordinates. &lt;strong>Read only.&lt;/strong></p></div>
+<a name="screenY"></a><h3><code><span class="k">var</span> <span class="i">screenY</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The Y coordinate of the mouse pointer in global (screen)&nbsp;coordinates. &lt;strong>Read only.&lt;/strong></p></div>
+<a name="shiftKey"></a><h3><code><span class="k">var</span> <span class="i">shiftKey</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><code>true</code> if the shift key was down when the mouse event was fired. <strong>Read only.</strong></div>
+<a name="toElement"></a><h3><code><span class="k">var</span> <span class="i">toElement</span>:<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="x"></a><h3><code><span class="k">var</span> <span class="i">x</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="y"></a><h3><code><span class="k">var</span> <span class="i">y</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="initMouseEvent"></a><h3><code><span class="k">function</span> <span class="i">initMouseEvent</span>(<span class="i">type</span>:<a href="/String.html">String</a>, <span class="i">canBubble</span>:<a href="/Bool.html">Bool</a>, <span class="i">cancelable</span>:<a href="/Bool.html">Bool</a>, <span class="i">view</span>:<a href="/js/html/DOMWindow.html">DOMWindow</a>, <span class="i">detail</span>:<a href="/Int.html">Int</a>, <span class="i">screenX</span>:<a href="/Int.html">Int</a>, <span class="i">screenY</span>:<a href="/Int.html">Int</a>, <span class="i">clientX</span>:<a href="/Int.html">Int</a>, <span class="i">clientY</span>:<a href="/Int.html">Int</a>, <span class="i">ctrlKey</span>:<a href="/Bool.html">Bool</a>, <span class="i">altKey</span>:<a href="/Bool.html">Bool</a>, <span class="i">shiftKey</span>:<a href="/Bool.html">Bool</a>, <span class="i">metaKey</span>:<a href="/Bool.html">Bool</a>, <span class="i">button</span>:<a href="/Int.html">Int</a>, <span class="i">relatedTarget</span>:<a href="/js/html/EventTarget.html">EventTarget</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

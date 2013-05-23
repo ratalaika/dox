@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/Console.html">Console</a></h1>
+<div class="doc"><p>Beginning with Firefox 4, the old <a title="en/Error Console" rel="internal" href="https://developer.mozilla.org/en/Error_Console">Error Console</a> has been deprecated in favor of the new, improved Web&nbsp;Console. The Web Console is something of a heads-up display for the web, letting you view error messages and other logged information. In addition, there are methods you can call to output information to the console, making it a useful debugging aid, and you can evaluate JavaScript on the fly.</p>
+<p><a title="webconsole.png" rel="internal" href="https://developer.mozilla.org/@api/deki/files/4748/=webconsole.png"><img alt="webconsole.png" class="internal default" src="https://developer.mozilla.org/@api/deki/files/4748/=webconsole.png"></a></p>
+<p>The Web Console won't replace more advanced debugging tools like <a class="external" title="http://getfirebug.com/" rel="external" href="http://getfirebug.com/" target="_blank">Firebug</a>; what it does give you, however, is a way to let remote users of your site or web application gather and report console logs and other information to you. It also provides a lightweight way to debug content if you don't happen to have Firebug installed when something goes wrong.</p>
+<div class="note"><strong>Note:</strong> The Error Console is still available; you can re-enable it by changing the <code>devtools.errorconsole.enabled</code> preference to <code>true</code> and restarting the browser.</div><br><br>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/en/Using_the_Web_Console">MDN</a>.</div>
+<h2>Instance Fields</h2>
+<a name="memory"></a><h3><code><span class="k">var</span> <span class="i">memory</span>:<a href="/js/html/MemoryInfo.html">MemoryInfo</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="profiles"></a><h3><code><span class="k">var</span> <span class="i">profiles</span>:<a href="/Array.html">Array</a>&lt;<a href="/js/html/ScriptProfile.html">ScriptProfile</a>&gt;</code></h3>
+<div class="doc"><p></p></div>
+<a name="assert"></a><h3><code><span class="k">function</span> <span class="i">assert</span>(<span class="i">condition</span>:<a href="/Bool.html">Bool</a>, ?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="clear"></a><h3><code><span class="k">function</span> <span class="i">clear</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="count"></a><h3><code><span class="k">function</span> <span class="i">count</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="debug"></a><h3><code><span class="k">function</span> <span class="i">debug</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="dir"></a><h3><code><span class="k">function</span> <span class="i">dir</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="dirxml"></a><h3><code><span class="k">function</span> <span class="i">dirxml</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="error"></a><h3><code><span class="k">function</span> <span class="i">error</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="group"></a><h3><code><span class="k">function</span> <span class="i">group</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="groupCollapsed"></a><h3><code><span class="k">function</span> <span class="i">groupCollapsed</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="groupEnd"></a><h3><code><span class="k">function</span> <span class="i">groupEnd</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="info"></a><h3><code><span class="k">function</span> <span class="i">info</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="log"></a><h3><code><span class="k">function</span> <span class="i">log</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="markTimeline"></a><h3><code><span class="k">function</span> <span class="i">markTimeline</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="profile"></a><h3><code><span class="k">function</span> <span class="i">profile</span>(<span class="i">title</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="profileEnd"></a><h3><code><span class="k">function</span> <span class="i">profileEnd</span>(<span class="i">title</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="time"></a><h3><code><span class="k">function</span> <span class="i">time</span>(<span class="i">title</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="timeEnd"></a><h3><code><span class="k">function</span> <span class="i">timeEnd</span>(<span class="i">title</span>:<a href="/String.html">String</a>, ?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="timeStamp"></a><h3><code><span class="k">function</span> <span class="i">timeStamp</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="trace"></a><h3><code><span class="k">function</span> <span class="i">trace</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="warn"></a><h3><code><span class="k">function</span> <span class="i">warn</span>(?<span class="i">p1</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p2</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p3</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p4</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">p5</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

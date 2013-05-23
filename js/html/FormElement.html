@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/FormElement.html">FormElement</a></h1>
+<div>extends <a href="/js/html/Element.html">Element</a></div>
+<div class="doc"><p><code>FORM</code> elements share all of the properties and methods of other HTML elements described in the <a title="en/DOM/element" rel="internal" href="/api/js/html/Element">element</a> section.</p>
+<p>This interface provides methods to create and modify <code>FORM</code> elements using the DOM.</p><br><br>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/HTMLFormElement">MDN</a>.</div>
+<h2>Instance Fields</h2>
+<a name="acceptCharset"></a><h3><code><span class="k">var</span> <span class="i">acceptCharset</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-accept-charset">accept-charset</a></code>
+&nbsp;HTML&nbsp;attribute, containing a list of character encodings that the server accepts.</div>
+<a name="action"></a><h3><code><span class="k">var</span> <span class="i">action</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-action">action</a></code>
+&nbsp;HTML&nbsp;attribute, containing the URI&nbsp;of a program that processes the information submitted by the form.</div>
+<a name="autocomplete"></a><h3><code><span class="k">var</span> <span class="i">autocomplete</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-autocomplete">autocomplete</a></code>
+HTML&nbsp;attribute, containing a string that indicates whether the controls in this form can have their values automatically populated by the browser.</div>
+<a name="elements"></a><h3><code><span class="k">var</span> <span class="i">elements</span>:<a href="/js/html/HTMLCollection.html">HTMLCollection</a></code></h3>
+<div class="doc"><p>All the form controls belonging to this form element.</p></div>
+<a name="encoding"></a><h3><code><span class="k">var</span> <span class="i">encoding</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Synonym for &lt;strong>enctype&lt;/strong>.</p></div>
+<a name="enctype"></a><h3><code><span class="k">var</span> <span class="i">enctype</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-enctype">enctype</a></code>
+&nbsp;HTML&nbsp;attribute, indicating the type of content that is used to transmit the form to the server. Only specified values can be set.</div>
+<a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The number of controls in the form.</p></div>
+<a name="method"></a><h3><code><span class="k">var</span> <span class="i">method</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-method">method</a></code>
+&nbsp;HTML&nbsp;attribute, indicating the HTTP&nbsp;method used to submit the form. Only specified values can be set.</div>
+<a name="name"></a><h3><code><span class="k">var</span> <span class="i">name</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-name">name</a></code>
+&nbsp;HTML&nbsp;attribute, containing the name of the form.</div>
+<a name="noValidate"></a><h3><code><span class="k">var</span> <span class="i">noValidate</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-novalidate">novalidate</a></code>
+HTML attribute, indicating that the form should not be validated.</div>
+<a name="target"></a><h3><code><span class="k">var</span> <span class="i">target</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-target">target</a></code>
+HTML attribute, indicating where to display the results received from submitting the form.</div>
+<a name="checkValidity"></a><h3><code><span class="k">function</span> <span class="i">checkValidity</span>():<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="reset"></a><h3><code><span class="k">function</span> <span class="i">reset</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="submit"></a><h3><code><span class="k">function</span> <span class="i">submit</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

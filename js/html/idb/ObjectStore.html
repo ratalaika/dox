@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/idb/ObjectStore.html">ObjectStore</a></h1>
+<div class="doc"><p>The &lt;code>IDBObjectStore&lt;/code> interface of the &lt;a title="en/IndexedDB" rel="internal" href="https://developer.mozilla.org/en/IndexedDB">IndexedDB API&lt;/a> represents an &lt;a title="en/IndexedDB#gloss object store" rel="internal" href="https://developer.mozilla.org/en/IndexedDB#gloss<em>object</em>store">object store&lt;/a> in a database.&nbsp;Records within an object store are sorted according to their keys. This sorting enable fast insertion, look-up, and &nbsp;ordered retrieval.&nbsp;&lt;br>&lt;br>
+Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/IndexedDB/IDBObjectStore">MDN&lt;/a>.</p></div>
+<h2>Instance Fields</h2>
+<a name="autoIncrement"></a><h3><code><span class="k">var</span> <span class="i">autoIncrement</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="indexNames"></a><h3><code><span class="k">var</span> <span class="i">indexNames</span>:<a href="/js/html/DOMStringList.html">DOMStringList</a></code></h3>
+<div class="doc"><p>A list of the names of &lt;a title="en/IndexedDB#gloss index" rel="internal" href="https://developer.mozilla.org/en/IndexedDB#gloss_index">indexes&lt;/a> on objects in this object store.</p></div>
+<a name="keyPath"></a><h3><code><span class="k">var</span> <span class="i">keyPath</span>:<a href="/js/html/idb/Any.html">Any</a></code></h3>
+<div class="doc"><p>The &lt;a title="en/IndexedDB#gloss key path" rel="internal" href="https://developer.mozilla.org/en/IndexedDB#gloss<em>key</em>path">key path&lt;/a> of this object store. If this attribute is null, the application must provide a key for each modification operation.</p></div>
+<a name="name"></a><h3><code><span class="k">var</span> <span class="i">name</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>The name of this object store.</p></div>
+<a name="transaction"></a><h3><code><span class="k">var</span> <span class="i">transaction</span>:<a href="/js/html/idb/Transaction.html">Transaction</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="add"></a><h3><code><span class="k">function</span> <span class="i">add</span>(<span class="i">value</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">key</span>:<a href="/js/html/idb/Key.html">Key</a>):<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="clear"></a><h3><code><span class="k">function</span> <span class="i">clear</span>():<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="count"></a><h3><code><span class="k">function</span> <span class="i">count</span>(<span class="i">key</span>:<a href="/js/html/idb/Key.html">Key</a>):<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p>Immediately returns an <a title="IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a> object and asynchronously count the amount of objects in the object store that match the parameter, a key or a key range. If the parameter is not valid returns an exception.</p><div id="section_12"><span id="Parameters_2"></span><h5 class="editable">Parameters</h5>
+<dl> <dt>key</dt> <dd>The key or key range that identifies the records to be counted.</dd>
+</dl>
+</div><div id="section_13"><span id="Returns_3"></span><h5 class="editable">Returns</h5>
+<dl> <dt><a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a></dt> <dd>A request object on which subsequent events related to this operation are fired.</dd>
+</dl>
+</div><div id="section_14"><span id="Exceptions_3"></span><h5 class="editable">Exceptions</h5>
+<p>This method can raise an <a title="IDBDatabaseException" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException">IDBDatabaseException</a> with the following codes:</p>
+<dl> <dt><code><a href="IDBDatabaseException#DATA_ERR" rel="internal" title="en/IndexedDB/DatabaseException#DATA ERR">DATA_ERR</a></code></dt> <dd>If the object store uses in-line keys or has a key generator, and a key parameter was provided.<br> If the object store uses out-of-line keys and has no key generator, and no key parameter was provided.<br> If the object store uses in-line keys but no key generator, and the object store's key path does not yield a valid key.<br> If the key parameter was provided but does not contain a valid key.<br> If there are indexed on this object store, and using their key path on the value parameter yields a value that is not a valid key.</dd> <dt><code><a href="IDBDatabaseException#NOT_ALLOWED_ERR" rel="internal" title="en/IndexedDB/IDBDatabaseException#NOT_ALLOWED_ERR">NOT_ALLOWED_ERR</a></code></dt> <dd>The request was made on a source object that has been deleted or removed.</dd>
+</dl></div> Throws DatabaseException.</div>
+<a name="createIndex"></a><h3><code><span class="k">function</span> <span class="i">createIndex</span>(<span class="i">name</span>:<a href="/String.html">String</a>, <span class="i">keyPath</span>:<a href="/String.html">String</a>, ?<span class="i">options</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/js/html/idb/Index.html">Index</a></code></h3>
+<div class="doc"><p>Creates and returns a new index in the connected database. Note that this method must be called only from a <a title="en/IndexedDB/IDBTransaction#VERSION CHANGE" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBTransaction#VERSION_CHANGE"><code>VERSION_CHANGE</code></a> transaction callback.</p>
+<pre>IDBIndex createIndex (
+&nbsp; in DOMString name, 
+&nbsp; in DOMString keyPath, 
+&nbsp; in Object optionalParameters
+) raises (IDBDatabaseException);
+<p>&lt;/pre>
+&lt;div id="section<em>16">&lt;span id="Parameters</em>3">&lt;/span>&lt;h5 class="editable">Parameters&lt;/h5>
+&lt;dl> &lt;dt>name&lt;/dt> &lt;dd>The name of the index to create.&lt;/dd> &lt;dt>keyPath&lt;/dt> &lt;dd>The key path for the index to use.&lt;/dd> &lt;dt>optionalParameters&lt;/dt> &lt;dd> &lt;div class="warning">&lt;strong>Warning:&lt;/strong> The latest draft of the specification changed this to &lt;code>IDBIndexParameters&lt;/code>, which is not yet recognized by any browser&lt;/div> &lt;p>Options object whose attributes are optional parameters to the method. It includes the following properties:&lt;/p> &lt;table class="standard-table"> &lt;thead> &lt;tr> &lt;th scope="col" width="131">Attribute&lt;/th> &lt;th scope="col" width="698">Description&lt;/th> &lt;/tr> &lt;/thead> &lt;tbody> &lt;tr> &lt;td>&lt;code>unique&lt;/code>&lt;/td> &lt;td>If true, the index will not allow duplicate values for a single key.&lt;/td> &lt;/tr> &lt;tr> &lt;td>&lt;code>multientry&lt;/code>&lt;/td> &lt;td>If true, the index will add an entry in the index for each array element when the &lt;em>keypath&lt;/em> resolves to an Array. If false, it will add one single entry containing the Array.&lt;/td> &lt;/tr> &lt;/tbody> &lt;/table> &lt;p>Unknown parameters are ignored.&lt;/p> &lt;/dd> &lt;dd>&lt;/dd>
+&lt;/dl>
+&lt;/div>&lt;div id="section<em>17">&lt;span id="Returns</em>4">&lt;/span>&lt;h5 class="editable">Returns&lt;/h5>
+&lt;dl> &lt;dt>&lt;a title="en/IndexedDB/IDBIndex" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBIndex">IDBIndex&lt;/a>&lt;/dt> &lt;dd>The newly created index.&lt;/dd>
+&lt;/dl>
+&lt;/div>&lt;div id="section<em>18">&lt;span id="Exceptions</em>4">&lt;/span>&lt;h5 class="editable">Exceptions&lt;/h5>
+&lt;p>This method can raise an &lt;a title="en/IndexedDB/IDBDatabaseException" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException">IDBDatabaseException&lt;/a> with the following codes:&lt;/p>
+&lt;dl> &lt;dt>&lt;code>&lt;a title="en/IndexedDB/DatabaseException#CONSTRAINT ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#CONSTRAINT<em>ERR">CONSTRAINT</em>ERR&lt;/a>&lt;/code>&lt;/dt> &lt;dd>If an index with the same name (based on case-sensitive comparison) already exists in the connected database.&lt;/dd> &lt;dt>&lt;code>&lt;a title="en/IndexedDB/DatabaseException#NOT ALLOWED ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#NOT<em>ALLOWED</em>ERR">NOT<em>ALLOWED</em>ERR&lt;/a>&lt;/code>&lt;/dt> &lt;dd>If this method was not called from a &lt;a title="en/IndexedDB/IDBTransaction#VERSION CHANGE" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBTransaction#VERSION<em>CHANGE">&lt;code>VERSION</em>CHANGE&lt;/code>&lt;/a> transaction callback.&lt;/dd>
+&lt;/dl>&lt;/div> Throws DatabaseException.</p></div>
+<a name="delete"></a><h3><code><span class="k">function</span> <span class="i">delete</span>(<span class="i">key</span>:<a href="/js/html/idb/Key.html">Key</a>):<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p>Immediately returns an <code><a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a></code> object, and removes the record specified by the given key from this object store, and any indexes that reference it, in a separate thread. If no record exists in this object store corresponding to the key, an error event is fired on the returned request object, with its <code><a title="en/IndexedDB/IDBErrorEvent#attr code" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBErrorEvent#attr_code">code</a></code> set to <code><a title="en/IndexedDB/IDBDatabaseException#NOT FOUND ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR">NOT_FOUND_ERR</a></code> and an appropriate <code><a title="en/IndexedDB/IDBErrorEvent#attr message" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBErrorEvent#attr_message">message</a></code>. If the record is successfully removed, then a success event is fired on the returned request object, using the <code><a title="en/IndexedDB/IDBTransactionEvent" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBTransactionEvent">IDBTransactionEvent</a></code> interface, with the <code><a title="en/IndexedDB/IDBSuccessEvent#attr result" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBSuccessEvent#attr_result">result</a></code> set to <code>undefined</code>, and <a title="en/IndexedDB/IDBTransactionEvent#attr transaction" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBTransactionEvent#attr_transaction">transaction</a> set to the transaction in which this object store is opened.</p>
+<pre>IDBRequest delete (
+ in any key
+) raises (IDBDatabaseException); 
+</pre>
+<div id="section_20"><span id="Parameters_4"></span><h5 class="editable">Parameters</h5>
+<dl> <dt>key</dt> <dd>The key to use to identify the record.</dd>
+</dl>
+</div><div id="section_21"><span id="Returns_5"></span><h5 class="editable">Returns</h5>
+<dl> <dt><a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a></dt> <dd>A request object on which subsequent events related to this operation are fired.</dd>
+</dl>
+</div><div id="section_22"><span id="Exceptions_5"></span><h5 class="editable">Exceptions</h5>
+<p>This method can raise an <a title="en/IndexedDB/IDBDatabaseException" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException">IDBDatabaseException</a> with the following codes:</p></div> Throws DatabaseException.</div>
+<a name="deleteIndex"></a><h3><code><span class="k">function</span> <span class="i">deleteIndex</span>(<span class="i">name</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>(<span class="i">key</span>:<a href="/js/html/idb/Key.html">Key</a>):<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p>Immediately returns an <a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a> object, and retrieves the requested record from the object store in a separate thread. If the operation is successful, then a success event is fired on the returned object, using the <a title="en/IndexedDB/IDBTransactionEvent" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBTransactionEvent">IDBTransactionEvent</a> interface, with its <code><a title="en/IndexedDB/IDBSuccessEvent#attr result" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBSuccessEvent#attr_result">result</a></code> set to the retrieved value, and <code><a title="en/IndexedDB/IDBTransactionEvent#attr transaction" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBTransactionEvent#attr_transaction">transaction</a></code> set to the transaction in which this object store is opened. If a record does not exist in the object store for the key parameter, then an error event is fired on the returned object, with its <code><a title="en/IndexedDB/IDBErrorEvent#attr code" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBErrorEvent#attr_code">code</a></code> set to <code><a title="en/IndexedDB/IDBDatabaseException#NOT FOUND ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR">NOT_FOUND_ERR</a></code> and an appropriate <code><a title="en/IndexedDB/IDBErrorEvent#attr message" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBErrorEvent#attr_message">message</a></code>.</p>
+<p></p><div class="note"><strong>Note:</strong>&nbsp;This function produces the same result if no record with the given key exists in the database as when a record exists, but with an undefined value. To tell these situations apart, call the openCursor() method with the same key. That method provides a cursor if the record exists, and not if it does not.</div>
+<p></p><div id="section_27"><span id="Parameters_6"></span><h5 class="editable">Parameters</h5>
+<dl> <dt>key</dt> <dd>The key identifying the record to retrieve.</dd>
+</dl>
+</div><div id="section_28"><span id="Returns_6"></span><h5 class="editable">Returns</h5>
+<dl> <dt><code><a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a></code></dt> <dd>A request object on which subsequent events related to this operation are fired.</dd>
+</dl>
+</div><div id="section_29"><span id="Exceptions_7"></span><h5 class="editable">Exceptions</h5>
+<p>This method can raise an <a title="en/IndexedDB/IDBDatabaseException" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException">IDBDatabaseException</a> with the following code:</p>
+<dl> <dt><code><a title="en/IndexedDB/IDBDatabaseException#DATA ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#DATA_ERR">DATA_ERR</a></code></dt> <dd>If the <code>key</code> parameter was not a valid value.</dd> <dt><code><a title="en/IndexedDB/IDBDatabaseException#TRANSACTION INACTIVE ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#TRANSACTION_INACTIVE_ERR">TRANSACTION_INACTIVE_ERR</a></code></dt> <dd>If the associated transaction is not active.</dd>
+</dl>
+</div> Throws DatabaseException.</div>
+<a name="index"></a><h3><code><span class="k">function</span> <span class="i">index</span>(<span class="i">name</span>:<a href="/String.html">String</a>):<a href="/js/html/idb/Index.html">Index</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="openCursor"></a><h3><code><span class="k">function</span> <span class="i">openCursor</span>(<span class="i">key</span>:<a href="/js/html/idb/Key.html">Key</a>, ?<span class="i">direction</span>:<a href="/String.html">String</a>):<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p>Immediately returns an <a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a> object, and creates a <a title="en/IndexedDB#gloss cursor" rel="internal" href="https://developer.mozilla.org/en/IndexedDB#gloss_cursor">cursor</a> over the records in this object store, in a separate thread. If there is even a single record that matches the <a title="en/IndexedDB#gloss key range" rel="internal" href="https://developer.mozilla.org/en/IndexedDB#gloss_key_range">key range</a>, then a success event is fired on the returned object, with its <code><a title="en/IndexedDB/IDBSuccessEvent#attr result" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBSuccessEvent#attr_result">result</a></code> set to the <a title="en/IndexedDB/IDBCursor" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBCursor">IDBCursor</a> object for the new cursor. If no records match the key range, then a success event is fired on the returned object, with its <code><a title="en/IndexedDB/IDBSuccessEvent#attr result" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBSuccessEvent#attr_result">result</a></code> set to null.</p>
+<pre>IDBRequest openCursor (
+&nbsp; in optional IDBKeyRange range, 
+&nbsp; in optional unsigned short direction
+) raises (IDBDatabaseException);
+</pre>
+<div id="section_35"><span id="Parameters_8"></span><h5 class="editable">Parameters</h5>
+<dl> <dt>range</dt> <dd>The key range to use as the cursor's range. If this parameter is unspecified or null, then the range includes all the records in the object store.</dd> <dt>direction</dt> <dd>The cursor's <a title="en/IndexedDB#gloss direction" rel="internal" href="https://developer.mozilla.org/en/IndexedDB#gloss_direction">direction</a>.</dd>
+</dl>
+</div><div id="section_36"><span id="Returns_8"></span><h5 class="editable">Returns</h5>
+<dl> <dt><code><a title="en/IndexedDB/IDBRequest" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBRequest">IDBRequest</a></code></dt> <dd>A request object on which subsequent events related to this operation are fired.</dd>
+</dl>
+</div><div id="section_37"><span id="Exceptions_9"></span><h5 class="editable">Exceptions</h5>
+<p>This method can raise an IDBDatabaseException with the following code:</p>
+<dl> <dt><code><a title="en/IndexedDB/DatabaseException#NOT ALLOWED ERR" rel="internal" href="https://developer.mozilla.org/en/IndexedDB/IDBDatabaseException#NOT_ALLOWED_ERR">NOT_ALLOWED_ERR</a></code></dt> <dd>If this object store is not in the scope of any existing transaction on the connected database.</dd>
+</dl>
+</div> Throws DatabaseException.</div>
+<a name="put"></a><h3><code><span class="k">function</span> <span class="i">put</span>(<span class="i">value</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">key</span>:<a href="/js/html/idb/Key.html">Key</a>):<a href="/js/html/idb/Request.html">Request</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

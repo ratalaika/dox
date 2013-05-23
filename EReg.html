@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/EReg.html">EReg</a></h1>
+<div class="doc"><p>The EReg class represents regular expressions.</p>
+<p>While basic usage and patterns consistently work across platforms, some more
+complex operations may yield different results. This is a necessary trade-
+off to retain a certain level of performance.</p>
+<p>EReg instances can be created by calling the constructor, or with the
+special syntax ~/pattern/modifier</p>
+<p>EReg instances maintain an internal state, which is affected by several of
+its methods.</p>
+<p>A detailed explanation of the supported operations is available at
+http://haxe.org/doc/cross/regexp</p></div>
+<h2>Instance Fields</h2>
+<a name="match"></a><h3><code><span class="k">function</span> <span class="i">match</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if <code><a href="#this">this</a></code> regular expression matches String <code><a href="#s">s</a></code>.</p>
+<p>This method modifies the internal state.</p>
+<p>If <code><a href="#s">s</a></code> is null, the result is unspecified.</p></div>
+<a name="matched"></a><h3><code><span class="k">function</span> <span class="i">matched</span>(<span class="i">n</span>:<a href="/Int.html">Int</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Returns the matched sub-group <code><a href="#n">n</a></code> of <code><a href="#this">this</a></code> EReg.</p>
+<p>This method should only be called after <code><a href="#this">this</a></code>.match() or
+<code><a href="#this">this</a></code>.matchSub(), and then operates on the String of that operation.</p>
+<p>The index <code><a href="#n">n</a></code> corresponds to the n-th set of parentheses in the pattern
+of <code><a href="#this">this</a></code> EReg. If no such sub-group exists, an exception is thrown.</p>
+<p>If <code><a href="#n">n</a></code> equals 0, the whole matched substring is returned.</p></div>
+<a name="matchedLeft"></a><h3><code><span class="k">function</span> <span class="i">matchedLeft</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Returns the part to the left of the last matched substring.</p>
+<p>If the most recent call to <code><a href="#this">this</a></code>.match() or <code><a href="#this">this</a></code>.matchSub() did not
+match anything, the result is unspecified.</p>
+<p>If the global g modifier was in place for the matching, only the
+substring to the left of the leftmost match is returned.</p>
+<p>The result does not include the matched part.</p></div>
+<a name="matchedRight"></a><h3><code><span class="k">function</span> <span class="i">matchedRight</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Returns the part to the right of the last matched substring.</p>
+<p>If the most recent call to <code><a href="#this">this</a></code>.match() or <code><a href="#this">this</a></code>.matchSub() did not
+match anything, the result is unspecified.</p>
+<p>If the global g modifier was in place for the matching, only the
+substring to the right of the leftmost match is returned.</p>
+<p>The result does not include the matched part.</p></div>
+<a name="matchedPos"></a><h3><code><span class="k">function</span> <span class="i">matchedPos</span>():{ len:<a href="/Int.html">Int</a>, pos:<a href="/Int.html">Int</a> }</code></h3>
+<div class="doc"><p>Returns the position and length of the last matched substring, within
+the String which was last used as argument to <code><a href="#this">this</a></code>.match() or
+<code><a href="#this">this</a></code>.matchSub().</p>
+<p>If the most recent call to <code><a href="#this">this</a></code>.match() or <code><a href="#this">this</a></code>.matchSub() did not
+match anything, the result is unspecified.</p>
+<p>If the global g modifier was in place for the matching, the position and
+length of the leftmost substring is returned.</p></div>
+<a name="matchSub"></a><h3><code><span class="k">function</span> <span class="i">matchSub</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">pos</span>:<a href="/Int.html">Int</a>, ?<span class="i">len</span>:<a href="/Int.html">Int</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if <code><a href="#this">this</a></code> regular expression matches a substring of String <code><a href="#s">s</a></code>.</p>
+<p>This function expects <code><a href="#pos">pos</a></code> and <code><a href="#len">len</a></code> to describe a valid substring of
+<code><a href="#s">s</a></code>, or else the result is unspecified. To get more robust behavior,
+<code><a href="#this">this</a></code>.matchSub(s.substr(pos,len)) can be used instead.</p>
+<p>This method modifies the internal state.</p>
+<p>If <code><a href="#s">s</a></code> is null, the result is unspecified.</p></div>
+<a name="split"></a><h3><code><span class="k">function</span> <span class="i">split</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/Array.html">Array</a>&lt;<a href="/String.html">String</a>&gt;</code></h3>
+<div class="doc"><p>Splits String <code><a href="#s">s</a></code> at all substrings <code><a href="#this">this</a></code> EReg matches.</p>
+<p>If a match is found at the start of <code><a href="#s">s</a></code>, the result contains a leading
+empty String "" entry.</p>
+<p>If a match is found at the end of <code><a href="#s">s</a></code>, the result contains a trailing
+empty String "" entry.</p>
+<p>If two matching substrings appear next to each other, the result
+contains the empty String "" between them.</p>
+<p>By default, this method splits <code><a href="#s">s</a></code> into two parts at the first matched
+substring. If the global g modifier is in place, <code><a href="#s">s</a></code> is split at each
+matched substring.</p>
+<p>If <code><a href="#s">s</a></code> is null, the result is unspecified.</p></div>
+<a name="replace"></a><h3><code><span class="k">function</span> <span class="i">replace</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">by</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Replaces the first substring of <code><a href="#s">s</a></code> which <code><a href="#this">this</a></code> EReg matches with <code><a href="#by">by</a></code>.</p>
+<p>If <code><a href="#this">this</a></code> EReg does not match any substring, the result is <code><a href="#s">s</a></code>.</p>
+<p>By default, this method replaces only the first matched substring. If
+the global g modifier is in place, all matched substrings are replaced.</p>
+<p>If <code><a href="#by">by</a></code> contains [$1] to [$9], the digit corresponds to number of a
+matched sub-group and its value is used instead. If no such sub-group
+exists, the replacement is unspecified. The string [$$] becomes [$].</p>
+<p>If <code><a href="#s">s</a></code> or <code><a href="#by">by</a></code> are null, the result is unspecified.</p></div>
+<a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">f</span>:<a href="/EReg.html">EReg</a> -> <a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>For each occurence of the pattern in the string <code><a href="#s">s</a></code>, the function <code><a href="#f">f</a></code> is called and
+can return the string that needs to be replaced. All occurences are matched anyway,
+and setting the <code><a href="#g">g</a></code> flag might cause some incorrect behavior on some platforms.</p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

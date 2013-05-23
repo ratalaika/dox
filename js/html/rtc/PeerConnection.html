@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/rtc/PeerConnection.html">PeerConnection</a></h1>
+<div>extends <a href="/js/html/EventTarget.html">EventTarget</a></div>
+<div class="doc"><p></p></div>
+<h2>Instance Fields</h2>
+<a name="iceState"></a><h3><code><span class="k">var</span> <span class="i">iceState</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="localDescription"></a><h3><code><span class="k">var</span> <span class="i">localDescription</span>:<a href="/js/html/rtc/SessionDescription.html">SessionDescription</a></code></h3>
+<div class="doc"><p>Getter throws DOMException.</p></div>
+<a name="localStreams"></a><h3><code><span class="k">var</span> <span class="i">localStreams</span>:<a href="/js/html/rtc/MediaStreamList.html">MediaStreamList</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onaddstream"></a><h3><code><span class="k">var</span> <span class="i">onaddstream</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="ondatachannel"></a><h3><code><span class="k">var</span> <span class="i">ondatachannel</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onicecandidate"></a><h3><code><span class="k">var</span> <span class="i">onicecandidate</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onicechange"></a><h3><code><span class="k">var</span> <span class="i">onicechange</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onnegotiationneeded"></a><h3><code><span class="k">var</span> <span class="i">onnegotiationneeded</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onopen"></a><h3><code><span class="k">var</span> <span class="i">onopen</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onremovestream"></a><h3><code><span class="k">var</span> <span class="i">onremovestream</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="onstatechange"></a><h3><code><span class="k">var</span> <span class="i">onstatechange</span>:<a href="/js/html/EventListener.html">EventListener</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="readyState"></a><h3><code><span class="k">var</span> <span class="i">readyState</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="remoteDescription"></a><h3><code><span class="k">var</span> <span class="i">remoteDescription</span>:<a href="/js/html/rtc/SessionDescription.html">SessionDescription</a></code></h3>
+<div class="doc"><p>Getter throws DOMException.</p></div>
+<a name="remoteStreams"></a><h3><code><span class="k">var</span> <span class="i">remoteStreams</span>:<a href="/js/html/rtc/MediaStreamList.html">MediaStreamList</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="addIceCandidate"></a><h3><code><span class="k">function</span> <span class="i">addIceCandidate</span>(<span class="i">candidate</span>:<a href="/js/html/rtc/IceCandidate.html">IceCandidate</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="addStream"></a><h3><code><span class="k">function</span> <span class="i">addStream</span>(<span class="i">stream</span>:<a href="/js/html/rtc/MediaStream.html">MediaStream</a>, ?<span class="i">mediaConstraints</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="close"></a><h3><code><span class="k">function</span> <span class="i">close</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="createAnswer"></a><h3><code><span class="k">function</span> <span class="i">createAnswer</span>(<span class="i">successCallback</span>:<a href="/js/html/rtc/SessionDescriptionCallback.html">SessionDescriptionCallback</a>, <span class="i">failureCallback</span>:<a href="/js/html/rtc/ErrorCallback.html">ErrorCallback</a>, ?<span class="i">mediaConstraints</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="createDataChannel"></a><h3><code><span class="k">function</span> <span class="i">createDataChannel</span>(<span class="i">label</span>:<a href="/String.html">String</a>, ?<span class="i">options</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/js/html/rtc/DataChannel.html">DataChannel</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="createOffer"></a><h3><code><span class="k">function</span> <span class="i">createOffer</span>(<span class="i">successCallback</span>:<a href="/js/html/rtc/SessionDescriptionCallback.html">SessionDescriptionCallback</a>, <span class="i">failureCallback</span>:<a href="/js/html/rtc/ErrorCallback.html">ErrorCallback</a>, ?<span class="i">mediaConstraints</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="getStats"></a><h3><code><span class="k">function</span> <span class="i">getStats</span>(<span class="i">successCallback</span>:<a href="/js/html/rtc/StatsCallback.html">StatsCallback</a>, <span class="i">selector</span>:<a href="/js/html/rtc/MediaStreamTrack.html">MediaStreamTrack</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="removeStream"></a><h3><code><span class="k">function</span> <span class="i">removeStream</span>(<span class="i">stream</span>:<a href="/js/html/rtc/MediaStream.html">MediaStream</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setLocalDescription"></a><h3><code><span class="k">function</span> <span class="i">setLocalDescription</span>(<span class="i">description</span>:<a href="/js/html/rtc/SessionDescription.html">SessionDescription</a>, <span class="i">successCallback</span>:<a href="/js/html/VoidCallback.html">VoidCallback</a>, <span class="i">failureCallback</span>:<a href="/js/html/rtc/ErrorCallback.html">ErrorCallback</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setRemoteDescription"></a><h3><code><span class="k">function</span> <span class="i">setRemoteDescription</span>(<span class="i">description</span>:<a href="/js/html/rtc/SessionDescription.html">SessionDescription</a>, <span class="i">successCallback</span>:<a href="/js/html/VoidCallback.html">VoidCallback</a>, <span class="i">failureCallback</span>:<a href="/js/html/rtc/ErrorCallback.html">ErrorCallback</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="updateIce"></a><h3><code><span class="k">function</span> <span class="i">updateIce</span>(?<span class="i">configuration</span>:<a href="/Dynamic.html">Dynamic</a>, ?<span class="i">mediaConstraints</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/StringTools.html">StringTools</a></h1>
+<div class="doc"><p>This class provides advanced methods on Strings. It is ideally used with
+'using StringTools' and then acts as an extension to the String class.</p>
+<p>If the first argument to any of the methods is null, the result is
+unspecified.</p></div>
+<h2>Class Fields</h2>
+<a name="urlEncode"></a><h3><code><span class="k">function</span> <span class="i">urlEncode</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Encode an URL by using the standard format.</p></div>
+<a name="urlDecode"></a><h3><code><span class="k">function</span> <span class="i">urlDecode</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Decode an URL using the standard format.</p></div>
+<a name="htmlEscape"></a><h3><code><span class="k">function</span> <span class="i">htmlEscape</span>(<span class="i">s</span>:<a href="/String.html">String</a>, ?<span class="i">quotes</span>:<a href="/Bool.html">Bool</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Escapes HTML special characters of the string <code><a href="#s">s</a></code>.</p>
+<p>The following replacements are made:</p>
+<pre><code>- &amp; becomes &amp;amp;
+- &lt; becomes &amp;lt;
+- &gt; becomes &amp;gt;
+</code></pre>
+<p>If <code><a href="#quotes">quotes</a></code> is true, the following characters are also replaced:</p>
+<pre><code>- " becomes &amp;quot;
+- ' becomes &amp;#039;
+</code></pre></div>
+<a name="htmlUnescape"></a><h3><code><span class="k">function</span> <span class="i">htmlUnescape</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Unescapes HTML special characters of the string <code><a href="#s">s</a></code>.</p>
+<p>This is the inverse operation to htmlEscape, i.e. the following always
+holds: htmlUnescape(htmlEscape(s)) == s</p>
+<p>The replacements follow:</p>
+<pre><code>- &amp;amp; becomes &amp;
+- &amp;lt; becomes &lt;
+- &amp;gt; becomes &gt;
+- &amp;quot; becomes "
+- &amp;#039; becomes '
+</code></pre></div>
+<a name="startsWith"></a><h3><code><span class="k">function</span> <span class="i">startsWith</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">start</span>:<a href="/String.html">String</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if the string <code><a href="#s">s</a></code> starts with the string <code><a href="#start">start</a></code>.</p>
+<p>If <code><a href="#start">start</a></code> is null, the result is unspecified.</p>
+<p>If <code><a href="#start">start</a></code> is the empty String "", the result is true.</p></div>
+<a name="endsWith"></a><h3><code><span class="k">function</span> <span class="i">endsWith</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">end</span>:<a href="/String.html">String</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if the string <code><a href="#s">s</a></code> ends with the string <code><a href="#end">end</a></code>.</p>
+<p>If <code><a href="#end">end</a></code> is null, the result is unspecified.</p>
+<p>If <code><a href="#end">end</a></code> is the empty String "", the result is true.</p></div>
+<a name="isSpace"></a><h3><code><span class="k">function</span> <span class="i">isSpace</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">pos</span>:<a href="/Int.html">Int</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if the character in the string <code><a href="#s">s</a></code> at position <code><a href="#pos">pos</a></code> is a space.</p>
+<p>A character is considered to be a space character if its character code
+is 9,10,11,12,13 or 32.</p>
+<p>If <code><a href="#s">s</a></code> is the empty String "", or if pos is not a valid position within
+<code><a href="#s">s</a></code>, the result is false.</p></div>
+<a name="ltrim"></a><h3><code><span class="k">function</span> <span class="i">ltrim</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Removes leading space characters of <code><a href="#s">s</a></code>.</p>
+<p>This function internally calls isSpace() to decide which characters to
+remove.</p>
+<p>If <code><a href="#s">s</a></code> is the empty String "" or consists only of space characters, the
+result is the empty String "".</p></div>
+<a name="rtrim"></a><h3><code><span class="k">function</span> <span class="i">rtrim</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Removes trailing space characters of <code><a href="#s">s</a></code>.</p>
+<p>This function internally calls isSpace() to decide which characters to
+remove.</p>
+<p>If <code><a href="#s">s</a></code> is the empty String "" or consists only of space characters, the
+result is the empty String "".</p></div>
+<a name="trim"></a><h3><code><span class="k">function</span> <span class="i">trim</span>(<span class="i">s</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Removes leading and trailing space characters of <code><a href="#s">s</a></code>.</p>
+<p>This is a convenience function for ltrim(rtrim(s)).</p></div>
+<a name="lpad"></a><h3><code><span class="k">function</span> <span class="i">lpad</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">c</span>:<a href="/String.html">String</a>, <span class="i">l</span>:<a href="/Int.html">Int</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Concatenates <code><a href="#c">c</a></code> to <code><a href="#s">s</a></code> until <code><a href="#s">s</a></code>.length is at least <code><a href="#l">l</a></code>.</p>
+<p>If <code><a href="#c">c</a></code> is the empty String "" or if <code><a href="#l">l</a></code> does not exceed <code><a href="#s">s</a></code>.length,
+<code><a href="#s">s</a></code> is returned unchanged.</p>
+<p>If <code><a href="#c">c</a></code>.length is 1, the resulting String length is exactly <code><a href="#l">l</a></code>.</p>
+<p>Otherwise the length may exceed <code><a href="#l">l</a></code>.</p>
+<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p></div>
+<a name="rpad"></a><h3><code><span class="k">function</span> <span class="i">rpad</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">c</span>:<a href="/String.html">String</a>, <span class="i">l</span>:<a href="/Int.html">Int</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Appends <code><a href="#c">c</a></code> to <code><a href="#s">s</a></code> until <code><a href="#s">s</a></code>.length is at least <code><a href="#l">l</a></code>.</p>
+<p>If <code><a href="#c">c</a></code> is the empty String "" or if <code><a href="#l">l</a></code> does not exceed <code><a href="#s">s</a></code>.length,
+<code><a href="#s">s</a></code> is returned unchanged.</p>
+<p>If <code><a href="#c">c</a></code>.length is 1, the resulting String length is exactly <code><a href="#l">l</a></code>.</p>
+<p>Otherwise the length may exceed <code><a href="#l">l</a></code>.</p>
+<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p></div>
+<a name="replace"></a><h3><code><span class="k">function</span> <span class="i">replace</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">sub</span>:<a href="/String.html">String</a>, <span class="i">by</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Replace all occurences of the String <code><a href="#sub">sub</a></code> in the String <code><a href="#s">s</a></code> by the
+String <code><a href="#by">by</a></code>.</p>
+<p>If <code><a href="#sub">sub</a></code> is the empty String "", <code><a href="#by">by</a></code> is inserted after each character
+of <code><a href="#s">s</a></code>. If <code><a href="#by">by</a></code> is also the empty String "", <code><a href="#s">s</a></code> remains unchanged.</p>
+<p>This is a convenience function for <code><a href="#s">s</a></code>.split(<code><a href="#sub">sub</a></code>).join(<code><a href="#by">by</a></code>).</p>
+<p>If <code><a href="#sub">sub</a></code> or <code><a href="#by">by</a></code> are null, the result is unspecified.</p></div>
+<a name="hex"></a><h3><code><span class="k">function</span> <span class="i">hex</span>(<span class="i">n</span>:<a href="/Int.html">Int</a>, ?<span class="i">digits</span>:<a href="/Int.html">Int</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Encodes <code><a href="#n">n</a></code> into a hexadecimal representation.</p>
+<p>If <code><a href="#digits">digits</a></code> is specified, the resulting String is padded with "0" until
+its length equals <code><a href="#digits">digits</a></code>.</p></div>
+<a name="fastCodeAt"></a><h3><code><span class="k">function</span> <span class="i">fastCodeAt</span>(<span class="i">s</span>:<a href="/String.html">String</a>, <span class="i">index</span>:<a href="/Int.html">Int</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Returns the character code at position <code><a href="#index">index</a></code> of String <code><a href="#s">s</a></code>.</p>
+<p>This method is faster than String.charCodeAt() on most platforms.
+However, unlike String.charCodeAt(), the result is unspecified if
+<code><a href="#index">index</a></code> is negative or exceeds <code><a href="#s">s</a></code>.length.</p>
+<p>This operation is not guaranteed to work if <code><a href="#s">s</a></code> contains the \0
+character.</p></div>
+<a name="isEof"></a><h3><code><span class="k">function</span> <span class="i">isEof</span>(<span class="i">c</span>:<a href="/Int.html">Int</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

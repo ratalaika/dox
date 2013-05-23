@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/NamedNodeMap.html">NamedNodeMap</a></h1>
+<div class="doc"><p>A collection of nodes returned by &lt;a title="En/DOM/Element.attributes" class="internal" rel="internal" href="https://developer.mozilla.org/En/DOM/Node.attributes">&lt;code>Element.attributes&lt;/code>&lt;/a> (also potentially for &lt;code>&lt;a title="En/DOM/DocumentType.entities" rel="internal" href="https://developer.mozilla.org/En/DOM/DocumentType.entities" class="new internal">DocumentType.entities&lt;/a>&lt;/code>, &lt;code>&lt;a title="En/DOM/DocumentType.notations" rel="internal" href="https://developer.mozilla.org/En/DOM/DocumentType.notations" class="new internal">DocumentType.notations&lt;/a>&lt;/code>). &lt;code>NamedNodeMap&lt;/code>s are not in any particular order (unlike &lt;code>&lt;a title="En/DOM/NodeList" class="internal" rel="internal" href="/api/js/html/NodeList">NodeList&lt;/a>&lt;/code>), although they may be accessed by an index as in an array (they may also be accessed with the &lt;code>item&lt;/code>() method). A NamedNodeMap object are live and will thus be auto-updated if changes are made to their contents internally or elsewhere.&lt;br>&lt;br>
+Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/DOM/NamedNodeMap">MDN&lt;/a>.</p></div>
+<h2>Instance Fields</h2>
+<a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="getNamedItem"></a><h3><code><span class="k">function</span> <span class="i">getNamedItem</span>(<span class="i">name</span>:<a href="/String.html">String</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="getNamedItemNS"></a><h3><code><span class="k">function</span> <span class="i">getNamedItemNS</span>(?<span class="i">namespaceURI</span>:<a href="/String.html">String</a>, <span class="i">localName</span>:<a href="/String.html">String</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="item"></a><h3><code><span class="k">function</span> <span class="i">item</span>(<span class="i">index</span>:<a href="/Int.html">Int</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="removeNamedItem"></a><h3><code><span class="k">function</span> <span class="i">removeNamedItem</span>(<span class="i">name</span>:<a href="/String.html">String</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="removeNamedItemNS"></a><h3><code><span class="k">function</span> <span class="i">removeNamedItemNS</span>(?<span class="i">namespaceURI</span>:<a href="/String.html">String</a>, <span class="i">localName</span>:<a href="/String.html">String</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setNamedItem"></a><h3><code><span class="k">function</span> <span class="i">setNamedItem</span>(<span class="i">node</span>:<a href="/js/html/Node.html">Node</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setNamedItemNS"></a><h3><code><span class="k">function</span> <span class="i">setNamedItemNS</span>(<span class="i">node</span>:<a href="/js/html/Node.html">Node</a>):<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

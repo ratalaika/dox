@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/CharacterData.html">CharacterData</a></h1>
+<div>extends <a href="/js/html/Node.html">Node</a></div>
+<table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Direct Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/js/html/Text.html">Text</a>, <a href="/js/html/Comment.html">Comment</a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/js/html/Text.html">Text</a></td><td><p>In the <a title="en/DOM" rel="internal" href="https://developer.mozilla.org/en/DOM">DOM</a>, the Text interface represents the textual content of an <a class="internal" title="En/DOM/Element" rel="internal" href="/api/js/html/Element">Element</a> or <a class="internal" title="En/DOM/Attr" rel="internal" href="https://developer.mozilla.org/En/DOM/Attr">Attr</a>.&nbsp; If an element has no markup within its content, it has a single child implementing Text that contains the element's text.&nbsp; However, if the element contains markup, it is parsed into information items and Text nodes that form its children.</p></td></tr><tr><td width="200"><a href="/js/html/Comment.html">Comment</a></td><td><p>A comment is used to add notations within markup; although it is generally not displayed, it is still available to be read in the source view (in Firefox:&nbsp;View -&gt; Page Source).&nbsp; These are represented in HTML and XML as content between <code>&lt;!--</code> and&nbsp; <code>--&gt; . </code>In XML, the character sequence "--" cannot be used within a comment.</p></td></tr></tbody></table></td></tr></tbody></table><table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Indirect Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/js/html/CDATASection.html">CDATASection</a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/js/html/CDATASection.html">CDATASection</a></td><td><p>A CDATA Section can be used within XML to include extended portions of unescaped text, such that the symbols &lt; and &amp; do not need escaping as they normally do within XML when used as text.</p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><code><a title="En/DOM/Text" rel="internal" href="https://developer.mozilla.org/En/DOM/Text">Text</a></code>, <code><a title="En/DOM/Comment" rel="internal" href="https://developer.mozilla.org/En/DOM/Comment">Comment</a></code>, and <code><a title="en/DOM/CDATASection" rel="internal" href="/api/js/html/CDATASection">CDATASection</a></code> all implement CharacterData, which in turn also implements <code><a class="internal" title="En/DOM/Node" rel="internal" href="/api/js/html/Node">Node</a></code>. See <code>Node</code> for the remaining methods, properties, and constants.<br><br>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/En/DOM/CharacterData">MDN</a>.</div>
+<h2>Instance Fields</h2>
+<a name="data"></a><h3><code><span class="k">var</span> <span class="i">data</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Setter throws DOMException.</p></div>
+<a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="appendData"></a><h3><code><span class="k">function</span> <span class="i">appendData</span>(<span class="i">data</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="deleteData"></a><h3><code><span class="k">function</span> <span class="i">deleteData</span>(<span class="i">offset</span>:<a href="/Int.html">Int</a>, <span class="i">length</span>:<a href="/Int.html">Int</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="insertData"></a><h3><code><span class="k">function</span> <span class="i">insertData</span>(<span class="i">offset</span>:<a href="/Int.html">Int</a>, <span class="i">data</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="replaceData"></a><h3><code><span class="k">function</span> <span class="i">replaceData</span>(<span class="i">offset</span>:<a href="/Int.html">Int</a>, <span class="i">length</span>:<a href="/Int.html">Int</a>, <span class="i">data</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="substringData"></a><h3><code><span class="k">function</span> <span class="i">substringData</span>(<span class="i">offset</span>:<a href="/Int.html">Int</a>, <span class="i">length</span>:<a href="/Int.html">Int</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

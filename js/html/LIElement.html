@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/LIElement.html">LIElement</a></h1>
+<div>extends <a href="/js/html/Element.html">Element</a></div>
+<div class="doc"><p>The &lt;em>HTML List item element&lt;/em> (&lt;code>&lt;li&gt;&lt;/code>) is used to represent a list item. It should be contained in an ordered list (&lt;code>&lt;a rel="custom" href="/api/js/html/OListElement">&lt;ol&gt;&lt;/a>&lt;/code>
+), an unordered list (&lt;code>&lt;a rel="custom" href="/api/js/html/UListElement">&lt;ul&gt;&lt;/a>&lt;/code>
+) or a menu (&lt;code>&lt;a rel="custom" href="/api/js/html/MenuElement">&lt;menu&gt;&lt;/a>&lt;/code>
+), where it represents a single entity in that list. In menus and unordered lists, list items are ordinarily displayed using bullet points. In order lists, they are usually displayed with some ascending counter on the left such as a number or letter&lt;br>&lt;br>
+Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/HTML/Element/li">MDN&lt;/a>.</p></div>
+<h2>Instance Fields</h2>
+<a name="type"></a><h3><code><span class="k">var</span> <span class="i">type</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>This character attributes indicates the numbering type: &lt;ul> &lt;li>&lt;code>a&lt;/code>: lowercase letters&lt;/li> &lt;li>&lt;code>A&lt;/code>: uppercase letters&lt;/li> &lt;li>&lt;code>i&lt;/code>: lowercase Roman numerals&lt;/li> &lt;li>&lt;code>I&lt;/code>: uppercase Roman numerals&lt;/li> &lt;li>&lt;code>1&lt;/code>: numbers&lt;/li> &lt;/ul> This type overrides the one used by its parent &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/ol">&lt;ol&gt;&lt;/a>&lt;/code>
+element, if any.&lt;br> &lt;div class="note">&lt;strong>Usage note:&lt;/strong> This attribute has been deprecated: use the CSS &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/CSS/list-style-type">list-style-type&lt;/a>&lt;/code>
+property instead.&lt;/div></p></div>
+<a name="value"></a><h3><code><span class="k">var</span> <span class="i">value</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>This integer attributes indicates the current ordinal value of the item in the list as defined by the &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/ol">&lt;ol&gt;&lt;/a>&lt;/code>
+element. The only allowed value for this attribute is a number, even if the list is displayed with Roman numerals or letters. List items that follow this one continue numbering from the value set. The &lt;strong>value&lt;/strong> attribute has no meaning for unordered lists (&lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/ul">&lt;ul&gt;&lt;/a>&lt;/code>
+) or for menus (&lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/menu">&lt;menu&gt;&lt;/a>&lt;/code>
+). &lt;div class="note">&lt;strong>Note&lt;/strong>: This attribute was deprecated in HTML4, but reintroduced in HTML5.&lt;/div> &lt;div class="geckoVersionNote"> &lt;p>
+&lt;/p>&lt;div class="geckoVersionHeading">Gecko 9.0 note&lt;div>(Firefox 9.0 / Thunderbird 9.0 / SeaMonkey 2.6)
+&lt;/div>&lt;/div>
+&lt;p>&lt;/p> &lt;p>Prior to &lt;span title="(Firefox 9.0 / Thunderbird 9.0 / SeaMonkey 2.6)
+">Gecko&nbsp;9.0&lt;/span>, negative values were incorrectly converted to 0. Starting in &lt;span title="(Firefox 9.0 / Thunderbird 9.0 / SeaMonkey 2.6)
+">Gecko&nbsp;9.0&lt;/span> all integer values are correctly parsed.&lt;/p> &lt;/div></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

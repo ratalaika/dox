@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/Range.html">Range</a></h1>
+<div class="doc"><p>The <code>Range</code> object represents a fragment of a document that can contain nodes and parts of text nodes in a given document.</p>
+<p>A range can be created using the <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/Document.createRange">Document.createRange</a></code>
+&nbsp;method of the&nbsp;<code><a rel="custom" href="https://developer.mozilla.org/en/DOM/Document">Document</a></code>
+&nbsp;object. Range objects can also be retrieved by using the <code><a rel="internal" href="https://developer.mozilla.org/Article_not_found?uri=en/DOM/Selection.getRangeAt" class="new">Selection.getRangeAt</a></code>
+&nbsp;method of the&nbsp;<code><a rel="custom" href="/api/js/html/DOMSelection">Selection</a></code>
+&nbsp;object.</p><br><br>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/range">MDN</a>.</div>
+<h2>Class Fields</h2>
+<a name="END_TO_END"></a><h3><code><span class="k">var</span> <span class="i">END_TO_END</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="END_TO_START"></a><h3><code><span class="k">var</span> <span class="i">END_TO_START</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="NODE_AFTER"></a><h3><code><span class="k">var</span> <span class="i">NODE_AFTER</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="NODE_BEFORE"></a><h3><code><span class="k">var</span> <span class="i">NODE_BEFORE</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="NODE_BEFORE_AND_AFTER"></a><h3><code><span class="k">var</span> <span class="i">NODE_BEFORE_AND_AFTER</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="NODE_INSIDE"></a><h3><code><span class="k">var</span> <span class="i">NODE_INSIDE</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="START_TO_END"></a><h3><code><span class="k">var</span> <span class="i">START_TO_END</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="START_TO_START"></a><h3><code><span class="k">var</span> <span class="i">START_TO_START</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<h2>Instance Fields</h2>
+<a name="collapsed"></a><h3><code><span class="k">var</span> <span class="i">collapsed</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Returns a&nbsp;&lt;code>boolean&lt;/code>&nbsp;indicating whether the range's start and end points are at the same position. Getter throws DOMException.</p></div>
+<a name="commonAncestorContainer"></a><h3><code><span class="k">var</span> <span class="i">commonAncestorContainer</span>:<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p>Returns the deepest&nbsp;&lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/DOM/Node">Node&lt;/a>&lt;/code>
+&nbsp;that contains the startContainer and endContainer Nodes. Getter throws DOMException.</p></div>
+<a name="endContainer"></a><h3><code><span class="k">var</span> <span class="i">endContainer</span>:<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p>Returns the&nbsp;&lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/DOM/Node">Node&lt;/a>&lt;/code>
+&nbsp;within which the Range ends. Getter throws DOMException.</p></div>
+<a name="endOffset"></a><h3><code><span class="k">var</span> <span class="i">endOffset</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Returns a number representing where in the endContainer the Range ends. Getter throws DOMException.</p></div>
+<a name="startContainer"></a><h3><code><span class="k">var</span> <span class="i">startContainer</span>:<a href="/js/html/Node.html">Node</a></code></h3>
+<div class="doc"><p>Returns the&nbsp;&lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/DOM/Node">Node&lt;/a>&lt;/code>
+&nbsp;within which the Range starts. Getter throws DOMException.</p></div>
+<a name="startOffset"></a><h3><code><span class="k">var</span> <span class="i">startOffset</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Returns a number representing where in the startContainer the Range starts. Getter throws DOMException.</p></div>
+<a name="cloneContents"></a><h3><code><span class="k">function</span> <span class="i">cloneContents</span>():<a href="/js/html/DocumentFragment.html">DocumentFragment</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="cloneRange"></a><h3><code><span class="k">function</span> <span class="i">cloneRange</span>():<a href="/js/html/Range.html">Range</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="collapse"></a><h3><code><span class="k">function</span> <span class="i">collapse</span>(<span class="i">toStart</span>:<a href="/Bool.html">Bool</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="compareBoundaryPoints"></a><h3><code><span class="k">function</span> <span class="i">compareBoundaryPoints</span>(<span class="i">how</span>:<a href="/Int.html">Int</a>, <span class="i">sourceRange</span>:<a href="/js/html/Range.html">Range</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="compareNode"></a><h3><code><span class="k">function</span> <span class="i">compareNode</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="comparePoint"></a><h3><code><span class="k">function</span> <span class="i">comparePoint</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>, <span class="i">offset</span>:<a href="/Int.html">Int</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="createContextualFragment"></a><h3><code><span class="k">function</span> <span class="i">createContextualFragment</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/html/DocumentFragment.html">DocumentFragment</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="deleteContents"></a><h3><code><span class="k">function</span> <span class="i">deleteContents</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="detach"></a><h3><code><span class="k">function</span> <span class="i">detach</span>():<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="expand"></a><h3><code><span class="k">function</span> <span class="i">expand</span>(<span class="i">unit</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="extractContents"></a><h3><code><span class="k">function</span> <span class="i">extractContents</span>():<a href="/js/html/DocumentFragment.html">DocumentFragment</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="getBoundingClientRect"></a><h3><code><span class="k">function</span> <span class="i">getBoundingClientRect</span>():<a href="/js/html/ClientRect.html">ClientRect</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="getClientRects"></a><h3><code><span class="k">function</span> <span class="i">getClientRects</span>():<a href="/js/html/ClientRectList.html">ClientRectList</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="insertNode"></a><h3><code><span class="k">function</span> <span class="i">insertNode</span>(<span class="i">newNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="intersectsNode"></a><h3><code><span class="k">function</span> <span class="i">intersectsNode</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="isPointInRange"></a><h3><code><span class="k">function</span> <span class="i">isPointInRange</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>, <span class="i">offset</span>:<a href="/Int.html">Int</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="selectNode"></a><h3><code><span class="k">function</span> <span class="i">selectNode</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="selectNodeContents"></a><h3><code><span class="k">function</span> <span class="i">selectNodeContents</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setEnd"></a><h3><code><span class="k">function</span> <span class="i">setEnd</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>, <span class="i">offset</span>:<a href="/Int.html">Int</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setEndAfter"></a><h3><code><span class="k">function</span> <span class="i">setEndAfter</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setEndBefore"></a><h3><code><span class="k">function</span> <span class="i">setEndBefore</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setStart"></a><h3><code><span class="k">function</span> <span class="i">setStart</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>, <span class="i">offset</span>:<a href="/Int.html">Int</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setStartAfter"></a><h3><code><span class="k">function</span> <span class="i">setStartAfter</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="setStartBefore"></a><h3><code><span class="k">function</span> <span class="i">setStartBefore</span>(<span class="i">refNode</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="surroundContents"></a><h3><code><span class="k">function</span> <span class="i">surroundContents</span>(<span class="i">newParent</span>:<a href="/js/html/Node.html">Node</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

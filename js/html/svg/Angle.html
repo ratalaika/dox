@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/svg/Angle.html">Angle</a></h1>
+<div class="doc"><p>The <code>SVGAngle</code> interface correspond to the <a title="https://developer.mozilla.org/en/SVG/Content_type#Angle" rel="internal" href="https://developer.mozilla.org/en/SVG/Content_type#Angle">&lt;angle&gt;</a> basic data type.</p>
+<p>An <code>SVGAngle</code> object can be designated as read only, which means that attempts to modify the object will result in an exception being thrown.</p><br><br>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/SVGAngle">MDN</a>.</div>
+<h2>Class Fields</h2>
+<a name="SVG_ANGLETYPE_DEG"></a><h3><code><span class="k">var</span> <span class="i">SVG_ANGLETYPE_DEG</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The unit type was explicitly set to degrees.</p></div>
+<a name="SVG_ANGLETYPE_GRAD"></a><h3><code><span class="k">var</span> <span class="i">SVG_ANGLETYPE_GRAD</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The unit type is gradians.</p></div>
+<a name="SVG_ANGLETYPE_RAD"></a><h3><code><span class="k">var</span> <span class="i">SVG_ANGLETYPE_RAD</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The unit type is radians.</p></div>
+<a name="SVG_ANGLETYPE_UNKNOWN"></a><h3><code><span class="k">var</span> <span class="i">SVG_ANGLETYPE_UNKNOWN</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The unit type is not one of predefined unit types. It is invalid to attempt to define a new value of this type or to attempt to switch an existing value to this type.</p></div>
+<a name="SVG_ANGLETYPE_UNSPECIFIED"></a><h3><code><span class="k">var</span> <span class="i">SVG_ANGLETYPE_UNSPECIFIED</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>No unit type was provided (i.e., a unitless value was specified). For angles, a unitless value is treated the same as if degrees were specified.</p></div>
+<h2>Instance Fields</h2>
+<a name="unitType"></a><h3><code><span class="k">var</span> <span class="i">unitType</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>The type of the value as specified by one of the SVG<em>ANGLETYPE</em>* constants defined on this interface.</p></div>
+<a name="value"></a><h3><code><span class="k">var</span> <span class="i">value</span>:<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>The value as a floating point value, in user units. Setting this attribute will cause <code>valueInSpecifiedUnits</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</p></div>
+<a name="valueAsString"></a><h3><code><span class="k">var</span> <span class="i">valueAsString</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>The value as a string value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code>, <code>valueInSpecifiedUnits</code> and <code>unitType</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong></p> <ul> <li>a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+with code <code>SYNTAX_ERR</code> is raised if the assigned string cannot be parsed as a valid <a title="https://developer.mozilla.org/en/SVG/Content_type#Angle" rel="internal" href="https://developer.mozilla.org/en/SVG/Content_type#Angle">&lt;angle&gt;</a>.</li> <li>a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</li> </ul> Setter throws DOMException.</div>
+<a name="valueInSpecifiedUnits"></a><h3><code><span class="k">var</span> <span class="i">valueInSpecifiedUnits</span>:<a href="/Float.html">Float</a></code></h3>
+<div class="doc"><p>The value as a floating point value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</p></div>
+<a name="convertToSpecifiedUnits"></a><h3><code><span class="k">function</span> <span class="i">convertToSpecifiedUnits</span>(<span class="i">unitType</span>:<a href="/Int.html">Int</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="newValueSpecifiedUnits"></a><h3><code><span class="k">function</span> <span class="i">newValueSpecifiedUnits</span>(<span class="i">unitType</span>:<a href="/Int.html">Int</a>, <span class="i">valueInSpecifiedUnits</span>:<a href="/Float.html">Float</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

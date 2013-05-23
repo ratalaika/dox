@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/html/ImageElement.html">ImageElement</a></h1>
+<div>extends <a href="/js/html/Element.html">Element</a></div>
+<table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Direct Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/js/html/Image.html">Image</a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/js/html/Image.html">Image</a></td><td><p></p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><p>DOM image objects expose the &lt;a title="http://www.w3.org/TR/html5/embedded-content-1.html#htmlimageelement" class=" external" rel="external" href="http://www.w3.org/TR/html5/embedded-content-1.html#htmlimageelement" target="<em>blank">HTMLImageElement&lt;/a> (or 
+&lt;span>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML">HTML 4&lt;/a>&lt;/span> &lt;a title="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-17701901" class=" external" rel="external" href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-17701901" target="</em>blank">&lt;code>HTMLImageElement&lt;/code>&lt;/a>) interface, which provides special properties and methods (beyond the regular &lt;code>&lt;a rel="custom" href="/api/js/html/Element">element&lt;/a>&lt;/code>
+object interface they also have available to them by inheritance) for manipulating the layout and presentation of input elements.&lt;br>&lt;br>
+Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/DOM/HTMLImageElement">MDN&lt;/a>.</p></div>
+<h2>Instance Fields</h2>
+<a name="align"></a><h3><code><span class="k">var</span> <span class="i">align</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Indicates the alignment of the image with respect to the surrounding context.</p></div>
+<a name="alt"></a><h3><code><span class="k">var</span> <span class="i">alt</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img#attr-alt">alt</a></code>
+HTML attribute, indicating fallback context for the image.</div>
+<a name="border"></a><h3><code><span class="k">var</span> <span class="i">border</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Width of the border around the image.</p></div>
+<a name="complete"></a><h3><code><span class="k">var</span> <span class="i">complete</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>True if the browser has fetched the image, and it is in a &lt;a title="en/HTML/Element/Img#Image Format" rel="internal" href="https://developer.mozilla.org/En/HTML/Element/Img#Image_Format">supported image type&lt;/a> that was decoded without errors.</p></div>
+<a name="crossOrigin"></a><h3><code><span class="k">var</span> <span class="i">crossOrigin</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>The CORS setting for this image element. See &lt;a title="en/HTML/CORS settings attributes" rel="internal" href="https://developer.mozilla.org/en/HTML/CORS<em>settings</em>attributes">CORS&nbsp;settings attributes&lt;/a> for details.</p></div>
+<a name="height"></a><h3><code><span class="k">var</span> <span class="i">height</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img#attr-height">height</a></code>
+HTML attribute, indicating the rendered height of the image in CSS&nbsp;pixels.</div>
+<a name="hspace"></a><h3><code><span class="k">var</span> <span class="i">hspace</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Space to the left and right of the image.</p></div>
+<a name="isMap"></a><h3><code><span class="k">var</span> <span class="i">isMap</span>:<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img#attr-ismap">ismap</a></code>
+HTML attribute, indicating that the image is part of a server-side image map.</div>
+<a name="longDesc"></a><h3><code><span class="k">var</span> <span class="i">longDesc</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>URI of a long description of the image.</p></div>
+<a name="lowsrc"></a><h3><code><span class="k">var</span> <span class="i">lowsrc</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>A reference to a low-quality (but faster to load) copy of the image.</p></div>
+<a name="name"></a><h3><code><span class="k">var</span> <span class="i">name</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="naturalHeight"></a><h3><code><span class="k">var</span> <span class="i">naturalHeight</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Intrinsic height of the image in CSS&nbsp;pixels, if it is available; otherwise, 0.</p></div>
+<a name="naturalWidth"></a><h3><code><span class="k">var</span> <span class="i">naturalWidth</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Intrinsic width of the image in CSS&nbsp;pixels, if it is available; otherwise, 0.</p></div>
+<a name="src"></a><h3><code><span class="k">var</span> <span class="i">src</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element#attr-src">src</a></code>
+HTML attribute, containing the URL of the image.</div>
+<a name="useMap"></a><h3><code><span class="k">var</span> <span class="i">useMap</span>:<a href="/String.html">String</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img#attr-usemap">usemap</a></code>
+HTML attribute, containing a partial URL of a map element.</div>
+<a name="vspace"></a><h3><code><span class="k">var</span> <span class="i">vspace</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Space above and below the image.</p></div>
+<a name="width"></a><h3><code><span class="k">var</span> <span class="i">width</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img#attr-width">width</a></code>
+HTML attribute, indicating the rendered width of the image in CSS&nbsp;pixels.</div>
+<a name="x"></a><h3><code><span class="k">var</span> <span class="i">x</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="y"></a><h3><code><span class="k">var</span> <span class="i">y</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

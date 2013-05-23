@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/index.html">top level</a></li>
+<li><a href="/haxe/index.html">haxe</a></li>
+<li><a href="/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/haxe/web/index.html">haxe.web</a></li>
+<li><a href="/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/js/index.html">js</a></li>
+<li><a href="/js/html/index.html">js.html</a></li>
+<li><a href="/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/js/html/webgl/index.html">js.html.webgl</a></li>
+</div>
+				<div class="content"><h1><span class="d">class</span> <a href="/js/JQuery.html">JQuery</a></h1>
+<div class="doc"><p></p></div>
+<h2>Class Fields</h2>
+<a name="cur"></a><h3><code><span class="k">var</span> <span class="i">cur</span>:<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p>Return the current JQuery element (in a callback), similar to $(this) in JS.</p></div>
+<a name="fx"></a><h3><code><span class="k">var</span> <span class="i">fx</span>:{ interval:<a href="/Int.html">Int</a>, off:<a href="/Bool.html">Bool</a> }</code></h3>
+<div class="doc"><p></p></div>
+<a name="browser"></a><h3><code><span class="k">var</span> <span class="i">browser</span>:{ mozilla:<a href="/Bool.html">Bool</a>, msie:<a href="/Bool.html">Bool</a>, opera:<a href="/Bool.html">Bool</a>, version:<a href="/String.html">String</a>, webkit:<a href="/Bool.html">Bool</a> }</code></h3>
+<div class="doc"><p></p></div>
+<a name="contains"></a><h3><code><span class="k">function</span> <span class="i">contains</span>(<span class="i">parent</span>:<a href="/js/html/Element.html">Element</a>, <span class="i">child</span>:<a href="/js/html/Element.html">Element</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="noConflict"></a><h3><code><span class="k">function</span> <span class="i">noConflict</span>(?<span class="i">removeAll</span>:<a href="/Bool.html">Bool</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="parseJSON"></a><h3><code><span class="k">function</span> <span class="i">parseJSON</span>(<span class="i">json</span>:<a href="/String.html">String</a>):<a href="/Dynamic.html">Dynamic</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="globalEval"></a><h3><code><span class="k">function</span> <span class="i">globalEval</span>(<span class="i">js</span>:<a href="/String.html">String</a>):<a href="/Void.html">Void</a></code></h3>
+<div class="doc"><p></p></div>
+<h2>Instance Fields</h2>
+<a name="context"></a><h3><code><span class="k">var</span> <span class="i">context</span>:<a href="/js/html/Element.html">Element</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="addClass"></a><h3><code><span class="k">function</span> <span class="i">addClass</span>(<span class="i">className</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="removeClass"></a><h3><code><span class="k">function</span> <span class="i">removeClass</span>(?<span class="i">className</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="hasClass"></a><h3><code><span class="k">function</span> <span class="i">hasClass</span>(<span class="i">className</span>:<a href="/String.html">String</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="toggleClass"></a><h3><code><span class="k">function</span> <span class="i">toggleClass</span>(<span class="i">className</span>:<a href="/String.html">String</a>, ?<span class="i">addRemove</span>:<a href="/Bool.html">Bool</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="attr"></a><h3><code><span class="k">function</span> <span class="i">attr</span>(<span class="i">name</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="removeAttr"></a><h3><code><span class="k">function</span> <span class="i">removeAttr</span>(<span class="i">attr</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="prop"></a><h3><code><span class="k">function</span> <span class="i">prop</span>(<span class="i">name</span>:<a href="/String.html">String</a>):<a href="/Dynamic.html">Dynamic</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="css"></a><h3><code><span class="k">function</span> <span class="i">css</span>(<span class="i">prop</span>:<a href="/String.html">String</a>):<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="html"></a><h3><code><span class="k">function</span> <span class="i">html</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="val"></a><h3><code><span class="k">function</span> <span class="i">val</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="text"></a><h3><code><span class="k">function</span> <span class="i">text</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="width"></a><h3><code><span class="k">function</span> <span class="i">width</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="height"></a><h3><code><span class="k">function</span> <span class="i">height</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="innerWidth"></a><h3><code><span class="k">function</span> <span class="i">innerWidth</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="innerHeight"></a><h3><code><span class="k">function</span> <span class="i">innerHeight</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="outerWidth"></a><h3><code><span class="k">function</span> <span class="i">outerWidth</span>(?<span class="i">includeMargin</span>:<a href="/Bool.html">Bool</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="outerHeight"></a><h3><code><span class="k">function</span> <span class="i">outerHeight</span>(?<span class="i">includeMargin</span>:<a href="/Bool.html">Bool</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="scrollLeft"></a><h3><code><span class="k">function</span> <span class="i">scrollLeft</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="scrollTop"></a><h3><code><span class="k">function</span> <span class="i">scrollTop</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="offset"></a><h3><code><span class="k">function</span> <span class="i">offset</span>():{ left:<a href="/Int.html">Int</a>, top:<a href="/Int.html">Int</a> }</code></h3>
+<div class="doc"><p></p></div>
+<a name="offsetParent"></a><h3><code><span class="k">function</span> <span class="i">offsetParent</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="position"></a><h3><code><span class="k">function</span> <span class="i">position</span>():{ left:<a href="/Int.html">Int</a>, top:<a href="/Int.html">Int</a> }</code></h3>
+<div class="doc"><p></p></div>
+<a name="add"></a><h3><code><span class="k">function</span> <span class="i">add</span>(<span class="i">selector</span>:<a href="/String.html">String</a>, ?<span class="i">context</span>:<a href="/js/JQuery.html">JQuery</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="andSelf"></a><h3><code><span class="k">function</span> <span class="i">andSelf</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="children"></a><h3><code><span class="k">function</span> <span class="i">children</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="clone"></a><h3><code><span class="k">function</span> <span class="i">clone</span>(?<span class="i">withDataAndEvents</span>:<a href="/Bool.html">Bool</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="closest"></a><h3><code><span class="k">function</span> <span class="i">closest</span>(<span class="i">selector</span>:<a href="/String.html">String</a>, ?<span class="i">context</span>:<a href="/js/JQuery.html">JQuery</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="contents"></a><h3><code><span class="k">function</span> <span class="i">contents</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="each"></a><h3><code><span class="k">function</span> <span class="i">each</span>(<span class="i">f</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="end"></a><h3><code><span class="k">function</span> <span class="i">end</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="eq"></a><h3><code><span class="k">function</span> <span class="i">eq</span>(<span class="i">index</span>:<a href="/Int.html">Int</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="filter"></a><h3><code><span class="k">function</span> <span class="i">filter</span>(<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="find"></a><h3><code><span class="k">function</span> <span class="i">find</span>(<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="first"></a><h3><code><span class="k">function</span> <span class="i">first</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="index"></a><h3><code><span class="k">function</span> <span class="i">index</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="last"></a><h3><code><span class="k">function</span> <span class="i">last</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="has"></a><h3><code><span class="k">function</span> <span class="i">has</span>(<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="next"></a><h3><code><span class="k">function</span> <span class="i">next</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="nextAll"></a><h3><code><span class="k">function</span> <span class="i">nextAll</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="nextUntil"></a><h3><code><span class="k">function</span> <span class="i">nextUntil</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="parent"></a><h3><code><span class="k">function</span> <span class="i">parent</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="parents"></a><h3><code><span class="k">function</span> <span class="i">parents</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="parentsUntil"></a><h3><code><span class="k">function</span> <span class="i">parentsUntil</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="not"></a><h3><code><span class="k">function</span> <span class="i">not</span>(<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="prev"></a><h3><code><span class="k">function</span> <span class="i">prev</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="prevAll"></a><h3><code><span class="k">function</span> <span class="i">prevAll</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="prevUntil"></a><h3><code><span class="k">function</span> <span class="i">prevUntil</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="pushStack"></a><h3><code><span class="k">function</span> <span class="i">pushStack</span>(<span class="i">elements</span>:<a href="/Array.html">Array</a>&lt;<a href="/js/html/Element.html">Element</a>&gt;):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="siblings"></a><h3><code><span class="k">function</span> <span class="i">siblings</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="size"></a><h3><code><span class="k">function</span> <span class="i">size</span>():<a href="/Int.html">Int</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="slice"></a><h3><code><span class="k">function</span> <span class="i">slice</span>(<span class="i">start</span>:<a href="/Int.html">Int</a>, ?<span class="i">end</span>:<a href="/Int.html">Int</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="toArray"></a><h3><code><span class="k">function</span> <span class="i">toArray</span>():<a href="/Array.html">Array</a>&lt;<a href="/js/html/Element.html">Element</a>&gt;</code></h3>
+<div class="doc"><p></p></div>
+<a name="before"></a><h3><code><span class="k">function</span> <span class="i">before</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="after"></a><h3><code><span class="k">function</span> <span class="i">after</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="append"></a><h3><code><span class="k">function</span> <span class="i">append</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="appendTo"></a><h3><code><span class="k">function</span> <span class="i">appendTo</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="detach"></a><h3><code><span class="k">function</span> <span class="i">detach</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="empty"></a><h3><code><span class="k">function</span> <span class="i">empty</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="insertBefore"></a><h3><code><span class="k">function</span> <span class="i">insertBefore</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="insertAfter"></a><h3><code><span class="k">function</span> <span class="i">insertAfter</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="prepend"></a><h3><code><span class="k">function</span> <span class="i">prepend</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="prependTo"></a><h3><code><span class="k">function</span> <span class="i">prependTo</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="replaceAll"></a><h3><code><span class="k">function</span> <span class="i">replaceAll</span>(<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="replaceWith"></a><h3><code><span class="k">function</span> <span class="i">replaceWith</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="unwrap"></a><h3><code><span class="k">function</span> <span class="i">unwrap</span>():<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="wrap"></a><h3><code><span class="k">function</span> <span class="i">wrap</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="wrapAll"></a><h3><code><span class="k">function</span> <span class="i">wrapAll</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="wrapInner"></a><h3><code><span class="k">function</span> <span class="i">wrapInner</span>(<span class="i">html</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="animate"></a><h3><code><span class="k">function</span> <span class="i">animate</span>(<span class="i">properties</span>:{  }, ?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">callb</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="delay"></a><h3><code><span class="k">function</span> <span class="i">delay</span>(<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">queueName</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="hide"></a><h3><code><span class="k">function</span> <span class="i">hide</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fadeIn"></a><h3><code><span class="k">function</span> <span class="i">fadeIn</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fadeOut"></a><h3><code><span class="k">function</span> <span class="i">fadeOut</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fadeTo"></a><h3><code><span class="k">function</span> <span class="i">fadeTo</span>(<span class="i">duration</span>:<a href="/Int.html">Int</a>, <span class="i">opacity</span>:<a href="/Float.html">Float</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="fadeToggle"></a><h3><code><span class="k">function</span> <span class="i">fadeToggle</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="show"></a><h3><code><span class="k">function</span> <span class="i">show</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="slideDown"></a><h3><code><span class="k">function</span> <span class="i">slideDown</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="slideToggle"></a><h3><code><span class="k">function</span> <span class="i">slideToggle</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="slideUp"></a><h3><code><span class="k">function</span> <span class="i">slideUp</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="stop"></a><h3><code><span class="k">function</span> <span class="i">stop</span>(?<span class="i">clearQueue</span>:<a href="/Bool.html">Bool</a>, ?<span class="i">jumpToEnd</span>:<a href="/Bool.html">Bool</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="toggle"></a><h3><code><span class="k">function</span> <span class="i">toggle</span>(?<span class="i">duration</span>:<a href="/Int.html">Int</a>, ?<span class="i">call</span>:<a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="blur"></a><h3><code><span class="k">function</span> <span class="i">blur</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="change"></a><h3><code><span class="k">function</span> <span class="i">change</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="click"></a><h3><code><span class="k">function</span> <span class="i">click</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="dblclick"></a><h3><code><span class="k">function</span> <span class="i">dblclick</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="error"></a><h3><code><span class="k">function</span> <span class="i">error</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="focus"></a><h3><code><span class="k">function</span> <span class="i">focus</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="focusin"></a><h3><code><span class="k">function</span> <span class="i">focusin</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="focusout"></a><h3><code><span class="k">function</span> <span class="i">focusout</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="hover"></a><h3><code><span class="k">function</span> <span class="i">hover</span>(<span class="i">onIn</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>, ?<span class="i">onOut</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="keydown"></a><h3><code><span class="k">function</span> <span class="i">keydown</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="keypress"></a><h3><code><span class="k">function</span> <span class="i">keypress</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="keyup"></a><h3><code><span class="k">function</span> <span class="i">keyup</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mousedown"></a><h3><code><span class="k">function</span> <span class="i">mousedown</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mouseenter"></a><h3><code><span class="k">function</span> <span class="i">mouseenter</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mouseleave"></a><h3><code><span class="k">function</span> <span class="i">mouseleave</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mouseout"></a><h3><code><span class="k">function</span> <span class="i">mouseout</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mouseover"></a><h3><code><span class="k">function</span> <span class="i">mouseover</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mousemove"></a><h3><code><span class="k">function</span> <span class="i">mousemove</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="mouseup"></a><h3><code><span class="k">function</span> <span class="i">mouseup</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="load"></a><h3><code><span class="k">function</span> <span class="i">load</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="ready"></a><h3><code><span class="k">function</span> <span class="i">ready</span>(<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="resize"></a><h3><code><span class="k">function</span> <span class="i">resize</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="scroll"></a><h3><code><span class="k">function</span> <span class="i">scroll</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="select"></a><h3><code><span class="k">function</span> <span class="i">select</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="submit"></a><h3><code><span class="k">function</span> <span class="i">submit</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="unload"></a><h3><code><span class="k">function</span> <span class="i">unload</span>(?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="bind"></a><h3><code><span class="k">function</span> <span class="i">bind</span>(<span class="i">events</span>:<a href="/String.html">String</a>, <span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="delegate"></a><h3><code><span class="k">function</span> <span class="i">delegate</span>(<span class="i">selector</span>:<a href="/String.html">String</a>, <span class="i">events</span>:<a href="/String.html">String</a>, <span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="die"></a><h3><code><span class="k">function</span> <span class="i">die</span>(?<span class="i">events</span>:<a href="/String.html">String</a>, ?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="one"></a><h3><code><span class="k">function</span> <span class="i">one</span>(<span class="i">events</span>:<a href="/String.html">String</a>, <span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="live"></a><h3><code><span class="k">function</span> <span class="i">live</span>(<span class="i">events</span>:<a href="/String.html">String</a>, <span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="trigger"></a><h3><code><span class="k">function</span> <span class="i">trigger</span>(<span class="i">events</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="triggerHandler"></a><h3><code><span class="k">function</span> <span class="i">triggerHandler</span>(<span class="i">events</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="unbind"></a><h3><code><span class="k">function</span> <span class="i">unbind</span>(?<span class="i">events</span>:<a href="/String.html">String</a>, ?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="undelegate"></a><h3><code><span class="k">function</span> <span class="i">undelegate</span>(?<span class="i">selector</span>:<a href="/String.html">String</a>, ?<span class="i">events</span>:<a href="/String.html">String</a>, ?<span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="on"></a><h3><code><span class="k">function</span> <span class="i">on</span>(<span class="i">events</span>:<a href="/String.html">String</a>, <span class="i">callb</span>:<a href="/js/JqEvent.html">JqEvent</a> -> <a href="/Void.html">Void</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="clearQueue"></a><h3><code><span class="k">function</span> <span class="i">clearQueue</span>(?<span class="i">queueName</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="dequeue"></a><h3><code><span class="k">function</span> <span class="i">dequeue</span>(?<span class="i">queueName</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="queue"></a><h3><code><span class="k">function</span> <span class="i">queue</span>(?<span class="i">queueName</span>:<a href="/String.html">String</a>, ?<span class="i">callb</span>:<a href="/Void.html">Void</a> -> <a href="/Void.html">Void</a>):{ length:<a href="/Int.html">Int</a> }</code></h3>
+<div class="doc"><p></p></div>
+<a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>():<a href="/Array.html">Array</a>&lt;<a href="/js/html/Element.html">Element</a>&gt;</code></h3>
+<div class="doc"><p></p></div>
+<a name="is"></a><h3><code><span class="k">function</span> <span class="i">is</span>(<span class="i">selector</span>:<a href="/String.html">String</a>):<a href="/Bool.html">Bool</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="data"></a><h3><code><span class="k">function</span> <span class="i">data</span>(<span class="i">key</span>:<a href="/String.html">String</a>, <span class="i">value</span>:<a href="/Dynamic.html">Dynamic</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="removeData"></a><h3><code><span class="k">function</span> <span class="i">removeData</span>(?<span class="i">key</span>:<a href="/String.html">String</a>):<a href="/js/JQuery.html">JQuery</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="serialize"></a><h3><code><span class="k">function</span> <span class="i">serialize</span>():<a href="/String.html">String</a></code></h3>
+<div class="doc"><p></p></div>
+<a name="serializeArray"></a><h3><code><span class="k">function</span> <span class="i">serializeArray</span>():<a href="/Array.html">Array</a>&lt;{ name:<a href="/String.html">String</a>, value:<a href="/String.html">String</a> }&gt;</code></h3>
+<div class="doc"><p></p></div>
+<a name="iterator"></a><h3><code><span class="k">function</span> <span class="i">iterator</span>():<a href="/Iterator.html">Iterator</a>&lt;<a href="/js/JQuery.html">JQuery</a>&gt;</code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>
