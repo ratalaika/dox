@@ -42,10 +42,10 @@
 </div>
 				<div class="content"><h1><span class="d">class</span> <a href="/dox/js/html/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a></h1>
 <div>extends <a href="/dox/js/html/CanvasRenderingContext.html">CanvasRenderingContext</a></div>
-<div class="doc"><p>The bulk of the operations available at present with &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;&lt;/a>&lt;/code>
-are available through this interface, returned by a call to &lt;code>getContext()&lt;/code> on the &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;&lt;/a>&lt;/code>
-element, with "2d" as its argument.&lt;br>&lt;br>
-Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/DOM/CanvasRenderingContext2D">MDN&lt;/a>.</p></div>
+<div class="doc"><p>The bulk of the operations available at present with &lt;code>&lt;a rel=custom href=https://developer.mozilla.org/en/HTML/Element/canvas>&lt;canvas&gt;&lt;/a>&lt;/code>
+are available through this interface, returned by a call to &lt;code>getContext()&lt;/code> on the &lt;code>&lt;a rel=custom href=https://developer.mozilla.org/en/HTML/Element/canvas>&lt;canvas&gt;&lt;/a>&lt;/code>
+element, with 2d as its argument.&lt;br>&lt;br>
+Documentation for this class was provided by &lt;a href=https://developer.mozilla.org/en/DOM/CanvasRenderingContext2D>MDN&lt;/a>.</p></div>
 <h2>Instance Fields</h2>
 <a name="backingStorePixelRatio"></a><h3><code><span class="k">var</span> <span class="i">backingStorePixelRatio</span>:<a href="/dox/Float.html">Float</a></code></h3>
 <div class="doc"><p></p></div>
@@ -106,43 +106,20 @@ Documentation for this class was provided by &lt;a href="https://developer.mozil
 <a name="createLinearGradient"></a><h3><code><span class="k">function</span> <span class="i">createLinearGradient</span>(<span class="i">x0</span>:<a href="/dox/Float.html">Float</a>, <span class="i">y0</span>:<a href="/dox/Float.html">Float</a>, <span class="i">x1</span>:<a href="/dox/Float.html">Float</a>, <span class="i">y1</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/js/html/CanvasGradient.html">CanvasGradient</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="createPattern"></a><h3><code><span class="k">function</span> <span class="i">createPattern</span>(<span class="i">image</span>:<a href="/dox/js/html/ImageElement.html">ImageElement</a>, <span class="i">repetitionType</span>:<a href="/dox/String.html">String</a>):<a href="/dox/js/html/CanvasPattern.html">CanvasPattern</a></code></h3>
-<div class="doc"><div id="section_31"><span id="Parameters_10"></span><h6 class="editable">Parameters</h6>
-<dl> <dt><code>image</code></dt> <dd>A DOM <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/element">element</a></code>
-to use as the source image for the pattern. This can be any element, although typically you'll use an <code><a rel="internal" href="https://developer.mozilla.org/Article_not_found?uri=en/DOM/Image" class="new">Image</a></code>
-or <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;</a></code>
-.</dd> <dt><code>repetition</code></dt> <dd>?</dd>
-</dl>
-</div><div id="section_32"><span id="Return_value_3"></span><h6 class="editable">Return value</h6>
-<p>A new DOM canvas pattern object for use in pattern-based operations.</p>
-</div><div id="section_33"><span id="Exceptions_thrown"></span><h6 class="editable">Exceptions thrown</h6>
-<dl> <dt><code>NS_ERROR_DOM_INVALID_STATE_ERR</code> 
-<span title="(Firefox 10.0 / Thunderbird 10.0)
-">Requires Gecko 10.0</span>
-</dt> <dd>The specified <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;</a></code>
-element for the <code>image</code> parameter is zero-sized (that is, one or both of its dimensions are 0 pixels).</dd>
-</dl>
-</div> Throws DOMException.</div>
+<div class="doc"><pre>sh: -c: line 10: syntax error near unexpected token `('
+sh: -c: line 10: `<span title="(Firefox 10.0 / Thunderbird 10.0)'
+</pre></div>
 <a name="createRadialGradient"></a><h3><code><span class="k">function</span> <span class="i">createRadialGradient</span>(<span class="i">x0</span>:<a href="/dox/Float.html">Float</a>, <span class="i">y0</span>:<a href="/dox/Float.html">Float</a>, <span class="i">r0</span>:<a href="/dox/Float.html">Float</a>, <span class="i">x1</span>:<a href="/dox/Float.html">Float</a>, <span class="i">y1</span>:<a href="/dox/Float.html">Float</a>, <span class="i">r1</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/js/html/CanvasGradient.html">CanvasGradient</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="drawImage"></a><h3><code><span class="k">function</span> <span class="i">drawImage</span>(<span class="i">video</span>:<a href="/dox/js/html/VideoElement.html">VideoElement</a>, <span class="i">sx</span>:<a href="/dox/Float.html">Float</a>, <span class="i">sy</span>:<a href="/dox/Float.html">Float</a>, <span class="i">sw</span>:<a href="/dox/Float.html">Float</a>, <span class="i">sh</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dx</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dy</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dw</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dh</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Draws the specified image. This method is available in multiple formats, providing a great deal of flexibility in its use.</p><div id="section_41"><span id="Parameters_13"></span><h6 class="editable">Parameters</h6>
-<dl> <dt><code>image</code></dt> <dd>An element to draw into the context; the specification permits any image element (that is, <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img">&lt;img&gt;</a></code>
-, <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;</a></code>
-, and <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video">&lt;video&gt;</a></code>
+<div class="doc"><p>Draws the specified image. This method is available in multiple formats, providing a great deal of flexibility in its use.</p><div id=section_41><span id=Parameters_13></span><h6 class=editable>Parameters</h6>
+<dl> <dt><code>image</code></dt> <dd>An element to draw into the context; the specification permits any image element (that is, <code><a rel=custom href=https://developer.mozilla.org/en/HTML/Element/img>&lt;img&gt;</a></code>
+, <code><a rel=custom href=https://developer.mozilla.org/en/HTML/Element/canvas>&lt;canvas&gt;</a></code>
+, and <code><a rel=custom href=https://developer.mozilla.org/en/HTML/Element/video>&lt;video&gt;</a></code>
 ). Some browsers, including Firefox, let you use any arbitrary element.</dd> <dt><code>dx</code></dt> <dd>The X coordinate in the destination canvas at which to place the top-left corner of the source <code>image</code>.</dd> <dt><code>dy</code></dt> <dd>The Y coordinate in the destination canvas at which to place the top-left corner of the source <code>image</code>.</dd> <dt><code>dw</code></dt> <dd>The width to draw the <code>image</code> in the destination canvas. This allows scaling of the drawn image. If not specified, the image is not scaled in width when drawn.</dd> <dt><code>dh</code></dt> <dd>The height to draw the <code>image</code> in the destination canvas. This allows scaling of the drawn image. If not specified, the image is not scaled in height when drawn.</dd> <dt><code>sx</code></dt> <dd>The X coordinate of the top left corner of the sub-rectangle of the source image to draw into the destination context.</dd> <dt><code>sy</code></dt> <dd>The Y coordinate of the top left corner of the sub-rectangle of the source image to draw into the destination context.</dd> <dt><code>sw</code></dt> <dd>The width of the sub-rectangle of the source image to draw into the destination context. If not specified, the entire rectangle from the coordinates specified by <code>sx</code> and <code>sy</code> to the bottom-right corner of the image is used. If you specify a negative value, the image is flipped horizontally when drawn.</dd> <dt><code>sh</code></dt> <dd>The height of the sub-rectangle of the source image to draw into the destination context. If you specify a negative value, the image is flipped vertically when drawn.</dd>
 </dl>
 <p>The diagram below illustrates the meanings of the various parameters.</p>
-<p><img alt="drawImage.png" class="internal default" src="https://developer.mozilla.org/@api/deki/files/5494/=drawImage.png"></p>
-</div><div id="section_42"><span id="Exceptions_thrown_2"></span><h6 class="editable">Exceptions thrown</h6>
-<dl> <dt><code>INDEX_SIZE_ERR</code></dt> <dd>If the canvas or source rectangle width or height is zero.</dd> <dt><code>INVALID_STATE_ERR</code></dt> <dd>The image has no image data.</dd> <dt><code>TYPE_MISMATCH_ERR</code></dt> <dd>The specified source element isn't supported. This is not thrown by Firefox, since any element may be used as a source image.</dd>
-</dl>
-</div><div id="section_43"><span id="Compatibility_notes"></span><h6 class="editable">Compatibility notes</h6>
-<ul> <li>Prior to Gecko 7.0 (Firefox 7.0 / Thunderbird 7.0 / SeaMonkey 2.4)
-, Firefox threw an exception if any of the coordinate values was non-finite or zero. As per the specification, this no longer happens.</li> <li>Support for flipping the image by using negative values for <code>sw</code> and <code>sh</code> was added in Gecko 5.0 (Firefox 5.0 / Thunderbird 5.0 / SeaMonkey 2.2)
-.</li> <li>Gecko 9.0 (Firefox 9.0 / Thunderbird 9.0 / SeaMonkey 2.6)
-now correctly supports CORS for drawing images across domains without <a title="en/CORS_Enabled_Image#What_is_a_.22tainted.22_canvas.3F" rel="internal" href="https://developer.mozilla.org/en/CORS_Enabled_Image#What_is_a_.22tainted.22_canvas.3F">tainting the canvas</a>.</li>
-</ul>
-</div> Throws DOMException.</div>
+<p><img alt=drawImage.png class=internal</div>
 <a name="drawImageFromRect"></a><h3><code><span class="k">function</span> <span class="i">drawImageFromRect</span>(<span class="i">image</span>:<a href="/dox/js/html/ImageElement.html">ImageElement</a>, ?<span class="i">sx</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">sy</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">sw</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">sh</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">dx</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">dy</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">dw</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">dh</span>:<a href="/dox/Float.html">Float</a>, ?<span class="i">compositeOperation</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="fill"></a><h3><code><span class="k">function</span> <span class="i">fill</span>():<a href="/dox/Void.html">Void</a></code></h3>
@@ -166,7 +143,7 @@ now correctly supports CORS for drawing images across domains without <a title="
 <a name="moveTo"></a><h3><code><span class="k">function</span> <span class="i">moveTo</span>(<span class="i">x</span>:<a href="/dox/Float.html">Float</a>, <span class="i">y</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="putImageData"></a><h3><code><span class="k">function</span> <span class="i">putImageData</span>(<span class="i">imagedata</span>:<a href="/dox/js/html/ImageData.html">ImageData</a>, <span class="i">dx</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dy</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dirtyX</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dirtyY</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dirtyWidth</span>:<a href="/dox/Float.html">Float</a>, <span class="i">dirtyHeight</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><h6 class="editable">Compatibility notes</h6>
+<div class="doc"><h6 class=editable>Compatibility notes</h6>
 <ul> <li>Starting in Gecko 10.0 (Firefox 10.0 / Thunderbird 10.0)
 , non-finite values to any of these parameters causes the call to putImageData() to be silently ignored, rather than throwing an exception.</li>
 </ul> Throws DOMException.</div>

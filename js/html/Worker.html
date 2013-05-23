@@ -43,18 +43,8 @@
 				<div class="content"><h1><span class="d">class</span> <a href="/dox/js/html/Worker.html">Worker</a></h1>
 <div>extends <a href="/dox/js/html/AbstractWorker.html">AbstractWorker</a></div>
 <div class="doc"><p>Workers are background tasks that can be easily created and can send messages back to their creators. Creating a worker is as simple as calling the <code>Worker()</code>&nbsp;constructor, specifying a script to be run in the worker thread.</p>
-<p>Of note is the fact that workers may in turn spawn new workers as long as those workers are hosted within the same origin as the parent page.&nbsp; In addition, workers may use <a title="En/XMLHttpRequest" class="internal" rel="internal" href="https://developer.mozilla.org/en/DOM/XMLHttpRequest"><code>XMLHttpRequest</code></a> for network I/O, with the exception that the <code>responseXML</code> and <code>channel</code> attributes on <code>XMLHttpRequest</code> always return <code>null</code>.</p>
-<p>For a list of global functions available to workers, see <a title="En/DOM/Worker/Functions available to workers" rel="internal" href="https://developer.mozilla.org/En/DOM/Worker/Functions_available_to_workers">Functions available to workers</a>.</p>
-<div class="geckoVersionNote">
-<p>
-</p><div class="geckoVersionHeading">Gecko 2.0 note<div>(Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1)
-</div></div>
-<p></p>
-<p>If you want to use workers in extensions, and would like to have access to <a title="en/js-ctypes" rel="internal" href="https://developer.mozilla.org/en/js-ctypes">js-ctypes</a>, you should use the <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/ChromeWorker">ChromeWorker</a></code>
-object instead.</p>
-</div>
-<p>See <a class="internal" title="en/Using DOM workers" rel="internal" href="/api/js/html/WorkerContext">Using web workers</a> for examples and details.</p><br><br>
-Documentation for this class was provided by <a href="https://developer.mozilla.org/En/DOM/Worker">MDN</a>.</div>
+<p>Of note is the fact that workers may in turn spawn new workers as long as those workers are hosted within the same origin as the parent page.&nbsp; In addition, workers may use <a title=En/XMLHttpRequest class=internal rel=internal href=https://developer.mozilla.org/en/DOM/XMLHttpRequest><code>XMLHttpRequest</code></a> for network I/O, with the exception that the <code>responseXML</code> and <code>channel</code> attributes on <code>XMLHttpRequest</code> always return <code>null</code>.</p>
+<p>For a list of global functions available to workers, see <a title=En/DOM/Worker/Functions</div>
 <h2>Instance Fields</h2>
 <a name="onmessage"></a><h3><code><span class="k">var</span> <span class="i">onmessage</span>:<a href="/dox/js/html/EventListener.html">EventListener</a></code></h3>
 <div class="doc"><p>An event listener that is called whenever a &lt;code>MessageEvent&lt;/code> with type &lt;code>message&lt;/code> bubbles through the worker. The message is stored in the event's &lt;code>data&lt;/code> member.</p></div>

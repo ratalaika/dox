@@ -84,11 +84,40 @@ property setter functions into account.</p>
 <div class="doc"><p>Returns true if <code><a href="#f">f</a></code> is a function, false otherwise.</p>
 <p>If <code><a href="#f">f</a></code> is null, the result is false.</p></div>
 <a name="compare"></a><h3><code><span class="k">function</span> <span class="i">compare</span>(<span class="i">a</span>:<a href="/dox/compare/T.html">T</a>, <span class="i">b</span>:<a href="/dox/compare/T.html">T</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Generic comparison function, does not work for methods, see <code><a href="#compareMethods">compareMethods</a></code></p></div>
+<div class="doc"><p>Compares <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code>.</p>
+<p>If <code><a href="#a">a</a></code> is less than <code><a href="#b">b</a></code>, the result is negative. If <code><a href="#b">b</a></code> is less than
+<code><a href="#a">a</a></code>, the result is positive. If <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are equal, the result is 0.</p>
+<p>This function is only defined if <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are of the same type.</p>
+<p>If that type is a function, the result is unspecified and
+[Type.compareMethods()] should be used instead.</p>
+<p>For all other types, the result is 0 if <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are equal. If they
+are not equal, the result depends on the type and is negative if:</p>
+<pre><code>Numeric types: a is less than b
+String: a is lexicographically less than b
+Other: unspecified
+</code></pre>
+<p>If <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are null, the result is 0. If only one of them is null,
+the result is unspecified.</p></div>
 <a name="compareMethods"></a><h3><code><span class="k">function</span> <span class="i">compareMethods</span>(<span class="i">f1</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">f2</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Compare two methods closures. Returns true if it's the same method of the same instance.</p></div>
+<div class="doc"><p>Compares the functions [f1] and [f2].</p>
+<p>If [f1] or [f2] are not functions, the result is unspecified.</p>
+<p>Otherwise the result is true if [f1] and the [f2] are physically equal,
+false otherwise.</p></div>
 <a name="isObject"></a><h3><code><span class="k">function</span> <span class="i">isObject</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Tells if a value is an object or not.</p></div>
+<div class="doc"><p>Tells if <code><a href="#v">v</a></code> is an object.</p>
+<p>The result is true if <code><a href="#v">v</a></code> is one of the following:</p>
+<pre><code>- class instance
+- structure
+- Class&lt;T&gt;
+- Enum&lt;T&gt;
+
+</code></pre>
+<p>Otherwise, including if <code><a href="#v">v</a></code> is null, the result is false.</p></div>
+<a name="isEnumValue"></a><h3><code><span class="k">function</span> <span class="i">isEnumValue</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Tells if <code><a href="#v">v</a></code> is an enum value.</p>
+<p>The result is true if <code><a href="#v">v</a></code> is of type EnumValue, i.e. an enum
+constructor.</p>
+<p>Otherwise, including if <code><a href="#v">v</a></code> is null, the result is false.</p></div>
 <a name="deleteField"></a><h3><code><span class="k">function</span> <span class="i">deleteField</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
 <div class="doc"><p>Removes the field named <code><a href="#field">field</a></code> from structure <code><a href="#o">o</a></code>.</p>
 <p>This method is only guaranteed to work on anonymous structures.</p>

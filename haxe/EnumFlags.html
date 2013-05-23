@@ -48,6 +48,30 @@ corresponding enum instance. Up to 32 flags can be stored that way.</p>
 declared is index 0, the next index 1 etc. The methods are optimized if the
 enum instance is passed directly, e.g. as has(EnumCtor). Otherwise
 Type.enumIndex() reflection is used.</p></div>
+<h2>Class Fields</h2>
+<a name="_new"></a><h3><code><span class="k">function</span> <span class="i">_new</span>(?<span class="i">i</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Int.html">Int</a></code></h3>
+<div class="doc"><p>Initializes the bitflags to <code><a href="#i">i</a></code>.</p></div>
+<a name="has"></a><h3><code><span class="k">function</span> <span class="i">has</span>(<span class="i">this</span>:<a href="/dox/Int.html">Int</a>, <span class="i">v</span>:<a href="/dox/haxe/EnumFlags/T.html">T</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<div class="doc"><p>Checks if the index of enum instance <code><a href="#v">v</a></code> is set.</p>
+<p>This method is optimized if <code><a href="#v">v</a></code> is an enum instance expression such as
+SomeEnum.SomeCtor.</p>
+<p>If <code><a href="#v">v</a></code> is null, the result is unspecified.</p></div>
+<a name="set"></a><h3><code><span class="k">function</span> <span class="i">set</span>(<span class="i">this</span>:<a href="/dox/Int.html">Int</a>, <span class="i">v</span>:<a href="/dox/haxe/EnumFlags/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<div class="doc"><p>Sets the index of enum instance <code><a href="#v">v</a></code>.</p>
+<p>This method is optimized if <code><a href="#v">v</a></code> is an enum instance expression such as
+SomeEnum.SomeCtor.</p>
+<p>If <code><a href="#v">v</a></code> is null, the result is unspecified.</p></div>
+<a name="unset"></a><h3><code><span class="k">function</span> <span class="i">unset</span>(<span class="i">this</span>:<a href="/dox/Int.html">Int</a>, <span class="i">v</span>:<a href="/dox/haxe/EnumFlags/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<div class="doc"><p>Unsets the index of enum instance <code><a href="#v">v</a></code>.</p>
+<p>This method is optimized if <code><a href="#v">v</a></code> is an enum instance expression such as
+SomeEnum.SomeCtor.</p>
+<p>If <code><a href="#v">v</a></code> is null, the result is unspecified.</p></div>
+<a name="ofInt"></a><h3><code><span class="k">function</span> <span class="i">ofInt</span>(<span class="i">i</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/haxe/EnumFlags.html">EnumFlags</a></code></h3>
+<div class="doc"><p>Convert a integer bitflag into a typed one (this is a no-op, it does not
+have any impact on speed).</p></div>
+<a name="toInt"></a><h3><code><span class="k">function</span> <span class="i">toInt</span>(<span class="i">this</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Int.html">Int</a></code></h3>
+<div class="doc"><p>Convert the typed bitflag into the corresponding int value (this is a
+no-op, it doesn't have any impact on speed).</p></div>
 </div>
 			</div>
 		</div>

@@ -41,9 +41,9 @@
 <li><a href="/dox/js/html/webgl/index.html">js.html.webgl</a></li>
 </div>
 				<div class="content"><h1><span class="d">class</span> <a href="/dox/js/html/svg/Length.html">Length</a></h1>
-<div class="doc"><p>The <code>SVGLength</code> interface correspond to the <a title="https://developer.mozilla.org/en/SVG/Content_type#Length" rel="internal" href="https://developer.mozilla.org/en/SVG/Content_type#Length">&lt;length&gt;</a> basic data type.</p>
-<p>An <code>SVGLength</code> object can be designated as read only, which means that attempts to modify the object will result in an exception being thrown.</p><br><br>
-Documentation for this class was provided by <a href="https://developer.mozilla.org/en/Document_Object_Model_(DOM)/SVGLength">MDN</a>.</div>
+<div class="doc"><pre>sh: -c: line 2: syntax error near unexpected token `('
+sh: -c: line 2: `Documentation for this class was provided by <a href="https://developer.mozilla.org/en/Document_Object_Model_(DOM)/SVGLength">MDN</a>." /ws/dox/'
+</pre></div>
 <h2>Class Fields</h2>
 <a name="SVG_LENGTHTYPE_CM"></a><h3><code><span class="k">var</span> <span class="i">SVG_LENGTHTYPE_CM</span>:<a href="/dox/Int.html">Int</a></code></h3>
 <div class="doc"><p>A value was specified using the cm units defined in CSS2.</p></div>
@@ -71,14 +71,14 @@ Documentation for this class was provided by <a href="https://developer.mozilla.
 <a name="unitType"></a><h3><code><span class="k">var</span> <span class="i">unitType</span>:<a href="/dox/Int.html">Int</a></code></h3>
 <div class="doc"><p>The type of the value as specified by one of the SVG<em>LENGTHTYPE</em>* constants defined on this interface.</p></div>
 <a name="value"></a><h3><code><span class="k">var</span> <span class="i">value</span>:<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>The value as a floating point value, in user units. Setting this attribute will cause <code>valueInSpecifiedUnits</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+<div class="doc"><p>The value as a floating point value, in user units. Setting this attribute will cause <code>valueInSpecifiedUnits</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel=custom href=https://developer.mozilla.org/en/DOM/DOMException>DOMException</a></code>
 with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</p> Getter throws DOMException. Setter throws DOMException.</div>
 <a name="valueAsString"></a><h3><code><span class="k">var</span> <span class="i">valueAsString</span>:<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>The value as a string value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code>, <code>valueInSpecifiedUnits</code> and <code>unitType</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong></p> <ul> <li>a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
-with code <code>SYNTAX_ERR</code> is raised if the assigned string cannot be parsed as a valid <a title="https://developer.mozilla.org/en/SVG/Content_type#Length" rel="internal" href="https://developer.mozilla.org/en/SVG/Content_type#Length">&lt;length&gt;</a>.</li> <li>a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+<div class="doc"><p>The value as a string value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code>, <code>valueInSpecifiedUnits</code> and <code>unitType</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong></p> <ul> <li>a <code><a rel=custom href=https://developer.mozilla.org/en/DOM/DOMException>DOMException</a></code>
+with code <code>SYNTAX_ERR</code> is raised if the assigned string cannot be parsed as a valid <a title=https://developer.mozilla.org/en/SVG/Content_type#Length rel=internal href=https://developer.mozilla.org/en/SVG/Content_type#Length>&lt;length&gt;</a>.</li> <li>a <code><a rel=custom href=https://developer.mozilla.org/en/DOM/DOMException>DOMException</a></code>
 with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</li> </ul> Setter throws DOMException.</div>
 <a name="valueInSpecifiedUnits"></a><h3><code><span class="k">var</span> <span class="i">valueInSpecifiedUnits</span>:<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>The value as a floating point value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
+<div class="doc"><p>The value as a floating point value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel=custom href=https://developer.mozilla.org/en/DOM/DOMException>DOMException</a></code>
 with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</p></div>
 <a name="convertToSpecifiedUnits"></a><h3><code><span class="k">function</span> <span class="i">convertToSpecifiedUnits</span>(<span class="i">unitType</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p></p></div>

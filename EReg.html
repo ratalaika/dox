@@ -95,11 +95,11 @@ length of the leftmost substring is returned.</p></div>
 <a name="split"></a><h3><code><span class="k">function</span> <span class="i">split</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
 <div class="doc"><p>Splits String <code><a href="#s">s</a></code> at all substrings <code><a href="#this">this</a></code> EReg matches.</p>
 <p>If a match is found at the start of <code><a href="#s">s</a></code>, the result contains a leading
-empty String "" entry.</p>
+empty String  entry.</p>
 <p>If a match is found at the end of <code><a href="#s">s</a></code>, the result contains a trailing
-empty String "" entry.</p>
+empty String  entry.</p>
 <p>If two matching substrings appear next to each other, the result
-contains the empty String "" between them.</p>
+contains the empty String  between them.</p>
 <p>By default, this method splits <code><a href="#s">s</a></code> into two parts at the first matched
 substring. If the global g modifier is in place, <code><a href="#s">s</a></code> is split at each
 matched substring.</p>
@@ -109,9 +109,9 @@ matched substring.</p>
 <p>If <code><a href="#this">this</a></code> EReg does not match any substring, the result is <code><a href="#s">s</a></code>.</p>
 <p>By default, this method replaces only the first matched substring. If
 the global g modifier is in place, all matched substrings are replaced.</p>
-<p>If <code><a href="#by">by</a></code> contains [$1] to [$9], the digit corresponds to number of a
+<p>If <code><a href="#by">by</a></code> contains [] to [], the digit corresponds to number of a
 matched sub-group and its value is used instead. If no such sub-group
-exists, the replacement is unspecified. The string [$$] becomes [$].</p>
+exists, the replacement is unspecified. The string [31466] becomes [$].</p>
 <p>If <code><a href="#s">s</a></code> or <code><a href="#by">by</a></code> are null, the result is unspecified.</p></div>
 <a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">f</span>:<a href="/dox/EReg.html">EReg</a> -> <a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>For each occurence of the pattern in the string <code><a href="#s">s</a></code>, the function <code><a href="#f">f</a></code> is called and

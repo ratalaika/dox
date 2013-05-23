@@ -91,12 +91,18 @@ true.</p>
 <p>If <code><a href="#it">it</a></code> is empty, the result is the empty List even if <code><a href="#f">f</a></code> is null.</p>
 <p>Otherwise if <code><a href="#f">f</a></code> is null, the result is unspecified.</p></div>
 <a name="fold"></a><h3><code><span class="k">function</span> <span class="i">fold</span>(<span class="i">it</span>:<a href="/dox/Iterable.html">Iterable</a>&lt;<a href="/dox/fold/A.html">A</a>&gt;, <span class="i">f</span>:<a href="/dox/fold/A.html">A</a> -> <a href="/dox/fold/B.html">B</a> -> <a href="/dox/fold/B.html">B</a>, <span class="i">first</span>:<a href="/dox/fold/B.html">B</a>):<a href="/dox/fold/B.html">B</a></code></h3>
-<div class="doc"><p>Functional 'fold' using an <code><a href="/dox/Iterable.html">Iterable</a></code></p></div>
+<div class="doc"><p>Functional fold on Iterable <code><a href="#it">it</a></code>, using function <code><a href="#f">f</a></code> with start argument
+<code><a href="#first">first</a></code>.</p>
+<p>If <code><a href="#it">it</a></code> has no elements, the result is <code><a href="#first">first</a></code>.</p>
+<p>Otherwise the first element of <code><a href="#it">it</a></code> is passed to <code><a href="#f">f</a></code> alongside <code><a href="#first">first</a></code>.
+The result of that call is then passed to <code><a href="#f">f</a></code> with the next element of
+<code><a href="#it">it</a></code>, and so on until <code><a href="#it">it</a></code> has no more elements.</p>
+<p>If <code><a href="#it">it</a></code> or <code><a href="#f">f</a></code> are null, the result is unspecified.</p></div>
 <a name="count"></a><h3><code><span class="k">function</span> <span class="i">count</span>(<span class="i">it</span>:<a href="/dox/Iterable.html">Iterable</a>&lt;<a href="/dox/count/A.html">A</a>&gt;, ?<span class="i">pred</span>:<a href="/dox/count/A.html">A</a> -> <a href="/dox/Bool.html">Bool</a>):<a href="/dox/Int.html">Int</a></code></h3>
 <div class="doc"><p>Returns the number of elements in <code><a href="#it">it</a></code> for which <code><a href="#pred">pred</a></code> is true, or the
 total number of elements in <code><a href="#it">it</a></code> if <code><a href="#pred">pred</a></code> is null.</p>
 <p>This function traverses all elements.</p></div>
-<a name="empty"></a><h3><code><span class="k">function</span> <span class="i">empty</span>(<span class="i">it</span>:<a href="/dox/Iterable.html">Iterable</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="empty"></a><h3><code><span class="k">function</span> <span class="i">empty</span>(<span class="i">it</span>:<a href="/dox/Iterable.html">Iterable</a>&lt;<a href="/dox/empty/T.html">T</a>&gt;):<a href="/dox/Bool.html">Bool</a></code></h3>
 <div class="doc"><p>Tells if Iterable <code><a href="#it">it</a></code> does not contain any element.</p></div>
 <a name="indexOf"></a><h3><code><span class="k">function</span> <span class="i">indexOf</span>(<span class="i">it</span>:<a href="/dox/Iterable.html">Iterable</a>&lt;<a href="/dox/indexOf/T.html">T</a>&gt;, <span class="i">v</span>:<a href="/dox/indexOf/T.html">T</a>):<a href="/dox/Int.html">Int</a></code></h3>
 <div class="doc"><p>Returns the index of the first element <code><a href="#v">v</a></code> within Iterable <code><a href="#it">it</a></code>.</p>

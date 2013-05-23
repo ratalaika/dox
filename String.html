@@ -44,9 +44,7 @@
 <div class="doc"><p>The basic String class.</p>
 <p>A haxe String is immutable, it is not possible to modify individual
 characters. No method of this class changes the state of <code><a href="#this">this</a></code> String.</p>
-<p>Strings can be constructed using the string literal syntax "string value".</p>
-<p>String can be concatenated by using the + operator. If an operand is not a
-String, it is passed through Std.string() first.</p></div>
+<p>Strings can be constructed using the string literal syntax string</p></div>
 <h2>Class Fields</h2>
 <a name="fromCharCode"></a><h3><code><span class="k">function</span> <span class="i">fromCharCode</span>(<span class="i">code</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns the String corresponding to the character code <code><a href="#code">code</a></code>.</p>
@@ -63,7 +61,7 @@ unspecified.</p></div>
 <p>Affects the characters [A-Z]. Other characters remain unchanged.</p></div>
 <a name="charAt"></a><h3><code><span class="k">function</span> <span class="i">charAt</span>(<span class="i">index</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns the character at position <code><a href="#index">index</a></code> of <code><a href="#this">this</a></code> String.</p>
-<p>If <code><a href="#index">index</a></code> is negative or exceeds <code><a href="#this">this</a></code>.length, the empty String ""
+<p>If <code><a href="#index">index</a></code> is negative or exceeds <code><a href="#this">this</a></code>.length, the empty String 
 is returned.</p></div>
 <a name="indexOf"></a><h3><code><span class="k">function</span> <span class="i">indexOf</span>(<span class="i">str</span>:<a href="/dox/String.html">String</a>, ?<span class="i">startIndex</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Int.html">Int</a></code></h3>
 <div class="doc"><p>Returns the position of the leftmost occurence of <code><a href="#str">str</a></code> within <code><a href="#this">this</a></code>
@@ -83,7 +81,7 @@ is relative to the beginning of <code><a href="#this">this</a></code> String.</p
 <p>If <code><a href="#str">str</a></code> cannot be found, -1 is returned.</p></div>
 <a name="split"></a><h3><code><span class="k">function</span> <span class="i">split</span>(<span class="i">delimiter</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
 <div class="doc"><p>Splits <code><a href="#this">this</a></code> String at each occurence of <code><a href="#delimiter">delimiter</a></code>.</p>
-<p>If <code><a href="#delimiter">delimiter</a></code> is the empty String "", <code><a href="#this">this</a></code> String is split into an
+<p>If <code><a href="#delimiter">delimiter</a></code> is the empty String , <code><a href="#this">this</a></code> String is split into an
 Array of <code><a href="#this">this</a></code>.length elements, where the elements correspond to the
 characters of <code><a href="#this">this</a></code> String.</p>
 <p>If <code><a href="#delimiter">delimiter</a></code> is not found within <code><a href="#this">this</a></code> String, the result is an Array
@@ -91,28 +89,33 @@ with one element, which equals <code><a href="#this">this</a></code> String.</p>
 <p>If <code><a href="#delimiter">delimiter</a></code> is null, the result is unspecified.</p>
 <p>Otherwise, <code><a href="#this">this</a></code> String is split into parts at each occurence of
 <code><a href="#delimiter">delimiter</a></code>. If <code><a href="#this">this</a></code> String starts (or ends) with [delimiter}, the
-result Array contains a leading (or trailing) empty String "" element.
-Two subsequent delimiters also result in an empty String "" element.</p></div>
+result Array contains a leading (or trailing) empty String  element.
+Two subsequent delimiters also result in an empty String  element.</p></div>
 <a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns the String itself.</p></div>
 <a name="substring"></a><h3><code><span class="k">function</span> <span class="i">substring</span>(<span class="i">startIndex</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">endIndex</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns the part of <code><a href="#this">this</a></code> String from <code><a href="#startIndex">startIndex</a></code> to <code><a href="#endIndex">endIndex</a></code>.</p>
-<p>If <code><a href="#endIndex">endIndex</a></code> is omitted, <code><a href="#this">this</a></code>.length is used instead.</p>
 <p>If <code><a href="#startIndex">startIndex</a></code> or <code><a href="#endIndex">endIndex</a></code> are negative, 0 is used instead.</p>
-<p>If <code><a href="#startIndex">startIndex</a></code> exceeds <code><a href="#endIndex">endIndex</a></code>, they are swapped.</p></div>
+<p>If <code><a href="#startIndex">startIndex</a></code> exceeds <code><a href="#endIndex">endIndex</a></code>, they are swapped.</p>
+<p>If the (possibly swapped) <code><a href="#endIndex">endIndex</a></code> is omitted or exceeds
+<code><a href="#this">this</a></code>.length, <code><a href="#this">this</a></code>.length is used instead.</p>
+<p>If the (possibly swapped) <code><a href="#startIndex">startIndex</a></code> exceeds <code><a href="#this">this</a></code>.length, the empty
+String  is returned.</p></div>
 <a name="charCodeAt"></a><h3><code><span class="k">function</span> <span class="i">charCodeAt</span>(<span class="i">index</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt;</code></h3>
 <div class="doc"><p>Returns the character code at position <code><a href="#index">index</a></code> of <code><a href="#this">this</a></code> String.</p>
 <p>If <code><a href="#index">index</a></code> is negative or exceeds <code><a href="#this">this</a></code>.length, null is returned.</p>
-<p>To obtain the character code of a single character, "x".code can be used
+<p>To obtain the character code of a single character, x.code can be used
 instead to inline the character code at compile time. Note that this
 only works on String literals of length 1.</p></div>
 <a name="substr"></a><h3><code><span class="k">function</span> <span class="i">substr</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Returns <code><a href="#len">len</a></code> characters of <code><a href="#this">this</a></code> String, starting at position <code><a href="#pos">pos</a></code>.</p>
 <p>If <code><a href="#len">len</a></code> is omitted, all characters from position <code><a href="#pos">pos</a></code> to the end of
 <code><a href="#this">this</a></code> String are included.</p>
-<p>If <code><a href="#pos">pos</a></code> is negative, its values is calculated from the end	of <code><a href="#this">this</a></code>
+<p>If <code><a href="#pos">pos</a></code> is negative, its value is calculated from the end of <code><a href="#this">this</a></code>
 String by <code><a href="#this">this</a></code>.length + <code><a href="#pos">pos</a></code>. If this yields a negative value, 0 is
 used instead.</p>
+<p>If the calculated position + <code><a href="#len">len</a></code> exceeds <code><a href="#this">this</a></code>.length, the characters
+from that position to the end of <code><a href="#this">this</a></code> String are returned.</p>
 <p>If <code><a href="#len">len</a></code> is negative, the result is unspecified.</p></div>
 </div>
 			</div>
