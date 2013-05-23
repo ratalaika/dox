@@ -47,17 +47,17 @@ instances and timestamps.</p>
 milliseconds elapsed since 1st January 1970.</p></div>
 <h2>Class Fields</h2>
 <a name="format"></a><h3><code><span class="k">function</span> <span class="i">format</span>(<span class="i">d</span>:<a href="/dox/Date.html">Date</a>, <span class="i">f</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Format the date <code><a href="#d">d</a></code> according to the format <code><a href="#f">f</a></code>. The format is
-compatible with the <code><a href="#strftime">strftime</a></code> standard format, except that there is no
+<div class="doc"><p>Format the date <code>d</code> according to the format <code>f</code>. The format is
+compatible with the <code>strftime</code> standard format, except that there is no
 support in Flash and JS for day and months names (due to lack of proper
 internationalization API). On haXe/Neko/Windows, some formats are not
 supported.</p></div>
 <a name="delta"></a><h3><code><span class="k">function</span> <span class="i">delta</span>(<span class="i">d</span>:<a href="/dox/Date.html">Date</a>, <span class="i">t</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Date.html">Date</a></code></h3>
-<div class="doc"><p>Returns the result of adding timestamp <code><a href="#t">t</a></code> to Date <code><a href="#d">d</a></code>.</p>
+<div class="doc"><p>Returns the result of adding timestamp <code>t</code> to Date <code>d</code>.</p>
 <p>This is a convenience function for calling
 Date.fromTime(d.getTime() + t).</p></div>
 <a name="getMonthDays"></a><h3><code><span class="k">function</span> <span class="i">getMonthDays</span>(<span class="i">d</span>:<a href="/dox/Date.html">Date</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Returns the number of days in the month of Date <code><a href="#d">d</a></code>.</p>
+<div class="doc"><p>Returns the number of days in the month of Date <code>d</code>.</p>
 <p>This method handles leap years.</p></div>
 <a name="seconds"></a><h3><code><span class="k">function</span> <span class="i">seconds</span>(<span class="i">n</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Float.html">Float</a></code></h3>
 <div class="doc"><p>Converts a number of seconds to a timestamp.</p></div>

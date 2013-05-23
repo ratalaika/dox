@@ -44,48 +44,48 @@
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
 <a name="getName"></a><h3><code><span class="k">function</span> <span class="i">getName</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the name of enum <code><a href="#e">e</a></code>, including its path.</p>
-<p>If <code><a href="#e">e</a></code> is inside a package, the package structure is returned dot-
+<div class="doc"><p>Returns the name of enum <code>e</code>, including its path.</p>
+<p>If <code>e</code> is inside a package, the package structure is returned dot-
 separated, with another dot separating the enum name:</p>
 <pre><code>pack1.pack2.(...).packN.EnumName
 </code></pre>
-<p>If <code><a href="#e">e</a></code> is a sub-type of a haxe module, that module is not part of the
+<p>If <code>e</code> is a sub-type of a haxe module, that module is not part of the
 package structure.</p>
 <pre><code>
 </code></pre>
-<p>If <code><a href="#e">e</a></code> has no package, the enum name is returned.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p>
+<p>If <code>e</code> has no package, the enum name is returned.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p>
 <p>The enum name does not include any type parameters.</p></div>
 <a name="createByName"></a><h3><code><span class="k">function</span> <span class="i">createByName</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>, <span class="i">constr</span>:<a href="/dox/String.html">String</a>, ?<span class="i">params</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/createByName/T.html">T</a></code></h3>
-<div class="doc"><p>Creates an instance of enum <code><a href="#e">e</a></code> by calling its constructor <code><a href="#constr">constr</a></code> with
-arguments <code><a href="#params">params</a></code>.</p>
-<p>If <code><a href="#e">e</a></code> or <code><a href="#constr">constr</a></code> is null, or if enum <code><a href="#e">e</a></code> has no constructor named
-<code><a href="#constr">constr</a></code>, or if the number of elements in <code><a href="#params">params</a></code> does not match the
+<div class="doc"><p>Creates an instance of enum <code>e</code> by calling its constructor <code>constr</code> with
+arguments <code>params</code>.</p>
+<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
+<code>constr</code>, or if the number of elements in <code>params</code> does not match the
 expected number of constructor arguments, or if any argument has an
 invalid type, the result is unspecified.</p></div>
 <a name="createByIndex"></a><h3><code><span class="k">function</span> <span class="i">createByIndex</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>, <span class="i">index</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">params</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/createByIndex/T.html">T</a></code></h3>
-<div class="doc"><p>Creates an instance of enum <code><a href="#e">e</a></code> by calling its constructor number
-<code><a href="#index">index</a></code> with arguments <code><a href="#params">params</a></code>.</p>
+<div class="doc"><p>Creates an instance of enum <code>e</code> by calling its constructor number
+<code>index</code> with arguments <code>params</code>.</p>
 <p>The constructor indices are preserved from haxe syntax, so the first
 declared is index 0, the next index 1 etc.</p>
-<p>If <code><a href="#e">e</a></code> or <code><a href="#constr">constr</a></code> is null, or if enum <code><a href="#e">e</a></code> has no constructor named
-<code><a href="#constr">constr</a></code>, or if the number of elements in <code><a href="#params">params</a></code> does not match the
+<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
+<code>constr</code>, or if the number of elements in <code>params</code> does not match the
 expected number of constructor arguments, or if any argument has an
 invalid type, the result is unspecified.</p></div>
 <a name="createAll"></a><h3><code><span class="k">function</span> <span class="i">createAll</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/createAll/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of all constructors of enum <code><a href="#e">e</a></code> that require no
+<div class="doc"><p>Returns a list of all constructors of enum <code>e</code> that require no
 arguments.</p>
-<p>This may return the empty Array [] if all constructors of <code><a href="#e">e</a></code> require
+<p>This may return the empty Array [] if all constructors of <code>e</code> require
 arguments.</p>
-<p>Otherwise an instance of <code><a href="#e">e</a></code> constructed through each of its non-
+<p>Otherwise an instance of <code>e</code> constructed through each of its non-
 argument constructors is returned, in the order of the constructor
 declaration.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 <a name="getConstructors"></a><h3><code><span class="k">function</span> <span class="i">getConstructors</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of the names of all constructors of enum <code><a href="#e">e</a></code>.</p>
+<div class="doc"><p>Returns a list of the names of all constructors of enum <code>e</code>.</p>
 <p>The order of the constructor names in the returned Array is preserved
 from the original syntax.</p>
-<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>c</code> is null, the result is unspecified.</p></div>
 </div>
 			</div>
 		</div>

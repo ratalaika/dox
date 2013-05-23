@@ -45,87 +45,87 @@
 abstract interface in an untyped manner. Use with care.</p></div>
 <h2>Class Fields</h2>
 <a name="hasField"></a><h3><code><span class="k">function</span> <span class="i">hasField</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Tells if structure <code><a href="#o">o</a></code> has a field named <code><a href="#field">field</a></code>.</p>
+<div class="doc"><p>Tells if structure <code>o</code> has a field named <code>field</code>.</p>
 <p>This is only guaranteed to work for anonymous structures. Refer to
 [Type.getInstanceFields()] for a function supporting class instances.</p>
-<p>If <code><a href="#o">o</a></code> or <code><a href="#field">field</a></code> are null, the result is unspecified.</p></div>
+<p>If <code>o</code> or <code>field</code> are null, the result is unspecified.</p></div>
 <a name="field"></a><h3><code><span class="k">function</span> <span class="i">field</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
-<div class="doc"><p>Returns the value of the field named <code><a href="#field">field</a></code> on object <code><a href="#o">o</a></code>.</p>
-<p>If <code><a href="#o">o</a></code> is not an object or has no field named <code><a href="#field">field</a></code>, the result is
+<div class="doc"><p>Returns the value of the field named <code>field</code> on object <code>o</code>.</p>
+<p>If <code>o</code> is not an object or has no field named <code>field</code>, the result is
 null.</p>
 <p>If the field is defined as a property, its accessors are ignored. Refer
 to [Reflect.getProperty()] for a function supporting property accessors.</p>
-<p>If <code><a href="#field">field</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>field</code> is null, the result is unspecified.</p></div>
 <a name="setField"></a><h3><code><span class="k">function</span> <span class="i">setField</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>, <span class="i">value</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Sets the field named <code><a href="#field">field</a></code> of object <code><a href="#o">o</a></code> to value <code><a href="#value">value</a></code>.</p>
-<p>If <code><a href="#o">o</a></code> has no field named <code><a href="#field">field</a></code>, this function is only guaranteed to
+<div class="doc"><p>Sets the field named <code>field</code> of object <code>o</code> to value <code>value</code>.</p>
+<p>If <code>o</code> has no field named <code>field</code>, this function is only guaranteed to
 work for anonymous structures.</p>
-<p>If <code><a href="#o">o</a></code> or <code><a href="#field">field</a></code> are null, the result is unspecified.</p></div>
+<p>If <code>o</code> or <code>field</code> are null, the result is unspecified.</p></div>
 <a name="getProperty"></a><h3><code><span class="k">function</span> <span class="i">getProperty</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
-<div class="doc"><p>Returns the value of the field named <code><a href="#field">field</a></code> on object <code><a href="#o">o</a></code>, taking
+<div class="doc"><p>Returns the value of the field named <code>field</code> on object <code>o</code>, taking
 property getter functions into account.</p>
 <p>If the field is not a property, this function behaves like
 <code><a href="/dox/Reflect.html#field">Reflect.field</a></code>, but might be slower.</p>
-<p>If <code><a href="#o">o</a></code> or <code><a href="#field">field</a></code> are null, the result is unspecified.</p></div>
+<p>If <code>o</code> or <code>field</code> are null, the result is unspecified.</p></div>
 <a name="setProperty"></a><h3><code><span class="k">function</span> <span class="i">setProperty</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>, <span class="i">value</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Sets the field named <code><a href="#field">field</a></code> of object <code><a href="#o">o</a></code> to value <code><a href="#value">value</a></code>, taking
+<div class="doc"><p>Sets the field named <code>field</code> of object <code>o</code> to value <code>value</code>, taking
 property setter functions into account.</p>
 <p>If the field is not a property, this function behaves like
 <code><a href="/dox/Reflect.html#setField">Reflect.setField</a></code>, but might be slower.</p>
-<p>If <code><a href="#field">field</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>field</code> is null, the result is unspecified.</p></div>
 <a name="callMethod"></a><h3><code><span class="k">function</span> <span class="i">callMethod</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">func</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">args</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
 <div class="doc"><p>Call a method with the given object and arguments.</p></div>
 <a name="fields"></a><h3><code><span class="k">function</span> <span class="i">fields</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
-<div class="doc"><p>Returns the fields of structure <code><a href="#o">o</a></code>.</p>
+<div class="doc"><p>Returns the fields of structure <code>o</code>.</p>
 <p>This method is only guaranteed to work on anonymous structures. Refer to
 [Type.getInstanceFields()] for a function supporting class instances.</p>
-<p>If <code><a href="#o">o</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>o</code> is null, the result is unspecified.</p></div>
 <a name="isFunction"></a><h3><code><span class="k">function</span> <span class="i">isFunction</span>(<span class="i">f</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Returns true if <code><a href="#f">f</a></code> is a function, false otherwise.</p>
-<p>If <code><a href="#f">f</a></code> is null, the result is false.</p></div>
+<div class="doc"><p>Returns true if <code>f</code> is a function, false otherwise.</p>
+<p>If <code>f</code> is null, the result is false.</p></div>
 <a name="compare"></a><h3><code><span class="k">function</span> <span class="i">compare</span>(<span class="i">a</span>:<a href="/dox/compare/T.html">T</a>, <span class="i">b</span>:<a href="/dox/compare/T.html">T</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Compares <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code>.</p>
-<p>If <code><a href="#a">a</a></code> is less than <code><a href="#b">b</a></code>, the result is negative. If <code><a href="#b">b</a></code> is less than
-<code><a href="#a">a</a></code>, the result is positive. If <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are equal, the result is 0.</p>
-<p>This function is only defined if <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are of the same type.</p>
+<div class="doc"><p>Compares <code>a</code> and <code>b</code>.</p>
+<p>If <code>a</code> is less than <code>b</code>, the result is negative. If <code>b</code> is less than
+<code>a</code>, the result is positive. If <code>a</code> and <code>b</code> are equal, the result is 0.</p>
+<p>This function is only defined if <code>a</code> and <code>b</code> are of the same type.</p>
 <p>If that type is a function, the result is unspecified and
 [Type.compareMethods()] should be used instead.</p>
-<p>For all other types, the result is 0 if <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are equal. If they
+<p>For all other types, the result is 0 if <code>a</code> and <code>b</code> are equal. If they
 are not equal, the result depends on the type and is negative if:</p>
 <pre><code>Numeric types: a is less than b
 String: a is lexicographically less than b
 Other: unspecified
 </code></pre>
-<p>If <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> are null, the result is 0. If only one of them is null,
+<p>If <code>a</code> and <code>b</code> are null, the result is 0. If only one of them is null,
 the result is unspecified.</p></div>
 <a name="compareMethods"></a><h3><code><span class="k">function</span> <span class="i">compareMethods</span>(<span class="i">f1</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">f2</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Compares the functions [f1] and [f2].</p>
-<p>If [f1] or [f2] are not functions, the result is unspecified.</p>
-<p>Otherwise the result is true if [f1] and the [f2] are physically equal,
+<div class="doc"><p>Compares the functions <code>f1</code> and <code>f2</code>.</p>
+<p>If <code>f1</code> or <code>f2</code> are not functions, the result is unspecified.</p>
+<p>Otherwise the result is true if <code>f1</code> and the <code>f2</code> are physically equal,
 false otherwise.</p></div>
 <a name="isObject"></a><h3><code><span class="k">function</span> <span class="i">isObject</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Tells if <code><a href="#v">v</a></code> is an object.</p>
-<p>The result is true if <code><a href="#v">v</a></code> is one of the following:</p>
+<div class="doc"><p>Tells if <code>v</code> is an object.</p>
+<p>The result is true if <code>v</code> is one of the following:</p>
 <pre><code>- class instance
 - structure
 - Class&lt;T&gt;
 - Enum&lt;T&gt;
 
 </code></pre>
-<p>Otherwise, including if <code><a href="#v">v</a></code> is null, the result is false.</p></div>
+<p>Otherwise, including if <code>v</code> is null, the result is false.</p></div>
 <a name="isEnumValue"></a><h3><code><span class="k">function</span> <span class="i">isEnumValue</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Tells if <code><a href="#v">v</a></code> is an enum value.</p>
-<p>The result is true if <code><a href="#v">v</a></code> is of type EnumValue, i.e. an enum
+<div class="doc"><p>Tells if <code>v</code> is an enum value.</p>
+<p>The result is true if <code>v</code> is of type EnumValue, i.e. an enum
 constructor.</p>
-<p>Otherwise, including if <code><a href="#v">v</a></code> is null, the result is false.</p></div>
+<p>Otherwise, including if <code>v</code> is null, the result is false.</p></div>
 <a name="deleteField"></a><h3><code><span class="k">function</span> <span class="i">deleteField</span>(<span class="i">o</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">field</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Removes the field named <code><a href="#field">field</a></code> from structure <code><a href="#o">o</a></code>.</p>
+<div class="doc"><p>Removes the field named <code>field</code> from structure <code>o</code>.</p>
 <p>This method is only guaranteed to work on anonymous structures.</p>
-<p>If <code><a href="#o">o</a></code> or <code><a href="#field">field</a></code> are null, the result is unspecified.</p></div>
+<p>If <code>o</code> or <code>field</code> are null, the result is unspecified.</p></div>
 <a name="copy"></a><h3><code><span class="k">function</span> <span class="i">copy</span>(<span class="i">o</span>:<a href="/dox/copy/T.html">T</a>):<a href="/dox/copy/T.html">T</a></code></h3>
-<div class="doc"><p>Copies the fields of structure <code><a href="#o">o</a></code>.</p>
+<div class="doc"><p>Copies the fields of structure <code>o</code>.</p>
 <p>This is only guaranteed to work on anonymous structures.</p>
-<p>If <code><a href="#o">o</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>o</code> is null, the result is unspecified.</p></div>
 <a name="makeVarArgs"></a><h3><code><span class="k">function</span> <span class="i">makeVarArgs</span>(<span class="i">f</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt; -> <a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
 <div class="doc"><p>Transform a function taking an array of arguments into a function that can
 be called with any number of arguments.</p></div>

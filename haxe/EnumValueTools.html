@@ -44,25 +44,25 @@
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
 <a name="equals"></a><h3><code><span class="k">function</span> <span class="i">equals</span>(<span class="i">a</span>:<a href="/dox/equals/T.html">T</a>, <span class="i">b</span>:<a href="/dox/equals/T.html">T</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Recursively compares two enum instances <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> by value.</p>
-<p>Unlike <code><a href="#a">a</a></code> == <code><a href="#b">b</a></code>, this function performs a deep equality check on the
+<div class="doc"><p>Recursively compares two enum instances <code>a</code> and <code>b</code> by value.</p>
+<p>Unlike <code>a</code> == <code>b</code>, this function performs a deep equality check on the
 arguments of the constructors, if exists.</p>
-<p>If <code><a href="#a">a</a></code> or <code><a href="#b">b</a></code> are null, the result is unspecified.</p></div>
+<p>If <code>a</code> or <code>b</code> are null, the result is unspecified.</p></div>
 <a name="getName"></a><h3><code><span class="k">function</span> <span class="i">getName</span>(<span class="i">e</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the constructor name of enum instance <code><a href="#e">e</a></code>.</p>
+<div class="doc"><p>Returns the constructor name of enum instance <code>e</code>.</p>
 <p>The result String does not contain any constructor arguments.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 <a name="getParameters"></a><h3><code><span class="k">function</span> <span class="i">getParameters</span>(<span class="i">e</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of the constructor arguments of enum instance <code><a href="#e">e</a></code>.</p>
-<p>If <code><a href="#e">e</a></code> has no arguments, the result is [].</p>
-<p>Otherwise the result are the values that were used as arguments to <code><a href="#e">e</a></code>,
+<div class="doc"><p>Returns a list of the constructor arguments of enum instance <code>e</code>.</p>
+<p>If <code>e</code> has no arguments, the result is [].</p>
+<p>Otherwise the result are the values that were used as arguments to <code>e</code>,
 in the order of their declaration.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 <a name="getIndex"></a><h3><code><span class="k">function</span> <span class="i">getIndex</span>(<span class="i">e</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Returns the index of enum instance <code><a href="#e">e</a></code>.</p>
-<p>This corresponds to the original syntactic position of <code><a href="#e">e</a></code>. The index of
+<div class="doc"><p>Returns the index of enum instance <code>e</code>.</p>
+<p>This corresponds to the original syntactic position of <code>e</code>. The index of
 the first declared constructor is 0, the next one is 1 etc.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 </div>
 			</div>
 		</div>

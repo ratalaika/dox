@@ -72,27 +72,27 @@ the enum, the indices may no longer match.</p>
 <p>This value can be changed for individual instances of Serializer by
 setting their useEnumIndex field.</p></div>
 <a name="run"></a><h3><code><span class="k">function</span> <span class="i">run</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Serializes <code><a href="#v">v</a></code> and returns the String representation.</p>
+<div class="doc"><p>Serializes <code>v</code> and returns the String representation.</p>
 <p>This is a convenience function for creating a new instance of
-Serializer, serialize <code><a href="#v">v</a></code> into it and obtain the result through a call
+Serializer, serialize <code>v</code> into it and obtain the result through a call
 to toString().</p></div>
 <h2>Instance Fields</h2>
 <a name="useCache"></a><h3><code><span class="k">var</span> <span class="i">useCache</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>The individual cache setting for <code><a href="#this">this</a></code> Serializer instance.</p>
+<div class="doc"><p>The individual cache setting for <code>this</code> Serializer instance.</p>
 <p>See USE_CACHE for a complete description.</p></div>
 <a name="useEnumIndex"></a><h3><code><span class="k">var</span> <span class="i">useEnumIndex</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>The individual enum index setting for <code><a href="#this">this</a></code> Serializer instance.</p>
+<div class="doc"><p>The individual enum index setting for <code>this</code> Serializer instance.</p>
 <p>See USE<em>ENUM</em>INDEX for a complete description.</p></div>
 <a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Return the String representation of <code><a href="#this">this</a></code> Serializer.</p>
+<div class="doc"><p>Return the String representation of <code>this</code> Serializer.</p>
 <p>The exact format specification can be found here:
 http://haxe.org/manual/serialization/format</p></div>
 <a name="serialize"></a><h3><code><span class="k">function</span> <span class="i">serialize</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Serializes <code><a href="#v">v</a></code>.</p>
+<div class="doc"><p>Serializes <code>v</code>.</p>
 <p>All haxe-defined values and objects with the exception of functions can
 be serialized. Serialization of external/native objects is not
 guaranteed to work.</p>
-<p>The values of <code><a href="#this">this</a></code>.useCache and <code><a href="#this">this</a></code>.useEnumIndex may affect
+<p>The values of <code>this</code>.useCache and <code>this</code>.useEnumIndex may affect
 serialization output.</p></div>
 <a name="serializeException"></a><h3><code><span class="k">function</span> <span class="i">serializeException</span>(<span class="i">e</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p></p></div>

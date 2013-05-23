@@ -50,25 +50,25 @@ it can be passed as argument to functions which modify it by appending more
 values. However, the internal buffer cannot be modified.</p></div>
 <h2>Instance Fields</h2>
 <a name="add"></a><h3><code><span class="k">function</span> <span class="i">add</span>(<span class="i">x</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Appends the representation of <code><a href="#x">x</a></code> to <code><a href="#this">this</a></code> StringBuf.</p>
-<p>The exact representation of <code><a href="#x">x</a></code> may vary per platform. To get more
+<div class="doc"><p>Appends the representation of <code>x</code> to <code>this</code> StringBuf.</p>
+<p>The exact representation of <code>x</code> may vary per platform. To get more
 consistent behavior, this function should be called with
 Std.string(x).</p>
-<p>If <code><a href="#x">x</a></code> is null, the String "null" is appended.</p></div>
+<p>If <code>x</code> is null, the String "null" is appended.</p></div>
 <a name="addChar"></a><h3><code><span class="k">function</span> <span class="i">addChar</span>(<span class="i">c</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Appends the character identified by <code><a href="#c">c</a></code> to <code><a href="#this">this</a></code> StringBuf.</p>
-<p>If <code><a href="#c">c</a></code> is negative or has another invalid value, the result is
+<div class="doc"><p>Appends the character identified by <code>c</code> to <code>this</code> StringBuf.</p>
+<p>If <code>c</code> is negative or has another invalid value, the result is
 unspecified.</p></div>
 <a name="addSub"></a><h3><code><span class="k">function</span> <span class="i">addSub</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Appends a substring of <code><a href="#s">s</a></code> to <code><a href="#this">this</a></code> StringBuf.</p>
-<p>This function expects <code><a href="#pos">pos</a></code> and <code><a href="#len">len</a></code> to describe a valid substring of
-<code><a href="#s">s</a></code>, or else the result is unspecified. To get more robust behavior,
-<code><a href="#this">this</a></code>.add(s.substr(pos,len)) can be used instead.</p>
-<p>If <code><a href="#s">s</a></code> or <code><a href="#pos">pos</a></code> are null, the result is unspecified.</p>
-<p>If <code><a href="#len">len</a></code> is omitted or null, the substring ranges from <code><a href="#pos">pos</a></code> to the end
-of <code><a href="#s">s</a></code>.</p></div>
+<div class="doc"><p>Appends a substring of <code>s</code> to <code>this</code> StringBuf.</p>
+<p>This function expects <code>pos</code> and <code>len</code> to describe a valid substring of
+<code>s</code>, or else the result is unspecified. To get more robust behavior,
+<code>this</code>.add(s.substr(pos,len)) can be used instead.</p>
+<p>If <code>s</code> or <code>pos</code> are null, the result is unspecified.</p>
+<p>If <code>len</code> is omitted or null, the substring ranges from <code>pos</code> to the end
+of <code>s</code>.</p></div>
 <a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the content of <code><a href="#this">this</a></code> StringBuf as String.</p>
+<div class="doc"><p>Returns the content of <code>this</code> StringBuf as String.</p>
 <p>The buffer is not emptied by this operation.</p></div>
 </div>
 			</div>

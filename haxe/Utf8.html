@@ -45,7 +45,7 @@
 can use this crossplatform API to perform operations on such strings.</p></div>
 <h2>Class Fields</h2>
 <a name="iter"></a><h3><code><span class="k">function</span> <span class="i">iter</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">chars</span>:<a href="/dox/Int.html">Int</a> -> <a href="/dox/Void.html">Void</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Call the <code><a href="#chars">chars</a></code> function for each UTF8 char of the string.</p></div>
+<div class="doc"><p>Call the <code>chars</code> function for each UTF8 char of the string.</p></div>
 <a name="encode"></a><h3><code><span class="k">function</span> <span class="i">encode</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Encode the input ISO string into the corresponding UTF8 one.</p></div>
 <a name="decode"></a><h3><code><span class="k">function</span> <span class="i">decode</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
@@ -60,7 +60,7 @@ Throw an exception if a given UTF8 character is not supported by the decoder.</p
 <a name="compare"></a><h3><code><span class="k">function</span> <span class="i">compare</span>(<span class="i">a</span>:<a href="/dox/String.html">String</a>, <span class="i">b</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Int.html">Int</a></code></h3>
 <div class="doc"><p>Compare two UTF8 strings, character by character.</p></div>
 <a name="sub"></a><h3><code><span class="k">function</span> <span class="i">sub</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>This is similar to <code><a href="/dox/String.html#substr">String.substr</a></code> but the <code><a href="#pos">pos</a></code> and <code><a href="#len">len</a></code> parts are considering UTF8 characters.</p></div>
+<div class="doc"><p>This is similar to <code><a href="/dox/String.html#substr">String.substr</a></code> but the <code>pos</code> and <code>len</code> parts are considering UTF8 characters.</p></div>
 <h2>Instance Fields</h2>
 <a name="addChar"></a><h3><code><span class="k">function</span> <span class="i">addChar</span>(<span class="i">c</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
 <div class="doc"><p>Add the given UTF8 character code to the buffer.</p></div>

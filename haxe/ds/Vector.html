@@ -44,42 +44,43 @@
 <div class="doc"><p>A Vector is a storage of fixed size. It can be faster than Array on some
 targets, and is never slower.</p></div>
 <h2>Class Fields</h2>
-<a name="_new"></a><h3><code><span class="k">function</span> <span class="i">_new</span>(<span class="i">length</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Creates a new Vector of length <code><a href="#length">length</a></code>.</p>
-<p>Initially <code><a href="#this">this</a></code> Vector contains <code><a href="#length">length</a></code> neutral elements:</p>
+<a name="blit"></a><h3><code><span class="k">function</span> <span class="i">blit</span>(<span class="i">src</span>:<a href="/dox/haxe/ds/Vector.html">Vector</a>, <span class="i">srcPos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">dest</span>:<a href="/dox/haxe/ds/Vector.html">Vector</a>, <span class="i">destPos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<div class="doc"><p>Copies <code>length</code> of elements from <code>src</code> Vector, beginning at <code>srcPos</code> to <code>dest</code> Vector, beginning at <code>destPos</code></p>
+<p>The results are unspecified if <code>length</code> results in out-of-bounds access, or if <code>src</code> or <code>dest</code> are null</p></div>
+<a name="fromData"></a><h3><code><span class="k">function</span> <span class="i">fromData</span>(<span class="i">data</span>:<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/fromData/T.html">T</a>&gt;):<a href="/dox/haxe/ds/Vector.html">Vector</a></code></h3>
+<div class="doc"><p>Initializes a new Vector from <code>data</code>.</p>
+<p>Since <code>data</code> is the internal representation of Vector, this is a no-op.</p>
+<p>If <code>data</code> is null, the corresponding Vector is also <code>null</code>.</p></div>
+<a name="fromArrayCopy"></a><h3><code><span class="k">function</span> <span class="i">fromArrayCopy</span>(<span class="i">array</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/fromArrayCopy/T.html">T</a>&gt;):<a href="/dox/haxe/ds/Vector.html">Vector</a></code></h3>
+<div class="doc"><p>Creates a new Vector by copying the elements of <code>array</code>.</p>
+<p>This always creates a copy, even on platforms where the internal
+representation is Array.</p>
+<p>The elements are not copied and retain their identity, so
+a<code>i</code> == Vector.fromArrayCopy(a).get(i) is true for any valid i.</p>
+<p>If <code>array</code> is null, the result is unspecified.</p></div>
+<h2>Instance Fields</h2>
+<a name="_new"></a><h3><code><span class="k">function</span> <span class="i">_new</span>():<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;</code></h3>
+<div class="doc"><p>Creates a new Vector of length <code>length</code>.</p>
+<p>Initially <code>this</code> Vector contains <code>length</code> neutral elements:</p>
 <pre><code>- always null on dynamic targets
 - 0, 0.0 or false for Int, Float and Bool respectively on static
 targets
 - null for other types on static targets
 </code></pre>
-<p>If <code><a href="#length">length</a></code> is less than or equal to 0, the result is unspecified.</p></div>
-<a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>(<span class="i">this</span>:<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;, <span class="i">index</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Returns the value at index <code><a href="#index">index</a></code>.</p>
-<p>If <code><a href="#index">index</a></code> is negative or exceeds <code><a href="#this">this</a></code>.length, the result is
+<p>If <code>length</code> is less than or equal to 0, the result is unspecified.</p></div>
+<a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>(<span class="i">index</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;</code></h3>
+<div class="doc"><p>Returns the value at index <code>index</code>.</p>
+<p>If <code>index</code> is negative or exceeds <code>this</code>.length, the result is
 unspecified.</p></div>
-<a name="set"></a><h3><code><span class="k">function</span> <span class="i">set</span>(<span class="i">this</span>:<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;, <span class="i">index</span>:<a href="/dox/Int.html">Int</a>, <span class="i">val</span>:<a href="/dox/haxe/ds/Vector/T.html">T</a>):<a href="/dox/haxe/ds/Vector/T.html">T</a></code></h3>
-<div class="doc"><p>Sets the value at index <code><a href="#index">index</a></code> to <code><a href="#val">val</a></code>.</p>
-<p>If <code><a href="#index">index</a></code> is negative or exceeds <code><a href="#this">this</a></code>.length, the result is
+<a name="set"></a><h3><code><span class="k">function</span> <span class="i">set</span>(<span class="i">index</span>:<a href="/dox/Int.html">Int</a>, <span class="i">val</span>:<a href="/dox/haxe/ds/Vector/T.html">T</a>):<a href="/dox/haxe/ds/Vector/T.html">T</a></code></h3>
+<div class="doc"><p>Sets the value at index <code>index</code> to <code>val</code>.</p>
+<p>If <code>index</code> is negative or exceeds <code>this</code>.length, the result is
 unspecified.</p></div>
 <a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Returns the length of <code><a href="#this">this</a></code> Vector.</p></div>
-<a name="blit"></a><h3><code><span class="k">function</span> <span class="i">blit</span>(<span class="i">src</span>:<a href="/dox/haxe/ds/Vector.html">Vector</a>, <span class="i">srcPos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">dest</span>:<a href="/dox/haxe/ds/Vector.html">Vector</a>, <span class="i">destPos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Copies <code><a href="#length">length</a></code> of elements from <code><a href="#src">src</a></code> Vector, beginning at <code><a href="#srcPos">srcPos</a></code> to <code><a href="#dest">dest</a></code> Vector, beginning at <code><a href="#destPos">destPos</a></code></p>
-<p>The results are unspecified if <code><a href="#length">length</a></code> results in out-of-bounds access, or if <code><a href="#src">src</a></code> or <code><a href="#dest">dest</a></code> are null</p></div>
-<a name="toData"></a><h3><code><span class="k">function</span> <span class="i">toData</span>(<span class="i">this</span>:<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;):<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Extracts the data of <code><a href="#this">this</a></code> Vector.</p>
+<div class="doc"><p>Returns the length of <code>this</code> Vector.</p></div>
+<a name="toData"></a><h3><code><span class="k">function</span> <span class="i">toData</span>():<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/haxe/ds/Vector/T.html">T</a>&gt;</code></h3>
+<div class="doc"><p>Extracts the data of <code>this</code> Vector.</p>
 <p>This returns the internal representation type.</p></div>
-<a name="fromData"></a><h3><code><span class="k">function</span> <span class="i">fromData</span>(<span class="i">data</span>:<a href="/dox/haxe/ds/_Vector/VectorData.html">VectorData</a>&lt;<a href="/dox/fromData/T.html">T</a>&gt;):<a href="/dox/haxe/ds/Vector.html">Vector</a></code></h3>
-<div class="doc"><p>Initializes a new Vector from <code><a href="#data">data</a></code>.</p>
-<p>Since <code><a href="#data">data</a></code> is the internal representation of Vector, this is a no-op.</p>
-<p>If <code><a href="#data">data</a></code> is null, the corresponding Vector is also <code><a href="#null">null</a></code>.</p></div>
-<a name="fromArrayCopy"></a><h3><code><span class="k">function</span> <span class="i">fromArrayCopy</span>(<span class="i">array</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/fromArrayCopy/T.html">T</a>&gt;):<a href="/dox/haxe/ds/Vector.html">Vector</a></code></h3>
-<div class="doc"><p>Creates a new Vector by copying the elements of <code><a href="#array">array</a></code>.</p>
-<p>This always creates a copy, even on platforms where the internal
-representation is Array.</p>
-<p>The elements are not copied and retain their identity, so
-a<code><a href="#i">i</a></code> == Vector.fromArrayCopy(a).get(i) is true for any valid i.</p>
-<p>If <code><a href="#array">array</a></code> is null, the result is unspecified.</p></div>
 </div>
 			</div>
 		</div>

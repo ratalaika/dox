@@ -46,141 +46,141 @@
 class and enum instances.</p></div>
 <h2>Class Fields</h2>
 <a name="getClass"></a><h3><code><span class="k">function</span> <span class="i">getClass</span>(<span class="i">o</span>:<a href="/dox/getClass/T.html">T</a>):<a href="/dox/Class.html">Class</a></code></h3>
-<div class="doc"><p>Returns the class of <code><a href="#o">o</a></code>, if <code><a href="#o">o</a></code> is a class instance.</p>
-<p>If <code><a href="#o">o</a></code> is null or of a different type, null is returned.</p>
+<div class="doc"><p>Returns the class of <code>o</code>, if <code>o</code> is a class instance.</p>
+<p>If <code>o</code> is null or of a different type, null is returned.</p>
 <p>In general, type parameter information cannot be obtained at runtime.</p></div>
 <a name="getEnum"></a><h3><code><span class="k">function</span> <span class="i">getEnum</span>(<span class="i">o</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/Enum.html">Enum</a></code></h3>
-<div class="doc"><p>Returns the enum of enum instance <code><a href="#o">o</a></code>.</p>
+<div class="doc"><p>Returns the enum of enum instance <code>o</code>.</p>
 <p>An enum instance is the result of using an enum constructor. Given an
 enum Color { Red; }, getEnum(Red) returns Enum&lt;Color>.</p>
-<p>If <code><a href="#o">o</a></code> is null, null is returned.</p>
+<p>If <code>o</code> is null, null is returned.</p>
 <p>In general, type parameter information cannot be obtained at runtime.</p></div>
 <a name="getSuperClass"></a><h3><code><span class="k">function</span> <span class="i">getSuperClass</span>(<span class="i">c</span>:<a href="/dox/Class.html">Class</a>):<a href="/dox/Class.html">Class</a></code></h3>
-<div class="doc"><p>Returns the super-class of class <code><a href="#c">c</a></code>.</p>
-<p>If <code><a href="#c">c</a></code> has no super class, null is returned.</p>
-<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p>
+<div class="doc"><p>Returns the super-class of class <code>c</code>.</p>
+<p>If <code>c</code> has no super class, null is returned.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p>
 <p>In general, type parameter information cannot be obtained at runtime.</p></div>
 <a name="getClassName"></a><h3><code><span class="k">function</span> <span class="i">getClassName</span>(<span class="i">c</span>:<a href="/dox/Class.html">Class</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the name of class <code><a href="#c">c</a></code>, including its path.</p>
-<p>If <code><a href="#c">c</a></code> is inside a package, the package structure is returned dot-
+<div class="doc"><p>Returns the name of class <code>c</code>, including its path.</p>
+<p>If <code>c</code> is inside a package, the package structure is returned dot-
 separated, with another dot separating the class name:</p>
 <pre><code>pack1.pack2.(...).packN.ClassName
 </code></pre>
-<p>If <code><a href="#c">c</a></code> is a sub-type of a haxe module, that module is not part of the
+<p>If <code>c</code> is a sub-type of a haxe module, that module is not part of the
 package structure.</p>
-<p>If <code><a href="#c">c</a></code> has no package, the class name is returned.</p>
-<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p>
+<p>If <code>c</code> has no package, the class name is returned.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p>
 <p>The class name does not include any type parameters.</p></div>
 <a name="getEnumName"></a><h3><code><span class="k">function</span> <span class="i">getEnumName</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the name of enum <code><a href="#e">e</a></code>, including its path.</p>
-<p>If <code><a href="#e">e</a></code> is inside a package, the package structure is returned dot-
+<div class="doc"><p>Returns the name of enum <code>e</code>, including its path.</p>
+<p>If <code>e</code> is inside a package, the package structure is returned dot-
 separated, with another dot separating the enum name:</p>
 <pre><code>pack1.pack2.(...).packN.EnumName
 </code></pre>
-<p>If <code><a href="#e">e</a></code> is a sub-type of a haxe module, that module is not part of the
+<p>If <code>e</code> is a sub-type of a haxe module, that module is not part of the
 package structure.</p>
-<p>If <code><a href="#e">e</a></code> has no package, the enum name is returned.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p>
+<p>If <code>e</code> has no package, the enum name is returned.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p>
 <p>The enum name does not include any type parameters.</p></div>
 <a name="resolveClass"></a><h3><code><span class="k">function</span> <span class="i">resolveClass</span>(<span class="i">name</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Class.html">Class</a></code></h3>
 <div class="doc"><p>Resolves a class by name.</p>
-<p>If <code><a href="#name">name</a></code> is the path of an existing class, that class is returned.</p>
+<p>If <code>name</code> is the path of an existing class, that class is returned.</p>
 <p>Otherwise null is returned.</p>
-<p>If <code><a href="#name">name</a></code> is null or the path to a different type, the result is
+<p>If <code>name</code> is null or the path to a different type, the result is
 unspecified.</p>
 <p>The class name must not include any type parameters.</p></div>
 <a name="resolveEnum"></a><h3><code><span class="k">function</span> <span class="i">resolveEnum</span>(<span class="i">name</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Enum.html">Enum</a></code></h3>
 <div class="doc"><p>Resolves an enum by name.</p>
-<p>If <code><a href="#name">name</a></code> is the path of an existing enum, that enum is returned.</p>
+<p>If <code>name</code> is the path of an existing enum, that enum is returned.</p>
 <p>Otherwise null is returned.</p>
-<p>If <code><a href="#name">name</a></code> is null the result is unspecified.</p>
-<p>If <code><a href="#name">name</a></code> is the path to a different type, null is returned.</p>
+<p>If <code>name</code> is null the result is unspecified.</p>
+<p>If <code>name</code> is the path to a different type, null is returned.</p>
 <p>The enum name must not include any type parameters.</p></div>
 <a name="createInstance"></a><h3><code><span class="k">function</span> <span class="i">createInstance</span>(<span class="i">cl</span>:<a href="/dox/Class.html">Class</a>, <span class="i">args</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/createInstance/T.html">T</a></code></h3>
-<div class="doc"><p>Creates an instance of class <code><a href="#cl">cl</a></code>, using <code><a href="#args">args</a></code> as arguments to the
+<div class="doc"><p>Creates an instance of class <code>cl</code>, using <code>args</code> as arguments to the
 class constructor.</p>
 <p>This function guarantees that the class constructor is called.</p>
 <p>Default values of constructors arguments are not guaranteed to be
 taken into account.</p>
-<p>If <code><a href="#cl">cl</a></code> or <code><a href="#args">args</a></code> are null, or if the number of elements in <code><a href="#args">args</a></code> does
+<p>If <code>cl</code> or <code>args</code> are null, or if the number of elements in <code>args</code> does
 not match the expected number of constructor arguments, or if any
-argument has an invalid type,  or if <code><a href="#cl">cl</a></code> has no own constructor, the
+argument has an invalid type,  or if <code>cl</code> has no own constructor, the
 result is unspecified.</p>
 <p>In particular, default values of constructor arguments are not
 guaranteed to be taken into account.</p></div>
 <a name="createEmptyInstance"></a><h3><code><span class="k">function</span> <span class="i">createEmptyInstance</span>(<span class="i">cl</span>:<a href="/dox/Class.html">Class</a>):<a href="/dox/createEmptyInstance/T.html">T</a></code></h3>
-<div class="doc"><p>Creates an instance of class <code><a href="#cl">cl</a></code>.</p>
+<div class="doc"><p>Creates an instance of class <code>cl</code>.</p>
 <p>This function guarantees that the class constructor is not called.</p>
-<p>If <code><a href="#cl">cl</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>cl</code> is null, the result is unspecified.</p></div>
 <a name="createEnum"></a><h3><code><span class="k">function</span> <span class="i">createEnum</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>, <span class="i">constr</span>:<a href="/dox/String.html">String</a>, ?<span class="i">params</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/createEnum/T.html">T</a></code></h3>
-<div class="doc"><p>Creates an instance of enum <code><a href="#e">e</a></code> by calling its constructor <code><a href="#constr">constr</a></code> with
-arguments <code><a href="#params">params</a></code>.</p>
-<p>If <code><a href="#e">e</a></code> or <code><a href="#constr">constr</a></code> is null, or if enum <code><a href="#e">e</a></code> has no constructor named
-<code><a href="#constr">constr</a></code>, or if the number of elements in <code><a href="#params">params</a></code> does not match the
+<div class="doc"><p>Creates an instance of enum <code>e</code> by calling its constructor <code>constr</code> with
+arguments <code>params</code>.</p>
+<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
+<code>constr</code>, or if the number of elements in <code>params</code> does not match the
 expected number of constructor arguments, or if any argument has an
 invalid type, the result is unspecified.</p></div>
 <a name="createEnumIndex"></a><h3><code><span class="k">function</span> <span class="i">createEnumIndex</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>, <span class="i">index</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">params</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/createEnumIndex/T.html">T</a></code></h3>
-<div class="doc"><p>Creates an instance of enum <code><a href="#e">e</a></code> by calling its constructor number
-<code><a href="#index">index</a></code> with arguments <code><a href="#params">params</a></code>.</p>
+<div class="doc"><p>Creates an instance of enum <code>e</code> by calling its constructor number
+<code>index</code> with arguments <code>params</code>.</p>
 <p>The constructor indices are preserved from haxe syntax, so the first
 declared is index 0, the next index 1 etc.</p>
-<p>If <code><a href="#e">e</a></code> or <code><a href="#constr">constr</a></code> is null, or if enum <code><a href="#e">e</a></code> has no constructor named
-<code><a href="#constr">constr</a></code>, or if the number of elements in <code><a href="#params">params</a></code> does not match the
+<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
+<code>constr</code>, or if the number of elements in <code>params</code> does not match the
 expected number of constructor arguments, or if any argument has an
 invalid type, the result is unspecified.</p></div>
 <a name="getInstanceFields"></a><h3><code><span class="k">function</span> <span class="i">getInstanceFields</span>(<span class="i">c</span>:<a href="/dox/Class.html">Class</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of the instance fields of class <code><a href="#c">c</a></code>.</p>
+<div class="doc"><p>Returns a list of the instance fields of class <code>c</code>.</p>
 <p>This only includes fields which are known at compile-time. In
 particular, using getInstanceFields(getClass(obj)) will not include
 any fields which were added to obj at runtime.</p>
 <p>The order of the fields in the returned Array is unspecified.</p>
-<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p>
 <p>(As3) This method only returns instance fields that are public.</p></div>
 <a name="getClassFields"></a><h3><code><span class="k">function</span> <span class="i">getClassFields</span>(<span class="i">c</span>:<a href="/dox/Class.html">Class</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of static fields of class <code><a href="#c">c</a></code>.</p>
+<div class="doc"><p>Returns a list of static fields of class <code>c</code>.</p>
 <p>This does not include static fields of parent classes.</p>
 <p>The order of the fields in the returned Array is unspecified.</p>
-<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p>
 <p>(As3) This method only returns class fields that are public.</p></div>
 <a name="getEnumConstructs"></a><h3><code><span class="k">function</span> <span class="i">getEnumConstructs</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of the names of all constructors of enum <code><a href="#e">e</a></code>.</p>
+<div class="doc"><p>Returns a list of the names of all constructors of enum <code>e</code>.</p>
 <p>The order of the constructor names in the returned Array is preserved
 from the original syntax.</p>
-<p>If <code><a href="#c">c</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>c</code> is null, the result is unspecified.</p></div>
 <a name="typeof"></a><h3><code><span class="k">function</span> <span class="i">typeof</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/ValueType.html">ValueType</a></code></h3>
-<div class="doc"><p>Returns the runtime type of value <code><a href="#v">v</a></code>.</p>
-<p>The result corresponds to the type <code><a href="#v">v</a></code> has at runtime, which may vary
+<div class="doc"><p>Returns the runtime type of value <code>v</code>.</p>
+<p>The result corresponds to the type <code>v</code> has at runtime, which may vary
 per platform. Assumptions regarding this should be minimized to avoid
 surprises.</p></div>
 <a name="enumEq"></a><h3><code><span class="k">function</span> <span class="i">enumEq</span>(<span class="i">a</span>:<a href="/dox/enumEq/T.html">T</a>, <span class="i">b</span>:<a href="/dox/enumEq/T.html">T</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Recursively compares two enum instances <code><a href="#a">a</a></code> and <code><a href="#b">b</a></code> by value.</p>
-<p>Unlike <code><a href="#a">a</a></code> == <code><a href="#b">b</a></code>, this function performs a deep equality check on the
+<div class="doc"><p>Recursively compares two enum instances <code>a</code> and <code>b</code> by value.</p>
+<p>Unlike <code>a</code> == <code>b</code>, this function performs a deep equality check on the
 arguments of the constructors, if exists.</p>
-<p>If <code><a href="#a">a</a></code> or <code><a href="#b">b</a></code> are null, the result is unspecified.</p></div>
+<p>If <code>a</code> or <code>b</code> are null, the result is unspecified.</p></div>
 <a name="enumConstructor"></a><h3><code><span class="k">function</span> <span class="i">enumConstructor</span>(<span class="i">e</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the constructor name of enum instance <code><a href="#e">e</a></code>.</p>
+<div class="doc"><p>Returns the constructor name of enum instance <code>e</code>.</p>
 <p>The result String does not contain any constructor arguments.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 <a name="enumParameters"></a><h3><code><span class="k">function</span> <span class="i">enumParameters</span>(<span class="i">e</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of the constructor arguments of enum instance <code><a href="#e">e</a></code>.</p>
-<p>If <code><a href="#e">e</a></code> has no arguments, the result is [].</p>
-<p>Otherwise the result are the values that were used as arguments to <code><a href="#e">e</a></code>,
+<div class="doc"><p>Returns a list of the constructor arguments of enum instance <code>e</code>.</p>
+<p>If <code>e</code> has no arguments, the result is [].</p>
+<p>Otherwise the result are the values that were used as arguments to <code>e</code>,
 in the order of their declaration.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 <a name="enumIndex"></a><h3><code><span class="k">function</span> <span class="i">enumIndex</span>(<span class="i">e</span>:<a href="/dox/EnumValue.html">EnumValue</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Returns the index of enum instance <code><a href="#e">e</a></code>.</p>
-<p>This corresponds to the original syntactic position of <code><a href="#e">e</a></code>. The index of
+<div class="doc"><p>Returns the index of enum instance <code>e</code>.</p>
+<p>This corresponds to the original syntactic position of <code>e</code>. The index of
 the first declared constructor is 0, the next one is 1 etc.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 <a name="allEnums"></a><h3><code><span class="k">function</span> <span class="i">allEnums</span>(<span class="i">e</span>:<a href="/dox/Enum.html">Enum</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/allEnums/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Returns a list of all constructors of enum <code><a href="#e">e</a></code> that require no
+<div class="doc"><p>Returns a list of all constructors of enum <code>e</code> that require no
 arguments.</p>
-<p>This may return the empty Array [] if all constructors of <code><a href="#e">e</a></code> require
+<p>This may return the empty Array [] if all constructors of <code>e</code> require
 arguments.</p>
-<p>Otherwise an instance of <code><a href="#e">e</a></code> constructed through each of its non-
+<p>Otherwise an instance of <code>e</code> constructed through each of its non-
 argument constructors is returned, in the order of the constructor
 declaration.</p>
-<p>If <code><a href="#e">e</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>e</code> is null, the result is unspecified.</p></div>
 </div>
 			</div>
 		</div>

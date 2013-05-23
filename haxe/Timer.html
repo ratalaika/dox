@@ -50,38 +50,38 @@ eventually call stop() to stop the Timer.</p>
 the child class.</p></div>
 <h2>Class Fields</h2>
 <a name="delay"></a><h3><code><span class="k">function</span> <span class="i">delay</span>(<span class="i">f</span>:<a href="/dox/Void.html">Void</a>, <span class="i">time_ms</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/haxe/Timer.html">Timer</a></code></h3>
-<div class="doc"><p>Invokes <code><a href="#f">f</a></code> after [time_ms] milliseconds.</p>
+<div class="doc"><p>Invokes <code>f</code> after [time_ms] milliseconds.</p>
 <p>This is a convenience function for creating a new Timer instance with
-[time_ms] as argument, binding its run() method to <code><a href="#f">f</a></code> and then stopping
-<code><a href="#this">this</a></code> Timer upon the first invocation.</p>
-<p>If <code><a href="#f">f</a></code> is null, the result is unspecified.</p></div>
+[time_ms] as argument, binding its run() method to <code>f</code> and then stopping
+<code>this</code> Timer upon the first invocation.</p>
+<p>If <code>f</code> is null, the result is unspecified.</p></div>
 <a name="measure"></a><h3><code><span class="k">function</span> <span class="i">measure</span>(<span class="i">f</span>:<a href="/dox/measure/T.html">T</a>, ?<span class="i">pos</span>:<a href="/dox/haxe/PosInfos.html">PosInfos</a>):<a href="/dox/measure/T.html">T</a></code></h3>
-<div class="doc"><p>Measures the time it takes to execute <code><a href="#f">f</a></code>, in seconds with fractions.</p>
+<div class="doc"><p>Measures the time it takes to execute <code>f</code>, in seconds with fractions.</p>
 <p>This is a convenience function for calculating the difference between
-Timer.stamp() before and after the invocation of <code><a href="#f">f</a></code>.</p>
+Timer.stamp() before and after the invocation of <code>f</code>.</p>
 <p>The difference is passed as argument to Log.trace(), with "s" appended
-to denote the unit. The optional <code><a href="#pos">pos</a></code> argument is passed through.</p>
-<p>If <code><a href="#f">f</a></code> is null, the result is unspecified.</p></div>
+to denote the unit. The optional <code>pos</code> argument is passed through.</p>
+<p>If <code>f</code> is null, the result is unspecified.</p></div>
 <a name="stamp"></a><h3><code><span class="k">function</span> <span class="i">stamp</span>():<a href="/dox/Float.html">Float</a></code></h3>
 <div class="doc"><p>Returns a timestamp, in seconds with fractions.</p>
 <p>The value itself might differ depending on platforms, only differences
 between two values make sense.</p></div>
 <h2>Instance Fields</h2>
 <a name="stop"></a><h3><code><span class="k">function</span> <span class="i">stop</span>():<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Stops <code><a href="#this">this</a></code> Timer.</p>
-<p>After calling this method, no additional invocations of <code><a href="#this">this</a></code>.run()
+<div class="doc"><p>Stops <code>this</code> Timer.</p>
+<p>After calling this method, no additional invocations of <code>this</code>.run()
 will occur.</p>
-<p>It is not possible to restart <code><a href="#this">this</a></code> Timer once stopped.</p></div>
+<p>It is not possible to restart <code>this</code> Timer once stopped.</p></div>
 <a name="run"></a><h3><code><span class="k">function</span> <span class="i">run</span>():<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>This method is invoked repeatedly on <code><a href="#this">this</a></code> Timer.</p>
+<div class="doc"><p>This method is invoked repeatedly on <code>this</code> Timer.</p>
 <p>It can be overridden in a subclass, or rebound directly to a custom
 function:</p>
 <pre><code>var timer = new haxe.Timer(1000); // 1000ms delay
 timer.run = function() { ... }
 
 </code></pre>
-<p>Once bound, it can still be rebound to different functions until <code><a href="#this">this</a></code>
-Timer is stopped through a call to <code><a href="#this">this</a></code>.stop().</p></div>
+<p>Once bound, it can still be rebound to different functions until <code>this</code>
+Timer is stopped through a call to <code>this</code>.stop().</p></div>
 </div>
 			</div>
 		</div>

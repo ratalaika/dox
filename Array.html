@@ -46,115 +46,115 @@ with its API. On the server side, it's often better to use a <code><a href="/dox
 is less memory and CPU consuming, unless you really need indexed access.</p></div>
 <h2>Instance Fields</h2>
 <a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>The length of <code><a href="#this">this</a></code> Array.</p></div>
+<div class="doc"><p>The length of <code>this</code> Array.</p></div>
 <a name="concat"></a><h3><code><span class="k">function</span> <span class="i">concat</span>(<span class="i">a</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Returns a new Array by appending the elements of <code><a href="#a">a</a></code> to the elements of
-<code><a href="#this">this</a></code> Array.</p>
-<p>This operation does not modify <code><a href="#this">this</a></code> Array.</p>
-<p>If <code><a href="#a">a</a></code> is the empty Array [], a copy of <code><a href="#this">this</a></code> Array is returned.</p>
-<p>The length of the returned Array is equal to the sum of <code><a href="#this">this</a></code>.length
-and <code><a href="#a">a</a></code>.length.</p>
-<p>If <code><a href="#a">a</a></code> is null, the result is unspecified.</p></div>
+<div class="doc"><p>Returns a new Array by appending the elements of <code>a</code> to the elements of
+<code>this</code> Array.</p>
+<p>This operation does not modify <code>this</code> Array.</p>
+<p>If <code>a</code> is the empty Array [], a copy of <code>this</code> Array is returned.</p>
+<p>The length of the returned Array is equal to the sum of <code>this</code>.length
+and <code>a</code>.length.</p>
+<p>If <code>a</code> is null, the result is unspecified.</p></div>
 <a name="join"></a><h3><code><span class="k">function</span> <span class="i">join</span>(<span class="i">sep</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns a string representation of <code><a href="#this">this</a></code> Array, with <code><a href="#sep">sep</a></code> separating
+<div class="doc"><p>Returns a string representation of <code>this</code> Array, with <code>sep</code> separating
 each element.</p>
-<p>The result of this operation is equal to Std.string(this[0]) + sep +
-Std.string(this[1]) + sep + ... + sep + Std.string(this[this.length-1]).</p>
-<p>If <code><a href="#this">this</a></code> is the empty Array [], the result is the empty String "". If
-<code><a href="#this">this</a></code> has exactly one element, the result is equal to a call to
-Std.string(this[0]).</p>
-<p>If <code><a href="#sep">sep</a></code> is null, the result is unspecified.</p></div>
+<p>The result of this operation is equal to Std.string(this<code>0</code>) + sep +
+Std.string(this<code>1</code>) + sep + ... + sep + Std.string(this[this.length-1]).</p>
+<p>If <code>this</code> is the empty Array [], the result is the empty String "". If
+<code>this</code> has exactly one element, the result is equal to a call to
+Std.string(this<code>0</code>).</p>
+<p>If <code>sep</code> is null, the result is unspecified.</p></div>
 <a name="pop"></a><h3><code><span class="k">function</span> <span class="i">pop</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Removes the last element of <code><a href="#this">this</a></code> Array and returns it.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p>If <code><a href="#this">this</a></code> has at least one element, <code><a href="#this">this</a></code>.length will decrease by 1.</p>
-<p>If <code><a href="#this">this</a></code> is the empty Array [], null is returned and the length remains
+<div class="doc"><p>Removes the last element of <code>this</code> Array and returns it.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p>If <code>this</code> has at least one element, <code>this</code>.length will decrease by 1.</p>
+<p>If <code>this</code> is the empty Array [], null is returned and the length remains
 0.</p></div>
 <a name="push"></a><h3><code><span class="k">function</span> <span class="i">push</span>(<span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Adds the element <code><a href="#x">x</a></code> at the end of <code><a href="#this">this</a></code> Array and returns the offset
+<div class="doc"><p>Adds the element <code>x</code> at the end of <code>this</code> Array and returns the offset
 it was added at.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p><code><a href="#this">this</a></code>.length increases by 1.</p></div>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p><code>this</code>.length increases by 1.</p></div>
 <a name="reverse"></a><h3><code><span class="k">function</span> <span class="i">reverse</span>():<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Reverse the order of elements of <code><a href="#this">this</a></code> Array.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p>If <code><a href="#this">this</a></code>.length &lt; 2, <code><a href="#this">this</a></code> remains unchanged.</p></div>
+<div class="doc"><p>Reverse the order of elements of <code>this</code> Array.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p>If <code>this</code>.length &lt; 2, <code>this</code> remains unchanged.</p></div>
 <a name="shift"></a><h3><code><span class="k">function</span> <span class="i">shift</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Removes the first element of <code><a href="#this">this</a></code> Array and returns it.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p>If <code><a href="#this">this</a></code> has at least one element, <code><a href="#this">this</a></code>.length and the index of each
+<div class="doc"><p>Removes the first element of <code>this</code> Array and returns it.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p>If <code>this</code> has at least one element, <code>this</code>.length and the index of each
 remaining element is decreased by 1.</p>
-<p>If <code><a href="#this">this</a></code> is the empty Array [], null is returned and the length remains
+<p>If <code>this</code> is the empty Array [], null is returned and the length remains
 0.</p></div>
 <a name="slice"></a><h3><code><span class="k">function</span> <span class="i">slice</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">end</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Creates a shallow copy of the range of <code><a href="#this">this</a></code> Array, starting at and
-including <code><a href="#pos">pos</a></code>, up to but not including <code><a href="#end">end</a></code>.</p>
-<p>This operation does not modify <code><a href="#this">this</a></code> Array.</p>
+<div class="doc"><p>Creates a shallow copy of the range of <code>this</code> Array, starting at and
+including <code>pos</code>, up to but not including <code>end</code>.</p>
+<p>This operation does not modify <code>this</code> Array.</p>
 <p>The elements are not copied and retain their identity.</p>
-<p>If <code><a href="#end">end</a></code> is omitted or exceeds <code><a href="#this">this</a></code>.length, it defaults to the end of
-<code><a href="#this">this</a></code> Array.</p>
-<p>If <code><a href="#pos">pos</a></code> or <code><a href="#end">end</a></code> are negative, their offsets are calculated from the
-end	of <code><a href="#this">this</a></code> Array by <code><a href="#this">this</a></code>.length + <code><a href="#pos">pos</a></code> and <code><a href="#this">this</a></code>.length + <code><a href="#end">end</a></code>
+<p>If <code>end</code> is omitted or exceeds <code>this</code>.length, it defaults to the end of
+<code>this</code> Array.</p>
+<p>If <code>pos</code> or <code>end</code> are negative, their offsets are calculated from the
+end	of <code>this</code> Array by <code>this</code>.length + <code>pos</code> and <code>this</code>.length + <code>end</code>
 respectively. If this yields a negative value, 0 is used instead.</p>
-<p>If <code><a href="#pos">pos</a></code> exceeds <code><a href="#this">this</a></code>.length or if [end} exceeds or equals <code><a href="#pos">pos</a></code>,
+<p>If <code>pos</code> exceeds <code>this</code>.length or if [end} exceeds or equals <code>pos</code>,
 the result is [].</p></div>
 <a name="sort"></a><h3><code><span class="k">function</span> <span class="i">sort</span>(<span class="i">f</span>:<a href="/dox/Array/T.html">T</a> -> <a href="/dox/Array/T.html">T</a> -> <a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Sorts <code><a href="#this">this</a></code> Array according to the comparison function <code><a href="#f">f</a></code>, where
+<div class="doc"><p>Sorts <code>this</code> Array according to the comparison function <code>f</code>, where
 [f(x,y)] returns 0 if x == y, a positive Int if x > y and a
 negative Int if x &lt; y.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
 <p>The sort operation is not guaranteed to be stable, which means that the
 order of equal elements may not be retained. For a stable Array sorting
 algorithm, haxe.ds.sort.MergeSort.sort() can be used instead.</p>
-<p>If <code><a href="#f">f</a></code> is null, the result is unspecified.</p></div>
+<p>If <code>f</code> is null, the result is unspecified.</p></div>
 <a name="splice"></a><h3><code><span class="k">function</span> <span class="i">splice</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Removes <code><a href="#len">len</a></code> elements from <code><a href="#this">this</a></code> Array, starting at and including
-<code><a href="#pos">pos</a></code>, an returns them.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p>If <code><a href="#len">len</a></code> is &lt; 0 or <code><a href="#pos">pos</a></code> exceeds <code><a href="#this">this</a></code>.length, the result is the empty
+<div class="doc"><p>Removes <code>len</code> elements from <code>this</code> Array, starting at and including
+<code>pos</code>, an returns them.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p>If <code>len</code> is &lt; 0 or <code>pos</code> exceeds <code>this</code>.length, the result is the empty
 Array [].</p>
-<p>If <code><a href="#pos">pos</a></code> is negative, its value is calculated from the end	of <code><a href="#this">this</a></code>
-Array by <code><a href="#this">this</a></code>.length + <code><a href="#pos">pos</a></code>. If this yields a negative value, 0 is
+<p>If <code>pos</code> is negative, its value is calculated from the end	of <code>this</code>
+Array by <code>this</code>.length + <code>pos</code>. If this yields a negative value, 0 is
 used instead.</p>
-<p>If the sum of the resulting values for <code><a href="#len">len</a></code> and <code><a href="#pos">pos</a></code> exceed
-<code><a href="#this">this</a></code>.length, this operation will affect the elements from <code><a href="#pos">pos</a></code> to the
-end of <code><a href="#this">this</a></code> Array.</p>
-<p>The length of the returned Array is equal to the new length of <code><a href="#this">this</a></code>
-Array subtracted from the original length of <code><a href="#this">this</a></code> Array. In other
-words, each element of the original <code><a href="#this">this</a></code> Array either remains in
-<code><a href="#this">this</a></code> Array or becomes an element of the returned Array.</p></div>
+<p>If the sum of the resulting values for <code>len</code> and <code>pos</code> exceed
+<code>this</code>.length, this operation will affect the elements from <code>pos</code> to the
+end of <code>this</code> Array.</p>
+<p>The length of the returned Array is equal to the new length of <code>this</code>
+Array subtracted from the original length of <code>this</code> Array. In other
+words, each element of the original <code>this</code> Array either remains in
+<code>this</code> Array or becomes an element of the returned Array.</p></div>
 <a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns a string representation of <code><a href="#this">this</a></code> Array.</p>
+<div class="doc"><p>Returns a string representation of <code>this</code> Array.</p>
 <p>The result will include the individual elements' String representations
 separated by comma. The enclosing [ ] may be missing on some platforms,
 use Std.string() to get a String representation that is consistent
 across platforms.</p></div>
 <a name="unshift"></a><h3><code><span class="k">function</span> <span class="i">unshift</span>(<span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Adds the element <code><a href="#x">x</a></code> at the start of <code><a href="#this">this</a></code> Array.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p><code><a href="#this">this</a></code>.length and the index of each Array element increases by 1.</p></div>
+<div class="doc"><p>Adds the element <code>x</code> at the start of <code>this</code> Array.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p><code>this</code>.length and the index of each Array element increases by 1.</p></div>
 <a name="insert"></a><h3><code><span class="k">function</span> <span class="i">insert</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Inserts the element <code><a href="#x">x</a></code> at the position <code><a href="#pos">pos</a></code>.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p>The offset is calculated like so:</p><ul><li>If <code><a href="#pos">pos</a></code> exceeds <code><a href="#this">this</a></code>.length, the offset is <code><a href="#this">this</a></code>.length.</li><li>
-<p>If <code><a href="#pos">pos</a></code> is negative, the offset is calculated from the end of <code><a href="#this">this</a></code>
-Array, i.e. <code><a href="#this">this</a></code>.length + <code><a href="#pos">pos</a></code>. If this yields a negative value,
-the offset is 0.</p></li><li>Otherwise, the offset is <code><a href="#pos">pos</a></code>.</li></ul>
-<p>If the resulting offset does not exceed <code><a href="#this">this</a></code>.length, all elements from
-and including that offset to the end of <code><a href="#this">this</a></code> Array are moved one index
+<div class="doc"><p>Inserts the element <code>x</code> at the position <code>pos</code>.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p>The offset is calculated like so:</p><ul><li>If <code>pos</code> exceeds <code>this</code>.length, the offset is <code>this</code>.length.</li><li>
+<p>If <code>pos</code> is negative, the offset is calculated from the end of <code>this</code>
+Array, i.e. <code>this</code>.length + <code>pos</code>. If this yields a negative value,
+the offset is 0.</p></li><li>Otherwise, the offset is <code>pos</code>.</li></ul>
+<p>If the resulting offset does not exceed <code>this</code>.length, all elements from
+and including that offset to the end of <code>this</code> Array are moved one index
 ahead.</p></div>
 <a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>(<span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Removes the first occurence of <code><a href="#x">x</a></code> in <code><a href="#this">this</a></code> Array.</p>
-<p>This operation modifies <code><a href="#this">this</a></code> Array in place.</p>
-<p>If <code><a href="#x">x</a></code> is found by checking standard equality, it is removed from <code><a href="#this">this</a></code>
+<div class="doc"><p>Removes the first occurence of <code>x</code> in <code>this</code> Array.</p>
+<p>This operation modifies <code>this</code> Array in place.</p>
+<p>If <code>x</code> is found by checking standard equality, it is removed from <code>this</code>
 Array and all following elements are reindexed acoordingly. The function
 then returns true.</p>
-<p>If <code><a href="#x">x</a></code> is not found, <code><a href="#this">this</a></code> Array is not changed and the function
+<p>If <code>x</code> is not found, <code>this</code> Array is not changed and the function
 returns false.</p></div>
 <a name="copy"></a><h3><code><span class="k">function</span> <span class="i">copy</span>():<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
-<div class="doc"><p>Returns a shallow copy of <code><a href="#this">this</a></code> Array.</p>
+<div class="doc"><p>Returns a shallow copy of <code>this</code> Array.</p>
 <p>The elements are not copied and retain their identity, so
-a<code><a href="#i">i</a></code> == a.copy()<code><a href="#i">i</a></code> is true for any valid i. However, a == a.copy() is
+a<code>i</code> == a.copy()<code>i</code> is true for any valid i. However, a == a.copy() is
 always false.</p></div>
 <a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">f</span>:<a href="/dox/Array/T.html">T</a> -> <a href="/dox/map/S.html">S</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/map/S.html">S</a>&gt;</code></h3>
 <div class="doc"><p></p></div>
