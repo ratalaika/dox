@@ -86,37 +86,37 @@
 </div>
 				<div class="content"><h1><span class="d">class</span> <a href="/dox/js/html/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a></h1>
 <div>extends <a href="/dox/js/html/CanvasRenderingContext.html">CanvasRenderingContext</a></div>
-<div class="doc"><p>The bulk of the operations available at present with &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;&lt;/a>&lt;/code>
-are available through this interface, returned by a call to &lt;code>getContext()&lt;/code> on the &lt;code>&lt;a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;&lt;/a>&lt;/code>
-element, with "2d" as its argument.&lt;br>&lt;br>
-Documentation for this class was provided by &lt;a href="https://developer.mozilla.org/en/DOM/CanvasRenderingContext2D">MDN&lt;/a>.</p></div>
+<div class="doc"><p>The bulk of the operations available at present with <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;</a></code>
+are available through this interface, returned by a call to <code>getContext()</code> on the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/canvas">&lt;canvas&gt;</a></code>
+element, with "2d" as its argument.<br><br>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/CanvasRenderingContext2D">MDN</a>.</p></div>
 <h2>Instance Fields</h2>
 <a name="backingStorePixelRatio"></a><h3><code><span class="k">var</span> <span class="i">backingStorePixelRatio</span>:<a href="/dox/Float.html">Float</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="fillStyle"></a><h3><code><span class="k">var</span> <span class="i">fillStyle</span>:<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
-<div class="doc"><p>Color or style to use inside shapes. Default &lt;code>#000&lt;/code> (black).</p></div>
+<div class="doc"><p>Color or style to use inside shapes. Default <code>#000</code> (black).</p></div>
 <a name="font"></a><h3><code><span class="k">var</span> <span class="i">font</span>:<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Default value &lt;code>10px sans-serif&lt;/code>.</p></div>
+<div class="doc"><p>Default value <code>10px sans-serif</code>.</p></div>
 <a name="globalAlpha"></a><h3><code><span class="k">var</span> <span class="i">globalAlpha</span>:<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>Alpha value that is applied to shapes and images before they are composited onto the canvas. Default &lt;code>1.0&lt;/code> (opaque).</p></div>
+<div class="doc"><p>Alpha value that is applied to shapes and images before they are composited onto the canvas. Default <code>1.0</code> (opaque).</p></div>
 <a name="globalCompositeOperation"></a><h3><code><span class="k">var</span> <span class="i">globalCompositeOperation</span>:<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>With &lt;code>globalAplpha&lt;/code> applied this sets how shapes and images are drawn onto the existing bitmap. Possible values: &lt;ul> &lt;li>&lt;code>source-atop&lt;/code>&lt;/li> &lt;li>&lt;code>source-in&lt;/code>&lt;/li> &lt;li>&lt;code>source-out&lt;/code>&lt;/li> &lt;li>&lt;code>source-over&lt;/code> (default)&lt;/li> &lt;li>&lt;code>destination-atop&lt;/code>&lt;/li> &lt;li>&lt;code>destination-in&lt;/code>&lt;/li> &lt;li>&lt;code>destination-out&lt;/code>&lt;/li> &lt;li>&lt;code>destination-over&lt;/code>&lt;/li> &lt;li>&lt;code>lighter&lt;/code>&lt;/li> &lt;li>&lt;code>xor&lt;/code>&lt;/li> &lt;/ul></p></div>
+<div class="doc"><p>With <code>globalAplpha</code> applied this sets how shapes and images are drawn onto the existing bitmap. Possible values: <ul> <li><code>source-atop</code></li> <li><code>source-in</code></li> <li><code>source-out</code></li> <li><code>source-over</code> (default)</li> <li><code>destination-atop</code></li> <li><code>destination-in</code></li> <li><code>destination-out</code></li> <li><code>destination-over</code></li> <li><code>lighter</code></li> <li><code>xor</code></li> </ul></p></div>
 <a name="imageSmoothingEnabled"></a><h3><code><span class="k">var</span> <span class="i">imageSmoothingEnabled</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="lineCap"></a><h3><code><span class="k">var</span> <span class="i">lineCap</span>:<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Type of endings on the end of lines. Possible values: &lt;code>butt&lt;/code> (default), &lt;code>round&lt;/code>, &lt;code>square&lt;/code></p></div>
+<div class="doc"><p>Type of endings on the end of lines. Possible values: <code>butt</code> (default), <code>round</code>, <code>square</code></p></div>
 <a name="lineDash"></a><h3><code><span class="k">var</span> <span class="i">lineDash</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;</code></h3>
 <div class="doc"><p></p></div>
 <a name="lineDashOffset"></a><h3><code><span class="k">var</span> <span class="i">lineDashOffset</span>:<a href="/dox/Float.html">Float</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="lineJoin"></a><h3><code><span class="k">var</span> <span class="i">lineJoin</span>:<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Defines the type of corners where two lines meet. Possible values: &lt;code>round&lt;/code>, &lt;code>bevel&lt;/code>, &lt;code>miter&lt;/code> (default)</p></div>
+<div class="doc"><p>Defines the type of corners where two lines meet. Possible values: <code>round</code>, <code>bevel</code>, <code>miter</code> (default)</p></div>
 <a name="lineWidth"></a><h3><code><span class="k">var</span> <span class="i">lineWidth</span>:<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>Width of lines. Default &lt;code>1.0&lt;/code></p></div>
+<div class="doc"><p>Width of lines. Default <code>1.0</code></p></div>
 <a name="miterLimit"></a><h3><code><span class="k">var</span> <span class="i">miterLimit</span>:<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>Default &lt;code>10&lt;/code>.</p></div>
+<div class="doc"><p>Default <code>10</code>.</p></div>
 <a name="shadowBlur"></a><h3><code><span class="k">var</span> <span class="i">shadowBlur</span>:<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>Specifies the blurring effect. Default &lt;code>0&lt;/code></p></div>
+<div class="doc"><p>Specifies the blurring effect. Default <code>0</code></p></div>
 <a name="shadowColor"></a><h3><code><span class="k">var</span> <span class="i">shadowColor</span>:<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p>Color of the shadow. Default fully-transparent black.</p></div>
 <a name="shadowOffsetX"></a><h3><code><span class="k">var</span> <span class="i">shadowOffsetX</span>:<a href="/dox/Float.html">Float</a></code></h3>
@@ -124,9 +124,9 @@ Documentation for this class was provided by &lt;a href="https://developer.mozil
 <a name="shadowOffsetY"></a><h3><code><span class="k">var</span> <span class="i">shadowOffsetY</span>:<a href="/dox/Float.html">Float</a></code></h3>
 <div class="doc"><p>Vertical distance the shadow will be offset. Default 0.</p></div>
 <a name="strokeStyle"></a><h3><code><span class="k">var</span> <span class="i">strokeStyle</span>:<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
-<div class="doc"><p>Color or style to use for the lines around shapes. Default &lt;code>#000&lt;/code> (black).</p></div>
+<div class="doc"><p>Color or style to use for the lines around shapes. Default <code>#000</code> (black).</p></div>
 <a name="textAlign"></a><h3><code><span class="k">var</span> <span class="i">textAlign</span>:<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Possible values: &lt;code>start&lt;/code> (default), &lt;code>end&lt;/code>, &lt;code>left&lt;/code>, &lt;code>right&lt;/code> or &lt;code>center&lt;/code>.</p></div>
+<div class="doc"><p>Possible values: <code>start</code> (default), <code>end</code>, <code>left</code>, <code>right</code> or <code>center</code>.</p></div>
 <a name="textBaseline"></a><h3><code><span class="k">var</span> <span class="i">textBaseline</span>:<a href="/dox/String.html">String</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="arc"></a><h3><code><span class="k">function</span> <span class="i">arc</span>(<span class="i">x</span>:<a href="/dox/Float.html">Float</a>, <span class="i">y</span>:<a href="/dox/Float.html">Float</a>, <span class="i">radius</span>:<a href="/dox/Float.html">Float</a>, <span class="i">startAngle</span>:<a href="/dox/Float.html">Float</a>, <span class="i">endAngle</span>:<a href="/dox/Float.html">Float</a>, <span class="i">anticlockwise</span>:<a href="/dox/Bool.html">Bool</a>):<a href="/dox/Void.html">Void</a></code></h3>
