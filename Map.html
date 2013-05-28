@@ -85,49 +85,45 @@
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
 				<div class="content"><h1><span class="d">abstract</span> <a href="/dox/Map.html">Map</a></h1>
-<div class="doc"><p>Map allows key to value mapping for arbitrary value types, and many key
-types.</p>
-<pre><code>
-</code></pre>
+<p>available in cpp, flash, neko, php, js</p><p>import Map</p><div class="doc"><p>Map allows key to value mapping for arbitrary value types, and many key
+types.</p>
 <p>This is a multi-type abstract, it is instantiated as one of its
-specialization types depending on its type parameters.</p>
+specialization types depending on its type parameters.</p>
 <p>A Map can be instantiated without explicit type parameters. Type inference
-will then determine the type parameters from the usage.</p>
-<p>Maps can also be created with [key1 => value1, key2 => value2] syntax.</p>
+will then determine the type parameters from the usage.</p>
+<p>Maps can also be created with [key1 => value1, key2 => value2] syntax.</p>
 <p>Map is an abstract type, it is not available at runtime.</p></div>
 <h2>Instance Fields</h2>
 <a name="_new"></a><h3><code><span class="k">function</span> <span class="i">_new</span>():<a href="/dox/IMap.html">IMap</a>&lt;<a href="/dox/Map/K.html">K</a>, <a href="/dox/Map/V.html">V</a>&gt;</code></h3>
-<div class="doc"><p>Creates a new Map.</p>
+<div class="doc"><p>Creates a new Map.</p>
 <p>This becomes a constructor call to one of the specialization types in
-the output. The rules for that are as follows:</p><ol><li>if K is a String, haxe.ds.StringMap is used</li><li>if K is an Int, haxe.ds.IntMap is used</li><li>if K is an enum, haxe.ds.EnumValueMap is used</li><li>if K is any other class or structure, haxe.ds.ObjectMap is used</li><li>
-<p>if K is any other type, it causes a compile-time error
-
-(Cpp) Map does not use weak keys on ObjectMap by default.</p></li></ol></div>
+the output. The rules for that are as follows:</p><ol><li>if K is a String, haxe.ds.StringMap is used</li><li>if K is an Int, haxe.ds.IntMap is used</li><li>if K is an enum, haxe.ds.EnumValueMap is used</li><li>if K is any other class or structure, haxe.ds.ObjectMap is used</li><li>if K is any other type, it causes a compile-time error</li></ol>
+<p>(Cpp) Map does not use weak keys on ObjectMap by default.</p></div>
 <a name="set"></a><h3><code><span class="k">function</span> <span class="i">set</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>, <span class="i">value</span>:<a href="/dox/Map/V.html">V</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Maps <code>key</code> to <code>value</code>.</p>
-<p>If <code>key</code> already has a mapping, the previous value disappears.</p>
+<div class="doc"><p>Maps <code>key</code> to <code>value</code>.</p>
+<p>If <code>key</code> already has a mapping, the previous value disappears.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
 <a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Map/V.html">V</a>&gt;</code></h3>
-<div class="doc"><p>Returns the current mapping of <code>key</code>.</p>
-<p>If no such mapping exists, null is returned.</p>
-<p>Note that a check like map.get(key) == null can hold for two reasons:</p><ol><li>the map has no mapping for <code>key</code></li><li>the map has a mapping with a value of null</li></ol>
-<p>If it is important to distinguish these cases, exists() should be used.</p>
+<div class="doc"><p>Returns the current mapping of <code>key</code>.</p>
+<p>If no such mapping exists, null is returned.</p>
+<p>Note that a check like map.get(key) == null can hold for two reasons:</p><ol><li>the map has no mapping for <code>key</code></li><li>the map has a mapping with a value of null</li></ol>
+<p>If it is important to distinguish these cases, exists() should be used.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
 <a name="exists"></a><h3><code><span class="k">function</span> <span class="i">exists</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Returns true if <code>key</code> has a mapping, false otherwise.</p>
+<div class="doc"><p>Returns true if <code>key</code> has a mapping, false otherwise.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
 <a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>(<span class="i">key</span>:<a href="/dox/Map/K.html">K</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
 <div class="doc"><p>Removes the mapping of <code>key</code> and returns true if such a mapping existed,
-false otherwise.</p>
+false otherwise.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
 <a name="keys"></a><h3><code><span class="k">function</span> <span class="i">keys</span>():<a href="/dox/Iterator.html">Iterator</a>&lt;<a href="/dox/Map/K.html">K</a>&gt;</code></h3>
-<div class="doc"><p>Returns an Iterator over the keys of <code>this</code> Map.</p>
+<div class="doc"><p>Returns an Iterator over the keys of <code>this</code> Map.</p>
 <p>The order of keys is undefined.</p></div>
 <a name="iterator"></a><h3><code><span class="k">function</span> <span class="i">iterator</span>():<a href="/dox/Iterator.html">Iterator</a>&lt;<a href="/dox/Map/V.html">V</a>&gt;</code></h3>
-<div class="doc"><p>Returns an Iterator over the values of <code>this</code> Map.</p>
+<div class="doc"><p>Returns an Iterator over the values of <code>this</code> Map.</p>
 <p>The order of values is undefined.</p></div>
 <a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns a String representation of <code>this</code> Map.</p>
+<div class="doc"><p>Returns a String representation of <code>this</code> Map.</p>
 <p>The exact representation depends on the platform and key-type.</p></div>
 <a name="arrayWrite"></a><h3><code><span class="k">function</span> <span class="i">arrayWrite</span>(<span class="i">k</span>:<a href="/dox/Map/K.html">K</a>, <span class="i">v</span>:<a href="/dox/Map/V.html">V</a>):<a href="/dox/Map/V.html">V</a></code></h3>
 <div class="doc"><p></p></div>

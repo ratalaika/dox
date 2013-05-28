@@ -85,28 +85,28 @@
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
 				<div class="content"><h1><span class="d">class</span> <a href="/dox/haxe/macro/ExprTools.html">ExprTools</a></h1>
-<div class="doc"><p>This class provides some utility methods to work with expressions. It is
+<p>available in cpp, flash, neko, php, js</p><p>import haxe.macro.ExprTools</p><div class="doc"><p>This class provides some utility methods to work with expressions. It is
 best used through 'using haxe.macro.ExprTools' syntax and then provides
-additional methods on haxe.macro.Expr instances.</p>
+additional methods on haxe.macro.Expr instances.</p>
 <p>While mainly intended to be used in macros, it works in non-macro code as
 well.</p></div>
 <h2>Class Fields</h2>
 <a name="toFieldExpr"></a><h3><code><span class="k">function</span> <span class="i">toFieldExpr</span>(<span class="i">sl</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;):<a href="/dox/haxe/macro/Expr.html">Expr</a></code></h3>
 <div class="doc"><p></p></div>
 <a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>(<span class="i">e</span>:<a href="/dox/haxe/macro/Expr.html">Expr</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Converts expression <code>e</code> to a human-readable String representation.</p>
+<div class="doc"><p>Converts expression <code>e</code> to a human-readable String representation.</p>
 <p>The result is guaranteed to be valid haxe code, but there may be
 differences from the original lexical syntax.</p></div>
 <a name="iter"></a><h3><code><span class="k">function</span> <span class="i">iter</span>(<span class="i">e</span>:<a href="/dox/haxe/macro/Expr.html">Expr</a>, <span class="i">f</span>:<a href="/dox/haxe/macro/Expr.html">Expr</a> -> <a href="/dox/Void.html">Void</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Calls function <code>f</code> on each sub-expression of <code>e</code>.</p>
-<p>If <code>e</code> has no sub-expressions, this operation has no effect.</p>
+<div class="doc"><p>Calls function <code>f</code> on each sub-expression of <code>e</code>.</p>
+<p>If <code>e</code> has no sub-expressions, this operation has no effect.</p>
 <p>Otherwise <code>f</code> is called once per sub-expression of <code>e</code>, with the
 sub-expression as argument. These calls are done in order of the
-sub-expression declarations.</p>
+sub-expression declarations.</p>
 <p>This method does not call itself recursively. It should instead be used
-in a recursive function which handles the expression nodes of interest.</p>
-<p>Usage example:</p>
-<p>function findStrings(e:Expr) {</p>
+in a recursive function which handles the expression nodes of interest.</p>
+<p>Usage example:</p>
+<p>function findStrings(e:Expr) {</p>
 <pre><code>switch(e.expr) {
 case EConst(CString(s)):
 	// handle s
@@ -116,15 +116,15 @@ case _:
 </code></pre>
 <p>}</p></div>
 <a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">e</span>:<a href="/dox/haxe/macro/Expr.html">Expr</a>, <span class="i">f</span>:<a href="/dox/haxe/macro/Expr.html">Expr</a> -> <a href="/dox/haxe/macro/Expr.html">Expr</a>):<a href="/dox/haxe/macro/Expr.html">Expr</a></code></h3>
-<div class="doc"><p>Transforms the sub-expressions of <code>e</code> by calling <code>f</code> on each of them.</p>
-<p>If <code>e</code> has no sub-expressions, this operation returns <code>e</code> unchanged.</p>
+<div class="doc"><p>Transforms the sub-expressions of <code>e</code> by calling <code>f</code> on each of them.</p>
+<p>If <code>e</code> has no sub-expressions, this operation returns <code>e</code> unchanged.</p>
 <p>Otherwise <code>f</code> is called once per sub-expression of <code>e</code>, with the
 sub-expression as argument. These calls are done in order of the
-sub-expression declarations.</p>
+sub-expression declarations.</p>
 <p>This method does not call itself recursively. It should instead be used
-in a recursive function which handles the expression nodes of interest.</p>
-<p>Usage example:</p>
-<p>function capitalizeStrings(e:Expr) {</p>
+in a recursive function which handles the expression nodes of interest.</p>
+<p>Usage example:</p>
+<p>function capitalizeStrings(e:Expr) {</p>
 <pre><code>return switch(e.expr) {
 case EConst(CString(s)):
 	{ expr: EConst(CString(s.toUpperCase())), pos: e.pos };
