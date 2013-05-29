@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/dox/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="/dox/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages"><li><a href="/dox/index.html">top level</a></li>
+<li><a href="/dox/cpp/index.html">cpp</a></li>
+<li><a href="/dox/cpp/net/index.html">cpp.net</a></li>
+<li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
+<li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
+<li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
+<li><a href="/dox/flash/index.html">flash</a></li>
+<li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
+<li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
+<li><a href="/dox/flash/concurrent/index.html">flash.concurrent</a></li>
+<li><a href="/dox/flash/desktop/index.html">flash.desktop</a></li>
+<li><a href="/dox/flash/display/index.html">flash.display</a></li>
+<li><a href="/dox/flash/display3D/index.html">flash.display3D</a></li>
+<li><a href="/dox/flash/display3D/textures/index.html">flash.display3D.textures</a></li>
+<li><a href="/dox/flash/errors/index.html">flash.errors</a></li>
+<li><a href="/dox/flash/events/index.html">flash.events</a></li>
+<li><a href="/dox/flash/external/index.html">flash.external</a></li>
+<li><a href="/dox/flash/filters/index.html">flash.filters</a></li>
+<li><a href="/dox/flash/geom/index.html">flash.geom</a></li>
+<li><a href="/dox/flash/globalization/index.html">flash.globalization</a></li>
+<li><a href="/dox/flash/media/index.html">flash.media</a></li>
+<li><a href="/dox/flash/net/index.html">flash.net</a></li>
+<li><a href="/dox/flash/net/drm/index.html">flash.net.drm</a></li>
+<li><a href="/dox/flash/printing/index.html">flash.printing</a></li>
+<li><a href="/dox/flash/sampler/index.html">flash.sampler</a></li>
+<li><a href="/dox/flash/security/index.html">flash.security</a></li>
+<li><a href="/dox/flash/sensors/index.html">flash.sensors</a></li>
+<li><a href="/dox/flash/system/index.html">flash.system</a></li>
+<li><a href="/dox/flash/text/index.html">flash.text</a></li>
+<li><a href="/dox/flash/text/engine/index.html">flash.text.engine</a></li>
+<li><a href="/dox/flash/text/ime/index.html">flash.text.ime</a></li>
+<li><a href="/dox/flash/trace/index.html">flash.trace</a></li>
+<li><a href="/dox/flash/ui/index.html">flash.ui</a></li>
+<li><a href="/dox/flash/utils/index.html">flash.utils</a></li>
+<li><a href="/dox/flash/xml/index.html">flash.xml</a></li>
+<li><a href="/dox/haxe/index.html">haxe</a></li>
+<li><a href="/dox/haxe/crypto/index.html">haxe.crypto</a></li>
+<li><a href="/dox/haxe/ds/index.html">haxe.ds</a></li>
+<li><a href="/dox/haxe/io/index.html">haxe.io</a></li>
+<li><a href="/dox/haxe/macro/index.html">haxe.macro</a></li>
+<li><a href="/dox/haxe/remoting/index.html">haxe.remoting</a></li>
+<li><a href="/dox/haxe/rtti/index.html">haxe.rtti</a></li>
+<li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
+<li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
+<li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
+<li><a href="/dox/js/index.html">js</a></li>
+<li><a href="/dox/js/html/index.html">js.html</a></li>
+<li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
+<li><a href="/dox/js/html/fs/index.html">js.html.fs</a></li>
+<li><a href="/dox/js/html/idb/index.html">js.html.idb</a></li>
+<li><a href="/dox/js/html/rtc/index.html">js.html.rtc</a></li>
+<li><a href="/dox/js/html/sql/index.html">js.html.sql</a></li>
+<li><a href="/dox/js/html/svg/index.html">js.html.svg</a></li>
+<li><a href="/dox/js/html/webgl/index.html">js.html.webgl</a></li>
+<li><a href="/dox/neko/index.html">neko</a></li>
+<li><a href="/dox/neko/net/index.html">neko.net</a></li>
+<li><a href="/dox/neko/vm/index.html">neko.vm</a></li>
+<li><a href="/dox/neko/zip/index.html">neko.zip</a></li>
+<li><a href="/dox/php/index.html">php</a></li>
+<li><a href="/dox/php/db/index.html">php.db</a></li>
+<li><a href="/dox/php/net/index.html">php.net</a></li>
+<li><a href="/dox/sys/index.html">sys</a></li>
+<li><a href="/dox/sys/db/index.html">sys.db</a></li>
+<li><a href="/dox/sys/io/index.html">sys.io</a></li>
+<li><a href="/dox/sys/net/index.html">sys.net</a></li>
+</div>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a></h1>
+<p>Available in java</p>
+<p>Import java.lang.Character</p>
+<div>extends <a href="/dox/java/lang/Character_Subset.html"><span class="type">Character_Subset</span></a></div>
+<div class="doc"><p></p></div>
+<h2>Class Fields</h2>
+<a name="of"></a><h3><code><span class="keyword">function</span> <span class="identifier">of</span>(<span class="identifier">param1</span>:<a href="/dox/java/types/Char16.html"><span class="type">Char16</span></a>):<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="forName"></a><h3><code><span class="keyword">function</span> <span class="identifier">forName</span>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_UNIFIED_IDEOGRAPHS_EXTENSION_D</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_UNIFIED_IDEOGRAPHS_EXTENSION_C</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ALCHEMICAL_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ALCHEMICAL_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TRANSPORT_AND_MAP_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">TRANSPORT_AND_MAP_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="EMOTICONS"></a><h3><code><span class="keyword">var</span> <span class="identifier">EMOTICONS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ENCLOSED_IDEOGRAPHIC_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">ENCLOSED_IDEOGRAPHIC_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ENCLOSED_ALPHANUMERIC_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">ENCLOSED_ALPHANUMERIC_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PLAYING_CARDS"></a><h3><code><span class="keyword">var</span> <span class="identifier">PLAYING_CARDS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="DOMINO_TILES"></a><h3><code><span class="keyword">var</span> <span class="identifier">DOMINO_TILES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MAHJONG_TILES"></a><h3><code><span class="keyword">var</span> <span class="identifier">MAHJONG_TILES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COUNTING_ROD_NUMERALS"></a><h3><code><span class="keyword">var</span> <span class="identifier">COUNTING_ROD_NUMERALS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ANCIENT_GREEK_MUSICAL_NOTATION"></a><h3><code><span class="keyword">var</span> <span class="identifier">ANCIENT_GREEK_MUSICAL_NOTATION</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KANA_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">KANA_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BAMUM_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">BAMUM_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="EGYPTIAN_HIEROGLYPHS"></a><h3><code><span class="keyword">var</span> <span class="identifier">EGYPTIAN_HIEROGLYPHS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CUNEIFORM_NUMBERS_AND_PUNCTUATION"></a><h3><code><span class="keyword">var</span> <span class="identifier">CUNEIFORM_NUMBERS_AND_PUNCTUATION</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CUNEIFORM"></a><h3><code><span class="keyword">var</span> <span class="identifier">CUNEIFORM</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KAITHI"></a><h3><code><span class="keyword">var</span> <span class="identifier">KAITHI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BRAHMI"></a><h3><code><span class="keyword">var</span> <span class="identifier">BRAHMI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="RUMI_NUMERAL_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">RUMI_NUMERAL_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OLD_TURKIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">OLD_TURKIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="INSCRIPTIONAL_PAHLAVI"></a><h3><code><span class="keyword">var</span> <span class="identifier">INSCRIPTIONAL_PAHLAVI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="INSCRIPTIONAL_PARTHIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">INSCRIPTIONAL_PARTHIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="AVESTAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">AVESTAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OLD_SOUTH_ARABIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">OLD_SOUTH_ARABIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KHAROSHTHI"></a><h3><code><span class="keyword">var</span> <span class="identifier">KHAROSHTHI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LYDIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">LYDIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PHOENICIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">PHOENICIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="IMPERIAL_ARAMAIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">IMPERIAL_ARAMAIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OLD_PERSIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">OLD_PERSIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CARIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">CARIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LYCIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">LYCIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PHAISTOS_DISC"></a><h3><code><span class="keyword">var</span> <span class="identifier">PHAISTOS_DISC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ANCIENT_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ANCIENT_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ANCIENT_GREEK_NUMBERS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ANCIENT_GREEK_NUMBERS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="VERTICAL_FORMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">VERTICAL_FORMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HANGUL_JAMO_EXTENDED_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">HANGUL_JAMO_EXTENDED_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MEETEI_MAYEK"></a><h3><code><span class="keyword">var</span> <span class="identifier">MEETEI_MAYEK</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ETHIOPIC_EXTENDED_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">ETHIOPIC_EXTENDED_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAI_VIET"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAI_VIET</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MYANMAR_EXTENDED_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">MYANMAR_EXTENDED_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CHAM"></a><h3><code><span class="keyword">var</span> <span class="identifier">CHAM</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="JAVANESE"></a><h3><code><span class="keyword">var</span> <span class="identifier">JAVANESE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HANGUL_JAMO_EXTENDED_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">HANGUL_JAMO_EXTENDED_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="REJANG"></a><h3><code><span class="keyword">var</span> <span class="identifier">REJANG</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KAYAH_LI"></a><h3><code><span class="keyword">var</span> <span class="identifier">KAYAH_LI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="DEVANAGARI_EXTENDED"></a><h3><code><span class="keyword">var</span> <span class="identifier">DEVANAGARI_EXTENDED</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SAURASHTRA"></a><h3><code><span class="keyword">var</span> <span class="identifier">SAURASHTRA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PHAGS_PA"></a><h3><code><span class="keyword">var</span> <span class="identifier">PHAGS_PA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COMMON_INDIC_NUMBER_FORMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">COMMON_INDIC_NUMBER_FORMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SYLOTI_NAGRI"></a><h3><code><span class="keyword">var</span> <span class="identifier">SYLOTI_NAGRI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LATIN_EXTENDED_D"></a><h3><code><span class="keyword">var</span> <span class="identifier">LATIN_EXTENDED_D</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MODIFIER_TONE_LETTERS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MODIFIER_TONE_LETTERS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BAMUM"></a><h3><code><span class="keyword">var</span> <span class="identifier">BAMUM</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CYRILLIC_EXTENDED_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">CYRILLIC_EXTENDED_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="VAI"></a><h3><code><span class="keyword">var</span> <span class="identifier">VAI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LISU"></a><h3><code><span class="keyword">var</span> <span class="identifier">LISU</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_STROKES"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_STROKES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPPLEMENTAL_PUNCTUATION"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPPLEMENTAL_PUNCTUATION</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CYRILLIC_EXTENDED_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">CYRILLIC_EXTENDED_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ETHIOPIC_EXTENDED"></a><h3><code><span class="keyword">var</span> <span class="identifier">ETHIOPIC_EXTENDED</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TIFINAGH"></a><h3><code><span class="keyword">var</span> <span class="identifier">TIFINAGH</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GEORGIAN_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">GEORGIAN_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COPTIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">COPTIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LATIN_EXTENDED_C"></a><h3><code><span class="keyword">var</span> <span class="identifier">LATIN_EXTENDED_C</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GLAGOLITIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">GLAGOLITIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COMBINING_DIACRITICAL_MARKS_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">COMBINING_DIACRITICAL_MARKS_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PHONETIC_EXTENSIONS_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">PHONETIC_EXTENSIONS_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="VEDIC_EXTENSIONS"></a><h3><code><span class="keyword">var</span> <span class="identifier">VEDIC_EXTENSIONS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OL_CHIKI"></a><h3><code><span class="keyword">var</span> <span class="identifier">OL_CHIKI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LEPCHA"></a><h3><code><span class="keyword">var</span> <span class="identifier">LEPCHA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BATAK"></a><h3><code><span class="keyword">var</span> <span class="identifier">BATAK</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUNDANESE"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUNDANESE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BALINESE"></a><h3><code><span class="keyword">var</span> <span class="identifier">BALINESE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAI_THAM"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAI_THAM</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BUGINESE"></a><h3><code><span class="keyword">var</span> <span class="identifier">BUGINESE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="NEW_TAI_LUE"></a><h3><code><span class="keyword">var</span> <span class="identifier">NEW_TAI_LUE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED"></a><h3><code><span class="keyword">var</span> <span class="identifier">UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS_EXTENDED</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ETHIOPIC_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">ETHIOPIC_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MANDAIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">MANDAIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SAMARITAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">SAMARITAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="NKO"></a><h3><code><span class="keyword">var</span> <span class="identifier">NKO</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ARABIC_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">ARABIC_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LOW_SURROGATES"></a><h3><code><span class="keyword">var</span> <span class="identifier">LOW_SURROGATES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HIGH_PRIVATE_USE_SURROGATES"></a><h3><code><span class="keyword">var</span> <span class="identifier">HIGH_PRIVATE_USE_SURROGATES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HIGH_SURROGATES"></a><h3><code><span class="keyword">var</span> <span class="identifier">HIGH_SURROGATES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPPLEMENTARY_PRIVATE_USE_AREA_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPPLEMENTARY_PRIVATE_USE_AREA_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPPLEMENTARY_PRIVATE_USE_AREA_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPPLEMENTARY_PRIVATE_USE_AREA_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="VARIATION_SELECTORS_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">VARIATION_SELECTORS_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAGS"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAGS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MATHEMATICAL_ALPHANUMERIC_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MATHEMATICAL_ALPHANUMERIC_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAI_XUAN_JING_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAI_XUAN_JING_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MUSICAL_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MUSICAL_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BYZANTINE_MUSICAL_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">BYZANTINE_MUSICAL_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CYPRIOT_SYLLABARY"></a><h3><code><span class="keyword">var</span> <span class="identifier">CYPRIOT_SYLLABARY</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OSMANYA"></a><h3><code><span class="keyword">var</span> <span class="identifier">OSMANYA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SHAVIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">SHAVIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="DESERET"></a><h3><code><span class="keyword">var</span> <span class="identifier">DESERET</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="UGARITIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">UGARITIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GOTHIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">GOTHIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OLD_ITALIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">OLD_ITALIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="AEGEAN_NUMBERS"></a><h3><code><span class="keyword">var</span> <span class="identifier">AEGEAN_NUMBERS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LINEAR_B_IDEOGRAMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">LINEAR_B_IDEOGRAMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LINEAR_B_SYLLABARY"></a><h3><code><span class="keyword">var</span> <span class="identifier">LINEAR_B_SYLLABARY</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="VARIATION_SELECTORS"></a><h3><code><span class="keyword">var</span> <span class="identifier">VARIATION_SELECTORS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="YIJING_HEXAGRAM_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">YIJING_HEXAGRAM_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KATAKANA_PHONETIC_EXTENSIONS"></a><h3><code><span class="keyword">var</span> <span class="identifier">KATAKANA_PHONETIC_EXTENSIONS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MISCELLANEOUS_SYMBOLS_AND_ARROWS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MISCELLANEOUS_SYMBOLS_AND_ARROWS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPPLEMENTAL_MATHEMATICAL_OPERATORS"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPPLEMENTAL_MATHEMATICAL_OPERATORS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPPLEMENTAL_ARROWS_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPPLEMENTAL_ARROWS_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPPLEMENTAL_ARROWS_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPPLEMENTAL_ARROWS_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PHONETIC_EXTENSIONS"></a><h3><code><span class="keyword">var</span> <span class="identifier">PHONETIC_EXTENSIONS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KHMER_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">KHMER_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAI_LE"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAI_LE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LIMBU"></a><h3><code><span class="keyword">var</span> <span class="identifier">LIMBU</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAGBANWA"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAGBANWA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BUHID"></a><h3><code><span class="keyword">var</span> <span class="identifier">BUHID</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HANUNOO"></a><h3><code><span class="keyword">var</span> <span class="identifier">HANUNOO</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAGALOG"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAGALOG</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CYRILLIC_SUPPLEMENTARY"></a><h3><code><span class="keyword">var</span> <span class="identifier">CYRILLIC_SUPPLEMENTARY</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="YI_RADICALS"></a><h3><code><span class="keyword">var</span> <span class="identifier">YI_RADICALS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="YI_SYLLABLES"></a><h3><code><span class="keyword">var</span> <span class="identifier">YI_SYLLABLES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BOPOMOFO_EXTENDED"></a><h3><code><span class="keyword">var</span> <span class="identifier">BOPOMOFO_EXTENDED</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="IDEOGRAPHIC_DESCRIPTION_CHARACTERS"></a><h3><code><span class="keyword">var</span> <span class="identifier">IDEOGRAPHIC_DESCRIPTION_CHARACTERS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KANGXI_RADICALS"></a><h3><code><span class="keyword">var</span> <span class="identifier">KANGXI_RADICALS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_RADICALS_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_RADICALS_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BRAILLE_PATTERNS"></a><h3><code><span class="keyword">var</span> <span class="identifier">BRAILLE_PATTERNS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MONGOLIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">MONGOLIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KHMER"></a><h3><code><span class="keyword">var</span> <span class="identifier">KHMER</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="RUNIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">RUNIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OGHAM"></a><h3><code><span class="keyword">var</span> <span class="identifier">OGHAM</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS"></a><h3><code><span class="keyword">var</span> <span class="identifier">UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CHEROKEE"></a><h3><code><span class="keyword">var</span> <span class="identifier">CHEROKEE</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ETHIOPIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">ETHIOPIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MYANMAR"></a><h3><code><span class="keyword">var</span> <span class="identifier">MYANMAR</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SINHALA"></a><h3><code><span class="keyword">var</span> <span class="identifier">SINHALA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="THAANA"></a><h3><code><span class="keyword">var</span> <span class="identifier">THAANA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SYRIAC"></a><h3><code><span class="keyword">var</span> <span class="identifier">SYRIAC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SURROGATES_AREA"></a><h3><code><span class="keyword">var</span> <span class="identifier">SURROGATES_AREA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SPECIALS"></a><h3><code><span class="keyword">var</span> <span class="identifier">SPECIALS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HALFWIDTH_AND_FULLWIDTH_FORMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">HALFWIDTH_AND_FULLWIDTH_FORMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ARABIC_PRESENTATION_FORMS_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">ARABIC_PRESENTATION_FORMS_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SMALL_FORM_VARIANTS"></a><h3><code><span class="keyword">var</span> <span class="identifier">SMALL_FORM_VARIANTS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_COMPATIBILITY_FORMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_COMPATIBILITY_FORMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COMBINING_HALF_MARKS"></a><h3><code><span class="keyword">var</span> <span class="identifier">COMBINING_HALF_MARKS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ARABIC_PRESENTATION_FORMS_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">ARABIC_PRESENTATION_FORMS_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ALPHABETIC_PRESENTATION_FORMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ALPHABETIC_PRESENTATION_FORMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_COMPATIBILITY_IDEOGRAPHS"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_COMPATIBILITY_IDEOGRAPHS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="PRIVATE_USE_AREA"></a><h3><code><span class="keyword">var</span> <span class="identifier">PRIVATE_USE_AREA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HANGUL_SYLLABLES"></a><h3><code><span class="keyword">var</span> <span class="identifier">HANGUL_SYLLABLES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_UNIFIED_IDEOGRAPHS"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_UNIFIED_IDEOGRAPHS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_COMPATIBILITY"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_COMPATIBILITY</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ENCLOSED_CJK_LETTERS_AND_MONTHS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ENCLOSED_CJK_LETTERS_AND_MONTHS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KANBUN"></a><h3><code><span class="keyword">var</span> <span class="identifier">KANBUN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HANGUL_COMPATIBILITY_JAMO"></a><h3><code><span class="keyword">var</span> <span class="identifier">HANGUL_COMPATIBILITY_JAMO</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BOPOMOFO"></a><h3><code><span class="keyword">var</span> <span class="identifier">BOPOMOFO</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KATAKANA"></a><h3><code><span class="keyword">var</span> <span class="identifier">KATAKANA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HIRAGANA"></a><h3><code><span class="keyword">var</span> <span class="identifier">HIRAGANA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CJK_SYMBOLS_AND_PUNCTUATION"></a><h3><code><span class="keyword">var</span> <span class="identifier">CJK_SYMBOLS_AND_PUNCTUATION</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="DINGBATS"></a><h3><code><span class="keyword">var</span> <span class="identifier">DINGBATS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MISCELLANEOUS_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MISCELLANEOUS_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GEOMETRIC_SHAPES"></a><h3><code><span class="keyword">var</span> <span class="identifier">GEOMETRIC_SHAPES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BLOCK_ELEMENTS"></a><h3><code><span class="keyword">var</span> <span class="identifier">BLOCK_ELEMENTS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BOX_DRAWING"></a><h3><code><span class="keyword">var</span> <span class="identifier">BOX_DRAWING</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ENCLOSED_ALPHANUMERICS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ENCLOSED_ALPHANUMERICS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="OPTICAL_CHARACTER_RECOGNITION"></a><h3><code><span class="keyword">var</span> <span class="identifier">OPTICAL_CHARACTER_RECOGNITION</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CONTROL_PICTURES"></a><h3><code><span class="keyword">var</span> <span class="identifier">CONTROL_PICTURES</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MISCELLANEOUS_TECHNICAL"></a><h3><code><span class="keyword">var</span> <span class="identifier">MISCELLANEOUS_TECHNICAL</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MATHEMATICAL_OPERATORS"></a><h3><code><span class="keyword">var</span> <span class="identifier">MATHEMATICAL_OPERATORS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ARROWS"></a><h3><code><span class="keyword">var</span> <span class="identifier">ARROWS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="NUMBER_FORMS"></a><h3><code><span class="keyword">var</span> <span class="identifier">NUMBER_FORMS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LETTERLIKE_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">LETTERLIKE_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COMBINING_MARKS_FOR_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">COMBINING_MARKS_FOR_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CURRENCY_SYMBOLS"></a><h3><code><span class="keyword">var</span> <span class="identifier">CURRENCY_SYMBOLS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SUPERSCRIPTS_AND_SUBSCRIPTS"></a><h3><code><span class="keyword">var</span> <span class="identifier">SUPERSCRIPTS_AND_SUBSCRIPTS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GENERAL_PUNCTUATION"></a><h3><code><span class="keyword">var</span> <span class="identifier">GENERAL_PUNCTUATION</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GREEK_EXTENDED"></a><h3><code><span class="keyword">var</span> <span class="identifier">GREEK_EXTENDED</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LATIN_EXTENDED_ADDITIONAL"></a><h3><code><span class="keyword">var</span> <span class="identifier">LATIN_EXTENDED_ADDITIONAL</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HANGUL_JAMO"></a><h3><code><span class="keyword">var</span> <span class="identifier">HANGUL_JAMO</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GEORGIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">GEORGIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TIBETAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">TIBETAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LAO"></a><h3><code><span class="keyword">var</span> <span class="identifier">LAO</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="THAI"></a><h3><code><span class="keyword">var</span> <span class="identifier">THAI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="MALAYALAM"></a><h3><code><span class="keyword">var</span> <span class="identifier">MALAYALAM</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="KANNADA"></a><h3><code><span class="keyword">var</span> <span class="identifier">KANNADA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TELUGU"></a><h3><code><span class="keyword">var</span> <span class="identifier">TELUGU</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="TAMIL"></a><h3><code><span class="keyword">var</span> <span class="identifier">TAMIL</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ORIYA"></a><h3><code><span class="keyword">var</span> <span class="identifier">ORIYA</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GUJARATI"></a><h3><code><span class="keyword">var</span> <span class="identifier">GUJARATI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GURMUKHI"></a><h3><code><span class="keyword">var</span> <span class="identifier">GURMUKHI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BENGALI"></a><h3><code><span class="keyword">var</span> <span class="identifier">BENGALI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="DEVANAGARI"></a><h3><code><span class="keyword">var</span> <span class="identifier">DEVANAGARI</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ARABIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">ARABIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="HEBREW"></a><h3><code><span class="keyword">var</span> <span class="identifier">HEBREW</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="ARMENIAN"></a><h3><code><span class="keyword">var</span> <span class="identifier">ARMENIAN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="CYRILLIC"></a><h3><code><span class="keyword">var</span> <span class="identifier">CYRILLIC</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="GREEK"></a><h3><code><span class="keyword">var</span> <span class="identifier">GREEK</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="COMBINING_DIACRITICAL_MARKS"></a><h3><code><span class="keyword">var</span> <span class="identifier">COMBINING_DIACRITICAL_MARKS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="SPACING_MODIFIER_LETTERS"></a><h3><code><span class="keyword">var</span> <span class="identifier">SPACING_MODIFIER_LETTERS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="IPA_EXTENSIONS"></a><h3><code><span class="keyword">var</span> <span class="identifier">IPA_EXTENSIONS</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LATIN_EXTENDED_B"></a><h3><code><span class="keyword">var</span> <span class="identifier">LATIN_EXTENDED_B</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LATIN_EXTENDED_A"></a><h3><code><span class="keyword">var</span> <span class="identifier">LATIN_EXTENDED_A</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="LATIN_1_SUPPLEMENT"></a><h3><code><span class="keyword">var</span> <span class="identifier">LATIN_1_SUPPLEMENT</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+<a name="BASIC_LATIN"></a><h3><code><span class="keyword">var</span> <span class="identifier">BASIC_LATIN</span>:<a href="/dox/java/lang/Character_UnicodeBlock.html"><span class="type">Character_UnicodeBlock</span></a>;</code></h3>
+<div class="doc"><p></p></div>
+</div>
+			</div>
+		</div>
+	</body>
+</html>

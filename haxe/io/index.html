@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,12 +118,12 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">package</span> haxe.io</h1><h2>Classes</h2><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/haxe/io/Input.html">Input</a></td><td><p>An Input is an abstract reader. See other classes in the <code>haxe.io</code> package
-for several possible implementations.</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BufferInput.html">BufferInput</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Bytes.html">Bytes</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BytesBuffer.html">BytesBuffer</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Unsigned_char__.html">Unsigned_char__</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BytesInput.html">BytesInput</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Output.html">Output</a></td><td><p>An Output is an abstract write. A specific output implementation will only
-have to override the <code>writeChar</code> and maybe the <code>write</code>, <code>flush</code> and <code>close</code>
-methods. See <code>File.write</code> and <code><a href="/dox/String.html#write">String.write</a></code> for two ways of creating an
-Output.</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BytesOutput.html">BytesOutput</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Eof.html">Eof</a></td><td><p>This exception is raised when reading while data is no longer available in the <code>Input</code>.</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Path.html">Path</a></td><td><p>This class provides a convenient way of working with paths. It supports the
-common path formats:</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/StringInput.html">StringInput</a></td><td><p></p></td></tr></tbody></table><h2>Type Definitions</h2><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/haxe/io/BytesData.html">BytesData</a></td><td><p></p></td></tr></tbody></table><h2>Enums</h2><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/haxe/io/Error.html">Error</a></td><td><p>The possible IO errors that can occur</p></td></tr></tbody></table></div>
+				<div class="content"><h1><span class="directive">package</span> haxe.io</h1><h2>Classes</h2><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/haxe/io/Input.html"><span class="type">Input</span></a></td><td><p>An Input is an abstract reader. See other classes in the [haxe.io] package
+for several possible implementations.</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BufferInput.html"><span class="type">BufferInput</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BytesBuffer.html"><span class="type">BytesBuffer</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Unsigned_char__.html"><span class="type">Unsigned_char__</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BytesInput.html"><span class="type">BytesInput</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a></td><td><p>An Output is an abstract write. A specific output implementation will only
+have to override the [writeChar] and maybe the [write], [flush] and [close]
+methods. See [File.write] and [String.write] for two ways of creating an
+Output.</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/BytesOutput.html"><span class="type">BytesOutput</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Eof.html"><span class="type">Eof</span></a></td><td><p>This exception is raised when reading while data is no longer available in the [Input].</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/Path.html"><span class="type">Path</span></a></td><td><p>This class provides a convenient way of working with paths. It supports the
+common path formats:</p></td></tr><tr><td width="200"><a href="/dox/haxe/io/StringInput.html"><span class="type">StringInput</span></a></td><td><p></p></td></tr></tbody></table><h2>Type Definitions</h2><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/haxe/io/BytesData.html"><span class="type">BytesData</span></a></td><td><p></p></td></tr></tbody></table><h2>Enums</h2><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/haxe/io/Error.html"><span class="type">Error</span></a></td><td><p>The possible IO errors that can occur</p></td></tr></tbody></table></div>
 			</div>
 		</div>
 	</body>

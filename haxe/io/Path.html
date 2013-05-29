@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,64 +118,65 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/haxe/io/Path.html">Path</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import haxe.io.Path</p><div class="doc"><p>This class provides a convenient way of working with paths. It supports the
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/haxe/io/Path.html"><span class="type">Path</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>This class provides a convenient way of working with paths. It supports the
 common path formats:</p>
 <pre><code>directory1/directory2/filename.extension
 directory1\directory2\filename.excention
 </code></pre></div>
 <h2>Class Fields</h2>
-<a name="withoutExtension"></a><h3><code><span class="k">function</span> <span class="i">withoutExtension</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the String representation of <code>path</code> without the file extension.</p>
-<p>If <code>path</code> is null, the result is unspecified.</p></div>
-<a name="withoutDirectory"></a><h3><code><span class="k">function</span> <span class="i">withoutDirectory</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the String representation of <code>path</code> without the directory.</p>
-<p>If <code>path</code> is null, the result is unspecified.</p></div>
-<a name="directory"></a><h3><code><span class="k">function</span> <span class="i">directory</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the directory of <code>path</code>.</p>
+<a name="withoutExtension"></a><h3><code><span class="keyword">function</span> <span class="identifier">withoutExtension</span>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Returns the String representation of [path] without the file extension.</p>
+<p>If [path] is null, the result is unspecified.</p></div>
+<a name="withoutDirectory"></a><h3><code><span class="keyword">function</span> <span class="identifier">withoutDirectory</span>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Returns the String representation of [path] without the directory.</p>
+<p>If [path] is null, the result is unspecified.</p></div>
+<a name="directory"></a><h3><code><span class="keyword">function</span> <span class="identifier">directory</span>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Returns the directory of [path].</p>
 <p>If the directory is null, the empty String "" is returned.</p>
-<p>If <code>path</code> is null, the result is unspecified.</p></div>
-<a name="extension"></a><h3><code><span class="k">function</span> <span class="i">extension</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns the extension of <code>path</code>.</p>
+<p>If [path] is null, the result is unspecified.</p></div>
+<a name="extension"></a><h3><code><span class="keyword">function</span> <span class="identifier">extension</span>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Returns the extension of [path].</p>
 <p>If the extension is null, the empty String "" is returned.</p>
-<p>If <code>path</code> is null, the result is unspecified.</p></div>
-<a name="withExtension"></a><h3><code><span class="k">function</span> <span class="i">withExtension</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>, <span class="i">ext</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns a String representation of <code>path</code> where the extension is <code>ext</code>.</p>
-<p>If <code>path</code> has no extension, <code>ext</code> is added as extension.</p>
-<p>If <code>path</code> or <code>ext</code> are null, the result is unspecified.</p></div>
-<a name="addTrailingSlash"></a><h3><code><span class="k">function</span> <span class="i">addTrailingSlash</span>(<span class="i">path</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Adds a trailing slash to <code>path</code>, if it does not have one already.</p>
-<p>If the last slash in <code>path</code> is a backslash, a backslash is appended to
-<code>path</code>.</p>
-<p>If the last slash in <code>path</code> is a slash, or if no slash is found, a slash
-is appended to <code>path</code>. In particular, this applies to the empty String
+<p>If [path] is null, the result is unspecified.</p></div>
+<a name="withExtension"></a><h3><code><span class="keyword">function</span> <span class="identifier">withExtension</span>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">ext</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Returns a String representation of [path] where the extension is [ext].</p>
+<p>If [path] has no extension, [ext] is added as extension.</p>
+<p>If [path] or [ext] are null, the result is unspecified.</p></div>
+<a name="addTrailingSlash"></a><h3><code><span class="keyword">function</span> <span class="identifier">addTrailingSlash</span>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Adds a trailing slash to [path], if it does not have one already.</p>
+<p>If the last slash in [path] is a backslash, a backslash is appended to
+[path].</p>
+<p>If the last slash in [path] is a slash, or if no slash is found, a slash
+is appended to [path]. In particular, this applies to the empty String
 "".</p>
-<p>If <code>path</code> is null, the result is unspecified.</p></div>
+<p>If [path] is null, the result is unspecified.</p></div>
 <h2>Instance Fields</h2>
-<a name="dir"></a><h3><code><span class="k">var</span> <span class="i">dir</span>:<a href="/dox/String.html">String</a></code></h3>
+<a name="dir"></a><h3><code><span class="keyword">var</span> <span class="identifier">dir</span>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>The directory.</p>
 <p>This is the leading part of the path that is not part of the file name
 and the extension.</p>
 <p>Does not end with a / or \ separator.</p>
 <p>If the path has no directory, the value is null.</p></div>
-<a name="file"></a><h3><code><span class="k">var</span> <span class="i">file</span>:<a href="/dox/String.html">String</a></code></h3>
+<a name="file"></a><h3><code><span class="keyword">var</span> <span class="identifier">file</span>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>The file name.</p>
 <p>This is the part of the part between the directory and the extension.</p>
 <p>If there is no file name, e.g. for ".htaccess" or "/dir/", the value
 is the empty String "".</p></div>
-<a name="ext"></a><h3><code><span class="k">var</span> <span class="i">ext</span>:<a href="/dox/String.html">String</a></code></h3>
+<a name="ext"></a><h3><code><span class="keyword">var</span> <span class="identifier">ext</span>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>The file extension.</p>
 <p>It is separated from the file name by a dot. This dot is not part of
 the extension.</p>
 <p>If the path has no extension, the value is null.</p></div>
-<a name="backslash"></a><h3><code><span class="k">var</span> <span class="i">backslash</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="backslash"></a><h3><code><span class="keyword">var</span> <span class="identifier">backslash</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>True if the last directory separator is a backslash, false otherwise.</p></div>
-<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
-<div class="doc"><p>Returns a String representation of <code>this</code> path.</p>
-<p>If <code>this</code>.backslash is true, backslash is used as directory separator,
+<a name="toString"></a><h3><code><span class="keyword">function</span> <span class="identifier">toString</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div class="doc"><p>Returns a String representation of [this] path.</p>
+<p>If [this].backslash is true, backslash is used as directory separator,
 otherwise slash is used. This only affects the separator between
-<code>this</code>.dir and <code>this</code>.file.</p>
-<p>If <code>this</code>.directory or <code>this</code>.extension is null, their representation
+[this].dir and [this].file.</p>
+<p>If [this].directory or [this].extension is null, their representation
 is the empty String "".</p></div>
 </div>
 			</div>

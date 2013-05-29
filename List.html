@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,52 +118,53 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/List.html">List</a>&lt;<a href="/dox/List/T.html">T</a>&gt;</h1>
-<p>available in cpp, flash, neko, php, js</p><p>import List</p><div class="doc"><p>A linked-list of elements. The list is composed of two-elements arrays
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/List.html"><span class="type">List</span></a>&lt;<span class="type">T</span>&gt;</h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>A linked-list of elements. The list is composed of two-elements arrays
 that are chained together. It is optimized so that adding or removing an
 element does not imply copying the whole array content every time.</p></div>
 <h2>Instance Fields</h2>
-<a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="length"></a><h3><code><span class="keyword">var</span> <span class="identifier">length</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>The length of <code>this</code> List.</p></div>
-<a name="add"></a><h3><code><span class="k">function</span> <span class="i">add</span>(<span class="i">item</span>:<a href="/dox/List/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="add"></a><h3><code><span class="keyword">function</span> <span class="identifier">add</span>(<span class="identifier">item</span>:<span class="type">T</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Adds element <code>item</code> at the end of <code>this</code> List.</p>
-<p><code>this</code>.length increases by 1.</p></div>
-<a name="push"></a><h3><code><span class="k">function</span> <span class="i">push</span>(<span class="i">item</span>:<a href="/dox/List/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<p><code>this.length</code> increases by 1.</p></div>
+<a name="push"></a><h3><code><span class="keyword">function</span> <span class="identifier">push</span>(<span class="identifier">item</span>:<span class="type">T</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Adds element <code>item</code> at the beginning of <code>this</code> List.</p>
-<p><code>this</code>.length increases by 1.</p></div>
-<a name="first"></a><h3><code><span class="k">function</span> <span class="i">first</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/List/T.html">T</a>&gt;</code></h3>
+<p><code>this.length</code> increases by 1.</p></div>
+<a name="first"></a><h3><code><span class="keyword">function</span> <span class="identifier">first</span>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns the first element of <code>this</code> List, or null if no elements exist.</p>
 <p>This function does not modify <code>this</code> List.</p></div>
-<a name="last"></a><h3><code><span class="k">function</span> <span class="i">last</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/List/T.html">T</a>&gt;</code></h3>
+<a name="last"></a><h3><code><span class="keyword">function</span> <span class="identifier">last</span>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns the last element of <code>this</code> List, or null if no elements exist.</p>
 <p>This function does not modify <code>this</code> List.</p></div>
-<a name="pop"></a><h3><code><span class="k">function</span> <span class="i">pop</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/List/T.html">T</a>&gt;</code></h3>
+<a name="pop"></a><h3><code><span class="keyword">function</span> <span class="identifier">pop</span>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns the first element of <code>this</code> List, or null if no elements exist.</p>
 <p>The element is removed from <code>this</code> List.</p></div>
-<a name="isEmpty"></a><h3><code><span class="k">function</span> <span class="i">isEmpty</span>():<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="isEmpty"></a><h3><code><span class="keyword">function</span> <span class="identifier">isEmpty</span>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Tells if <code>this</code> List is empty.</p></div>
-<a name="clear"></a><h3><code><span class="k">function</span> <span class="i">clear</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="clear"></a><h3><code><span class="keyword">function</span> <span class="identifier">clear</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Empties <code>this</code> List.</p>
 <p>This function does not traverse the elements, but simply sets the
-internal references to null and <code>this</code>.length to 0.</p></div>
-<a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>(<span class="i">v</span>:<a href="/dox/List/T.html">T</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+internal references to null and <code>this.length</code> to 0.</p></div>
+<a name="remove"></a><h3><code><span class="keyword">function</span> <span class="identifier">remove</span>(<span class="identifier">v</span>:<span class="type">T</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Removes the first occurence of <code>v</code> in <code>this</code> List.</p>
 <p>If <code>v</code> is found by checking standard equality, it is removed from <code>this</code>
 List and the function returns true.</p>
 <p>Otherwise, false is returned.</p></div>
-<a name="iterator"></a><h3><code><span class="k">function</span> <span class="i">iterator</span>():<a href="/dox/Iterator.html">Iterator</a>&lt;<a href="/dox/List/T.html">T</a>&gt;</code></h3>
+<a name="iterator"></a><h3><code><span class="keyword">function</span> <span class="identifier">iterator</span>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns an iterator on the elements of the list.</p></div>
-<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="toString"></a><h3><code><span class="keyword">function</span> <span class="identifier">toString</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns a string representation of <code>this</code> List.</p>
 <p>The result is enclosed in { } with the individual elements being
 separated by a comma.</p></div>
-<a name="join"></a><h3><code><span class="k">function</span> <span class="i">join</span>(<span class="i">sep</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="join"></a><h3><code><span class="keyword">function</span> <span class="identifier">join</span>(<span class="identifier">sep</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns a string representation of <code>this</code> List, with <code>sep</code> separating
 each element.</p></div>
-<a name="filter"></a><h3><code><span class="k">function</span> <span class="i">filter</span>(<span class="i">f</span>:<a href="/dox/List/T.html">T</a> -> <a href="/dox/Bool.html">Bool</a>):<a href="/dox/List.html">List</a>&lt;<a href="/dox/List/T.html">T</a>&gt;</code></h3>
+<a name="filter"></a><h3><code><span class="keyword">function</span> <span class="identifier">filter</span>(<span class="identifier">f</span>:<span class="type">T</span> -> <a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/List.html"><span class="type">List</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns a list filtered with <code>f</code>. The returned list will contain all
-elements for which [f(x) = true].</p></div>
-<a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">f</span>:<a href="/dox/List/T.html">T</a> -> <a href="/dox/map/X.html">X</a>):<a href="/dox/List.html">List</a>&lt;<a href="/dox/map/X.html">X</a>&gt;</code></h3>
+elements for which <code>f(x) == true</code>.</p></div>
+<a name="map"></a><h3><code><span class="keyword">function</span> <span class="identifier">map</span>(<span class="identifier">f</span>:<span class="type">T</span> -> <span class="type">X</span>):<a href="/dox/List.html"><span class="type">List</span></a>&lt;<span class="type">X</span>&gt;;</code></h3>
 <div class="doc"><p>Returns a new list where all elements have been converted by the
 function <code>f</code>.</p></div>
 </div>

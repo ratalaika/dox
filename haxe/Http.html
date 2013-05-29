@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,8 +118,9 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/haxe/Http.html">Http</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import haxe.Http</p><div class="doc"><p>This class can be used to handle Http requests consistently across
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/haxe/Http.html"><span class="type">Http</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>This class can be used to handle Http requests consistently across
 platforms. There are two intended usages:
 - call haxe.Http.requestUrl(url) and receive the result as a String (not</p>
 <pre><code>available on flash)
@@ -93,68 +128,68 @@ platforms. There are two intended usages:
 <p>create a new haxe.Http(url), register your callbacks for onData, onError
 and onStatus, then call request().</p></li></ul></div>
 <h2>Class Fields</h2>
-<a name="PROXY"></a><h3><code><span class="k">var</span> <span class="i">PROXY</span>:{ auth:{ pass:<a href="/dox/String.html">String</a>, user:<a href="/dox/String.html">String</a> }, host:<a href="/dox/String.html">String</a>, port:<a href="/dox/Int.html">Int</a> }</code></h3>
+<a name="PROXY"></a><h3><code><span class="keyword">var</span> <span class="identifier">PROXY</span>:{ auth:{ pass:<a href="/dox/String.html"><span class="type">String</span></a>, user:<a href="/dox/String.html"><span class="type">String</span></a> }, host:<a href="/dox/String.html"><span class="type">String</span></a>, port:<a href="/dox/Int.html"><span class="type">Int</span></a> };</code></h3>
 <div class="doc"><p></p></div>
-<a name="requestUrl"></a><h3><code><span class="k">function</span> <span class="i">requestUrl</span>(<span class="i">url</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="requestUrl"></a><h3><code><span class="keyword">function</span> <span class="identifier">requestUrl</span>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Makes a synchronous request to <code>url</code>.</p>
 <p>This creates a new Http instance and makes a GET request by calling its
 request(false) method.</p>
 <p>If <code>url</code> is null, the result is unspecified.</p></div>
 <h2>Instance Fields</h2>
-<a name="url"></a><h3><code><span class="k">var</span> <span class="i">url</span>:<a href="/dox/String.html">String</a></code></h3>
+<a name="url"></a><h3><code><span class="keyword">var</span> <span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>The url of <code>this</code> request. It is used only by the request() method and
 can be changed in order to send the same request to different target
 Urls.</p></div>
-<a name="responseData"></a><h3><code><span class="k">var</span> <span class="i">responseData</span>:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
+<a name="responseData"></a><h3><code><span class="keyword">var</span> <span class="identifier">responseData</span>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="noShutdown"></a><h3><code><span class="k">var</span> <span class="i">noShutdown</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="noShutdown"></a><h3><code><span class="keyword">var</span> <span class="identifier">noShutdown</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="cnxTimeout"></a><h3><code><span class="k">var</span> <span class="i">cnxTimeout</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="cnxTimeout"></a><h3><code><span class="keyword">var</span> <span class="identifier">cnxTimeout</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="responseHeaders"></a><h3><code><span class="k">var</span> <span class="i">responseHeaders</span>:<a href="/dox/haxe/ds/StringMap.html">StringMap</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
+<a name="responseHeaders"></a><h3><code><span class="keyword">var</span> <span class="identifier">responseHeaders</span>:<a href="/dox/haxe/ds/StringMap.html"><span class="type">StringMap</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
 <div class="doc"><p></p></div>
-<a name="setHeader"></a><h3><code><span class="k">function</span> <span class="i">setHeader</span>(<span class="i">header</span>:<a href="/dox/String.html">String</a>, <span class="i">value</span>:<a href="/dox/String.html">String</a>):<a href="/dox/haxe/Http.html">Http</a></code></h3>
+<a name="setHeader"></a><h3><code><span class="keyword">function</span> <span class="identifier">setHeader</span>(<span class="identifier">header</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">value</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/haxe/Http.html"><span class="type">Http</span></a>;</code></h3>
 <div class="doc"><p>Sets the header identified as <code>header</code> to value <code>value</code>.</p>
 <p>If <code>header</code> or <code>value</code> are null, the result is unspecified.</p>
 <p>This method provides a fluent interface.</p></div>
-<a name="setParameter"></a><h3><code><span class="k">function</span> <span class="i">setParameter</span>(<span class="i">param</span>:<a href="/dox/String.html">String</a>, <span class="i">value</span>:<a href="/dox/String.html">String</a>):<a href="/dox/haxe/Http.html">Http</a></code></h3>
+<a name="setParameter"></a><h3><code><span class="keyword">function</span> <span class="identifier">setParameter</span>(<span class="identifier">param</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">value</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/haxe/Http.html"><span class="type">Http</span></a>;</code></h3>
 <div class="doc"><p>Sets the parameter identified as <code>param</code> to value <code>value</code>.</p>
 <p>If <code>header</code> or <code>value</code> are null, the result is unspecified.</p>
 <p>This method provides a fluent interface.</p></div>
-<a name="setPostData"></a><h3><code><span class="k">function</span> <span class="i">setPostData</span>(<span class="i">data</span>:<a href="/dox/String.html">String</a>):<a href="/dox/haxe/Http.html">Http</a></code></h3>
+<a name="setPostData"></a><h3><code><span class="keyword">function</span> <span class="identifier">setPostData</span>(<span class="identifier">data</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/haxe/Http.html"><span class="type">Http</span></a>;</code></h3>
 <div class="doc"><p>Sets the post data of <code>this</code> Http request to <code>data</code>.</p>
 <p>There can only be one post data per request. Subsequent calls overwrite
 the previously set value.</p>
 <p>If <code>data</code> is null, the post data is considered to be absent.</p>
 <p>This method provides a fluent interface.</p></div>
-<a name="request"></a><h3><code><span class="k">function</span> <span class="i">request</span>(?<span class="i">post</span>:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Bool.html">Bool</a>&gt;):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Sends <code>this</code> Http request to the Url specified by <code>this</code>.url.</p>
+<a name="request"></a><h3><code><span class="keyword">function</span> <span class="identifier">request</span>(?<span class="identifier">post</span>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div class="doc"><p>Sends <code>this</code> Http request to the Url specified by <code>this.url</code>.</p>
 <p>If <code>post</code> is true, the request is sent as POST request, otherwise it is
 sent as GET request.</p>
 <p>Depending on the outcome of the request, this method calls the
 onStatus(), onError() or onData() callback functions.</p>
-<p>If <code>this</code>.url is null, the result is unspecified.</p>
-<p>If <code>this</code>.url is an invalid or inaccessible Url, the onError() callback
+<p>If <code>this.url</code> is null, the result is unspecified.</p>
+<p>If <code>this.url</code> is an invalid or inaccessible Url, the onError() callback
 function is called.</p>
-<p>(Js) If <code>this</code>.async is false, the callback functions are called before
+<p>(Js) If <code>this.async</code> is false, the callback functions are called before
 this method returns.</p></div>
-<a name="fileTransfert"></a><h3><code><span class="k">function</span> <span class="i">fileTransfert</span>(<span class="i">argname</span>:<a href="/dox/String.html">String</a>, <span class="i">filename</span>:<a href="/dox/String.html">String</a>, <span class="i">file</span>:<a href="/dox/haxe/io/Input.html">Input</a>, <span class="i">size</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="fileTransfert"></a><h3><code><span class="keyword">function</span> <span class="identifier">fileTransfert</span>(<span class="identifier">argname</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">filename</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">file</span>:<a href="/dox/haxe/io/Input.html"><span class="type">Input</span></a>, <span class="identifier">size</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="customRequest"></a><h3><code><span class="k">function</span> <span class="i">customRequest</span>(<span class="i">post</span>:<a href="/dox/Bool.html">Bool</a>, <span class="i">api</span>:<a href="/dox/haxe/io/Output.html">Output</a>, ?<span class="i">sock</span>:<a href="/dox/haxe/_Http/AbstractSocket.html">AbstractSocket</a>, ?<span class="i">method</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="customRequest"></a><h3><code><span class="keyword">function</span> <span class="identifier">customRequest</span>(<span class="identifier">post</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">api</span>:<a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a>, ?<span class="identifier">sock</span>:<a href="/dox/haxe/_Http/AbstractSocket.html"><span class="type">AbstractSocket</span></a>, ?<span class="identifier">method</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="onData"></a><h3><code><span class="k">function</span> <span class="i">onData</span>(<span class="i">data</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="onData"></a><h3><code><span class="keyword">function</span> <span class="identifier">onData</span>(<span class="identifier">data</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>This method is called upon a successful request, with <code>data</code> containing
 the result String.</p>
 <p>The intended usage is to bind it to a custom function:</p>
 <pre><code>httpInstance.onData = function(data) { // handle result }
 </code></pre></div>
-<a name="onError"></a><h3><code><span class="k">function</span> <span class="i">onError</span>(<span class="i">msg</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="onError"></a><h3><code><span class="keyword">function</span> <span class="identifier">onError</span>(<span class="identifier">msg</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>This method is called upon a request error, with <code>msg</code> containing the
 error description.</p>
 <p>The intended usage is to bind it to a custom function:</p>
 <pre><code>httpInstance.onError = function(msg) { // handle error }
 </code></pre></div>
-<a name="onStatus"></a><h3><code><span class="k">function</span> <span class="i">onStatus</span>(<span class="i">status</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="onStatus"></a><h3><code><span class="keyword">function</span> <span class="identifier">onStatus</span>(<span class="identifier">status</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>This method is called upon a Http status change, with <code>status</code> being the
 new status.</p>
 <p>The intended usage is to bind it to a custom function:</p>

@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,8 +118,9 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/neko/vm/Loader.html">Loader</a></h1>
-<p>available in neko</p><p>import neko.vm.Loader</p><div class="doc"><p>Loaders can be used to dynamicly load Neko primitives stored in NDLL libraries.</p>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/neko/vm/Loader.html"><span class="type">Loader</span></a></h1>
+<p>Available in neko</p>
+<div class="doc"><p>Loaders can be used to dynamicly load Neko primitives stored in NDLL libraries.</p>
 <p>Loaders can be used to dynamicly load other Neko modules (.n bytecode files).
 Modules are referenced by names. To lookup the corresponding bytecode file, the
 default loader first look in its cache, then eventually adds the .n extension
@@ -95,38 +130,38 @@ Loader, this loader can manager the module security by filtering which
 primitives can be loaded by this module or by rewrapping them at loading-time
 with custom securized versions. Loaders are inherited in loaded submodules.</p></div>
 <h2>Class Fields</h2>
-<a name="local"></a><h3><code><span class="k">function</span> <span class="i">local</span>():<a href="/dox/neko/vm/Loader.html">Loader</a></code></h3>
+<a name="local"></a><h3><code><span class="keyword">function</span> <span class="identifier">local</span>():<a href="/dox/neko/vm/Loader.html"><span class="type">Loader</span></a>;</code></h3>
 <div class="doc"><p>Returns the local Loader. This is the loader that was used to load the
 module in which the code is defined.</p></div>
-<a name="make"></a><h3><code><span class="k">function</span> <span class="i">make</span>(<span class="i">loadPrim</span>:<a href="/dox/String.html">String</a> -> <a href="/dox/Int.html">Int</a> -> <a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">loadModule</span>:<a href="/dox/String.html">String</a> -> <a href="/dox/neko/vm/Loader.html">Loader</a> -> <a href="/dox/neko/vm/Module.html">Module</a>):<a href="/dox/neko/vm/Loader.html">Loader</a></code></h3>
+<a name="make"></a><h3><code><span class="keyword">function</span> <span class="identifier">make</span>(<span class="identifier">loadPrim</span>:<a href="/dox/String.html"><span class="type">String</span></a> -> <a href="/dox/Int.html"><span class="type">Int</span></a> -> <a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">loadModule</span>:<a href="/dox/String.html"><span class="type">String</span></a> -> <a href="/dox/neko/vm/Loader.html"><span class="type">Loader</span></a> -> <a href="/dox/neko/vm/Module.html"><span class="type">Module</span></a>):<a href="/dox/neko/vm/Loader.html"><span class="type">Loader</span></a>;</code></h3>
 <div class="doc"><p>Creates a loader using two methods. This loader will not have an accessible cache or path,
 although you can implement such mecanism in the methods body.</p></div>
 <h2>Instance Fields</h2>
-<a name="l"></a><h3><code><span class="k">var</span> <span class="i">l</span>:<a href="/dox/neko/vm/LoaderHandle.html">LoaderHandle</a></code></h3>
+<a name="l"></a><h3><code><span class="keyword">var</span> <span class="identifier">l</span>:<a href="/dox/neko/vm/LoaderHandle.html"><span class="type">LoaderHandle</span></a>;</code></h3>
 <div class="doc"><p>The abstract handle.</p></div>
-<a name="getPath"></a><h3><code><span class="k">function</span> <span class="i">getPath</span>():<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
-<div class="doc"><p>The default loader contains a search path in its <code>path</code> field. It's a
-linked list of Neko strings that is a parsed version of the <code>NEKOPATH</code>.
+<a name="getPath"></a><h3><code><span class="keyword">function</span> <span class="identifier">getPath</span>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
+<div class="doc"><p>The default loader contains a search path in its [path] field. It's a
+linked list of Neko strings that is a parsed version of the [NEKOPATH].
 This path is used to lookup for modules and libraries.</p></div>
-<a name="addPath"></a><h3><code><span class="k">function</span> <span class="i">addPath</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
-<div class="doc"><p>Adds a directory to the search path. See <code>getPath</code></p></div>
-<a name="getCache"></a><h3><code><span class="k">function</span> <span class="i">getCache</span>():<a href="/dox/haxe/ds/StringMap.html">StringMap</a>&lt;<a href="/dox/neko/vm/Module.html">Module</a>&gt;</code></h3>
+<a name="addPath"></a><h3><code><span class="keyword">function</span> <span class="identifier">addPath</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div class="doc"><p>Adds a directory to the search path. See [getPath]</p></div>
+<a name="getCache"></a><h3><code><span class="keyword">function</span> <span class="identifier">getCache</span>():<a href="/dox/haxe/ds/StringMap.html"><span class="type">StringMap</span></a>&lt;<a href="/dox/neko/vm/Module.html"><span class="type">Module</span></a>&gt;;</code></h3>
 <div class="doc"><p>The default loader contains a cache of already loaded modules. It's
 ensuring that the same module does not get loaded twice when circular
 references are occuring. The same module can eventually be loaded twice
 but with different names, for example with two relatives paths reprensenting
 the same file, since the cache is done on a by-name basic.</p></div>
-<a name="setCache"></a><h3><code><span class="k">function</span> <span class="i">setCache</span>(<span class="i">name</span>:<a href="/dox/String.html">String</a>, <span class="i">m</span>:<a href="/dox/neko/vm/Module.html">Module</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="setCache"></a><h3><code><span class="keyword">function</span> <span class="identifier">setCache</span>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">m</span>:<a href="/dox/neko/vm/Module.html"><span class="type">Module</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Set a module in the loader cache.</p></div>
-<a name="backupCache"></a><h3><code><span class="k">function</span> <span class="i">backupCache</span>(<span class="i">c</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
+<a name="backupCache"></a><h3><code><span class="keyword">function</span> <span class="identifier">backupCache</span>(<span class="identifier">c</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div class="doc"><p>Change the cache value and returns the old value. This can be used
 to backup the loader cache and restore it later.</p></div>
-<a name="loadPrimitive"></a><h3><code><span class="k">function</span> <span class="i">loadPrimitive</span>(<span class="i">prim</span>:<a href="/dox/String.html">String</a>, <span class="i">nargs</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
+<a name="loadPrimitive"></a><h3><code><span class="keyword">function</span> <span class="identifier">loadPrimitive</span>(<span class="identifier">prim</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">nargs</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div class="doc"><p>Loads a neko primitive. By default, the name is of the form [library@method].
-The primitive might not be used directly in haXe since some of the Neko values
-needs an object wrapper in haXe.</p></div>
-<a name="loadModule"></a><h3><code><span class="k">function</span> <span class="i">loadModule</span>(<span class="i">modName</span>:<a href="/dox/String.html">String</a>, ?<span class="i">loader</span>:<a href="/dox/neko/vm/Loader.html">Loader</a>):<a href="/dox/neko/vm/Module.html">Module</a></code></h3>
-<div class="doc"><p>Loads a Module with the given name. If <code>loader</code> is defined, this will be
+The primitive might not be used directly in Haxe since some of the Neko values
+needs an object wrapper in Haxe.</p></div>
+<a name="loadModule"></a><h3><code><span class="keyword">function</span> <span class="identifier">loadModule</span>(<span class="identifier">modName</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">loader</span>:<a href="/dox/neko/vm/Loader.html"><span class="type">Loader</span></a>):<a href="/dox/neko/vm/Module.html"><span class="type">Module</span></a>;</code></h3>
+<div class="doc"><p>Loads a Module with the given name. If [loader] is defined, this will be
 this Module loader, else this loader will be inherited. When loaded this
 way, the module is directly executed.</p></div>
 </div>

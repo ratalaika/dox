@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,28 +118,29 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/haxe/ds/StringMap.html">StringMap</a>&lt;<a href="/dox/haxe/ds/StringMap/T.html">T</a>&gt;</h1>
-<p>available in cpp, flash, neko, php, js</p><p>import haxe.ds.StringMap</p><div>implements <a href="/dox/IMap.html">IMap</a>&lt;<a href="/dox/String.html">String</a>, <a href="/dox/haxe/ds/StringMap/T.html">T</a>&gt;</div>
-<div class="doc"><p>Hashtable over a set of elements, using <code><a href="/dox/String.html">String</a></code> as keys.
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/haxe/ds/StringMap.html"><span class="type">StringMap</span></a>&lt;<span class="type">T</span>&gt;</h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div>implements <a href="/dox/IMap.html"><span class="type">IMap</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>, <span class="type">T</span>&gt;</div>
+<div class="doc"><p>Hashtable over a set of elements, using [String] as keys.
 Other kind of keys are not possible on all platforms since they
 can't always be implemented efficiently.</p></div>
 <h2>Instance Fields</h2>
-<a name="set"></a><h3><code><span class="k">function</span> <span class="i">set</span>(<span class="i">key</span>:<a href="/dox/String.html">String</a>, <span class="i">value</span>:<a href="/dox/haxe/ds/StringMap/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="set"></a><h3><code><span class="keyword">function</span> <span class="identifier">set</span>(<span class="identifier">key</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">value</span>:<span class="type">T</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Set a value for the given key.</p></div>
-<a name="get"></a><h3><code><span class="k">function</span> <span class="i">get</span>(<span class="i">key</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/haxe/ds/StringMap/T.html">T</a>&gt;</code></h3>
+<a name="get"></a><h3><code><span class="keyword">function</span> <span class="identifier">get</span>(<span class="identifier">key</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Get a value for the given key.</p></div>
-<a name="exists"></a><h3><code><span class="k">function</span> <span class="i">exists</span>(<span class="i">key</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="exists"></a><h3><code><span class="keyword">function</span> <span class="identifier">exists</span>(<span class="identifier">key</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Tells if a value exists for the given key.
 In particular, it's useful to tells if a key has
-a <code>null</code> value versus no value.</p></div>
-<a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>(<span class="i">key</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Removes a hashtable entry. Returns <code>true</code> if
+a [null] value versus no value.</p></div>
+<a name="remove"></a><h3><code><span class="keyword">function</span> <span class="identifier">remove</span>(<span class="identifier">key</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<div class="doc"><p>Removes a hashtable entry. Returns [true] if
 there was such entry.</p></div>
-<a name="keys"></a><h3><code><span class="k">function</span> <span class="i">keys</span>():<a href="/dox/Iterator.html">Iterator</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
+<a name="keys"></a><h3><code><span class="keyword">function</span> <span class="identifier">keys</span>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
 <div class="doc"><p>Returns an iterator of all keys in the hashtable.</p></div>
-<a name="iterator"></a><h3><code><span class="k">function</span> <span class="i">iterator</span>():<a href="/dox/Iterator.html">Iterator</a>&lt;<a href="/dox/haxe/ds/StringMap/T.html">T</a>&gt;</code></h3>
+<a name="iterator"></a><h3><code><span class="keyword">function</span> <span class="identifier">iterator</span>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns an iterator of all values in the hashtable.</p></div>
-<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="toString"></a><h3><code><span class="keyword">function</span> <span class="identifier">toString</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns an displayable representation of the hashtable content.</p></div>
 </div>
 			</div>

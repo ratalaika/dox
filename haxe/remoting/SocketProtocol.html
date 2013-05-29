@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,8 +118,9 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/haxe/remoting/SocketProtocol.html">SocketProtocol</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import haxe.remoting.SocketProtocol</p><div class="doc"><p>The haXe Remoting Socket Protocol is composed of serialized string exchanges.
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/haxe/remoting/SocketProtocol.html"><span class="type">SocketProtocol</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>The Haxe Remoting Socket Protocol is composed of serialized string exchanges.
 Each string is prefixed with a 2-chars header encoding the string size (up to 4KB)
 and postfixed with the \0 message delimiting char.
 A request string is composed of the following serialized values :</p>
@@ -97,32 +132,32 @@ A request string is composed of the following serialized values :</p>
 <pre><code>- the boolean false for a response
 - a serialized value representing the result
 </code></pre>
-<p>Exceptions are serialized with <code>serializeException</code> so they will be thrown immediatly
+<p>Exceptions are serialized with [serializeException] so they will be thrown immediatly
 when they are unserialized.</p></div>
 <h2>Instance Fields</h2>
-<a name="socket"></a><h3><code><span class="k">var</span> <span class="i">socket</span>:<a href="/dox/haxe/remoting/Socket.html">Socket</a></code></h3>
+<a name="socket"></a><h3><code><span class="keyword">var</span> <span class="identifier">socket</span>:<a href="/dox/haxe/remoting/Socket.html"><span class="type">Socket</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="context"></a><h3><code><span class="k">var</span> <span class="i">context</span>:<a href="/dox/haxe/remoting/Context.html">Context</a></code></h3>
+<a name="context"></a><h3><code><span class="keyword">var</span> <span class="identifier">context</span>:<a href="/dox/haxe/remoting/Context.html"><span class="type">Context</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="messageLength"></a><h3><code><span class="k">function</span> <span class="i">messageLength</span>(<span class="i">c1</span>:<a href="/dox/Int.html">Int</a>, <span class="i">c2</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt;</code></h3>
+<a name="messageLength"></a><h3><code><span class="keyword">function</span> <span class="identifier">messageLength</span>(<span class="identifier">c1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">c2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;;</code></h3>
 <div class="doc"><p></p></div>
-<a name="encodeMessageLength"></a><h3><code><span class="k">function</span> <span class="i">encodeMessageLength</span>(<span class="i">len</span>:<a href="/dox/Int.html">Int</a>):{ c1:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt;, c2:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt; }</code></h3>
+<a name="encodeMessageLength"></a><h3><code><span class="keyword">function</span> <span class="identifier">encodeMessageLength</span>(<span class="identifier">len</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):{ c1:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;, c2:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt; };</code></h3>
 <div class="doc"><p></p></div>
-<a name="sendRequest"></a><h3><code><span class="k">function</span> <span class="i">sendRequest</span>(<span class="i">path</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;, <span class="i">params</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt;):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="sendRequest"></a><h3><code><span class="keyword">function</span> <span class="identifier">sendRequest</span>(<span class="identifier">path</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;, <span class="identifier">params</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="sendAnswer"></a><h3><code><span class="k">function</span> <span class="i">sendAnswer</span>(<span class="i">answer</span>:<a href="/dox/Dynamic.html">Dynamic</a>, ?<span class="i">isException</span>:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Bool.html">Bool</a>&gt;):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="sendAnswer"></a><h3><code><span class="keyword">function</span> <span class="identifier">sendAnswer</span>(<span class="identifier">answer</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, ?<span class="identifier">isException</span>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="sendMessage"></a><h3><code><span class="k">function</span> <span class="i">sendMessage</span>(<span class="i">msg</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="sendMessage"></a><h3><code><span class="keyword">function</span> <span class="identifier">sendMessage</span>(<span class="identifier">msg</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="decodeData"></a><h3><code><span class="k">function</span> <span class="i">decodeData</span>(<span class="i">data</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="decodeData"></a><h3><code><span class="keyword">function</span> <span class="identifier">decodeData</span>(<span class="identifier">data</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="isRequest"></a><h3><code><span class="k">function</span> <span class="i">isRequest</span>(<span class="i">data</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="isRequest"></a><h3><code><span class="keyword">function</span> <span class="identifier">isRequest</span>(<span class="identifier">data</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="processRequest"></a><h3><code><span class="k">function</span> <span class="i">processRequest</span>(<span class="i">data</span>:<a href="/dox/String.html">String</a>, ?<span class="i">onError</span>:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt; -> <a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Dynamic.html">Dynamic</a>&gt; -> <a href="/dox/Dynamic.html">Dynamic</a> -> <a href="/dox/Void.html">Void</a>&gt;):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="processRequest"></a><h3><code><span class="keyword">function</span> <span class="identifier">processRequest</span>(<span class="identifier">data</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">onError</span>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt; -> <a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt; -> <a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a> -> <a href="/dox/Void.html"><span class="type">Void</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="processAnswer"></a><h3><code><span class="k">function</span> <span class="i">processAnswer</span>(<span class="i">data</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Dynamic.html">Dynamic</a></code></h3>
+<a name="processAnswer"></a><h3><code><span class="keyword">function</span> <span class="identifier">processAnswer</span>(<span class="identifier">data</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="readMessage"></a><h3><code><span class="k">function</span> <span class="i">readMessage</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="readMessage"></a><h3><code><span class="keyword">function</span> <span class="identifier">readMessage</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
 </div>
 			</div>

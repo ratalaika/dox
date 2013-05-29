@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,8 +118,9 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/EReg.html">EReg</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import EReg</p><div class="doc"><p>The EReg class represents regular expressions.</p>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/EReg.html"><span class="type">EReg</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>The EReg class represents regular expressions.</p>
 <p>While basic usage and patterns consistently work across platforms, some more
 complex operations may yield different results. This is a necessary trade-
 off to retain a certain level of performance.</p>
@@ -96,47 +131,47 @@ its methods.</p>
 <p>A detailed explanation of the supported operations is available at
 http://haxe.org/doc/cross/regexp</p></div>
 <h2>Instance Fields</h2>
-<a name="match"></a><h3><code><span class="k">function</span> <span class="i">match</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="match"></a><h3><code><span class="keyword">function</span> <span class="identifier">match</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Tells if <code>this</code> regular expression matches String <code>s</code>.</p>
 <p>This method modifies the internal state.</p>
 <p>If <code>s</code> is null, the result is unspecified.</p></div>
-<a name="matched"></a><h3><code><span class="k">function</span> <span class="i">matched</span>(<span class="i">n</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="matched"></a><h3><code><span class="keyword">function</span> <span class="identifier">matched</span>(<span class="identifier">n</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the matched sub-group <code>n</code> of <code>this</code> EReg.</p>
-<p>This method should only be called after <code>this</code>.match() or
-<code>this</code>.matchSub(), and then operates on the String of that operation.</p>
+<p>This method should only be called after <code>this.match</code> or
+<code>this.matchSub</code>, and then operates on the String of that operation.</p>
 <p>The index <code>n</code> corresponds to the n-th set of parentheses in the pattern
 of <code>this</code> EReg. If no such sub-group exists, an exception is thrown.</p>
 <p>If <code>n</code> equals 0, the whole matched substring is returned.</p></div>
-<a name="matchedLeft"></a><h3><code><span class="k">function</span> <span class="i">matchedLeft</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="matchedLeft"></a><h3><code><span class="keyword">function</span> <span class="identifier">matchedLeft</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the part to the left of the last matched substring.</p>
-<p>If the most recent call to <code>this</code>.match() or <code>this</code>.matchSub() did not
+<p>If the most recent call to <code>this.match</code> or <code>this.matchSub</code> did not
 match anything, the result is unspecified.</p>
 <p>If the global g modifier was in place for the matching, only the
 substring to the left of the leftmost match is returned.</p>
 <p>The result does not include the matched part.</p></div>
-<a name="matchedRight"></a><h3><code><span class="k">function</span> <span class="i">matchedRight</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="matchedRight"></a><h3><code><span class="keyword">function</span> <span class="identifier">matchedRight</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the part to the right of the last matched substring.</p>
-<p>If the most recent call to <code>this</code>.match() or <code>this</code>.matchSub() did not
+<p>If the most recent call to <code>this.match</code> or <code>this.matchSub</code> did not
 match anything, the result is unspecified.</p>
 <p>If the global g modifier was in place for the matching, only the
 substring to the right of the leftmost match is returned.</p>
 <p>The result does not include the matched part.</p></div>
-<a name="matchedPos"></a><h3><code><span class="k">function</span> <span class="i">matchedPos</span>():{ len:<a href="/dox/Int.html">Int</a>, pos:<a href="/dox/Int.html">Int</a> }</code></h3>
+<a name="matchedPos"></a><h3><code><span class="keyword">function</span> <span class="identifier">matchedPos</span>():{ len:<a href="/dox/Int.html"><span class="type">Int</span></a>, pos:<a href="/dox/Int.html"><span class="type">Int</span></a> };</code></h3>
 <div class="doc"><p>Returns the position and length of the last matched substring, within
-the String which was last used as argument to <code>this</code>.match() or
-<code>this</code>.matchSub().</p>
-<p>If the most recent call to <code>this</code>.match() or <code>this</code>.matchSub() did not
+the String which was last used as argument to <code>this.match</code> or
+<code>this.matchSub</code>.</p>
+<p>If the most recent call to <code>this.match</code> or <code>this.matchSub</code> did not
 match anything, the result is unspecified.</p>
 <p>If the global g modifier was in place for the matching, the position and
 length of the leftmost substring is returned.</p></div>
-<a name="matchSub"></a><h3><code><span class="k">function</span> <span class="i">matchSub</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="matchSub"></a><h3><code><span class="keyword">function</span> <span class="identifier">matchSub</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">len</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Tells if <code>this</code> regular expression matches a substring of String <code>s</code>.</p>
 <p>This function expects <code>pos</code> and <code>len</code> to describe a valid substring of
 <code>s</code>, or else the result is unspecified. To get more robust behavior,
-<code>this</code>.matchSub(s.substr(pos,len)) can be used instead.</p>
+<code>this.matchSub(s.substr(pos,len))</code> can be used instead.</p>
 <p>This method modifies the internal state.</p>
 <p>If <code>s</code> is null, the result is unspecified.</p></div>
-<a name="split"></a><h3><code><span class="k">function</span> <span class="i">split</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
+<a name="split"></a><h3><code><span class="keyword">function</span> <span class="identifier">split</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
 <div class="doc"><p>Splits String <code>s</code> at all substrings <code>this</code> EReg matches.</p>
 <p>If a match is found at the start of <code>s</code>, the result contains a leading
 empty String "" entry.</p>
@@ -148,16 +183,16 @@ contains the empty String "" between them.</p>
 substring. If the global g modifier is in place, <code>s</code> is split at each
 matched substring.</p>
 <p>If <code>s</code> is null, the result is unspecified.</p></div>
-<a name="replace"></a><h3><code><span class="k">function</span> <span class="i">replace</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">by</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="replace"></a><h3><code><span class="keyword">function</span> <span class="identifier">replace</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">by</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Replaces the first substring of <code>s</code> which <code>this</code> EReg matches with <code>by</code>.</p>
 <p>If <code>this</code> EReg does not match any substring, the result is <code>s</code>.</p>
 <p>By default, this method replaces only the first matched substring. If
 the global g modifier is in place, all matched substrings are replaced.</p>
-<p>If <code>by</code> contains [$1] to [$9], the digit corresponds to number of a
+<p>If <code>by</code> contains <code>$1</code> to <code>$9</code>, the digit corresponds to number of a
 matched sub-group and its value is used instead. If no such sub-group
-exists, the replacement is unspecified. The string [$$] becomes [$].</p>
+exists, the replacement is unspecified. The string <code>$$</code> becomes <code>$</code>.</p>
 <p>If <code>s</code> or <code>by</code> are null, the result is unspecified.</p></div>
-<a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">f</span>:<a href="/dox/EReg.html">EReg</a> -> <a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="map"></a><h3><code><span class="keyword">function</span> <span class="identifier">map</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">f</span>:<a href="/dox/EReg.html"><span class="type">EReg</span></a> -> <a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>For each occurence of the pattern in the string <code>s</code>, the function <code>f</code> is called and
 can return the string that needs to be replaced. All occurences are matched anyway,
 and setting the <code>g</code> flag might cause some incorrect behavior on some platforms.</p></div>

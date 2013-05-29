@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,32 +118,33 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/Std.html">Std</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import Std</p><div class="doc"><p>The Std class provides standard methods for manipulating basic types.</p></div>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/Std.html"><span class="type">Std</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>The Std class provides standard methods for manipulating basic types.</p></div>
 <h2>Class Fields</h2>
-<a name="is"></a><h3><code><span class="k">function</span> <span class="i">is</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>, <span class="i">t</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="is"></a><h3><code><span class="keyword">function</span> <span class="identifier">is</span>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">t</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Tells if a value v is of the type t. Returns false if v or t are null.</p></div>
-<a name="string"></a><h3><code><span class="k">function</span> <span class="i">string</span>(<span class="i">s</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="string"></a><h3><code><span class="keyword">function</span> <span class="identifier">string</span>(<span class="identifier">s</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Converts any value to a String.</p>
-<p>If s is of String, Int, Float or Bool, its value is returned.</p>
-<p>If s is an instance of a class and that class or one of its parent classes has
-a toString() method, that method is called. If no such method is present, the result
+<p>If <code>s</code> is of <code>String</code>, <code>Int</code>, <code>Float</code> or <code>Bool</code>, its value is returned.</p>
+<p>If <code>s</code> is an instance of a class and that class or one of its parent classes has
+a <code>toString</code> method, that method is called. If no such method is present, the result
 is unspecified.</p>
-<p>If s is an enum constructor without argument, the constructor's name is returned. If
+<p>If <code>s</code> is an enum constructor without argument, the constructor's name is returned. If
 arguments exists, the constructor's name followed by the String representations of
 the arguments is returned.</p>
-<p>If s is a structure, the field names along with their values are returned. The field order
+<p>If <code>s</code> is a structure, the field names along with their values are returned. The field order
 and the operator separating field names and values are unspecified.</p>
 <p>If s is null, "null" is returned.</p></div>
-<a name="int"></a><h3><code><span class="k">function</span> <span class="i">int</span>(<span class="i">x</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Converts a Float to an Int, rounded towards 0.</p>
-<p>If x is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.</p></div>
-<a name="parseInt"></a><h3><code><span class="k">function</span> <span class="i">parseInt</span>(<span class="i">x</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt;</code></h3>
-<div class="doc"><p>Converts a String to an Int.</p>
+<a name="int"></a><h3><code><span class="keyword">function</span> <span class="identifier">int</span>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div class="doc"><p>Converts a <code>Float</code> to an <code>Int</code>, rounded towards 0.</p>
+<p>If <code>x</code> is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.</p></div>
+<a name="parseInt"></a><h3><code><span class="keyword">function</span> <span class="identifier">parseInt</span>(<span class="identifier">x</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;;</code></h3>
+<div class="doc"><p>Converts a <code>String</code> to an <code>Int</code>.</p>
 <p>Leading whitespaces are ignored.</p>
-<p>If x starts with 0x or 0X, hexadecimal notation is recognized where the following digits may
+<p>If <code>x</code> starts with 0x or 0X, hexadecimal notation is recognized where the following digits may
 contain 0-9 and A-F.</p>
-<p>Otherwise x is read as decimal number with 0-9 being allowed characters. x may also start with
+<p>Otherwise <code>x</code> is read as decimal number with 0-9 being allowed characters. <code>x</code> may also start with
 a - to denote a negative value.</p>
 <p>In decimal mode, parsing continues until an invalid character is detected, in which case the
 result up to that point is returned. For hexadecimal notation, the effect of invalid characters
@@ -117,14 +152,14 @@ is unspecified.</p>
 <p>Leading 0s that are not part of the 0x/0X hexadecimal notation are ignored, which means octal
 notation is not supported.</p>
 <p>If the input cannot be recognized, the result is null.</p></div>
-<a name="parseFloat"></a><h3><code><span class="k">function</span> <span class="i">parseFloat</span>(<span class="i">x</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Float.html">Float</a></code></h3>
-<div class="doc"><p>Converts a String to a Float.</p>
-<p>The parsing rules for parseInt() apply here as well, with the exception of invalid input
+<a name="parseFloat"></a><h3><code><span class="keyword">function</span> <span class="identifier">parseFloat</span>(<span class="identifier">x</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div class="doc"><p>Converts a <code>String</code> to a <code>Float</code>.</p>
+<p>The parsing rules for <code>parseInt</code> apply here as well, with the exception of invalid input
 resulting in a NaN value instead of null.</p>
-<p>Additionally, decimal notation may contain a single . to denote the start of the fractions.</p></div>
-<a name="random"></a><h3><code><span class="k">function</span> <span class="i">random</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Return a random integer between 0 included and x excluded.</p>
-<p>If x is &lt;= 1, the result is always 0.</p></div>
+<p>Additionally, decimal notation may contain a single <code>.</code> to denote the start of the fractions.</p></div>
+<a name="random"></a><h3><code><span class="keyword">function</span> <span class="identifier">random</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div class="doc"><p>Return a random integer between 0 included and <code>x</code> excluded.</p>
+<p>If <code>x &lt;= 1</code>, the result is always 0.</p></div>
 </div>
 			</div>
 		</div>

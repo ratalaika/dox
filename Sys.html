@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,53 +118,54 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/Sys.html">Sys</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import Sys</p><div class="doc"><p>This class gives you access to many base functionalities of system platforms. Looks in <code>sys</code> sub packages for more system APIs.</p></div>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/Sys.html"><span class="type">Sys</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>This class gives you access to many base functionalities of system platforms. Looks in [sys] sub packages for more system APIs.</p></div>
 <h2>Class Fields</h2>
-<a name="print"></a><h3><code><span class="k">function</span> <span class="i">print</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="print"></a><h3><code><span class="keyword">function</span> <span class="identifier">print</span>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Print any value on the standard output.</p></div>
-<a name="println"></a><h3><code><span class="k">function</span> <span class="i">println</span>(<span class="i">v</span>:<a href="/dox/Dynamic.html">Dynamic</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="println"></a><h3><code><span class="keyword">function</span> <span class="identifier">println</span>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Print any value on the standard output, followed by a newline</p></div>
-<a name="stdin"></a><h3><code><span class="k">function</span> <span class="i">stdin</span>():<a href="/dox/haxe/io/Input.html">Input</a></code></h3>
-<div class="doc"><p>Returns the process standard input, from which you can read what user enters. Usually it will block until the user send a full input line. See <code>getChar</code> for an alternative.</p></div>
-<a name="stdout"></a><h3><code><span class="k">function</span> <span class="i">stdout</span>():<a href="/dox/haxe/io/Output.html">Output</a></code></h3>
+<a name="stdin"></a><h3><code><span class="keyword">function</span> <span class="identifier">stdin</span>():<a href="/dox/haxe/io/Input.html"><span class="type">Input</span></a>;</code></h3>
+<div class="doc"><p>Returns the process standard input, from which you can read what user enters. Usually it will block until the user send a full input line. See [getChar] for an alternative.</p></div>
+<a name="stdout"></a><h3><code><span class="keyword">function</span> <span class="identifier">stdout</span>():<a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a>;</code></h3>
 <div class="doc"><p>Returns the process standard output on which you can write.</p></div>
-<a name="stderr"></a><h3><code><span class="k">function</span> <span class="i">stderr</span>():<a href="/dox/haxe/io/Output.html">Output</a></code></h3>
+<a name="stderr"></a><h3><code><span class="keyword">function</span> <span class="identifier">stderr</span>():<a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a>;</code></h3>
 <div class="doc"><p>Returns the process standard error on which you can write.</p></div>
-<a name="getChar"></a><h3><code><span class="k">function</span> <span class="i">getChar</span>(<span class="i">echo</span>:<a href="/dox/Bool.html">Bool</a>):<a href="/dox/Int.html">Int</a></code></h3>
-<div class="doc"><p>Read a single input character from the standard input (without blocking) and returns it. Setting <code>echo</code> to true will also display it on the output.</p></div>
-<a name="args"></a><h3><code><span class="k">function</span> <span class="i">args</span>():<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
+<a name="getChar"></a><h3><code><span class="keyword">function</span> <span class="identifier">getChar</span>(<span class="identifier">echo</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div class="doc"><p>Read a single input character from the standard input (without blocking) and returns it. Setting [echo] to true will also display it on the output.</p></div>
+<a name="args"></a><h3><code><span class="keyword">function</span> <span class="identifier">args</span>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
 <div class="doc"><p>Returns all the arguments that were passed by the commandline.</p></div>
-<a name="getEnv"></a><h3><code><span class="k">function</span> <span class="i">getEnv</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="getEnv"></a><h3><code><span class="keyword">function</span> <span class="identifier">getEnv</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the value of the given environment variable.</p></div>
-<a name="putEnv"></a><h3><code><span class="k">function</span> <span class="i">putEnv</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>, <span class="i">v</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="putEnv"></a><h3><code><span class="keyword">function</span> <span class="identifier">putEnv</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">v</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Set the value of the given environment variable.</p></div>
-<a name="sleep"></a><h3><code><span class="k">function</span> <span class="i">sleep</span>(<span class="i">seconds</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="sleep"></a><h3><code><span class="keyword">function</span> <span class="identifier">sleep</span>(<span class="identifier">seconds</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Suspend the current execution for the given time (in seconds).</p></div>
-<a name="setTimeLocale"></a><h3><code><span class="k">function</span> <span class="i">setTimeLocale</span>(<span class="i">loc</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
-<div class="doc"><p>Change the current time locale, which will affect <code><a href="/dox/DateTools.html#format">DateTools.format</a></code> date formating.
+<a name="setTimeLocale"></a><h3><code><span class="keyword">function</span> <span class="identifier">setTimeLocale</span>(<span class="identifier">loc</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<div class="doc"><p>Change the current time locale, which will affect [DateTools.format] date formating.
 Returns true if the locale was successfully changed</p></div>
-<a name="getCwd"></a><h3><code><span class="k">function</span> <span class="i">getCwd</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="getCwd"></a><h3><code><span class="keyword">function</span> <span class="identifier">getCwd</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Get the current working directory (usually the one in which the program was started)</p></div>
-<a name="setCwd"></a><h3><code><span class="k">function</span> <span class="i">setCwd</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="setCwd"></a><h3><code><span class="keyword">function</span> <span class="identifier">setCwd</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Change the current working directory.</p></div>
-<a name="systemName"></a><h3><code><span class="k">function</span> <span class="i">systemName</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="systemName"></a><h3><code><span class="keyword">function</span> <span class="identifier">systemName</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the name of the system you are running on. For instance :</p>
 <pre><code>"Windows", "Linux", "BSD" and "Mac" depending on your desktop OS.
 </code></pre></div>
-<a name="command"></a><h3><code><span class="k">function</span> <span class="i">command</span>(<span class="i">cmd</span>:<a href="/dox/String.html">String</a>, ?<span class="i">args</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/String.html">String</a>&gt;):<a href="/dox/Int.html">Int</a></code></h3>
+<a name="command"></a><h3><code><span class="keyword">function</span> <span class="identifier">command</span>(<span class="identifier">cmd</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">args</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Run the given command with the list of arguments. The command output will be printed on the same output as the current process.
 The current process will block until the command terminates and it will return the command result (0 if there was no error).
-Read the <code>sys.io.Process</code> api for a more complete way to start background processes.</p></div>
-<a name="exit"></a><h3><code><span class="k">function</span> <span class="i">exit</span>(<span class="i">code</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+Read the [sys.io.Process] api for a more complete way to start background processes.</p></div>
+<a name="exit"></a><h3><code><span class="keyword">function</span> <span class="identifier">exit</span>(<span class="identifier">code</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Exit the current process with the given error code.</p></div>
-<a name="time"></a><h3><code><span class="k">function</span> <span class="i">time</span>():<a href="/dox/Float.html">Float</a></code></h3>
+<a name="time"></a><h3><code><span class="keyword">function</span> <span class="identifier">time</span>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>Gives the most precise timestamp value (in seconds).</p></div>
-<a name="cpuTime"></a><h3><code><span class="k">function</span> <span class="i">cpuTime</span>():<a href="/dox/Float.html">Float</a></code></h3>
+<a name="cpuTime"></a><h3><code><span class="keyword">function</span> <span class="identifier">cpuTime</span>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>Gives the most precise timestamp value (in seconds) but only account for the actual time spent running on the CPU for the current thread/process.</p></div>
-<a name="executablePath"></a><h3><code><span class="k">function</span> <span class="i">executablePath</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="executablePath"></a><h3><code><span class="keyword">function</span> <span class="identifier">executablePath</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the path to the current executable that we are running.</p></div>
-<a name="environment"></a><h3><code><span class="k">function</span> <span class="i">environment</span>():<a href="/dox/haxe/ds/StringMap.html">StringMap</a>&lt;<a href="/dox/String.html">String</a>&gt;</code></h3>
+<a name="environment"></a><h3><code><span class="keyword">function</span> <span class="identifier">environment</span>():<a href="/dox/haxe/ds/StringMap.html"><span class="type">StringMap</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
 <div class="doc"><p>Returns the whole environement variables.</p></div>
 </div>
 			</div>

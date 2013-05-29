@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,8 +118,9 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/js/html/DOMSelection.html">DOMSelection</a></h1>
-<p>available in js</p><p>import js.html.DOMSelection</p><div class="doc"><p>Selection is the class of the object returned by <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.getSelection">window.getSelection()</a></code>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/js/html/DOMSelection.html"><span class="type">DOMSelection</span></a></h1>
+<p>Available in js</p>
+<div class="doc"><p>Selection is the class of the object returned by <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.getSelection">window.getSelection()</a></code>
 and other methods. It represents the text selection in the greater page, possibly spanning multiple elements, when the user drags over static text and other parts of the page. For information about text selection in an individual text editing element, see <code><a rel="custom" href="/dox/js/html/InputElement.html">Input</a></code>
 , <code><a rel="custom" href="/dox/js/html/TextAreaElement.html">TextArea</a></code>
 and <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/document.activeElement">document.activeElement</a></code>
@@ -102,57 +137,57 @@ method returns the text contained in the selection, e.g</p>
 window.alert(selObj);</pre></p><p>Note that using a selection object as the argument to <code>window.alert</code> will call the object's <code>toString</code> method.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/Selection">MDN</a>.</div>
 <h2>Instance Fields</h2>
-<a name="anchorNode"></a><h3><code><span class="k">var</span> <span class="i">anchorNode</span>:<a href="/dox/js/html/Node.html">Node</a></code></h3>
+<a name="anchorNode"></a><h3><code><span class="keyword">var</span> <span class="identifier">anchorNode</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>Returns the node in which the selection begins.</p></div>
-<a name="anchorOffset"></a><h3><code><span class="k">var</span> <span class="i">anchorOffset</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="anchorOffset"></a><h3><code><span class="keyword">var</span> <span class="identifier">anchorOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>Returns the number of characters that the selection's anchor is offset within the anchorNode.</p></div>
-<a name="baseNode"></a><h3><code><span class="k">var</span> <span class="i">baseNode</span>:<a href="/dox/js/html/Node.html">Node</a></code></h3>
+<a name="baseNode"></a><h3><code><span class="keyword">var</span> <span class="identifier">baseNode</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="baseOffset"></a><h3><code><span class="k">var</span> <span class="i">baseOffset</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="baseOffset"></a><h3><code><span class="keyword">var</span> <span class="identifier">baseOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="extentNode"></a><h3><code><span class="k">var</span> <span class="i">extentNode</span>:<a href="/dox/js/html/Node.html">Node</a></code></h3>
+<a name="extentNode"></a><h3><code><span class="keyword">var</span> <span class="identifier">extentNode</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="extentOffset"></a><h3><code><span class="k">var</span> <span class="i">extentOffset</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="extentOffset"></a><h3><code><span class="keyword">var</span> <span class="identifier">extentOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="focusNode"></a><h3><code><span class="k">var</span> <span class="i">focusNode</span>:<a href="/dox/js/html/Node.html">Node</a></code></h3>
+<a name="focusNode"></a><h3><code><span class="keyword">var</span> <span class="identifier">focusNode</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>Returns the node in which the selection ends.</p></div>
-<a name="focusOffset"></a><h3><code><span class="k">var</span> <span class="i">focusOffset</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="focusOffset"></a><h3><code><span class="keyword">var</span> <span class="identifier">focusOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>Returns the number of characters that the selection's focus is offset within the focusNode.</p></div>
-<a name="isCollapsed"></a><h3><code><span class="k">var</span> <span class="i">isCollapsed</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="isCollapsed"></a><h3><code><span class="keyword">var</span> <span class="identifier">isCollapsed</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>Returns a Boolean indicating whether the selection's start and end points are at the same position.</p></div>
-<a name="rangeCount"></a><h3><code><span class="k">var</span> <span class="i">rangeCount</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="rangeCount"></a><h3><code><span class="keyword">var</span> <span class="identifier">rangeCount</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>Returns the number of ranges in the selection.</p></div>
-<a name="type"></a><h3><code><span class="k">var</span> <span class="i">type</span>:<a href="/dox/String.html">String</a></code></h3>
+<a name="type"></a><h3><code><span class="keyword">var</span> <span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="addRange"></a><h3><code><span class="k">function</span> <span class="i">addRange</span>(<span class="i">range</span>:<a href="/dox/js/html/Range.html">Range</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="addRange"></a><h3><code><span class="keyword">function</span> <span class="identifier">addRange</span>(<span class="identifier">range</span>:<a href="/dox/js/html/Range.html"><span class="type">Range</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="collapse"></a><h3><code><span class="k">function</span> <span class="i">collapse</span>(<span class="i">node</span>:<a href="/dox/js/html/Node.html">Node</a>, <span class="i">index</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="collapse"></a><h3><code><span class="keyword">function</span> <span class="identifier">collapse</span>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">index</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="collapseToEnd"></a><h3><code><span class="k">function</span> <span class="i">collapseToEnd</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="collapseToEnd"></a><h3><code><span class="keyword">function</span> <span class="identifier">collapseToEnd</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="collapseToStart"></a><h3><code><span class="k">function</span> <span class="i">collapseToStart</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="collapseToStart"></a><h3><code><span class="keyword">function</span> <span class="identifier">collapseToStart</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="containsNode"></a><h3><code><span class="k">function</span> <span class="i">containsNode</span>(<span class="i">node</span>:<a href="/dox/js/html/Node.html">Node</a>, <span class="i">allowPartial</span>:<a href="/dox/Bool.html">Bool</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="containsNode"></a><h3><code><span class="keyword">function</span> <span class="identifier">containsNode</span>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">allowPartial</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="deleteFromDocument"></a><h3><code><span class="k">function</span> <span class="i">deleteFromDocument</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="deleteFromDocument"></a><h3><code><span class="keyword">function</span> <span class="identifier">deleteFromDocument</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="empty"></a><h3><code><span class="k">function</span> <span class="i">empty</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="empty"></a><h3><code><span class="keyword">function</span> <span class="identifier">empty</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="extend"></a><h3><code><span class="k">function</span> <span class="i">extend</span>(<span class="i">node</span>:<a href="/dox/js/html/Node.html">Node</a>, <span class="i">offset</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="extend"></a><h3><code><span class="keyword">function</span> <span class="identifier">extend</span>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">offset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="getRangeAt"></a><h3><code><span class="k">function</span> <span class="i">getRangeAt</span>(<span class="i">index</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/js/html/Range.html">Range</a></code></h3>
+<a name="getRangeAt"></a><h3><code><span class="keyword">function</span> <span class="identifier">getRangeAt</span>(<span class="identifier">index</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/js/html/Range.html"><span class="type">Range</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="modify"></a><h3><code><span class="k">function</span> <span class="i">modify</span>(<span class="i">alter</span>:<a href="/dox/String.html">String</a>, <span class="i">direction</span>:<a href="/dox/String.html">String</a>, <span class="i">granularity</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="modify"></a><h3><code><span class="keyword">function</span> <span class="identifier">modify</span>(<span class="identifier">alter</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">direction</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">granularity</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="removeAllRanges"></a><h3><code><span class="k">function</span> <span class="i">removeAllRanges</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="removeAllRanges"></a><h3><code><span class="keyword">function</span> <span class="identifier">removeAllRanges</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="selectAllChildren"></a><h3><code><span class="k">function</span> <span class="i">selectAllChildren</span>(<span class="i">node</span>:<a href="/dox/js/html/Node.html">Node</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="selectAllChildren"></a><h3><code><span class="keyword">function</span> <span class="identifier">selectAllChildren</span>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="setBaseAndExtent"></a><h3><code><span class="k">function</span> <span class="i">setBaseAndExtent</span>(<span class="i">baseNode</span>:<a href="/dox/js/html/Node.html">Node</a>, <span class="i">baseOffset</span>:<a href="/dox/Int.html">Int</a>, <span class="i">extentNode</span>:<a href="/dox/js/html/Node.html">Node</a>, <span class="i">extentOffset</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="setBaseAndExtent"></a><h3><code><span class="keyword">function</span> <span class="identifier">setBaseAndExtent</span>(<span class="identifier">baseNode</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">baseOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">extentNode</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">extentOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="setPosition"></a><h3><code><span class="k">function</span> <span class="i">setPosition</span>(<span class="i">node</span>:<a href="/dox/js/html/Node.html">Node</a>, <span class="i">offset</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="setPosition"></a><h3><code><span class="keyword">function</span> <span class="identifier">setPosition</span>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">offset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="toString"></a><h3><code><span class="keyword">function</span> <span class="identifier">toString</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
 </div>
 			</div>

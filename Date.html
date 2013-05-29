@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,23 +118,19 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/Date.html">Date</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import Date</p><div class="doc"><p>The Date class provides a basic structure for date and time related
-information. Date instances can be created by</p>
-<pre><code>- new Date() for a specific date,
-- Date.now() to obtain information about the current time,
-- Date.fromTime() with a given timestamp or
-- Date.fromString() by parsing from a String.
-</code></pre>
-<p>There is some extra functions available in the <code><a href="/dox/DateTools.html">DateTools</a></code> class.</p>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/Date.html"><span class="type">Date</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>The Date class provides a basic structure for date and time related
+information. Date instances can be created by</p><ul><li>new Date() for a specific date,</li><li>Date.now() to obtain information about the current time,</li><li>Date.fromTime() with a given timestamp or</li><li>Date.fromString() by parsing from a String.</li></ul>
+<p>There is some extra functions available in the <code>DateTools</code> class.</p>
 <p>In the context of haxe dates, a timestamp is defined as the number of
 milliseconds elapsed since 1st January 1970.</p></div>
 <h2>Class Fields</h2>
-<a name="now"></a><h3><code><span class="k">function</span> <span class="i">now</span>():<a href="/dox/Date.html">Date</a></code></h3>
+<a name="now"></a><h3><code><span class="keyword">function</span> <span class="identifier">now</span>():<a href="/dox/Date.html"><span class="type">Date</span></a>;</code></h3>
 <div class="doc"><p>Returns a Date representing the current local time.</p></div>
-<a name="fromTime"></a><h3><code><span class="k">function</span> <span class="i">fromTime</span>(<span class="i">t</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Date.html">Date</a></code></h3>
+<a name="fromTime"></a><h3><code><span class="keyword">function</span> <span class="identifier">fromTime</span>(<span class="identifier">t</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Date.html"><span class="type">Date</span></a>;</code></h3>
 <div class="doc"><p>Returns a Date from timestamp <code>t</code>.</p></div>
-<a name="fromString"></a><h3><code><span class="k">function</span> <span class="i">fromString</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Date.html">Date</a></code></h3>
+<a name="fromString"></a><h3><code><span class="keyword">function</span> <span class="identifier">fromString</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Date.html"><span class="type">Date</span></a>;</code></h3>
 <div class="doc"><p>Returns a Date from a formated string <code>s</code>, with the following accepted
 formats:</p>
 <pre><code>- [YYYY-MM-DD hh:mm:ss]
@@ -110,26 +140,26 @@ formats:</p>
 <p>The first two formats are expressed in local time, the third in UTC
 Epoch.</p></div>
 <h2>Instance Fields</h2>
-<a name="getTime"></a><h3><code><span class="k">function</span> <span class="i">getTime</span>():<a href="/dox/Float.html">Float</a></code></h3>
+<a name="getTime"></a><h3><code><span class="keyword">function</span> <span class="identifier">getTime</span>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>Returns the timestamp of the date. It might only have a per-second
 precision depending on the platforms.</p></div>
-<a name="getHours"></a><h3><code><span class="k">function</span> <span class="i">getHours</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getHours"></a><h3><code><span class="keyword">function</span> <span class="identifier">getHours</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the hours of <code>this</code> Date (0-23 range).</p></div>
-<a name="getMinutes"></a><h3><code><span class="k">function</span> <span class="i">getMinutes</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getMinutes"></a><h3><code><span class="keyword">function</span> <span class="identifier">getMinutes</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the minutes of <code>this</code> Date (0-59 range).</p></div>
-<a name="getSeconds"></a><h3><code><span class="k">function</span> <span class="i">getSeconds</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getSeconds"></a><h3><code><span class="keyword">function</span> <span class="identifier">getSeconds</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the seconds of the <code>this</code> Date (0-59 range).</p></div>
-<a name="getFullYear"></a><h3><code><span class="k">function</span> <span class="i">getFullYear</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getFullYear"></a><h3><code><span class="keyword">function</span> <span class="identifier">getFullYear</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the full year of <code>this</code> Date (4-digits).</p></div>
-<a name="getMonth"></a><h3><code><span class="k">function</span> <span class="i">getMonth</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getMonth"></a><h3><code><span class="keyword">function</span> <span class="identifier">getMonth</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the month of <code>this</code> Date (0-11 range).</p></div>
-<a name="getDate"></a><h3><code><span class="k">function</span> <span class="i">getDate</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getDate"></a><h3><code><span class="keyword">function</span> <span class="identifier">getDate</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the day of <code>this</code> Date (1-31 range).</p></div>
-<a name="getDay"></a><h3><code><span class="k">function</span> <span class="i">getDay</span>():<a href="/dox/Int.html">Int</a></code></h3>
+<a name="getDay"></a><h3><code><span class="keyword">function</span> <span class="identifier">getDay</span>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the day of the week of <code>this</code> Date (0-6 range).</p></div>
-<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="toString"></a><h3><code><span class="keyword">function</span> <span class="identifier">toString</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns a string representation of <code>this</code> Date, by using the
-standard format [YYYY-MM-DD HH:MM:SS]. See <code><a href="/dox/DateTools.html#format">DateTools.format</a></code> for
+standard format [YYYY-MM-DD HH:MM:SS]. See <code>DateTools.format</code> for
 other formating rules.</p></div>
 </div>
 			</div>

@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,14 +118,15 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</h1>
-<p>available in cpp, flash, neko, php, js</p><p>import Array</p><div class="doc"><p>An Array is a storage for values. You can access it using indexes or
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;</h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<div class="doc"><p>An Array is a storage for values. You can access it using indexes or
 with its API. On the server side, it's often better to use a <code>List</code> which
 is less memory and CPU consuming, unless you really need indexed access.</p></div>
 <h2>Instance Fields</h2>
-<a name="length"></a><h3><code><span class="k">var</span> <span class="i">length</span>:<a href="/dox/Int.html">Int</a></code></h3>
+<a name="length"></a><h3><code><span class="keyword">var</span> <span class="identifier">length</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p>The length of <code>this</code> Array.</p></div>
-<a name="concat"></a><h3><code><span class="k">function</span> <span class="i">concat</span>(<span class="i">a</span>:<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="concat"></a><h3><code><span class="keyword">function</span> <span class="identifier">concat</span>(<span class="identifier">a</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns a new Array by appending the elements of <code>a</code> to the elements of
 <code>this</code> Array.</p>
 <p>This operation does not modify <code>this</code> Array.</p>
@@ -99,38 +134,38 @@ is less memory and CPU consuming, unless you really need indexed access.</p></di
 <p>The length of the returned Array is equal to the sum of <code>this.length</code> 
 and <code>a.length</code>.</p>
 <p>If <code>a</code> is <code>null</code>, the result is unspecified.</p></div>
-<a name="join"></a><h3><code><span class="k">function</span> <span class="i">join</span>(<span class="i">sep</span>:<a href="/dox/String.html">String</a>):<a href="/dox/String.html">String</a></code></h3>
+<a name="join"></a><h3><code><span class="keyword">function</span> <span class="identifier">join</span>(<span class="identifier">sep</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns a string representation of <code>this</code> Array, with <code>sep</code> separating
 each element.</p>
-<p>The result of this operation is equal to <code>Std.string(this<code>0</code>) + sep +
-Std.string(this<code>1</code>) + sep + ... + sep + Std.string(this[this.length-1])</code></p>
+<p>The result of this operation is equal to <code>Std.string(this[0]) + sep +
+Std.string(this[1]) + sep + ... + sep + Std.string(this[this.length-1])</code></p>
 <p>If <code>this</code> is the empty Array <code>[]</code>, the result is the empty String <code>""</code>. 
 If <code>this</code> has exactly one element, the result is equal to a call to
-<code>Std.string(this<code>0</code>)</code>.</p>
+<code>Std.string(this[0])</code>.</p>
 <p>If <code>sep</code> is null, the result is unspecified.</p></div>
-<a name="pop"></a><h3><code><span class="k">function</span> <span class="i">pop</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="pop"></a><h3><code><span class="keyword">function</span> <span class="identifier">pop</span>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Removes the last element of <code>this</code> Array and returns it.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p>If <code>this</code> has at least one element, <code>this.length</code> will decrease by 1.</p>
 <p>If <code>this</code> is the empty Array <code>[]</code>, null is returned and the length 
 remains 0.</p></div>
-<a name="push"></a><h3><code><span class="k">function</span> <span class="i">push</span>(<span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Int.html">Int</a></code></h3>
+<a name="push"></a><h3><code><span class="keyword">function</span> <span class="identifier">push</span>(<span class="identifier">x</span>:<span class="type">T</span>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Adds the element <code>x</code> at the end of <code>this</code> Array and returns the offset
 it was added at.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p><code>this.length</code> increases by 1.</p></div>
-<a name="reverse"></a><h3><code><span class="k">function</span> <span class="i">reverse</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="reverse"></a><h3><code><span class="keyword">function</span> <span class="identifier">reverse</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Reverse the order of elements of <code>this</code> Array.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p>If <code>this.length &lt; 2</code>, <code>this</code> remains unchanged.</p></div>
-<a name="shift"></a><h3><code><span class="k">function</span> <span class="i">shift</span>():<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="shift"></a><h3><code><span class="keyword">function</span> <span class="identifier">shift</span>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Removes the first element of <code>this</code> Array and returns it.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p>If <code>this</code> has at least one element, <code>this</code>.length and the index of each
 remaining element is decreased by 1.</p>
 <p>If <code>this</code> is the empty Array <code>[]</code>, <code>null</code> is returned and the length 
 remains 0.</p></div>
-<a name="slice"></a><h3><code><span class="k">function</span> <span class="i">slice</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, ?<span class="i">end</span>:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt;):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="slice"></a><h3><code><span class="keyword">function</span> <span class="identifier">slice</span>(<span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">end</span>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Creates a shallow copy of the range of <code>this</code> Array, starting at and
 including <code>pos</code>, up to but not including <code>end</code>.</p>
 <p>This operation does not modify <code>this</code> Array.</p>
@@ -142,7 +177,7 @@ end	of <code>this</code> Array by <code>this.length + pos</code> and <code>this.
 respectively. If this yields a negative value, 0 is used instead.</p>
 <p>If <code>pos</code> exceeds <code>this.length</code> or if <code>end</code> exceeds or equals <code>pos</code>,
 the result is <code>[]</code>.</p></div>
-<a name="sort"></a><h3><code><span class="k">function</span> <span class="i">sort</span>(<span class="i">f</span>:<a href="/dox/Array/T.html">T</a> -> <a href="/dox/Array/T.html">T</a> -> <a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="sort"></a><h3><code><span class="keyword">function</span> <span class="identifier">sort</span>(<span class="identifier">f</span>:<span class="type">T</span> -> <span class="type">T</span> -> <a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Sorts <code>this</code> Array according to the comparison function <code>f</code>, where
 <code>f(x,y)</code> returns 0 if x == y, a positive Int if x > y and a
 negative Int if x &lt; y.</p>
@@ -151,7 +186,7 @@ negative Int if x &lt; y.</p>
 order of equal elements may not be retained. For a stable Array sorting
 algorithm, <code>haxe.ds.sort.MergeSort.sort()</code> can be used instead.</p>
 <p>If <code>f</code> is null, the result is unspecified.</p></div>
-<a name="splice"></a><h3><code><span class="k">function</span> <span class="i">splice</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="splice"></a><h3><code><span class="keyword">function</span> <span class="identifier">splice</span>(<span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">len</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Removes <code>len</code> elements from <code>this</code> Array, starting at and including
 <code>pos</code>, an returns them.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
@@ -167,24 +202,27 @@ end of <code>this</code> Array.</p>
 Array subtracted from the original length of <code>this</code> Array. In other
 words, each element of the original <code>this</code> Array either remains in
 <code>this</code> Array or becomes an element of the returned Array.</p></div>
-<a name="toString"></a><h3><code><span class="k">function</span> <span class="i">toString</span>():<a href="/dox/String.html">String</a></code></h3>
+<a name="toString"></a><h3><code><span class="keyword">function</span> <span class="identifier">toString</span>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns a string representation of <code>this</code> Array.</p>
 <p>The result will include the individual elements' String representations
 separated by comma. The enclosing [ ] may be missing on some platforms,
 use Std.string() to get a String representation that is consistent
 across platforms.</p></div>
-<a name="unshift"></a><h3><code><span class="k">function</span> <span class="i">unshift</span>(<span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="unshift"></a><h3><code><span class="keyword">function</span> <span class="identifier">unshift</span>(<span class="identifier">x</span>:<span class="type">T</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Adds the element <code>x</code> at the start of <code>this</code> Array.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p><code>this.length</code> and the index of each Array element increases by 1.</p></div>
-<a name="insert"></a><h3><code><span class="k">function</span> <span class="i">insert</span>(<span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="insert"></a><h3><code><span class="keyword">function</span> <span class="identifier">insert</span>(<span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">x</span>:<span class="type">T</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Inserts the element <code>x</code> at the position <code>pos</code>.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
-<p>The offset is calculated like so:</p><ul><li>If <code>pos</code> exceeds <code>this.length</code>, the offset is <code>this.length</code>.</li><li>If <code>pos</code> is negative, the offset is calculated from the end of <code>this</code> Array, i.e. <code>this.length + pos</code>. If this yields a negative value, the offset is 0.</li><li>Otherwise, the offset is <code>pos</code>.</li></ul>
+<p>The offset is calculated like so:</p><ul><li>If <code>pos</code> exceeds <code>this.length</code>, the offset is <code>this.length</code>.</li><li>
+<p>If <code>pos</code> is negative, the offset is calculated from the end of <code>this</code> 
+  Array, i.e. <code>this.length + pos</code>. If this yields a negative value, the 
+  offset is 0.</p></li><li>Otherwise, the offset is <code>pos</code>.</li></ul>
 <p>If the resulting offset does not exceed <code>this.length</code>, all elements from
 and including that offset to the end of <code>this</code> Array are moved one index
 ahead.</p></div>
-<a name="remove"></a><h3><code><span class="k">function</span> <span class="i">remove</span>(<span class="i">x</span>:<a href="/dox/Array/T.html">T</a>):<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="remove"></a><h3><code><span class="keyword">function</span> <span class="identifier">remove</span>(<span class="identifier">x</span>:<span class="type">T</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Removes the first occurence of <code>x</code> in <code>this</code> Array.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p>If <code>x</code> is found by checking standard equality, it is removed from <code>this</code>
@@ -192,16 +230,16 @@ Array and all following elements are reindexed acoordingly. The function
 then returns true.</p>
 <p>If <code>x</code> is not found, <code>this</code> Array is not changed and the function
 returns false.</p></div>
-<a name="copy"></a><h3><code><span class="k">function</span> <span class="i">copy</span>():<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="copy"></a><h3><code><span class="keyword">function</span> <span class="identifier">copy</span>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns a shallow copy of <code>this</code> Array.</p>
 <p>The elements are not copied and retain their identity, so
-<code>a<code>i</code> == a.copy()<code>i</code></code> is true for any valid <code>i</code>. However, 
+<code>a[i] == a.copy()[i]</code> is true for any valid <code>i</code>. However, 
 <code>a == a.copy()</code> is always false.</p></div>
-<a name="iterator"></a><h3><code><span class="k">function</span> <span class="i">iterator</span>():<a href="/dox/Iterator.html">Iterator</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="iterator"></a><h3><code><span class="keyword">function</span> <span class="identifier">iterator</span>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p>Returns an iterator of the Array values.</p></div>
-<a name="map"></a><h3><code><span class="k">function</span> <span class="i">map</span>(<span class="i">f</span>:<a href="/dox/Array/T.html">T</a> -> <a href="/dox/map/S.html">S</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/map/S.html">S</a>&gt;</code></h3>
+<a name="map"></a><h3><code><span class="keyword">function</span> <span class="identifier">map</span>(<span class="identifier">f</span>:<span class="type">T</span> -> <span class="type">S</span>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">S</span>&gt;;</code></h3>
 <div class="doc"><p></p></div>
-<a name="filter"></a><h3><code><span class="k">function</span> <span class="i">filter</span>(<span class="i">f</span>:<a href="/dox/Array/T.html">T</a> -> <a href="/dox/Bool.html">Bool</a>):<a href="/dox/Array.html">Array</a>&lt;<a href="/dox/Array/T.html">T</a>&gt;</code></h3>
+<a name="filter"></a><h3><code><span class="keyword">function</span> <span class="identifier">filter</span>(<span class="identifier">f</span>:<span class="type">T</span> -> <a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
 <div class="doc"><p></p></div>
 </div>
 			</div>

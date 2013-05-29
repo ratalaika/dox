@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,50 +118,51 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/haxe/io/Output.html">Output</a></h1>
-<p>available in cpp, flash, neko, php, js</p><p>import haxe.io.Output</p><table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Direct Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/dox/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/dox/haxe/io/BytesOutput.html">BytesOutput</a>, <a href="/dox/sys/io/FileOutput.html">FileOutput</a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/dox/haxe/io/BytesOutput.html">BytesOutput</a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/sys/io/FileOutput.html">FileOutput</a></td><td><p>Use <code><a href="/dox/sys/io/File.html#write">sys.io.File.write</a></code> to create a <code>FileOutput</code></p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><p>An Output is an abstract write. A specific output implementation will only
-have to override the <code>writeChar</code> and maybe the <code>write</code>, <code>flush</code> and <code>close</code>
-methods. See <code>File.write</code> and <code><a href="/dox/String.html#write">String.write</a></code> for two ways of creating an
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a></h1>
+<p>Available in cpp, flash, neko, php, js, cs, java</p>
+<table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Direct Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/dox/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/dox/haxe/io/BytesOutput.html"><span class="type">BytesOutput</span></a>, <a href="/dox/sys/io/FileOutput.html"><span class="type">FileOutput</span></a>, <a href="/dox/cs/io/NativeOutput.html"><span class="type">NativeOutput</span></a>, <a href="/dox/java/io/NativeOutput.html"><span class="type">NativeOutput</span></a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/dox/haxe/io/BytesOutput.html"><span class="type">BytesOutput</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/sys/io/FileOutput.html"><span class="type">FileOutput</span></a></td><td><p>Use [sys.io.File.write] to create a [FileOutput]</p></td></tr><tr><td width="200"><a href="/dox/cs/io/NativeOutput.html"><span class="type">NativeOutput</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/java/io/NativeOutput.html"><span class="type">NativeOutput</span></a></td><td><p></p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><p>An Output is an abstract write. A specific output implementation will only
+have to override the [writeChar] and maybe the [write], [flush] and [close]
+methods. See [File.write] and [String.write] for two ways of creating an
 Output.</p></div>
 <h2>Instance Fields</h2>
-<a name="bigEndian"></a><h3><code><span class="k">var</span> <span class="i">bigEndian</span>:<a href="/dox/Bool.html">Bool</a></code></h3>
+<a name="bigEndian"></a><h3><code><span class="keyword">var</span> <span class="identifier">bigEndian</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeByte"></a><h3><code><span class="k">function</span> <span class="i">writeByte</span>(<span class="i">c</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeByte"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeByte</span>(<span class="identifier">c</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeBytes"></a><h3><code><span class="k">function</span> <span class="i">writeBytes</span>(<span class="i">s</span>:<a href="/dox/haxe/io/Bytes.html">Bytes</a>, <span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Int.html">Int</a></code></h3>
+<a name="writeBytes"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeBytes</span>(<span class="identifier">s</span>:<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>, <span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">len</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="flush"></a><h3><code><span class="k">function</span> <span class="i">flush</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="flush"></a><h3><code><span class="keyword">function</span> <span class="identifier">flush</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="close"></a><h3><code><span class="k">function</span> <span class="i">close</span>():<a href="/dox/Void.html">Void</a></code></h3>
+<a name="close"></a><h3><code><span class="keyword">function</span> <span class="identifier">close</span>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="write"></a><h3><code><span class="k">function</span> <span class="i">write</span>(<span class="i">s</span>:<a href="/dox/haxe/io/Bytes.html">Bytes</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="write"></a><h3><code><span class="keyword">function</span> <span class="identifier">write</span>(<span class="identifier">s</span>:<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeFullBytes"></a><h3><code><span class="k">function</span> <span class="i">writeFullBytes</span>(<span class="i">s</span>:<a href="/dox/haxe/io/Bytes.html">Bytes</a>, <span class="i">pos</span>:<a href="/dox/Int.html">Int</a>, <span class="i">len</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeFullBytes"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeFullBytes</span>(<span class="identifier">s</span>:<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>, <span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">len</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeFloat"></a><h3><code><span class="k">function</span> <span class="i">writeFloat</span>(<span class="i">x</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeFloat"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeFloat</span>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeDouble"></a><h3><code><span class="k">function</span> <span class="i">writeDouble</span>(<span class="i">x</span>:<a href="/dox/Float.html">Float</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeDouble"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeDouble</span>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeInt8"></a><h3><code><span class="k">function</span> <span class="i">writeInt8</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeInt8"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeInt8</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeInt16"></a><h3><code><span class="k">function</span> <span class="i">writeInt16</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeInt16"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeInt16</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeUInt16"></a><h3><code><span class="k">function</span> <span class="i">writeUInt16</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeUInt16"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeUInt16</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeInt24"></a><h3><code><span class="k">function</span> <span class="i">writeInt24</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeInt24"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeInt24</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeUInt24"></a><h3><code><span class="k">function</span> <span class="i">writeUInt24</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeUInt24"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeUInt24</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeInt32"></a><h3><code><span class="k">function</span> <span class="i">writeInt32</span>(<span class="i">x</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeInt32"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeInt32</span>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="prepare"></a><h3><code><span class="k">function</span> <span class="i">prepare</span>(<span class="i">nbytes</span>:<a href="/dox/Int.html">Int</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="prepare"></a><h3><code><span class="keyword">function</span> <span class="identifier">prepare</span>(<span class="identifier">nbytes</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Inform that we are about to write at least a specified number of bytes.
 The underlying implementation can allocate proper working space depending
 on this information, or simply ignore it. This is not a mandatory call
 but a tip and is only used in some specific cases.</p></div>
-<a name="writeInput"></a><h3><code><span class="k">function</span> <span class="i">writeInput</span>(<span class="i">i</span>:<a href="/dox/haxe/io/Input.html">Input</a>, ?<span class="i">bufsize</span>:<a href="/dox/Null.html">Null</a>&lt;<a href="/dox/Int.html">Int</a>&gt;):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeInput"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeInput</span>(<span class="identifier">i</span>:<a href="/dox/haxe/io/Input.html"><span class="type">Input</span></a>, ?<span class="identifier">bufsize</span>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<a name="writeString"></a><h3><code><span class="k">function</span> <span class="i">writeString</span>(<span class="i">s</span>:<a href="/dox/String.html">String</a>):<a href="/dox/Void.html">Void</a></code></h3>
+<a name="writeString"></a><h3><code><span class="keyword">function</span> <span class="identifier">writeString</span>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
 </div>
 			</div>

@@ -24,6 +24,16 @@
 <li><a href="/dox/cpp/rtti/index.html">cpp.rtti</a></li>
 <li><a href="/dox/cpp/vm/index.html">cpp.vm</a></li>
 <li><a href="/dox/cpp/zip/index.html">cpp.zip</a></li>
+<li><a href="/dox/cs/index.html">cs</a></li>
+<li><a href="/dox/cs/internal/index.html">cs.internal</a></li>
+<li><a href="/dox/cs/io/index.html">cs.io</a></li>
+<li><a href="/dox/cs/system/index.html">cs.system</a></li>
+<li><a href="/dox/cs/system/collections/index.html">cs.system.collections</a></li>
+<li><a href="/dox/cs/system/io/index.html">cs.system.io</a></li>
+<li><a href="/dox/cs/system/reflection/index.html">cs.system.reflection</a></li>
+<li><a href="/dox/cs/system/text/index.html">cs.system.text</a></li>
+<li><a href="/dox/cs/system/text/regularExpressions/index.html">cs.system.text.regularExpressions</a></li>
+<li><a href="/dox/cs/system/threading/index.html">cs.system.threading</a></li>
 <li><a href="/dox/flash/index.html">flash</a></li>
 <li><a href="/dox/flash/accessibility/index.html">flash.accessibility</a></li>
 <li><a href="/dox/flash/automation/index.html">flash.automation</a></li>
@@ -63,6 +73,30 @@
 <li><a href="/dox/haxe/unit/index.html">haxe.unit</a></li>
 <li><a href="/dox/haxe/xml/index.html">haxe.xml</a></li>
 <li><a href="/dox/haxe/zip/index.html">haxe.zip</a></li>
+<li><a href="/dox/java/index.html">java</a></li>
+<li><a href="/dox/java/internal/index.html">java.internal</a></li>
+<li><a href="/dox/java/io/index.html">java.io</a></li>
+<li><a href="/dox/java/lang/index.html">java.lang</a></li>
+<li><a href="/dox/java/lang/annotation/index.html">java.lang.annotation</a></li>
+<li><a href="/dox/java/lang/ref/index.html">java.lang.ref</a></li>
+<li><a href="/dox/java/lang/reflect/index.html">java.lang.reflect</a></li>
+<li><a href="/dox/java/net/index.html">java.net</a></li>
+<li><a href="/dox/java/nio/index.html">java.nio</a></li>
+<li><a href="/dox/java/nio/channels/index.html">java.nio.channels</a></li>
+<li><a href="/dox/java/nio/channels/spi/index.html">java.nio.channels.spi</a></li>
+<li><a href="/dox/java/nio/file/index.html">java.nio.file</a></li>
+<li><a href="/dox/java/nio/file/attribute/index.html">java.nio.file.attribute</a></li>
+<li><a href="/dox/java/nio/file/spi/index.html">java.nio.file.spi</a></li>
+<li><a href="/dox/java/security/index.html">java.security</a></li>
+<li><a href="/dox/java/security/cert/index.html">java.security.cert</a></li>
+<li><a href="/dox/java/sun/util/index.html">java.sun.util</a></li>
+<li><a href="/dox/java/sun/util/locale/index.html">java.sun.util.locale</a></li>
+<li><a href="/dox/java/sun/util/resources/index.html">java.sun.util.resources</a></li>
+<li><a href="/dox/java/types/index.html">java.types</a></li>
+<li><a href="/dox/java/util/index.html">java.util</a></li>
+<li><a href="/dox/java/util/concurrent/index.html">java.util.concurrent</a></li>
+<li><a href="/dox/java/util/regex/index.html">java.util.regex</a></li>
+<li><a href="/dox/java/util/spi/index.html">java.util.spi</a></li>
 <li><a href="/dox/js/index.html">js</a></li>
 <li><a href="/dox/js/html/index.html">js.html</a></li>
 <li><a href="/dox/js/html/audio/index.html">js.html.audio</a></li>
@@ -84,25 +118,26 @@
 <li><a href="/dox/sys/io/index.html">sys.io</a></li>
 <li><a href="/dox/sys/net/index.html">sys.net</a></li>
 </div>
-				<div class="content"><h1><span class="d">class</span> <a href="/dox/js/html/MeterElement.html">MeterElement</a></h1>
-<p>available in js</p><p>import js.html.MeterElement</p><div>extends <a href="/dox/js/html/Element.html">Element</a></div>
+				<div class="content"><h1><span class="directive">class</span> <a href="/dox/js/html/MeterElement.html"><span class="type">MeterElement</span></a></h1>
+<p>Available in js</p>
+<div>extends <a href="/dox/js/html/Element.html"><span class="type">Element</span></a></div>
 <div class="doc"><p>The HTML <em>meter</em> element (<code>&lt;meter&gt;</code>) represents either a scalar value within a known range or a fractional value.</p>
 <div class="note"><strong>Usage note: </strong>Unless the <strong>value</strong> attribute is between 0 and 1 (inclusive), the <strong>min</strong> attribute and <strong>max</strong> attribute should define the range so that the <strong>value</strong> attribute's value is within it.</div><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/HTML/Element/meter">MDN</a>.</div>
 <h2>Instance Fields</h2>
-<a name="high"></a><h3><code><span class="k">var</span> <span class="i">high</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="high"></a><h3><code><span class="keyword">var</span> <span class="identifier">high</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>The lower numeric bound of the high end of the measured range. This must be less than the maximum value (<strong>max</strong> attribute), and it also must be greater than the low value and minimum value (<strong>low</strong> attribute and <strong>min</strong> attribute, respectively), if any are specified. If unspecified, or if greater than the maximum value, the <strong>high</strong> value is equal to the maximum value. Setter throws DOMException.</p></div>
-<a name="labels"></a><h3><code><span class="k">var</span> <span class="i">labels</span>:<a href="/dox/js/html/NodeList.html">NodeList</a></code></h3>
+<a name="labels"></a><h3><code><span class="keyword">var</span> <span class="identifier">labels</span>:<a href="/dox/js/html/NodeList.html"><span class="type">NodeList</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<a name="low"></a><h3><code><span class="k">var</span> <span class="i">low</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="low"></a><h3><code><span class="keyword">var</span> <span class="identifier">low</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>The upper numeric bound of the low end of the measured range. This must be greater than the minimum value (<strong>min</strong> attribute), and it also must be less than the high value and maximum value (<strong>high</strong> attribute and <strong>max</strong> attribute, respectively), if any are specified. If unspecified, or if less than the minimum value, the <strong>low</strong> value is equal to the minimum value. Setter throws DOMException.</p></div>
-<a name="max"></a><h3><code><span class="k">var</span> <span class="i">max</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="max"></a><h3><code><span class="keyword">var</span> <span class="identifier">max</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>The upper numeric bound of the measured range. This must be greater than the minimum value (<strong>min</strong> attribute), if specified. If unspecified, the maximum value is 1. Setter throws DOMException.</p></div>
-<a name="min"></a><h3><code><span class="k">var</span> <span class="i">min</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="min"></a><h3><code><span class="keyword">var</span> <span class="identifier">min</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>The lower numeric bound of the measured range. This must be less than the maximum value (<strong>max</strong> attribute), if specified. If unspecified, the minimum value is 0. Setter throws DOMException.</p></div>
-<a name="optimum"></a><h3><code><span class="k">var</span> <span class="i">optimum</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="optimum"></a><h3><code><span class="keyword">var</span> <span class="identifier">optimum</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>This attribute indicates the optimal numeric value. It must be within the range (as defined by the <strong>min</strong> attribute and <strong>max</strong> attribute). When used with the <strong>low</strong> attribute and <strong>high</strong> attribute, it gives an indication where along the range is considered preferable. For example, if it is between the <strong>min</strong> attribute and the <strong>low</strong> attribute, then the lower range is considered preferred. Setter throws DOMException.</p></div>
-<a name="value"></a><h3><code><span class="k">var</span> <span class="i">value</span>:<a href="/dox/Float.html">Float</a></code></h3>
+<a name="value"></a><h3><code><span class="keyword">var</span> <span class="identifier">value</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div class="doc"><p>The current numeric value. This must be between the minimum and maximum values (<strong>min</strong> attribute and <strong>max</strong> attribute) if they are specified. If unspecified or malformed, the value is 0. If specified, but not within the range given by the <strong>min</strong> attribute and <strong>max</strong> attribute, the value is equal to the nearest end of the range. Setter throws DOMException.</p></div>
 </div>
 			</div>
