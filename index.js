@@ -58,7 +58,7 @@ $(document).ready(function(){
 		$(".packages .expando").each(function(i, e){
 			if (states[i]) {
 				$(e).addClass("expanded");
-				$("img", e).first().attr("src", "/dox/pages/triangle-opened.png");
+				$("img", e).first().attr("src", "/dox/triangle-opened.png");
 			}
 		});
 	}
