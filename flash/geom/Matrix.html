@@ -14,112 +14,145 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
-<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash8/geom/Matrix.hx</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash/geom/Matrix.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-flash">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(?<span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">b</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">d</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="a" href="#a"><span class="identifier">a</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="a" href="#a"><span class="identifier">a</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="b" href="#b"><span class="identifier">b</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="b" href="#b"><span class="identifier">b</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="c" href="#c"><span class="identifier">c</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="c" href="#c"><span class="identifier">c</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clone"></a><h3><code><span class="keyword">function</span> <a name="clone" href="#clone"><span class="identifier">clone</span></a>():<a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="clone"></a><h3><code><span class="keyword">function</span> <a name="clone" href="#clone"><span class="identifier">clone</span></a>():<a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="concat"></a><h3><code><span class="keyword">function</span> <a name="concat" href="#concat"><span class="identifier">concat</span></a>(<span class="identifier">m</span>:<a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="concat"></a><h3><code><span class="keyword">function</span> <a name="concat" href="#concat"><span class="identifier">concat</span></a>(<span class="identifier">m</span>:<a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="copyColumnFrom"></a><h3><code><span class="keyword">function</span> <a name="copyColumnFrom" href="#copyColumnFrom"><span class="identifier">copyColumnFrom</span></a>(<span class="identifier">column</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="copyColumnFrom"></a><h3><code><span class="keyword">function</span> <a name="copyColumnFrom" href="#copyColumnFrom"><span class="identifier">copyColumnFrom</span></a>(<span class="identifier">column</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="copyColumnTo"></a><h3><code><span class="keyword">function</span> <a name="copyColumnTo" href="#copyColumnTo"><span class="identifier">copyColumnTo</span></a>(<span class="identifier">column</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="copyColumnTo"></a><h3><code><span class="keyword">function</span> <a name="copyColumnTo" href="#copyColumnTo"><span class="identifier">copyColumnTo</span></a>(<span class="identifier">column</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="copyFrom"></a><h3><code><span class="keyword">function</span> <a name="copyFrom" href="#copyFrom"><span class="identifier">copyFrom</span></a>(<span class="identifier">sourceMatrix</span>:<a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="copyFrom"></a><h3><code><span class="keyword">function</span> <a name="copyFrom" href="#copyFrom"><span class="identifier">copyFrom</span></a>(<span class="identifier">sourceMatrix</span>:<a href="/dox/flash/geom/Matrix.html"><span class="type">Matrix</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="copyRowFrom"></a><h3><code><span class="keyword">function</span> <a name="copyRowFrom" href="#copyRowFrom"><span class="identifier">copyRowFrom</span></a>(<span class="identifier">row</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="copyRowFrom"></a><h3><code><span class="keyword">function</span> <a name="copyRowFrom" href="#copyRowFrom"><span class="identifier">copyRowFrom</span></a>(<span class="identifier">row</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="copyRowTo"></a><h3><code><span class="keyword">function</span> <a name="copyRowTo" href="#copyRowTo"><span class="identifier">copyRowTo</span></a>(<span class="identifier">row</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="copyRowTo"></a><h3><code><span class="keyword">function</span> <a name="copyRowTo" href="#copyRowTo"><span class="identifier">copyRowTo</span></a>(<span class="identifier">row</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, <span class="identifier">vector3D</span>:<a href="/dox/flash/geom/Vector3D.html"><span class="type">Vector3D</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createBox"></a><h3><code><span class="keyword">function</span> <a name="createBox" href="#createBox"><span class="identifier">createBox</span></a>(<span class="identifier">scalex</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">scaley</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rot</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="createBox"></a><h3><code><span class="keyword">function</span> <a name="createBox" href="#createBox"><span class="identifier">createBox</span></a>(<span class="identifier">scaleX</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">scaleY</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rotation</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createBox"></a><h3><code><span class="keyword">function</span> <a name="createBox" href="#createBox"><span class="identifier">createBox</span></a>(<span class="identifier">scaleX</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">scaleY</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rotation</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="createGradientBox"></a><h3><code><span class="keyword">function</span> <a name="createGradientBox" href="#createGradientBox"><span class="identifier">createGradientBox</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rotation</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createGradientBox"></a><h3><code><span class="keyword">function</span> <a name="createGradientBox" href="#createGradientBox"><span class="identifier">createGradientBox</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rot</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="d" href="#d"><span class="identifier">d</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createGradientBox"></a><h3><code><span class="keyword">function</span> <a name="createGradientBox" href="#createGradientBox"><span class="identifier">createGradientBox</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rotation</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="deltaTransformPoint"></a><h3><code><span class="keyword">function</span> <a name="deltaTransformPoint" href="#deltaTransformPoint"><span class="identifier">deltaTransformPoint</span></a>(<span class="identifier">point</span>:<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>):<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="d" href="#d"><span class="identifier">d</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="identity"></a><h3><code><span class="keyword">function</span> <a name="identity" href="#identity"><span class="identifier">identity</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="deltaTransformPoint"></a><h3><code><span class="keyword">function</span> <a name="deltaTransformPoint" href="#deltaTransformPoint"><span class="identifier">deltaTransformPoint</span></a>(<span class="identifier">p</span>:<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;):<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="invert"></a><h3><code><span class="keyword">function</span> <a name="invert" href="#invert"><span class="identifier">invert</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="deltaTransformPoint"></a><h3><code><span class="keyword">function</span> <a name="deltaTransformPoint" href="#deltaTransformPoint"><span class="identifier">deltaTransformPoint</span></a>(<span class="identifier">point</span>:<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>):<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="rotate"></a><h3><code><span class="keyword">function</span> <a name="rotate" href="#rotate"><span class="identifier">rotate</span></a>(<span class="identifier">angle</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="identity"></a><h3><code><span class="keyword">function</span> <a name="identity" href="#identity"><span class="identifier">identity</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="scale"></a><h3><code><span class="keyword">function</span> <a name="scale" href="#scale"><span class="identifier">scale</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="invert"></a><h3><code><span class="keyword">function</span> <a name="invert" href="#invert"><span class="identifier">invert</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="setTo"></a><h3><code><span class="keyword">function</span> <a name="setTo" href="#setTo"><span class="identifier">setTo</span></a>(<span class="identifier">aa</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ba</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ca</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">da</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">txa</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">tya</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="rotate"></a><h3><code><span class="keyword">function</span> <a name="rotate" href="#rotate"><span class="identifier">rotate</span></a>(<span class="identifier">r</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="rotate"></a><h3><code><span class="keyword">function</span> <a name="rotate" href="#rotate"><span class="identifier">rotate</span></a>(<span class="identifier">angle</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="transformPoint"></a><h3><code><span class="keyword">function</span> <a name="transformPoint" href="#transformPoint"><span class="identifier">transformPoint</span></a>(<span class="identifier">point</span>:<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>):<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="scale"></a><h3><code><span class="keyword">function</span> <a name="scale" href="#scale"><span class="identifier">scale</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="translate"></a><h3><code><span class="keyword">function</span> <a name="translate" href="#translate"><span class="identifier">translate</span></a>(<span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setTo"></a><h3><code><span class="keyword">function</span> <a name="setTo" href="#setTo"><span class="identifier">setTo</span></a>(<span class="identifier">aa</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ba</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ca</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">da</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">txa</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">tya</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="tx" href="#tx"><span class="identifier">tx</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="ty" href="#ty"><span class="identifier">ty</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="transformPoint"></a><h3><code><span class="keyword">function</span> <a name="transformPoint" href="#transformPoint"><span class="identifier">transformPoint</span></a>(<span class="identifier">p</span>:<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;):<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><a name="transformPoint"></a><h3><code><span class="keyword">function</span> <a name="transformPoint" href="#transformPoint"><span class="identifier">transformPoint</span></a>(<span class="identifier">point</span>:<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>):<a href="/dox/flash/geom/Point.html"><span class="type">Point</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><a name="translate"></a><h3><code><span class="keyword">function</span> <a name="translate" href="#translate"><span class="identifier">translate</span></a>(<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><a name="translate"></a><h3><code><span class="keyword">function</span> <a name="translate" href="#translate"><span class="identifier">translate</span></a>(<span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="tx" href="#tx"><span class="identifier">tx</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ty" href="#ty"><span class="identifier">ty</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash8, flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

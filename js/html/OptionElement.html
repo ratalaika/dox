@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -29,41 +55,50 @@
 <p>No methods are defined on this interface.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/HTMLOptionElement">MDN</a>.</div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultSelected" href="#defaultSelected"><span class="identifier">defaultSelected</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultSelected" href="#defaultSelected"><span class="identifier">defaultSelected</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the value of the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/option#attr-selected">selected</a></code>
 HTML attribute. which indicates whether the option is selected by default.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="disabled" href="#disabled"><span class="identifier">disabled</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="disabled" href="#disabled"><span class="identifier">disabled</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the value of the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/option#attr-disabled">disabled</a></code>
 HTML&nbsp;attribute, which indicates that the option is unavailable to be selected. An option can also be disabled if it is a child of an <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/optgroup">&lt;optgroup&gt;</a></code>
 element that is disabled.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="form" href="#form"><span class="identifier">form</span></a>:<a href="/dox/js/html/FormElement.html"><span class="type">FormElement</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="form" href="#form"><span class="identifier">form</span></a>:<a href="/dox/js/html/FormElement.html"><span class="type">FormElement</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>If the option is a descendent of a <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/select">&lt;select&gt;</a></code>
 element, then this property has the same value as the <code>form</code> property of the corresponding {{DomXref("HTMLSelectElement") object; otherwise, it is null.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="index" href="#index"><span class="identifier">index</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="index" href="#index"><span class="identifier">index</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The position of the option within the list of options it belongs to, in tree-order. If the option is not part of a list of options, the value is 0.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="label" href="#label"><span class="identifier">label</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="label" href="#label"><span class="identifier">label</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the value of the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/option#attr-label">label</a></code>
 HTML attribute, which provides a label for the option. If this attribute isn't specifically set, reading it returns the element's text content.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="selected" href="#selected"><span class="identifier">selected</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="selected" href="#selected"><span class="identifier">selected</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates whether the option is selected.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="text" href="#text"><span class="identifier">text</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="text" href="#text"><span class="identifier">text</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Contains the text content of the element. Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="value" href="#value"><span class="identifier">value</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="value" href="#value"><span class="identifier">value</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the value of the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/option#attr-value">value</a></code>
 HTML attribute, if it exists; otherwise reflects value of the <code><a rel="internal" href="https://developer.mozilla.org/Article_not_found?uri=en/DOM/textContent" class="new">textContent</a></code>
 &nbsp;IDL&nbsp;attribute.</div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

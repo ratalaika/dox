@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,155 +52,204 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxelib/hxjava/3,0,0-rc,1/lib/hxjava-std.jar@java/net/URLConnection.class</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-java">
 <a name="getDefaultAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="getDefaultAllowUserInteraction" href="#getDefaultAllowUserInteraction"><span class="identifier">getDefaultAllowUserInteraction</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getDefaultRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="getDefaultRequestProperty" href="#getDefaultRequestProperty"><span class="identifier">getDefaultRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getDefaultRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="getDefaultRequestProperty" href="#getDefaultRequestProperty"><span class="identifier">getDefaultRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getFileNameMap"></a><h3><code><span class="keyword">function</span> <a name="getFileNameMap" href="#getFileNameMap"><span class="identifier">getFileNameMap</span></a>():<a href="/dox/java/net/FileNameMap.html"><span class="type">FileNameMap</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getFileNameMap"></a><h3><code><span class="keyword">function</span> <a name="getFileNameMap" href="#getFileNameMap"><span class="identifier">getFileNameMap</span></a>():<a href="/dox/java/net/FileNameMap.html"><span class="type">FileNameMap</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="guessContentTypeFromName"></a><h3><code><span class="keyword">function</span> <a name="guessContentTypeFromName" href="#guessContentTypeFromName"><span class="identifier">guessContentTypeFromName</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="guessContentTypeFromName"></a><h3><code><span class="keyword">function</span> <a name="guessContentTypeFromName" href="#guessContentTypeFromName"><span class="identifier">guessContentTypeFromName</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="guessContentTypeFromStream"></a><h3><code><span class="keyword">function</span> <a name="guessContentTypeFromStream" href="#guessContentTypeFromStream"><span class="identifier">guessContentTypeFromStream</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="guessContentTypeFromStream"></a><h3><code><span class="keyword">function</span> <a name="guessContentTypeFromStream" href="#guessContentTypeFromStream"><span class="identifier">guessContentTypeFromStream</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setContentHandlerFactory"></a><h3><code><span class="keyword">function</span> <a name="setContentHandlerFactory" href="#setContentHandlerFactory"><span class="identifier">setContentHandlerFactory</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/net/ContentHandlerFactory.html"><span class="type">ContentHandlerFactory</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setContentHandlerFactory"></a><h3><code><span class="keyword">function</span> <a name="setContentHandlerFactory" href="#setContentHandlerFactory"><span class="identifier">setContentHandlerFactory</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/net/ContentHandlerFactory.html"><span class="type">ContentHandlerFactory</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setDefaultAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="setDefaultAllowUserInteraction" href="#setDefaultAllowUserInteraction"><span class="identifier">setDefaultAllowUserInteraction</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setDefaultAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="setDefaultAllowUserInteraction" href="#setDefaultAllowUserInteraction"><span class="identifier">setDefaultAllowUserInteraction</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setDefaultRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="setDefaultRequestProperty" href="#setDefaultRequestProperty"><span class="identifier">setDefaultRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setDefaultRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="setDefaultRequestProperty" href="#setDefaultRequestProperty"><span class="identifier">setDefaultRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setFileNameMap"></a><h3><code><span class="keyword">function</span> <a name="setFileNameMap" href="#setFileNameMap"><span class="identifier">setFileNameMap</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/net/FileNameMap.html"><span class="type">FileNameMap</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setFileNameMap"></a><h3><code><span class="keyword">function</span> <a name="setFileNameMap" href="#setFileNameMap"><span class="identifier">setFileNameMap</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/net/FileNameMap.html"><span class="type">FileNameMap</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-java">
 <a name="addRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="addRequestProperty" href="#addRequestProperty"><span class="identifier">addRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="connect"></a><h3><code><span class="keyword">function</span> <a name="connect" href="#connect"><span class="identifier">connect</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="connect"></a><h3><code><span class="keyword">function</span> <a name="connect" href="#connect"><span class="identifier">connect</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="getAllowUserInteraction" href="#getAllowUserInteraction"><span class="identifier">getAllowUserInteraction</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="getAllowUserInteraction" href="#getAllowUserInteraction"><span class="identifier">getAllowUserInteraction</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getConnectTimeout"></a><h3><code><span class="keyword">function</span> <a name="getConnectTimeout" href="#getConnectTimeout"><span class="identifier">getConnectTimeout</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getConnectTimeout"></a><h3><code><span class="keyword">function</span> <a name="getConnectTimeout" href="#getConnectTimeout"><span class="identifier">getConnectTimeout</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getContent"></a><h3><code><span class="keyword">function</span> <a name="getContent" href="#getContent"><span class="identifier">getContent</span></a>():<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getContent"></a><h3><code><span class="keyword">function</span> <a name="getContent" href="#getContent"><span class="identifier">getContent</span></a>():<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getContentEncoding"></a><h3><code><span class="keyword">function</span> <a name="getContentEncoding" href="#getContentEncoding"><span class="identifier">getContentEncoding</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getContentEncoding"></a><h3><code><span class="keyword">function</span> <a name="getContentEncoding" href="#getContentEncoding"><span class="identifier">getContentEncoding</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getContentLength"></a><h3><code><span class="keyword">function</span> <a name="getContentLength" href="#getContentLength"><span class="identifier">getContentLength</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getContentLength"></a><h3><code><span class="keyword">function</span> <a name="getContentLength" href="#getContentLength"><span class="identifier">getContentLength</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getContentLengthLong"></a><h3><code><span class="keyword">function</span> <a name="getContentLengthLong" href="#getContentLengthLong"><span class="identifier">getContentLengthLong</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getContentLengthLong"></a><h3><code><span class="keyword">function</span> <a name="getContentLengthLong" href="#getContentLengthLong"><span class="identifier">getContentLengthLong</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getContentType"></a><h3><code><span class="keyword">function</span> <a name="getContentType" href="#getContentType"><span class="identifier">getContentType</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getContentType"></a><h3><code><span class="keyword">function</span> <a name="getContentType" href="#getContentType"><span class="identifier">getContentType</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getDate"></a><h3><code><span class="keyword">function</span> <a name="getDate" href="#getDate"><span class="identifier">getDate</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getDate"></a><h3><code><span class="keyword">function</span> <a name="getDate" href="#getDate"><span class="identifier">getDate</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getDefaultUseCaches"></a><h3><code><span class="keyword">function</span> <a name="getDefaultUseCaches" href="#getDefaultUseCaches"><span class="identifier">getDefaultUseCaches</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getDefaultUseCaches"></a><h3><code><span class="keyword">function</span> <a name="getDefaultUseCaches" href="#getDefaultUseCaches"><span class="identifier">getDefaultUseCaches</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getDoInput"></a><h3><code><span class="keyword">function</span> <a name="getDoInput" href="#getDoInput"><span class="identifier">getDoInput</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getDoInput"></a><h3><code><span class="keyword">function</span> <a name="getDoInput" href="#getDoInput"><span class="identifier">getDoInput</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getDoOutput"></a><h3><code><span class="keyword">function</span> <a name="getDoOutput" href="#getDoOutput"><span class="identifier">getDoOutput</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getDoOutput"></a><h3><code><span class="keyword">function</span> <a name="getDoOutput" href="#getDoOutput"><span class="identifier">getDoOutput</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getExpiration"></a><h3><code><span class="keyword">function</span> <a name="getExpiration" href="#getExpiration"><span class="identifier">getExpiration</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getExpiration"></a><h3><code><span class="keyword">function</span> <a name="getExpiration" href="#getExpiration"><span class="identifier">getExpiration</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getHeaderField"></a><h3><code><span class="keyword">function</span> <a name="getHeaderField" href="#getHeaderField"><span class="identifier">getHeaderField</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getHeaderField"></a><h3><code><span class="keyword">function</span> <a name="getHeaderField" href="#getHeaderField"><span class="identifier">getHeaderField</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getHeaderFieldDate"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldDate" href="#getHeaderFieldDate"><span class="identifier">getHeaderFieldDate</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>):<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getHeaderFieldDate"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldDate" href="#getHeaderFieldDate"><span class="identifier">getHeaderFieldDate</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>):<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getHeaderFieldInt"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldInt" href="#getHeaderFieldInt"><span class="identifier">getHeaderFieldInt</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getHeaderFieldInt"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldInt" href="#getHeaderFieldInt"><span class="identifier">getHeaderFieldInt</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getHeaderFieldKey"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldKey" href="#getHeaderFieldKey"><span class="identifier">getHeaderFieldKey</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getHeaderFieldKey"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldKey" href="#getHeaderFieldKey"><span class="identifier">getHeaderFieldKey</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getHeaderFieldLong"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldLong" href="#getHeaderFieldLong"><span class="identifier">getHeaderFieldLong</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>):<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getHeaderFieldLong"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFieldLong" href="#getHeaderFieldLong"><span class="identifier">getHeaderFieldLong</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>):<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getHeaderFields"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFields" href="#getHeaderFields"><span class="identifier">getHeaderFields</span></a>():<a href="/dox/java/util/Map.html"><span class="type">Map</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>, <a href="/dox/java/util/List.html"><span class="type">List</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;&gt;;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getHeaderFields"></a><h3><code><span class="keyword">function</span> <a name="getHeaderFields" href="#getHeaderFields"><span class="identifier">getHeaderFields</span></a>():<a href="/dox/java/util/Map.html"><span class="type">Map</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>, <a href="/dox/java/util/List.html"><span class="type">List</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getIfModifiedSince"></a><h3><code><span class="keyword">function</span> <a name="getIfModifiedSince" href="#getIfModifiedSince"><span class="identifier">getIfModifiedSince</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getIfModifiedSince"></a><h3><code><span class="keyword">function</span> <a name="getIfModifiedSince" href="#getIfModifiedSince"><span class="identifier">getIfModifiedSince</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getInputStream"></a><h3><code><span class="keyword">function</span> <a name="getInputStream" href="#getInputStream"><span class="identifier">getInputStream</span></a>():<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getInputStream"></a><h3><code><span class="keyword">function</span> <a name="getInputStream" href="#getInputStream"><span class="identifier">getInputStream</span></a>():<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getLastModified"></a><h3><code><span class="keyword">function</span> <a name="getLastModified" href="#getLastModified"><span class="identifier">getLastModified</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getLastModified"></a><h3><code><span class="keyword">function</span> <a name="getLastModified" href="#getLastModified"><span class="identifier">getLastModified</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getOutputStream"></a><h3><code><span class="keyword">function</span> <a name="getOutputStream" href="#getOutputStream"><span class="identifier">getOutputStream</span></a>():<a href="/dox/java/io/OutputStream.html"><span class="type">OutputStream</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getOutputStream"></a><h3><code><span class="keyword">function</span> <a name="getOutputStream" href="#getOutputStream"><span class="identifier">getOutputStream</span></a>():<a href="/dox/java/io/OutputStream.html"><span class="type">OutputStream</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getPermission"></a><h3><code><span class="keyword">function</span> <a name="getPermission" href="#getPermission"><span class="identifier">getPermission</span></a>():<a href="/dox/java/security/Permission.html"><span class="type">Permission</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getPermission"></a><h3><code><span class="keyword">function</span> <a name="getPermission" href="#getPermission"><span class="identifier">getPermission</span></a>():<a href="/dox/java/security/Permission.html"><span class="type">Permission</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getReadTimeout"></a><h3><code><span class="keyword">function</span> <a name="getReadTimeout" href="#getReadTimeout"><span class="identifier">getReadTimeout</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getReadTimeout"></a><h3><code><span class="keyword">function</span> <a name="getReadTimeout" href="#getReadTimeout"><span class="identifier">getReadTimeout</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getRequestProperties"></a><h3><code><span class="keyword">function</span> <a name="getRequestProperties" href="#getRequestProperties"><span class="identifier">getRequestProperties</span></a>():<a href="/dox/java/util/Map.html"><span class="type">Map</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>, <a href="/dox/java/util/List.html"><span class="type">List</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;&gt;;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getRequestProperties"></a><h3><code><span class="keyword">function</span> <a name="getRequestProperties" href="#getRequestProperties"><span class="identifier">getRequestProperties</span></a>():<a href="/dox/java/util/Map.html"><span class="type">Map</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>, <a href="/dox/java/util/List.html"><span class="type">List</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="getRequestProperty" href="#getRequestProperty"><span class="identifier">getRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="getRequestProperty" href="#getRequestProperty"><span class="identifier">getRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getURL"></a><h3><code><span class="keyword">function</span> <a name="getURL" href="#getURL"><span class="identifier">getURL</span></a>():<a href="/dox/java/net/URL.html"><span class="type">URL</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getURL"></a><h3><code><span class="keyword">function</span> <a name="getURL" href="#getURL"><span class="identifier">getURL</span></a>():<a href="/dox/java/net/URL.html"><span class="type">URL</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getUseCaches"></a><h3><code><span class="keyword">function</span> <a name="getUseCaches" href="#getUseCaches"><span class="identifier">getUseCaches</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getUseCaches"></a><h3><code><span class="keyword">function</span> <a name="getUseCaches" href="#getUseCaches"><span class="identifier">getUseCaches</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="setAllowUserInteraction" href="#setAllowUserInteraction"><span class="identifier">setAllowUserInteraction</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setAllowUserInteraction"></a><h3><code><span class="keyword">function</span> <a name="setAllowUserInteraction" href="#setAllowUserInteraction"><span class="identifier">setAllowUserInteraction</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setConnectTimeout"></a><h3><code><span class="keyword">function</span> <a name="setConnectTimeout" href="#setConnectTimeout"><span class="identifier">setConnectTimeout</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setConnectTimeout"></a><h3><code><span class="keyword">function</span> <a name="setConnectTimeout" href="#setConnectTimeout"><span class="identifier">setConnectTimeout</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setDefaultUseCaches"></a><h3><code><span class="keyword">function</span> <a name="setDefaultUseCaches" href="#setDefaultUseCaches"><span class="identifier">setDefaultUseCaches</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setDefaultUseCaches"></a><h3><code><span class="keyword">function</span> <a name="setDefaultUseCaches" href="#setDefaultUseCaches"><span class="identifier">setDefaultUseCaches</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setDoInput"></a><h3><code><span class="keyword">function</span> <a name="setDoInput" href="#setDoInput"><span class="identifier">setDoInput</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setDoInput"></a><h3><code><span class="keyword">function</span> <a name="setDoInput" href="#setDoInput"><span class="identifier">setDoInput</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setDoOutput"></a><h3><code><span class="keyword">function</span> <a name="setDoOutput" href="#setDoOutput"><span class="identifier">setDoOutput</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setDoOutput"></a><h3><code><span class="keyword">function</span> <a name="setDoOutput" href="#setDoOutput"><span class="identifier">setDoOutput</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setIfModifiedSince"></a><h3><code><span class="keyword">function</span> <a name="setIfModifiedSince" href="#setIfModifiedSince"><span class="identifier">setIfModifiedSince</span></a>(<span class="identifier">param1</span>:<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setIfModifiedSince"></a><h3><code><span class="keyword">function</span> <a name="setIfModifiedSince" href="#setIfModifiedSince"><span class="identifier">setIfModifiedSince</span></a>(<span class="identifier">param1</span>:<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setReadTimeout"></a><h3><code><span class="keyword">function</span> <a name="setReadTimeout" href="#setReadTimeout"><span class="identifier">setReadTimeout</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setReadTimeout"></a><h3><code><span class="keyword">function</span> <a name="setReadTimeout" href="#setReadTimeout"><span class="identifier">setReadTimeout</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="setRequestProperty" href="#setRequestProperty"><span class="identifier">setRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setRequestProperty"></a><h3><code><span class="keyword">function</span> <a name="setRequestProperty" href="#setRequestProperty"><span class="identifier">setRequestProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setUseCaches"></a><h3><code><span class="keyword">function</span> <a name="setUseCaches" href="#setUseCaches"><span class="identifier">setUseCaches</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setUseCaches"></a><h3><code><span class="keyword">function</span> <a name="setUseCaches" href="#setUseCaches"><span class="identifier">setUseCaches</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

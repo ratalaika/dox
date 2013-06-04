@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,11 +53,13 @@
 <div class="doc"><p>API for reading and writing to files.</p>
 <p>See <code><a href="/dox/sys/FileSystem.html">sys.FileSystem</a></code> for the complementary file system API.</p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-cpp platform-neko platform-php">
 <a name="append"></a><h3><code><span class="keyword">function</span> <a name="append" href="#append"><span class="identifier">append</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">binary</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/sys/io/FileOutput.html"><span class="type">FileOutput</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Similar to <code><a href="/dox/sys/io/File.html#write">sys.io.File.write</a></code>, but appends to the file if it exists
 instead of overwriting its contents.</p></div>
-<hr/><a name="copy"></a><h3><code><span class="keyword">function</span> <a name="copy" href="#copy"><span class="identifier">copy</span></a>(<span class="identifier">srcPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">dstPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="copy"></a><h3><code><span class="keyword">function</span> <a name="copy" href="#copy"><span class="identifier">copy</span></a>(<span class="identifier">srcPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">dstPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Copies the contents of the file specified by <code>srcPath</code> to the file
 specified by <code>dstPath</code>.</p>
@@ -39,19 +67,22 @@ specified by <code>dstPath</code>.</p>
 file cannot be written to, an exception is thrown.</p>
 <p>If the file at <code>dstPath</code> exists, its contents are overwritten.</p>
 <p>If <code>srcPath</code> or <code>dstPath</code> are null, the result is unspecified.</p></div>
-<hr/><a name="getBytes"></a><h3><code><span class="keyword">function</span> <a name="getBytes" href="#getBytes"><span class="identifier">getBytes</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="getBytes"></a><h3><code><span class="keyword">function</span> <a name="getBytes" href="#getBytes"><span class="identifier">getBytes</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Retrieves the binary content of the file specified by <code>path</code>.</p>
 <p>If the file does not exist or can not be read, an exception is thrown.</p>
 <p><code><a href="/dox/sys/FileSystem.html#exists">sys.FileSystem.exists</a></code> can be used to check for existence.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="getContent"></a><h3><code><span class="keyword">function</span> <a name="getContent" href="#getContent"><span class="identifier">getContent</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="getContent"></a><h3><code><span class="keyword">function</span> <a name="getContent" href="#getContent"><span class="identifier">getContent</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Retrieves the content of the file specified by <code>path</code> as a String.</p>
 <p>If the file does not exist or can not be read, an exception is thrown.</p>
 <p><code><a href="/dox/sys/FileSystem.html#exists">sys.FileSystem.exists</a></code> can be used to check for existence.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="read"></a><h3><code><span class="keyword">function</span> <a name="read" href="#read"><span class="identifier">read</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">binary</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/sys/io/FileInput.html"><span class="type">FileInput</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="read"></a><h3><code><span class="keyword">function</span> <a name="read" href="#read"><span class="identifier">read</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">binary</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/sys/io/FileInput.html"><span class="type">FileInput</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Returns an <code><a href="/dox/FileInput.html">FileInput</a></code> handle to the file specified by <code>path</code>.</p>
 <p>If <code>binary</code> is true, the file is opened in binary mode. Otherwise it is
@@ -61,17 +92,20 @@ opened in non-binary mode.</p>
 <p>File handles should be closed via <code><a href="/dox/FileInput.html#close">FileInput.close</a></code> once the operation
 is complete.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="saveBytes"></a><h3><code><span class="keyword">function</span> <a name="saveBytes" href="#saveBytes"><span class="identifier">saveBytes</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">bytes</span>:<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="saveBytes"></a><h3><code><span class="keyword">function</span> <a name="saveBytes" href="#saveBytes"><span class="identifier">saveBytes</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">bytes</span>:<a href="/dox/haxe/io/Bytes.html"><span class="type">Bytes</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Stores <code>bytes</code> in the file specified by <code>path</code> in binary mode.</p>
 <p>If the file cannot be written to, an exception is thrown.</p>
 <p>If <code>path</code> or <code>bytes</code> are null, the result is unspecified.</p></div>
-<hr/><a name="saveContent"></a><h3><code><span class="keyword">function</span> <a name="saveContent" href="#saveContent"><span class="identifier">saveContent</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">content</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="saveContent"></a><h3><code><span class="keyword">function</span> <a name="saveContent" href="#saveContent"><span class="identifier">saveContent</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">content</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Stores <code>content</code> in the file specified by <code>path</code>.</p>
 <p>If the file cannot be written to, an exception is thrown.</p>
 <p>If <code>path</code> or <code>content</code> are null, the result is unspecified.</p></div>
-<hr/><a name="write"></a><h3><code><span class="keyword">function</span> <a name="write" href="#write"><span class="identifier">write</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">binary</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/sys/io/FileOutput.html"><span class="type">FileOutput</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="write"></a><h3><code><span class="keyword">function</span> <a name="write" href="#write"><span class="identifier">write</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">binary</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/sys/io/FileOutput.html"><span class="type">FileOutput</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Returns an <code><a href="/dox/FileOutput.html">FileOutput</a></code> handle to the file specified by <code>path</code>.</p>
 <p>If <code>binary</code> is true, the file is opened in binary mode. Otherwise it is
@@ -82,7 +116,7 @@ If the file existed, its previous content is overwritten.</p>
 <p>File handles should be closed via <code><a href="/dox/FileOutput.html#close">FileOutput.close</a></code> once the operation
 is complete.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

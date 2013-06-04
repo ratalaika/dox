@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -31,35 +57,43 @@ method, which can be overridden in subclasses.</p>
 <p>Iteration over keys and values, using <code>keys</code> and <code>iterator</code> respectively,
 are in-order.</p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Creates a new BalancedTree, which is initially empty.</p></div>
-<hr/><a name="exists"></a><h3><code><span class="keyword">function</span> <a name="exists" href="#exists"><span class="identifier">exists</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="exists"></a><h3><code><span class="keyword">function</span> <a name="exists" href="#exists"><span class="identifier">exists</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Tells if <code>key</code> is bound to a value.</p>
 <p>This method returns true even if <code>key</code> is bound to null.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
 <div class="doc"><p>Returns the value <code>key</code> is bound to.</p>
 <p>If <code>key</code> is not bound to any value, <code><a href="/dox/Null.html">null</a></code> is returned.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="iterator"></a><h3><code><span class="keyword">function</span> <a name="iterator" href="#iterator"><span class="identifier">iterator</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="iterator"></a><h3><code><span class="keyword">function</span> <a name="iterator" href="#iterator"><span class="identifier">iterator</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
 <div class="doc"><p>Iterates over the bound values of <code>this</code> BalancedTree.</p>
 <p>This operation is performed in-order.</p></div>
-<hr/><a name="keys"></a><h3><code><span class="keyword">function</span> <a name="keys" href="#keys"><span class="identifier">keys</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">K</span>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="keys"></a><h3><code><span class="keyword">function</span> <a name="keys" href="#keys"><span class="identifier">keys</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">K</span>&gt;;</code></h3>
 <div class="doc"><p>Iterates over the keys of <code>this</code> BalancedTree.</p>
 <p>This operation is performed in-order.</p></div>
-<hr/><a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Removes the current binding of <code>key</code>.</p>
 <p>If <code>key</code> has no binding, <code>this</code> BalancedTree is unchanged and false is
 returned.</p>
 <p>Otherwise the binding of <code>key</code> is removed and true is returned.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="set"></a><h3><code><span class="keyword">function</span> <a name="set" href="#set"><span class="identifier">set</span></a>(<span class="identifier">key</span>:<span class="type">K</span>, <span class="identifier">value</span>:<span class="type">V</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="set"></a><h3><code><span class="keyword">function</span> <a name="set" href="#set"><span class="identifier">set</span></a>(<span class="identifier">key</span>:<span class="type">K</span>, <span class="identifier">value</span>:<span class="type">V</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Binds <code>key</code> to <code>value</code>.</p>
 <p>If <code>key</code> is already bound to a value, that binding disappears.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,86 +52,112 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxelib/hxjava/3,0,0-rc,1/lib/hxjava-std.jar@java/util/regex/Matcher.class</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-java">
 <a name="quoteReplacement"></a><h3><code><span class="keyword">function</span> <a name="quoteReplacement" href="#quoteReplacement"><span class="identifier">quoteReplacement</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-java">
 <a name="appendReplacement"></a><h3><code><span class="keyword">function</span> <a name="appendReplacement" href="#appendReplacement"><span class="identifier">appendReplacement</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/lang/StringBuffer.html"><span class="type">StringBuffer</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="appendTail"></a><h3><code><span class="keyword">function</span> <a name="appendTail" href="#appendTail"><span class="identifier">appendTail</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/lang/StringBuffer.html"><span class="type">StringBuffer</span></a>):<a href="/dox/java/lang/StringBuffer.html"><span class="type">StringBuffer</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="appendTail"></a><h3><code><span class="keyword">function</span> <a name="appendTail" href="#appendTail"><span class="identifier">appendTail</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/lang/StringBuffer.html"><span class="type">StringBuffer</span></a>):<a href="/dox/java/lang/StringBuffer.html"><span class="type">StringBuffer</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="end"></a><h3><code><span class="keyword">function</span> <a name="end" href="#end"><span class="identifier">end</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="end"></a><h3><code><span class="keyword">function</span> <a name="end" href="#end"><span class="identifier">end</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="find"></a><h3><code><span class="keyword">function</span> <a name="find" href="#find"><span class="identifier">find</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="find"></a><h3><code><span class="keyword">function</span> <a name="find" href="#find"><span class="identifier">find</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="group"></a><h3><code><span class="keyword">function</span> <a name="group" href="#group"><span class="identifier">group</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="group"></a><h3><code><span class="keyword">function</span> <a name="group" href="#group"><span class="identifier">group</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="groupCount"></a><h3><code><span class="keyword">function</span> <a name="groupCount" href="#groupCount"><span class="identifier">groupCount</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="groupCount"></a><h3><code><span class="keyword">function</span> <a name="groupCount" href="#groupCount"><span class="identifier">groupCount</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="hasAnchoringBounds"></a><h3><code><span class="keyword">function</span> <a name="hasAnchoringBounds" href="#hasAnchoringBounds"><span class="identifier">hasAnchoringBounds</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="hasAnchoringBounds"></a><h3><code><span class="keyword">function</span> <a name="hasAnchoringBounds" href="#hasAnchoringBounds"><span class="identifier">hasAnchoringBounds</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="hasTransparentBounds"></a><h3><code><span class="keyword">function</span> <a name="hasTransparentBounds" href="#hasTransparentBounds"><span class="identifier">hasTransparentBounds</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="hasTransparentBounds"></a><h3><code><span class="keyword">function</span> <a name="hasTransparentBounds" href="#hasTransparentBounds"><span class="identifier">hasTransparentBounds</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="hitEnd"></a><h3><code><span class="keyword">function</span> <a name="hitEnd" href="#hitEnd"><span class="identifier">hitEnd</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="hitEnd"></a><h3><code><span class="keyword">function</span> <a name="hitEnd" href="#hitEnd"><span class="identifier">hitEnd</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="lookingAt"></a><h3><code><span class="keyword">function</span> <a name="lookingAt" href="#lookingAt"><span class="identifier">lookingAt</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="lookingAt"></a><h3><code><span class="keyword">function</span> <a name="lookingAt" href="#lookingAt"><span class="identifier">lookingAt</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="matches"></a><h3><code><span class="keyword">function</span> <a name="matches" href="#matches"><span class="identifier">matches</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="matches"></a><h3><code><span class="keyword">function</span> <a name="matches" href="#matches"><span class="identifier">matches</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="pattern"></a><h3><code><span class="keyword">function</span> <a name="pattern" href="#pattern"><span class="identifier">pattern</span></a>():<a href="/dox/java/util/regex/Pattern.html"><span class="type">Pattern</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="pattern"></a><h3><code><span class="keyword">function</span> <a name="pattern" href="#pattern"><span class="identifier">pattern</span></a>():<a href="/dox/java/util/regex/Pattern.html"><span class="type">Pattern</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="region"></a><h3><code><span class="keyword">function</span> <a name="region" href="#region"><span class="identifier">region</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">param2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="region"></a><h3><code><span class="keyword">function</span> <a name="region" href="#region"><span class="identifier">region</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">param2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="regionEnd"></a><h3><code><span class="keyword">function</span> <a name="regionEnd" href="#regionEnd"><span class="identifier">regionEnd</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="regionEnd"></a><h3><code><span class="keyword">function</span> <a name="regionEnd" href="#regionEnd"><span class="identifier">regionEnd</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="regionStart"></a><h3><code><span class="keyword">function</span> <a name="regionStart" href="#regionStart"><span class="identifier">regionStart</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="regionStart"></a><h3><code><span class="keyword">function</span> <a name="regionStart" href="#regionStart"><span class="identifier">regionStart</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="replaceAll"></a><h3><code><span class="keyword">function</span> <a name="replaceAll" href="#replaceAll"><span class="identifier">replaceAll</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="replaceAll"></a><h3><code><span class="keyword">function</span> <a name="replaceAll" href="#replaceAll"><span class="identifier">replaceAll</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="replaceFirst"></a><h3><code><span class="keyword">function</span> <a name="replaceFirst" href="#replaceFirst"><span class="identifier">replaceFirst</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="replaceFirst"></a><h3><code><span class="keyword">function</span> <a name="replaceFirst" href="#replaceFirst"><span class="identifier">replaceFirst</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="requireEnd"></a><h3><code><span class="keyword">function</span> <a name="requireEnd" href="#requireEnd"><span class="identifier">requireEnd</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="requireEnd"></a><h3><code><span class="keyword">function</span> <a name="requireEnd" href="#requireEnd"><span class="identifier">requireEnd</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="reset"></a><h3><code><span class="keyword">function</span> <a name="reset" href="#reset"><span class="identifier">reset</span></a>():<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="reset"></a><h3><code><span class="keyword">function</span> <a name="reset" href="#reset"><span class="identifier">reset</span></a>():<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="start"></a><h3><code><span class="keyword">function</span> <a name="start" href="#start"><span class="identifier">start</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="start"></a><h3><code><span class="keyword">function</span> <a name="start" href="#start"><span class="identifier">start</span></a>():<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="toMatchResult"></a><h3><code><span class="keyword">function</span> <a name="toMatchResult" href="#toMatchResult"><span class="identifier">toMatchResult</span></a>():<a href="/dox/java/util/regex/MatchResult.html"><span class="type">MatchResult</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="toMatchResult"></a><h3><code><span class="keyword">function</span> <a name="toMatchResult" href="#toMatchResult"><span class="identifier">toMatchResult</span></a>():<a href="/dox/java/util/regex/MatchResult.html"><span class="type">MatchResult</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="useAnchoringBounds"></a><h3><code><span class="keyword">function</span> <a name="useAnchoringBounds" href="#useAnchoringBounds"><span class="identifier">useAnchoringBounds</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="useAnchoringBounds"></a><h3><code><span class="keyword">function</span> <a name="useAnchoringBounds" href="#useAnchoringBounds"><span class="identifier">useAnchoringBounds</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="usePattern"></a><h3><code><span class="keyword">function</span> <a name="usePattern" href="#usePattern"><span class="identifier">usePattern</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/util/regex/Pattern.html"><span class="type">Pattern</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="usePattern"></a><h3><code><span class="keyword">function</span> <a name="usePattern" href="#usePattern"><span class="identifier">usePattern</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/util/regex/Pattern.html"><span class="type">Pattern</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="useTransparentBounds"></a><h3><code><span class="keyword">function</span> <a name="useTransparentBounds" href="#useTransparentBounds"><span class="identifier">useTransparentBounds</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="useTransparentBounds"></a><h3><code><span class="keyword">function</span> <a name="useTransparentBounds" href="#useTransparentBounds"><span class="identifier">useTransparentBounds</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/java/util/regex/Matcher.html"><span class="type">Matcher</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

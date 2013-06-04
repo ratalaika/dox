@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,40 +53,51 @@
 <div class="doc"><p>Obsolete<br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/HTML/Element/applet">MDN</a>.</p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="align" href="#align"><span class="identifier">align</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute is used to position the applet on the page relative to content that might flow around it. The HTML 4.01 specification defines values of bottom, left, middle, right, and top, whereas Microsoft and Netscape also might support <strong>absbottom</strong>, <strong>absmiddle</strong>, <strong>baseline</strong>, <strong>center</strong>, and <strong>texttop</strong>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="alt" href="#alt"><span class="identifier">alt</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="alt" href="#alt"><span class="identifier">alt</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute causes a descriptive text alternate to be displayed on browsers that do not support Java. Page designers should also remember that content enclosed within the <code>&lt;applet&gt;</code> element may also be rendered as alternative text.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="archive" href="#archive"><span class="identifier">archive</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="archive" href="#archive"><span class="identifier">archive</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute refers to an archived or compressed version of the applet and its associated class files, which might help reduce download time.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="code" href="#code"><span class="identifier">code</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="code" href="#code"><span class="identifier">code</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute specifies the URL of the applet's class file to be loaded and executed. Applet filenames are identified by a .class filename extension. The URL specified by code might be relative to the <code>codebase</code> attribute.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="codeBase" href="#codeBase"><span class="identifier">codeBase</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="codeBase" href="#codeBase"><span class="identifier">codeBase</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="height" href="#height"><span class="identifier">height</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="height" href="#height"><span class="identifier">height</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute specifies the height, in pixels, that the applet needs.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hspace" href="#hspace"><span class="identifier">hspace</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="hspace" href="#hspace"><span class="identifier">hspace</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute specifies additional horizontal space, in pixels, to be reserved on either side of the applet.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute assigns a name to the applet so that it can be identified by other resources; particularly scripts.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="object" href="#object"><span class="identifier">object</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="object" href="#object"><span class="identifier">object</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute specifies the URL of a serialized representation of an applet.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="vspace" href="#vspace"><span class="identifier">vspace</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="vspace" href="#vspace"><span class="identifier">vspace</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute specifies additional vertical space, in pixels, to be reserved above and below the applet.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="width" href="#width"><span class="identifier">width</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="width" href="#width"><span class="identifier">width</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>This attribute specifies in pixels the width that the applet needs.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -31,47 +57,60 @@ Documentation for this class was provided by <a href="https://developer.mozilla.
 <p>There are several kinds of rules. The <code>CSSRule</code> interface specifies the properties common to all rules, while properties unique to specific rule types are specified in the more specialized interfaces for those rules' respective types.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/cssRule">MDN</a>.</div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="CHARSET_RULE" href="#CHARSET_RULE"><span class="identifier">CHARSET_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="FONT_FACE_RULE" href="#FONT_FACE_RULE"><span class="identifier">FONT_FACE_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="FONT_FACE_RULE" href="#FONT_FACE_RULE"><span class="identifier">FONT_FACE_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="IMPORT_RULE" href="#IMPORT_RULE"><span class="identifier">IMPORT_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="IMPORT_RULE" href="#IMPORT_RULE"><span class="identifier">IMPORT_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYFRAMES_RULE" href="#KEYFRAMES_RULE"><span class="identifier">KEYFRAMES_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="KEYFRAMES_RULE" href="#KEYFRAMES_RULE"><span class="identifier">KEYFRAMES_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYFRAME_RULE" href="#KEYFRAME_RULE"><span class="identifier">KEYFRAME_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="KEYFRAME_RULE" href="#KEYFRAME_RULE"><span class="identifier">KEYFRAME_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MEDIA_RULE" href="#MEDIA_RULE"><span class="identifier">MEDIA_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MEDIA_RULE" href="#MEDIA_RULE"><span class="identifier">MEDIA_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PAGE_RULE" href="#PAGE_RULE"><span class="identifier">PAGE_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="PAGE_RULE" href="#PAGE_RULE"><span class="identifier">PAGE_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STYLE_RULE" href="#STYLE_RULE"><span class="identifier">STYLE_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="STYLE_RULE" href="#STYLE_RULE"><span class="identifier">STYLE_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="UNKNOWN_RULE" href="#UNKNOWN_RULE"><span class="identifier">UNKNOWN_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="UNKNOWN_RULE" href="#UNKNOWN_RULE"><span class="identifier">UNKNOWN_RULE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="cssText" href="#cssText"><span class="identifier">cssText</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the textual representation of the rule, e.g. <code>"h1,h2 { font-size: 16pt }"</code> Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="parentRule" href="#parentRule"><span class="identifier">parentRule</span></a>:<a href="/dox/js/html/CSSRule.html"><span class="type">CSSRule</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="parentRule" href="#parentRule"><span class="identifier">parentRule</span></a>:<a href="/dox/js/html/CSSRule.html"><span class="type">CSSRule</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the containing rule, otherwise <code>null</code>. E.g. if this rule is a style rule inside an <code><a title="en/CSS/@media" rel="internal" href="https://developer.mozilla.org/en/CSS/@media">@media</a></code> block, the parent rule would be that <code><a title="en/DOM/CSSMediaRule" rel="internal" href="https://developer.mozilla.org/en/DOM/CSSMediaRule">CSSMediaRule</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="parentStyleSheet" href="#parentStyleSheet"><span class="identifier">parentStyleSheet</span></a>:<a href="/dox/js/html/CSSStyleSheet.html"><span class="type">CSSStyleSheet</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="parentStyleSheet" href="#parentStyleSheet"><span class="identifier">parentStyleSheet</span></a>:<a href="/dox/js/html/CSSStyleSheet.html"><span class="type">CSSStyleSheet</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the <code><a title="en/DOM/CSSStyleSheet" rel="internal" href="https://developer.mozilla.org/en/DOM/CSSStyleSheet">CSSStyleSheet</a></code> object for the style sheet that contains this rule</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>One of the <a rel="custom" href="https://developer.mozilla.org/en/DOM/cssRule#Type_constants">Type constants</a>&nbsp;indicating the type of CSS&nbsp;rule.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,67 +52,87 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/js/html/SpeechRecognition.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="abort"></a><h3><code><span class="keyword">function</span> <a name="abort" href="#abort"><span class="identifier">abort</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="abort"></a><h3><code><span class="keyword">function</span> <a name="abort" href="#abort"><span class="identifier">abort</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="continuous" href="#continuous"><span class="identifier">continuous</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="continuous" href="#continuous"><span class="identifier">continuous</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="grammars" href="#grammars"><span class="identifier">grammars</span></a>:<a href="/dox/js/html/SpeechGrammarList.html"><span class="type">SpeechGrammarList</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="grammars" href="#grammars"><span class="identifier">grammars</span></a>:<a href="/dox/js/html/SpeechGrammarList.html"><span class="type">SpeechGrammarList</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="interimResults" href="#interimResults"><span class="identifier">interimResults</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="interimResults" href="#interimResults"><span class="identifier">interimResults</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lang" href="#lang"><span class="identifier">lang</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lang" href="#lang"><span class="identifier">lang</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="maxAlternatives" href="#maxAlternatives"><span class="identifier">maxAlternatives</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="maxAlternatives" href="#maxAlternatives"><span class="identifier">maxAlternatives</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onaudioend" href="#onaudioend"><span class="identifier">onaudioend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onaudioend" href="#onaudioend"><span class="identifier">onaudioend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onaudiostart" href="#onaudiostart"><span class="identifier">onaudiostart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onaudiostart" href="#onaudiostart"><span class="identifier">onaudiostart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onend" href="#onend"><span class="identifier">onend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onend" href="#onend"><span class="identifier">onend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onnomatch" href="#onnomatch"><span class="identifier">onnomatch</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onnomatch" href="#onnomatch"><span class="identifier">onnomatch</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onresult" href="#onresult"><span class="identifier">onresult</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onresult" href="#onresult"><span class="identifier">onresult</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsoundend" href="#onsoundend"><span class="identifier">onsoundend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsoundend" href="#onsoundend"><span class="identifier">onsoundend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsoundstart" href="#onsoundstart"><span class="identifier">onsoundstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsoundstart" href="#onsoundstart"><span class="identifier">onsoundstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onspeechend" href="#onspeechend"><span class="identifier">onspeechend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onspeechend" href="#onspeechend"><span class="identifier">onspeechend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onspeechstart" href="#onspeechstart"><span class="identifier">onspeechstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onspeechstart" href="#onspeechstart"><span class="identifier">onspeechstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onstart" href="#onstart"><span class="identifier">onstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onstart" href="#onstart"><span class="identifier">onstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="start"></a><h3><code><span class="keyword">function</span> <a name="start" href="#start"><span class="identifier">start</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="start"></a><h3><code><span class="keyword">function</span> <a name="start" href="#start"><span class="identifier">start</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="stop"></a><h3><code><span class="keyword">function</span> <a name="stop" href="#stop"><span class="identifier">stop</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stop"></a><h3><code><span class="keyword">function</span> <a name="stop" href="#stop"><span class="identifier">stop</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

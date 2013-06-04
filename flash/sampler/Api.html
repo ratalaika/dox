@@ -14,70 +14,113 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/flash/sampler/Api.html"><span class="type">Api</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash/sampler/Api.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-flash">
 <a name="clearSamples"></a><h3><code><span class="keyword">function</span> <a name="clearSamples" href="#clearSamples"><span class="identifier">clearSamples</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getGetterInvocationCount"></a><h3><code><span class="keyword">function</span> <a name="getGetterInvocationCount" href="#getGetterInvocationCount"><span class="identifier">getGetterInvocationCount</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getGetterInvocationCount"></a><h3><code><span class="keyword">function</span> <a name="getGetterInvocationCount" href="#getGetterInvocationCount"><span class="identifier">getGetterInvocationCount</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getInvocationCount"></a><h3><code><span class="keyword">function</span> <a name="getInvocationCount" href="#getInvocationCount"><span class="identifier">getInvocationCount</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getInvocationCount"></a><h3><code><span class="keyword">function</span> <a name="getInvocationCount" href="#getInvocationCount"><span class="identifier">getInvocationCount</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getLexicalScopes"></a><h3><code><span class="keyword">function</span> <a name="getLexicalScopes" href="#getLexicalScopes"><span class="identifier">getLexicalScopes</span></a>(<span class="identifier">fun</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getLexicalScopes"></a><h3><code><span class="keyword">function</span> <a name="getLexicalScopes" href="#getLexicalScopes"><span class="identifier">getLexicalScopes</span></a>(<span class="identifier">fun</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getMasterString"></a><h3><code><span class="keyword">function</span> <a name="getMasterString" href="#getMasterString"><span class="identifier">getMasterString</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getMasterString"></a><h3><code><span class="keyword">function</span> <a name="getMasterString" href="#getMasterString"><span class="identifier">getMasterString</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getMemberNames"></a><h3><code><span class="keyword">function</span> <a name="getMemberNames" href="#getMemberNames"><span class="identifier">getMemberNames</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, ?<span class="identifier">instanceNames</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getMemberNames"></a><h3><code><span class="keyword">function</span> <a name="getMemberNames" href="#getMemberNames"><span class="identifier">getMemberNames</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, ?<span class="identifier">instanceNames</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSampleCount"></a><h3><code><span class="keyword">function</span> <a name="getSampleCount" href="#getSampleCount"><span class="identifier">getSampleCount</span></a>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getSampleCount"></a><h3><code><span class="keyword">function</span> <a name="getSampleCount" href="#getSampleCount"><span class="identifier">getSampleCount</span></a>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSamples"></a><h3><code><span class="keyword">function</span> <a name="getSamples" href="#getSamples"><span class="identifier">getSamples</span></a>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/flash/sampler/Sample.html"><span class="type">Sample</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getSamples"></a><h3><code><span class="keyword">function</span> <a name="getSamples" href="#getSamples"><span class="identifier">getSamples</span></a>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/flash/sampler/Sample.html"><span class="type">Sample</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSavedThis"></a><h3><code><span class="keyword">function</span> <a name="getSavedThis" href="#getSavedThis"><span class="identifier">getSavedThis</span></a>(<span class="identifier">fun</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getSavedThis"></a><h3><code><span class="keyword">function</span> <a name="getSavedThis" href="#getSavedThis"><span class="identifier">getSavedThis</span></a>(<span class="identifier">fun</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSetterInvocationCount"></a><h3><code><span class="keyword">function</span> <a name="getSetterInvocationCount" href="#getSetterInvocationCount"><span class="identifier">getSetterInvocationCount</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getSetterInvocationCount"></a><h3><code><span class="keyword">function</span> <a name="getSetterInvocationCount" href="#getSetterInvocationCount"><span class="identifier">getSetterInvocationCount</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSize"></a><h3><code><span class="keyword">function</span> <a name="getSize" href="#getSize"><span class="identifier">getSize</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getSize"></a><h3><code><span class="keyword">function</span> <a name="getSize" href="#getSize"><span class="identifier">getSize</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="isGetterSetter"></a><h3><code><span class="keyword">function</span> <a name="isGetterSetter" href="#isGetterSetter"><span class="identifier">isGetterSetter</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="isGetterSetter"></a><h3><code><span class="keyword">function</span> <a name="isGetterSetter" href="#isGetterSetter"><span class="identifier">isGetterSetter</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">qname</span>:<a href="/dox/flash/utils/QName.html"><span class="type">QName</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="pauseSampling"></a><h3><code><span class="keyword">function</span> <a name="pauseSampling" href="#pauseSampling"><span class="identifier">pauseSampling</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="pauseSampling"></a><h3><code><span class="keyword">function</span> <a name="pauseSampling" href="#pauseSampling"><span class="identifier">pauseSampling</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="sampleInternalAllocs"></a><h3><code><span class="keyword">function</span> <a name="sampleInternalAllocs" href="#sampleInternalAllocs"><span class="identifier">sampleInternalAllocs</span></a>(<span class="identifier">b</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="sampleInternalAllocs"></a><h3><code><span class="keyword">function</span> <a name="sampleInternalAllocs" href="#sampleInternalAllocs"><span class="identifier">sampleInternalAllocs</span></a>(<span class="identifier">b</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setSamplerCallback"></a><h3><code><span class="keyword">function</span> <a name="setSamplerCallback" href="#setSamplerCallback"><span class="identifier">setSamplerCallback</span></a>(<span class="identifier">callb</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="setSamplerCallback"></a><h3><code><span class="keyword">function</span> <a name="setSamplerCallback" href="#setSamplerCallback"><span class="identifier">setSamplerCallback</span></a>(<span class="identifier">callb</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="startSampling"></a><h3><code><span class="keyword">function</span> <a name="startSampling" href="#startSampling"><span class="identifier">startSampling</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="startSampling"></a><h3><code><span class="keyword">function</span> <a name="startSampling" href="#startSampling"><span class="identifier">startSampling</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="stopSampling"></a><h3><code><span class="keyword">function</span> <a name="stopSampling" href="#stopSampling"><span class="identifier">stopSampling</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="stopSampling"></a><h3><code><span class="keyword">function</span> <a name="stopSampling" href="#stopSampling"><span class="identifier">stopSampling</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

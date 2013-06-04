@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -29,40 +55,52 @@ are available through this interface, returned by a call to <code>getContext()</
 element, with "2d" as its argument.<br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/CanvasRenderingContext2D">MDN</a>.</p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="arc"></a><h3><code><span class="keyword">function</span> <a name="arc" href="#arc"><span class="identifier">arc</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">radius</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">startAngle</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">endAngle</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">anticlockwise</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="arcTo"></a><h3><code><span class="keyword">function</span> <a name="arcTo" href="#arcTo"><span class="identifier">arcTo</span></a>(<span class="identifier">x1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x2</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y2</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">radius</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="arcTo"></a><h3><code><span class="keyword">function</span> <a name="arcTo" href="#arcTo"><span class="identifier">arcTo</span></a>(<span class="identifier">x1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x2</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y2</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">radius</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="backingStorePixelRatio" href="#backingStorePixelRatio"><span class="identifier">backingStorePixelRatio</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="backingStorePixelRatio" href="#backingStorePixelRatio"><span class="identifier">backingStorePixelRatio</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="beginPath"></a><h3><code><span class="keyword">function</span> <a name="beginPath" href="#beginPath"><span class="identifier">beginPath</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="beginPath"></a><h3><code><span class="keyword">function</span> <a name="beginPath" href="#beginPath"><span class="identifier">beginPath</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="bezierCurveTo"></a><h3><code><span class="keyword">function</span> <a name="bezierCurveTo" href="#bezierCurveTo"><span class="identifier">bezierCurveTo</span></a>(<span class="identifier">cp1x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cp1y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cp2x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cp2y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="bezierCurveTo"></a><h3><code><span class="keyword">function</span> <a name="bezierCurveTo" href="#bezierCurveTo"><span class="identifier">bezierCurveTo</span></a>(<span class="identifier">cp1x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cp1y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cp2x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cp2y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clearRect"></a><h3><code><span class="keyword">function</span> <a name="clearRect" href="#clearRect"><span class="identifier">clearRect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="clearRect"></a><h3><code><span class="keyword">function</span> <a name="clearRect" href="#clearRect"><span class="identifier">clearRect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clearShadow"></a><h3><code><span class="keyword">function</span> <a name="clearShadow" href="#clearShadow"><span class="identifier">clearShadow</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="clearShadow"></a><h3><code><span class="keyword">function</span> <a name="clearShadow" href="#clearShadow"><span class="identifier">clearShadow</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clip"></a><h3><code><span class="keyword">function</span> <a name="clip" href="#clip"><span class="identifier">clip</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="clip"></a><h3><code><span class="keyword">function</span> <a name="clip" href="#clip"><span class="identifier">clip</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="closePath"></a><h3><code><span class="keyword">function</span> <a name="closePath" href="#closePath"><span class="identifier">closePath</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="closePath"></a><h3><code><span class="keyword">function</span> <a name="closePath" href="#closePath"><span class="identifier">closePath</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createImageData"></a><h3><code><span class="keyword">function</span> <a name="createImageData" href="#createImageData"><span class="identifier">createImageData</span></a>(<span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="createImageData"></a><h3><code><span class="keyword">function</span> <a name="createImageData" href="#createImageData"><span class="identifier">createImageData</span></a>(<span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Throws DOMException.</p></div>
-<hr/><a name="createLinearGradient"></a><h3><code><span class="keyword">function</span> <a name="createLinearGradient" href="#createLinearGradient"><span class="identifier">createLinearGradient</span></a>(<span class="identifier">x0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/CanvasGradient.html"><span class="type">CanvasGradient</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="createLinearGradient"></a><h3><code><span class="keyword">function</span> <a name="createLinearGradient" href="#createLinearGradient"><span class="identifier">createLinearGradient</span></a>(<span class="identifier">x0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/CanvasGradient.html"><span class="type">CanvasGradient</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createPattern"></a><h3><code><span class="keyword">function</span> <a name="createPattern" href="#createPattern"><span class="identifier">createPattern</span></a>(<span class="identifier">image</span>:<a href="/dox/js/html/ImageElement.html"><span class="type">ImageElement</span></a>, <span class="identifier">repetitionType</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/CanvasPattern.html"><span class="type">CanvasPattern</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="createPattern"></a><h3><code><span class="keyword">function</span> <a name="createPattern" href="#createPattern"><span class="identifier">createPattern</span></a>(<span class="identifier">image</span>:<a href="/dox/js/html/ImageElement.html"><span class="type">ImageElement</span></a>, <span class="identifier">repetitionType</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/CanvasPattern.html"><span class="type">CanvasPattern</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><div id="section_31"><span id="Parameters_10"></span><h6 class="editable">Parameters</h6>
 <dl> <dt><code>image</code></dt> <dd>A DOM <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/element">element</a></code>
@@ -80,10 +118,12 @@ or <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/can
 element for the <code>image</code> parameter is zero-sized (that is, one or both of its dimensions are 0 pixels).</dd>
 </dl>
 </div> Throws DOMException.</div>
-<hr/><a name="createRadialGradient"></a><h3><code><span class="keyword">function</span> <a name="createRadialGradient" href="#createRadialGradient"><span class="identifier">createRadialGradient</span></a>(<span class="identifier">x0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">r0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">r1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/CanvasGradient.html"><span class="type">CanvasGradient</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="createRadialGradient"></a><h3><code><span class="keyword">function</span> <a name="createRadialGradient" href="#createRadialGradient"><span class="identifier">createRadialGradient</span></a>(<span class="identifier">x0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">r0</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">r1</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/CanvasGradient.html"><span class="type">CanvasGradient</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="drawImage"></a><h3><code><span class="keyword">function</span> <a name="drawImage" href="#drawImage"><span class="identifier">drawImage</span></a>(<span class="identifier">video</span>:<a href="/dox/js/html/VideoElement.html"><span class="type">VideoElement</span></a>, <span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="drawImage"></a><h3><code><span class="keyword">function</span> <a name="drawImage" href="#drawImage"><span class="identifier">drawImage</span></a>(<span class="identifier">video</span>:<a href="/dox/js/html/VideoElement.html"><span class="type">VideoElement</span></a>, <span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Draws the specified image. This method is available in multiple formats, providing a great deal of flexibility in its use.</p><div id="section_41"><span id="Parameters_13"></span><h6 class="editable">Parameters</h6>
 <dl> <dt><code>image</code></dt> <dd>An element to draw into the context; the specification permits any image element (that is, <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/img">&lt;img&gt;</a></code>
@@ -103,169 +143,222 @@ element for the <code>image</code> parameter is zero-sized (that is, one or both
 now correctly supports CORS for drawing images across domains without <a title="en/CORS_Enabled_Image#What_is_a_.22tainted.22_canvas.3F" rel="internal" href="https://developer.mozilla.org/en/CORS_Enabled_Image#What_is_a_.22tainted.22_canvas.3F">tainting the canvas</a>.</li>
 </ul>
 </div> Throws DOMException.</div>
-<hr/><a name="drawImageFromRect"></a><h3><code><span class="keyword">function</span> <a name="drawImageFromRect" href="#drawImageFromRect"><span class="identifier">drawImageFromRect</span></a>(<span class="identifier">image</span>:<a href="/dox/js/html/ImageElement.html"><span class="type">ImageElement</span></a>, ?<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">compositeOperation</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="drawImageFromRect"></a><h3><code><span class="keyword">function</span> <a name="drawImageFromRect" href="#drawImageFromRect"><span class="identifier">drawImageFromRect</span></a>(<span class="identifier">image</span>:<a href="/dox/js/html/ImageElement.html"><span class="type">ImageElement</span></a>, ?<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">dh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">compositeOperation</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="fill"></a><h3><code><span class="keyword">function</span> <a name="fill" href="#fill"><span class="identifier">fill</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="fill"></a><h3><code><span class="keyword">function</span> <a name="fill" href="#fill"><span class="identifier">fill</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="fillRect"></a><h3><code><span class="keyword">function</span> <a name="fillRect" href="#fillRect"><span class="identifier">fillRect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="fillRect"></a><h3><code><span class="keyword">function</span> <a name="fillRect" href="#fillRect"><span class="identifier">fillRect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="fillStyle" href="#fillStyle"><span class="identifier">fillStyle</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="fillStyle" href="#fillStyle"><span class="identifier">fillStyle</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Color or style to use inside shapes. Default <code>#000</code> (black).</p></div>
-<hr/><a name="fillText"></a><h3><code><span class="keyword">function</span> <a name="fillText" href="#fillText"><span class="identifier">fillText</span></a>(<span class="identifier">text</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">maxWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="fillText"></a><h3><code><span class="keyword">function</span> <a name="fillText" href="#fillText"><span class="identifier">fillText</span></a>(<span class="identifier">text</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">maxWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="font" href="#font"><span class="identifier">font</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="font" href="#font"><span class="identifier">font</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Default value <code>10px sans-serif</code>.</p></div>
-<hr/><a name="getImageData"></a><h3><code><span class="keyword">function</span> <a name="getImageData" href="#getImageData"><span class="identifier">getImageData</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="getImageData"></a><h3><code><span class="keyword">function</span> <a name="getImageData" href="#getImageData"><span class="identifier">getImageData</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getImageDataHD"></a><h3><code><span class="keyword">function</span> <a name="getImageDataHD" href="#getImageDataHD"><span class="identifier">getImageDataHD</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="getImageDataHD"></a><h3><code><span class="keyword">function</span> <a name="getImageDataHD" href="#getImageDataHD"><span class="identifier">getImageDataHD</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sw</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sh</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getLineDash"></a><h3><code><span class="keyword">function</span> <a name="getLineDash" href="#getLineDash"><span class="identifier">getLineDash</span></a>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="getLineDash"></a><h3><code><span class="keyword">function</span> <a name="getLineDash" href="#getLineDash"><span class="identifier">getLineDash</span></a>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="globalAlpha" href="#globalAlpha"><span class="identifier">globalAlpha</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="globalAlpha" href="#globalAlpha"><span class="identifier">globalAlpha</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Alpha value that is applied to shapes and images before they are composited onto the canvas. Default <code>1.0</code> (opaque).</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="globalCompositeOperation" href="#globalCompositeOperation"><span class="identifier">globalCompositeOperation</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="globalCompositeOperation" href="#globalCompositeOperation"><span class="identifier">globalCompositeOperation</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>With <code>globalAplpha</code> applied this sets how shapes and images are drawn onto the existing bitmap. Possible values: <ul> <li><code>source-atop</code></li> <li><code>source-in</code></li> <li><code>source-out</code></li> <li><code>source-over</code> (default)</li> <li><code>destination-atop</code></li> <li><code>destination-in</code></li> <li><code>destination-out</code></li> <li><code>destination-over</code></li> <li><code>lighter</code></li> <li><code>xor</code></li> </ul></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="imageSmoothingEnabled" href="#imageSmoothingEnabled"><span class="identifier">imageSmoothingEnabled</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="imageSmoothingEnabled" href="#imageSmoothingEnabled"><span class="identifier">imageSmoothingEnabled</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="isPointInPath"></a><h3><code><span class="keyword">function</span> <a name="isPointInPath" href="#isPointInPath"><span class="identifier">isPointInPath</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="isPointInPath"></a><h3><code><span class="keyword">function</span> <a name="isPointInPath" href="#isPointInPath"><span class="identifier">isPointInPath</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lineCap" href="#lineCap"><span class="identifier">lineCap</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lineCap" href="#lineCap"><span class="identifier">lineCap</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Type of endings on the end of lines. Possible values: <code>butt</code> (default), <code>round</code>, <code>square</code></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lineDash" href="#lineDash"><span class="identifier">lineDash</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lineDash" href="#lineDash"><span class="identifier">lineDash</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lineDashOffset" href="#lineDashOffset"><span class="identifier">lineDashOffset</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lineDashOffset" href="#lineDashOffset"><span class="identifier">lineDashOffset</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lineJoin" href="#lineJoin"><span class="identifier">lineJoin</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lineJoin" href="#lineJoin"><span class="identifier">lineJoin</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Defines the type of corners where two lines meet. Possible values: <code>round</code>, <code>bevel</code>, <code>miter</code> (default)</p></div>
-<hr/><a name="lineTo"></a><h3><code><span class="keyword">function</span> <a name="lineTo" href="#lineTo"><span class="identifier">lineTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="lineTo"></a><h3><code><span class="keyword">function</span> <a name="lineTo" href="#lineTo"><span class="identifier">lineTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lineWidth" href="#lineWidth"><span class="identifier">lineWidth</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lineWidth" href="#lineWidth"><span class="identifier">lineWidth</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Width of lines. Default <code>1.0</code></p></div>
-<hr/><a name="measureText"></a><h3><code><span class="keyword">function</span> <a name="measureText" href="#measureText"><span class="identifier">measureText</span></a>(<span class="identifier">text</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/TextMetrics.html"><span class="type">TextMetrics</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="measureText"></a><h3><code><span class="keyword">function</span> <a name="measureText" href="#measureText"><span class="identifier">measureText</span></a>(<span class="identifier">text</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/TextMetrics.html"><span class="type">TextMetrics</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="miterLimit" href="#miterLimit"><span class="identifier">miterLimit</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="miterLimit" href="#miterLimit"><span class="identifier">miterLimit</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Default <code>10</code>.</p></div>
-<hr/><a name="moveTo"></a><h3><code><span class="keyword">function</span> <a name="moveTo" href="#moveTo"><span class="identifier">moveTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="moveTo"></a><h3><code><span class="keyword">function</span> <a name="moveTo" href="#moveTo"><span class="identifier">moveTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="putImageData"></a><h3><code><span class="keyword">function</span> <a name="putImageData" href="#putImageData"><span class="identifier">putImageData</span></a>(<span class="identifier">imagedata</span>:<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyX</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyY</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyHeight</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="putImageData"></a><h3><code><span class="keyword">function</span> <a name="putImageData" href="#putImageData"><span class="identifier">putImageData</span></a>(<span class="identifier">imagedata</span>:<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyX</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyY</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyHeight</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><h6 class="editable">Compatibility notes</h6>
 <ul> <li>Starting in Gecko 10.0 (Firefox 10.0 / Thunderbird 10.0)
 , non-finite values to any of these parameters causes the call to putImageData() to be silently ignored, rather than throwing an exception.</li>
 </ul> Throws DOMException.</div>
-<hr/><a name="putImageDataHD"></a><h3><code><span class="keyword">function</span> <a name="putImageDataHD" href="#putImageDataHD"><span class="identifier">putImageDataHD</span></a>(<span class="identifier">imagedata</span>:<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyX</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyY</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyHeight</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="putImageDataHD"></a><h3><code><span class="keyword">function</span> <a name="putImageDataHD" href="#putImageDataHD"><span class="identifier">putImageDataHD</span></a>(<span class="identifier">imagedata</span>:<a href="/dox/js/html/ImageData.html"><span class="type">ImageData</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyX</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyY</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dirtyHeight</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Throws DOMException.</p></div>
-<hr/><a name="quadraticCurveTo"></a><h3><code><span class="keyword">function</span> <a name="quadraticCurveTo" href="#quadraticCurveTo"><span class="identifier">quadraticCurveTo</span></a>(<span class="identifier">cpx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cpy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="quadraticCurveTo"></a><h3><code><span class="keyword">function</span> <a name="quadraticCurveTo" href="#quadraticCurveTo"><span class="identifier">quadraticCurveTo</span></a>(<span class="identifier">cpx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">cpy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="rect"></a><h3><code><span class="keyword">function</span> <a name="rect" href="#rect"><span class="identifier">rect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="rect"></a><h3><code><span class="keyword">function</span> <a name="rect" href="#rect"><span class="identifier">rect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="restore"></a><h3><code><span class="keyword">function</span> <a name="restore" href="#restore"><span class="identifier">restore</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="restore"></a><h3><code><span class="keyword">function</span> <a name="restore" href="#restore"><span class="identifier">restore</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="rotate"></a><h3><code><span class="keyword">function</span> <a name="rotate" href="#rotate"><span class="identifier">rotate</span></a>(<span class="identifier">angle</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="rotate"></a><h3><code><span class="keyword">function</span> <a name="rotate" href="#rotate"><span class="identifier">rotate</span></a>(<span class="identifier">angle</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="save"></a><h3><code><span class="keyword">function</span> <a name="save" href="#save"><span class="identifier">save</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="save"></a><h3><code><span class="keyword">function</span> <a name="save" href="#save"><span class="identifier">save</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="scale"></a><h3><code><span class="keyword">function</span> <a name="scale" href="#scale"><span class="identifier">scale</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="scale"></a><h3><code><span class="keyword">function</span> <a name="scale" href="#scale"><span class="identifier">scale</span></a>(<span class="identifier">sx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">sy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setAlpha"></a><h3><code><span class="keyword">function</span> <a name="setAlpha" href="#setAlpha"><span class="identifier">setAlpha</span></a>(<span class="identifier">alpha</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setAlpha"></a><h3><code><span class="keyword">function</span> <a name="setAlpha" href="#setAlpha"><span class="identifier">setAlpha</span></a>(<span class="identifier">alpha</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setCompositeOperation"></a><h3><code><span class="keyword">function</span> <a name="setCompositeOperation" href="#setCompositeOperation"><span class="identifier">setCompositeOperation</span></a>(<span class="identifier">compositeOperation</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setCompositeOperation"></a><h3><code><span class="keyword">function</span> <a name="setCompositeOperation" href="#setCompositeOperation"><span class="identifier">setCompositeOperation</span></a>(<span class="identifier">compositeOperation</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setFillColor"></a><h3><code><span class="keyword">function</span> <a name="setFillColor" href="#setFillColor"><span class="identifier">setFillColor</span></a>(<span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">k</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setFillColor"></a><h3><code><span class="keyword">function</span> <a name="setFillColor" href="#setFillColor"><span class="identifier">setFillColor</span></a>(<span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">k</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setLineCap"></a><h3><code><span class="keyword">function</span> <a name="setLineCap" href="#setLineCap"><span class="identifier">setLineCap</span></a>(<span class="identifier">cap</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setLineCap"></a><h3><code><span class="keyword">function</span> <a name="setLineCap" href="#setLineCap"><span class="identifier">setLineCap</span></a>(<span class="identifier">cap</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setLineDash"></a><h3><code><span class="keyword">function</span> <a name="setLineDash" href="#setLineDash"><span class="identifier">setLineDash</span></a>(<span class="identifier">dash</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setLineDash"></a><h3><code><span class="keyword">function</span> <a name="setLineDash" href="#setLineDash"><span class="identifier">setLineDash</span></a>(<span class="identifier">dash</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setLineJoin"></a><h3><code><span class="keyword">function</span> <a name="setLineJoin" href="#setLineJoin"><span class="identifier">setLineJoin</span></a>(<span class="identifier">join</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setLineJoin"></a><h3><code><span class="keyword">function</span> <a name="setLineJoin" href="#setLineJoin"><span class="identifier">setLineJoin</span></a>(<span class="identifier">join</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setLineWidth"></a><h3><code><span class="keyword">function</span> <a name="setLineWidth" href="#setLineWidth"><span class="identifier">setLineWidth</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setLineWidth"></a><h3><code><span class="keyword">function</span> <a name="setLineWidth" href="#setLineWidth"><span class="identifier">setLineWidth</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setMiterLimit"></a><h3><code><span class="keyword">function</span> <a name="setMiterLimit" href="#setMiterLimit"><span class="identifier">setMiterLimit</span></a>(<span class="identifier">limit</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setMiterLimit"></a><h3><code><span class="keyword">function</span> <a name="setMiterLimit" href="#setMiterLimit"><span class="identifier">setMiterLimit</span></a>(<span class="identifier">limit</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setShadow"></a><h3><code><span class="keyword">function</span> <a name="setShadow" href="#setShadow"><span class="identifier">setShadow</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">blur</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">k</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setShadow"></a><h3><code><span class="keyword">function</span> <a name="setShadow" href="#setShadow"><span class="identifier">setShadow</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">blur</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">k</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setStrokeColor"></a><h3><code><span class="keyword">function</span> <a name="setStrokeColor" href="#setStrokeColor"><span class="identifier">setStrokeColor</span></a>(<span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">k</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setStrokeColor"></a><h3><code><span class="keyword">function</span> <a name="setStrokeColor" href="#setStrokeColor"><span class="identifier">setStrokeColor</span></a>(<span class="identifier">c</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">k</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">a</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setTransform"></a><h3><code><span class="keyword">function</span> <a name="setTransform" href="#setTransform"><span class="identifier">setTransform</span></a>(<span class="identifier">m11</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m12</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m21</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m22</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setTransform"></a><h3><code><span class="keyword">function</span> <a name="setTransform" href="#setTransform"><span class="identifier">setTransform</span></a>(<span class="identifier">m11</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m12</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m21</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m22</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="shadowBlur" href="#shadowBlur"><span class="identifier">shadowBlur</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="shadowBlur" href="#shadowBlur"><span class="identifier">shadowBlur</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Specifies the blurring effect. Default <code>0</code></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="shadowColor" href="#shadowColor"><span class="identifier">shadowColor</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="shadowColor" href="#shadowColor"><span class="identifier">shadowColor</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Color of the shadow. Default fully-transparent black.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="shadowOffsetX" href="#shadowOffsetX"><span class="identifier">shadowOffsetX</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="shadowOffsetX" href="#shadowOffsetX"><span class="identifier">shadowOffsetX</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Horizontal distance the shadow will be offset. Default 0.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="shadowOffsetY" href="#shadowOffsetY"><span class="identifier">shadowOffsetY</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="shadowOffsetY" href="#shadowOffsetY"><span class="identifier">shadowOffsetY</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Vertical distance the shadow will be offset. Default 0.</p></div>
-<hr/><a name="stroke"></a><h3><code><span class="keyword">function</span> <a name="stroke" href="#stroke"><span class="identifier">stroke</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stroke"></a><h3><code><span class="keyword">function</span> <a name="stroke" href="#stroke"><span class="identifier">stroke</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="strokeRect"></a><h3><code><span class="keyword">function</span> <a name="strokeRect" href="#strokeRect"><span class="identifier">strokeRect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">lineWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="strokeRect"></a><h3><code><span class="keyword">function</span> <a name="strokeRect" href="#strokeRect"><span class="identifier">strokeRect</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">lineWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="strokeStyle" href="#strokeStyle"><span class="identifier">strokeStyle</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="strokeStyle" href="#strokeStyle"><span class="identifier">strokeStyle</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Color or style to use for the lines around shapes. Default <code>#000</code> (black).</p></div>
-<hr/><a name="strokeText"></a><h3><code><span class="keyword">function</span> <a name="strokeText" href="#strokeText"><span class="identifier">strokeText</span></a>(<span class="identifier">text</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">maxWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="strokeText"></a><h3><code><span class="keyword">function</span> <a name="strokeText" href="#strokeText"><span class="identifier">strokeText</span></a>(<span class="identifier">text</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">maxWidth</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="textAlign" href="#textAlign"><span class="identifier">textAlign</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="textAlign" href="#textAlign"><span class="identifier">textAlign</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Possible values: <code>start</code> (default), <code>end</code>, <code>left</code>, <code>right</code> or <code>center</code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="textBaseline" href="#textBaseline"><span class="identifier">textBaseline</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="textBaseline" href="#textBaseline"><span class="identifier">textBaseline</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="transform"></a><h3><code><span class="keyword">function</span> <a name="transform" href="#transform"><span class="identifier">transform</span></a>(<span class="identifier">m11</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m12</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m21</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m22</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="transform"></a><h3><code><span class="keyword">function</span> <a name="transform" href="#transform"><span class="identifier">transform</span></a>(<span class="identifier">m11</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m12</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m21</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">m22</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">dy</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="translate"></a><h3><code><span class="keyword">function</span> <a name="translate" href="#translate"><span class="identifier">translate</span></a>(<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="translate"></a><h3><code><span class="keyword">function</span> <a name="translate" href="#translate"><span class="identifier">translate</span></a>(<span class="identifier">tx</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">ty</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

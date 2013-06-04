@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -43,28 +69,35 @@ interface.</p>
 </div><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/event/StorageEvent">MDN</a>.</div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">canBubble</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">cancelable</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="initStorageEvent"></a><h3><code><span class="keyword">function</span> <a name="initStorageEvent" href="#initStorageEvent"><span class="identifier">initStorageEvent</span></a>(<span class="identifier">typeArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">canBubbleArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">cancelableArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">keyArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">oldValueArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">newValueArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">urlArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">storageAreaArg</span>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="initStorageEvent"></a><h3><code><span class="keyword">function</span> <a name="initStorageEvent" href="#initStorageEvent"><span class="identifier">initStorageEvent</span></a>(<span class="identifier">typeArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">canBubbleArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">cancelableArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">keyArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">oldValueArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">newValueArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">urlArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">storageAreaArg</span>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="key" href="#key"><span class="identifier">key</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="key" href="#key"><span class="identifier">key</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Represents the key changed. The <code>key</code> attribute is <code>null</code> when the change is caused by the storage <code>clear()</code> method. <strong>Read only.</strong></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="newValue" href="#newValue"><span class="identifier">newValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="newValue" href="#newValue"><span class="identifier">newValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The new value of the <code>key</code>. The <code>newValue</code> is <code>null</code> when the change has been invoked by storage <code>clear()</code> method or the <code>key</code> has been removed from the storage. <strong>Read only.</strong></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oldValue" href="#oldValue"><span class="identifier">oldValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oldValue" href="#oldValue"><span class="identifier">oldValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The original value of the <code>key</code>. The <code>oldValue</code> is <code>null</code> when the change has been invoked by storage <code>clear()</code> method or the <code>key</code> has been newly added and therefor doesn't have any previous value. <strong>Read only.</strong></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="storageArea" href="#storageArea"><span class="identifier">storageArea</span></a>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="storageArea" href="#storageArea"><span class="identifier">storageArea</span></a>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Represents the Storage object that was affected. <strong>Read only.</strong></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="url" href="#url"><span class="identifier">url</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="url" href="#url"><span class="identifier">url</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The URL of the document whose <code>key</code> changed. <strong>Read only.</strong></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

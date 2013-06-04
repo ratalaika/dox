@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,19 +53,25 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/rtti/CType.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="constructorEq"></a><h3><code><span class="keyword">function</span> <a name="constructorEq" href="#constructorEq"><span class="identifier">constructorEq</span></a>(<span class="identifier">c1</span>:<a href="/dox/haxe/rtti/EnumField.html"><span class="type">EnumField</span></a>, <span class="identifier">c2</span>:<a href="/dox/haxe/rtti/EnumField.html"><span class="type">EnumField</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="fieldEq"></a><h3><code><span class="keyword">function</span> <a name="fieldEq" href="#fieldEq"><span class="identifier">fieldEq</span></a>(<span class="identifier">f1</span>:<a href="/dox/haxe/rtti/ClassField.html"><span class="type">ClassField</span></a>, <span class="identifier">f2</span>:<a href="/dox/haxe/rtti/ClassField.html"><span class="type">ClassField</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="fieldEq"></a><h3><code><span class="keyword">function</span> <a name="fieldEq" href="#fieldEq"><span class="identifier">fieldEq</span></a>(<span class="identifier">f1</span>:<a href="/dox/haxe/rtti/ClassField.html"><span class="type">ClassField</span></a>, <span class="identifier">f2</span>:<a href="/dox/haxe/rtti/ClassField.html"><span class="type">ClassField</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="isVar"></a><h3><code><span class="keyword">function</span> <a name="isVar" href="#isVar"><span class="identifier">isVar</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/rtti/CType.html"><span class="type">CType</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="isVar"></a><h3><code><span class="keyword">function</span> <a name="isVar" href="#isVar"><span class="identifier">isVar</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/rtti/CType.html"><span class="type">CType</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="rightsEq"></a><h3><code><span class="keyword">function</span> <a name="rightsEq" href="#rightsEq"><span class="identifier">rightsEq</span></a>(<span class="identifier">r1</span>:<a href="/dox/haxe/rtti/Rights.html"><span class="type">Rights</span></a>, <span class="identifier">r2</span>:<a href="/dox/haxe/rtti/Rights.html"><span class="type">Rights</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="rightsEq"></a><h3><code><span class="keyword">function</span> <a name="rightsEq" href="#rightsEq"><span class="identifier">rightsEq</span></a>(<span class="identifier">r1</span>:<a href="/dox/haxe/rtti/Rights.html"><span class="type">Rights</span></a>, <span class="identifier">r2</span>:<a href="/dox/haxe/rtti/Rights.html"><span class="type">Rights</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="typeEq"></a><h3><code><span class="keyword">function</span> <a name="typeEq" href="#typeEq"><span class="identifier">typeEq</span></a>(<span class="identifier">t1</span>:<a href="/dox/haxe/rtti/CType.html"><span class="type">CType</span></a>, <span class="identifier">t2</span>:<a href="/dox/haxe/rtti/CType.html"><span class="type">CType</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="typeEq"></a><h3><code><span class="keyword">function</span> <a name="typeEq" href="#typeEq"><span class="identifier">typeEq</span></a>(<span class="identifier">t1</span>:<a href="/dox/haxe/rtti/CType.html"><span class="type">CType</span></a>, <span class="identifier">t2</span>:<a href="/dox/haxe/rtti/CType.html"><span class="type">CType</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="typeInfos"></a><h3><code><span class="keyword">function</span> <a name="typeInfos" href="#typeInfos"><span class="identifier">typeInfos</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/rtti/TypeTree.html"><span class="type">TypeTree</span></a>):<a href="/dox/haxe/rtti/TypeInfos.html"><span class="type">TypeInfos</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="typeInfos"></a><h3><code><span class="keyword">function</span> <a name="typeInfos" href="#typeInfos"><span class="identifier">typeInfos</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/rtti/TypeTree.html"><span class="type">TypeTree</span></a>):<a href="/dox/haxe/rtti/TypeInfos.html"><span class="type">TypeInfos</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

@@ -14,64 +14,105 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/flash/system/System.html"><span class="type">System</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash/system/System.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-flash">
 <a name="disposeXML"></a><h3><code><span class="keyword">function</span> <a name="disposeXML" href="#disposeXML"><span class="identifier">disposeXML</span></a>(<span class="identifier">node</span>:<a href="/dox/flash/xml/XML.html"><span class="type">XML</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="exit"></a><h3><code><span class="keyword">function</span> <a name="exit" href="#exit"><span class="identifier">exit</span></a>(<span class="identifier">code</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="exit"></a><h3><code><span class="keyword">function</span> <a name="exit" href="#exit"><span class="identifier">exit</span></a>(<span class="identifier">code</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="freeMemory" href="#freeMemory"><span class="identifier">freeMemory</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="freeMemory" href="#freeMemory"><span class="identifier">freeMemory</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="gc"></a><h3><code><span class="keyword">function</span> <a name="gc" href="#gc"><span class="identifier">gc</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="gc"></a><h3><code><span class="keyword">function</span> <a name="gc" href="#gc"><span class="identifier">gc</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ime" href="#ime"><span class="identifier">ime</span></a>:<a href="/dox/flash/system/IME.html"><span class="type">IME</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="ime" href="#ime"><span class="identifier">ime</span></a>:<a href="/dox/flash/system/IME.html"><span class="type">IME</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="pause"></a><h3><code><span class="keyword">function</span> <a name="pause" href="#pause"><span class="identifier">pause</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="pause"></a><h3><code><span class="keyword">function</span> <a name="pause" href="#pause"><span class="identifier">pause</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="pauseForGCIfCollectionImminent"></a><h3><code><span class="keyword">function</span> <a name="pauseForGCIfCollectionImminent" href="#pauseForGCIfCollectionImminent"><span class="identifier">pauseForGCIfCollectionImminent</span></a>(?<span class="identifier">imminence</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="pauseForGCIfCollectionImminent"></a><h3><code><span class="keyword">function</span> <a name="pauseForGCIfCollectionImminent" href="#pauseForGCIfCollectionImminent"><span class="identifier">pauseForGCIfCollectionImminent</span></a>(?<span class="identifier">imminence</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="privateMemory" href="#privateMemory"><span class="identifier">privateMemory</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="privateMemory" href="#privateMemory"><span class="identifier">privateMemory</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="processCPUUsage" href="#processCPUUsage"><span class="identifier">processCPUUsage</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="processCPUUsage" href="#processCPUUsage"><span class="identifier">processCPUUsage</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="resume"></a><h3><code><span class="keyword">function</span> <a name="resume" href="#resume"><span class="identifier">resume</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="resume"></a><h3><code><span class="keyword">function</span> <a name="resume" href="#resume"><span class="identifier">resume</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setClipboard"></a><h3><code><span class="keyword">function</span> <a name="setClipboard" href="#setClipboard"><span class="identifier">setClipboard</span></a>(<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="setClipboard"></a><h3><code><span class="keyword">function</span> <a name="setClipboard" href="#setClipboard"><span class="identifier">setClipboard</span></a>(<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="totalMemory" href="#totalMemory"><span class="identifier">totalMemory</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="totalMemory" href="#totalMemory"><span class="identifier">totalMemory</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="totalMemoryNumber" href="#totalMemoryNumber"><span class="identifier">totalMemoryNumber</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="totalMemoryNumber" href="#totalMemoryNumber"><span class="identifier">totalMemoryNumber</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="useCodePage" href="#useCodePage"><span class="identifier">useCodePage</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="useCodePage" href="#useCodePage"><span class="identifier">useCodePage</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="vmVersion" href="#vmVersion"><span class="identifier">vmVersion</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="vmVersion" href="#vmVersion"><span class="identifier">vmVersion</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

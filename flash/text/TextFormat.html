@@ -14,79 +14,125 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/flash/text/TextFormat.html"><span class="type">TextFormat</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash/text/TextFormat.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-flash">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(?<span class="identifier">font</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">size</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">color</span>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>, ?<span class="identifier">bold</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">italic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">underline</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">target</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">align</span>:<a href="/dox/flash/text/TextFormatAlign.html"><span class="type">TextFormatAlign</span></a>, ?<span class="identifier">leftMargin</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">rightMargin</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">indent</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">leading</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="align" href="#align"><span class="identifier">align</span></a>:<a href="/dox/flash/text/TextFormatAlign.html"><span class="type">TextFormatAlign</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="align" href="#align"><span class="identifier">align</span></a>:<a href="/dox/flash/text/TextFormatAlign.html"><span class="type">TextFormatAlign</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="blockIndent" href="#blockIndent"><span class="identifier">blockIndent</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="blockIndent" href="#blockIndent"><span class="identifier">blockIndent</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="bold" href="#bold"><span class="identifier">bold</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="bold" href="#bold"><span class="identifier">bold</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="bullet" href="#bullet"><span class="identifier">bullet</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="bullet" href="#bullet"><span class="identifier">bullet</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="color" href="#color"><span class="identifier">color</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/UInt.html"><span class="type">UInt</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="color" href="#color"><span class="identifier">color</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/UInt.html"><span class="type">UInt</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="display" href="#display"><span class="identifier">display</span></a>:<a href="/dox/flash/text/TextFormatDisplay.html"><span class="type">TextFormatDisplay</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="display" href="#display"><span class="identifier">display</span></a>:<a href="/dox/flash/text/TextFormatDisplay.html"><span class="type">TextFormatDisplay</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="font" href="#font"><span class="identifier">font</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="font" href="#font"><span class="identifier">font</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="indent" href="#indent"><span class="identifier">indent</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="indent" href="#indent"><span class="identifier">indent</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="italic" href="#italic"><span class="identifier">italic</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="italic" href="#italic"><span class="identifier">italic</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="kerning" href="#kerning"><span class="identifier">kerning</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="kerning" href="#kerning"><span class="identifier">kerning</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="leading" href="#leading"><span class="identifier">leading</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="leading" href="#leading"><span class="identifier">leading</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="leftMargin" href="#leftMargin"><span class="identifier">leftMargin</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="leftMargin" href="#leftMargin"><span class="identifier">leftMargin</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="letterSpacing" href="#letterSpacing"><span class="identifier">letterSpacing</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="letterSpacing" href="#letterSpacing"><span class="identifier">letterSpacing</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="rightMargin" href="#rightMargin"><span class="identifier">rightMargin</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="rightMargin" href="#rightMargin"><span class="identifier">rightMargin</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="size" href="#size"><span class="identifier">size</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="size" href="#size"><span class="identifier">size</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Float.html"><span class="type">Float</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="tabStops" href="#tabStops"><span class="identifier">tabStops</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/UInt.html"><span class="type">UInt</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="tabStops" href="#tabStops"><span class="identifier">tabStops</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/UInt.html"><span class="type">UInt</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="target" href="#target"><span class="identifier">target</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="target" href="#target"><span class="identifier">target</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="underline" href="#underline"><span class="identifier">underline</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="underline" href="#underline"><span class="identifier">underline</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Bool.html"><span class="type">Bool</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="url" href="#url"><span class="identifier">url</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="url" href="#url"><span class="identifier">url</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

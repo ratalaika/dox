@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,41 +52,58 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/macro/Printer.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(?<span class="identifier">tabString</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printAccess"></a><h3><code><span class="keyword">function</span> <a name="printAccess" href="#printAccess"><span class="identifier">printAccess</span></a>(<span class="identifier">access</span>:<a href="/dox/haxe/macro/Access.html"><span class="type">Access</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printAccess"></a><h3><code><span class="keyword">function</span> <a name="printAccess" href="#printAccess"><span class="identifier">printAccess</span></a>(<span class="identifier">access</span>:<a href="/dox/haxe/macro/Access.html"><span class="type">Access</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printBinop"></a><h3><code><span class="keyword">function</span> <a name="printBinop" href="#printBinop"><span class="identifier">printBinop</span></a>(<span class="identifier">op</span>:<a href="/dox/haxe/macro/Binop.html"><span class="type">Binop</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printBinop"></a><h3><code><span class="keyword">function</span> <a name="printBinop" href="#printBinop"><span class="identifier">printBinop</span></a>(<span class="identifier">op</span>:<a href="/dox/haxe/macro/Binop.html"><span class="type">Binop</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printComplexType"></a><h3><code><span class="keyword">function</span> <a name="printComplexType" href="#printComplexType"><span class="identifier">printComplexType</span></a>(<span class="identifier">ct</span>:<a href="/dox/haxe/macro/ComplexType.html"><span class="type">ComplexType</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printComplexType"></a><h3><code><span class="keyword">function</span> <a name="printComplexType" href="#printComplexType"><span class="identifier">printComplexType</span></a>(<span class="identifier">ct</span>:<a href="/dox/haxe/macro/ComplexType.html"><span class="type">ComplexType</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printConstant"></a><h3><code><span class="keyword">function</span> <a name="printConstant" href="#printConstant"><span class="identifier">printConstant</span></a>(<span class="identifier">c</span>:<a href="/dox/haxe/macro/Constant.html"><span class="type">Constant</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printConstant"></a><h3><code><span class="keyword">function</span> <a name="printConstant" href="#printConstant"><span class="identifier">printConstant</span></a>(<span class="identifier">c</span>:<a href="/dox/haxe/macro/Constant.html"><span class="type">Constant</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printExpr"></a><h3><code><span class="keyword">function</span> <a name="printExpr" href="#printExpr"><span class="identifier">printExpr</span></a>(<span class="identifier">e</span>:<a href="/dox/haxe/macro/Expr.html"><span class="type">Expr</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printExpr"></a><h3><code><span class="keyword">function</span> <a name="printExpr" href="#printExpr"><span class="identifier">printExpr</span></a>(<span class="identifier">e</span>:<a href="/dox/haxe/macro/Expr.html"><span class="type">Expr</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printExprs"></a><h3><code><span class="keyword">function</span> <a name="printExprs" href="#printExprs"><span class="identifier">printExprs</span></a>(<span class="identifier">el</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/haxe/macro/Expr.html"><span class="type">Expr</span></a>&gt;, <span class="identifier">sep</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printExprs"></a><h3><code><span class="keyword">function</span> <a name="printExprs" href="#printExprs"><span class="identifier">printExprs</span></a>(<span class="identifier">el</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/haxe/macro/Expr.html"><span class="type">Expr</span></a>&gt;, <span class="identifier">sep</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printField"></a><h3><code><span class="keyword">function</span> <a name="printField" href="#printField"><span class="identifier">printField</span></a>(<span class="identifier">field</span>:<a href="/dox/haxe/macro/Field.html"><span class="type">Field</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printField"></a><h3><code><span class="keyword">function</span> <a name="printField" href="#printField"><span class="identifier">printField</span></a>(<span class="identifier">field</span>:<a href="/dox/haxe/macro/Field.html"><span class="type">Field</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printFunction"></a><h3><code><span class="keyword">function</span> <a name="printFunction" href="#printFunction"><span class="identifier">printFunction</span></a>(<span class="identifier">func</span>:<a href="/dox/haxe/macro/Function.html"><span class="type">Function</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printFunction"></a><h3><code><span class="keyword">function</span> <a name="printFunction" href="#printFunction"><span class="identifier">printFunction</span></a>(<span class="identifier">func</span>:<a href="/dox/haxe/macro/Function.html"><span class="type">Function</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printFunctionArg"></a><h3><code><span class="keyword">function</span> <a name="printFunctionArg" href="#printFunctionArg"><span class="identifier">printFunctionArg</span></a>(<span class="identifier">arg</span>:<a href="/dox/haxe/macro/FunctionArg.html"><span class="type">FunctionArg</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printFunctionArg"></a><h3><code><span class="keyword">function</span> <a name="printFunctionArg" href="#printFunctionArg"><span class="identifier">printFunctionArg</span></a>(<span class="identifier">arg</span>:<a href="/dox/haxe/macro/FunctionArg.html"><span class="type">FunctionArg</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printMetadata"></a><h3><code><span class="keyword">function</span> <a name="printMetadata" href="#printMetadata"><span class="identifier">printMetadata</span></a>(<span class="identifier">meta</span>:<a href="/dox/haxe/macro/MetadataEntry.html"><span class="type">MetadataEntry</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printMetadata"></a><h3><code><span class="keyword">function</span> <a name="printMetadata" href="#printMetadata"><span class="identifier">printMetadata</span></a>(<span class="identifier">meta</span>:<a href="/dox/haxe/macro/MetadataEntry.html"><span class="type">MetadataEntry</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printTypeDefinition"></a><h3><code><span class="keyword">function</span> <a name="printTypeDefinition" href="#printTypeDefinition"><span class="identifier">printTypeDefinition</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/macro/TypeDefinition.html"><span class="type">TypeDefinition</span></a>, ?<span class="identifier">printPackage</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printTypeDefinition"></a><h3><code><span class="keyword">function</span> <a name="printTypeDefinition" href="#printTypeDefinition"><span class="identifier">printTypeDefinition</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/macro/TypeDefinition.html"><span class="type">TypeDefinition</span></a>, ?<span class="identifier">printPackage</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printTypeParam"></a><h3><code><span class="keyword">function</span> <a name="printTypeParam" href="#printTypeParam"><span class="identifier">printTypeParam</span></a>(<span class="identifier">param</span>:<a href="/dox/haxe/macro/TypeParam.html"><span class="type">TypeParam</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printTypeParam"></a><h3><code><span class="keyword">function</span> <a name="printTypeParam" href="#printTypeParam"><span class="identifier">printTypeParam</span></a>(<span class="identifier">param</span>:<a href="/dox/haxe/macro/TypeParam.html"><span class="type">TypeParam</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printTypeParamDecl"></a><h3><code><span class="keyword">function</span> <a name="printTypeParamDecl" href="#printTypeParamDecl"><span class="identifier">printTypeParamDecl</span></a>(<span class="identifier">tpd</span>:<a href="/dox/haxe/macro/TypeParamDecl.html"><span class="type">TypeParamDecl</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printTypeParamDecl"></a><h3><code><span class="keyword">function</span> <a name="printTypeParamDecl" href="#printTypeParamDecl"><span class="identifier">printTypeParamDecl</span></a>(<span class="identifier">tpd</span>:<a href="/dox/haxe/macro/TypeParamDecl.html"><span class="type">TypeParamDecl</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printTypePath"></a><h3><code><span class="keyword">function</span> <a name="printTypePath" href="#printTypePath"><span class="identifier">printTypePath</span></a>(<span class="identifier">tp</span>:<a href="/dox/haxe/macro/TypePath.html"><span class="type">TypePath</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printTypePath"></a><h3><code><span class="keyword">function</span> <a name="printTypePath" href="#printTypePath"><span class="identifier">printTypePath</span></a>(<span class="identifier">tp</span>:<a href="/dox/haxe/macro/TypePath.html"><span class="type">TypePath</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printUnop"></a><h3><code><span class="keyword">function</span> <a name="printUnop" href="#printUnop"><span class="identifier">printUnop</span></a>(<span class="identifier">op</span>:<a href="/dox/haxe/macro/Unop.html"><span class="type">Unop</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printUnop"></a><h3><code><span class="keyword">function</span> <a name="printUnop" href="#printUnop"><span class="identifier">printUnop</span></a>(<span class="identifier">op</span>:<a href="/dox/haxe/macro/Unop.html"><span class="type">Unop</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="printVar"></a><h3><code><span class="keyword">function</span> <a name="printVar" href="#printVar"><span class="identifier">printVar</span></a>(<span class="identifier">v</span>:<a href="/dox/haxe/macro/Var.html"><span class="type">Var</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="printVar"></a><h3><code><span class="keyword">function</span> <a name="printVar" href="#printVar"><span class="identifier">printVar</span></a>(<span class="identifier">v</span>:<a href="/dox/haxe/macro/Var.html"><span class="type">Var</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

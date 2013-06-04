@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,83 +53,105 @@
 <div class="doc"><p>DOM anchor elements expose the <a target="_blank" href="http://www.w3.org/TR/html5/text-level-semantics.html#htmlanchorelement" rel="external nofollow" class=" external" title="http://www.w3.org/TR/html5/text-level-semantics.html#htmlanchorelement">HTMLAnchorElement</a> (or <span><a href="https://developer.mozilla.org/en/HTML" rel="custom nofollow">HTML 4</a></span> <a target="_blank" title="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-48250443" href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-48250443" rel="external nofollow" class=" external"><code>HTMLAnchorElement</code></a>) interface, which provides special properties and methods (beyond the regular <a href="/api/js/html/Element" rel="internal">element</a> object interface they also have available to them by inheritance) for manipulating the layout and presentation of hyperlink elements.<br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/HTMLAnchorElement">MDN</a>.</p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="charset" href="#charset"><span class="identifier">charset</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The character encoding of the linked resource. </p><span title="">Obsolete</span> in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="coords" href="#coords"><span class="identifier">coords</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="coords" href="#coords"><span class="identifier">coords</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Comma-separated list of coordinates. </p><span title="">Obsolete</span> in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="download" href="#download"><span class="identifier">download</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="download" href="#download"><span class="identifier">download</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hash" href="#hash"><span class="identifier">hash</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="hash" href="#hash"><span class="identifier">hash</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The fragment identifier (including the leading hash mark (#)), if any, in the referenced URL.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="host" href="#host"><span class="identifier">host</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="host" href="#host"><span class="identifier">host</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The hostname and port (if it's not the default port) in the referenced URL.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hostname" href="#hostname"><span class="identifier">hostname</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="hostname" href="#hostname"><span class="identifier">hostname</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The hostname in the referenced URL.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="href" href="#href"><span class="identifier">href</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="href" href="#href"><span class="identifier">href</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/a#attr-href">href</a></code>
 HTML attribute, containing a valid URL of a linked resource.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hreflang" href="#hreflang"><span class="identifier">hreflang</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="hreflang" href="#hreflang"><span class="identifier">hreflang</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/a#attr-hreflang">hreflang</a></code>
 HTML&nbsp;attribute, indicating the language of the linked resource.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Anchor name. </p><span title="">Obsolete</span> in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="origin" href="#origin"><span class="identifier">origin</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="origin" href="#origin"><span class="identifier">origin</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="pathname" href="#pathname"><span class="identifier">pathname</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="pathname" href="#pathname"><span class="identifier">pathname</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The path name component, if any, of the referenced URL.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ping" href="#ping"><span class="identifier">ping</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ping" href="#ping"><span class="identifier">ping</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="port" href="#port"><span class="identifier">port</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="port" href="#port"><span class="identifier">port</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The port component, if any, of the referenced URL.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="protocol" href="#protocol"><span class="identifier">protocol</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="protocol" href="#protocol"><span class="identifier">protocol</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The protocol component (including trailing colon (:)), of the referenced URL.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="rel" href="#rel"><span class="identifier">rel</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="rel" href="#rel"><span class="identifier">rel</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/a#attr-rel">rel</a></code>
 HTML attribute, specifying the relationship of the target object to the link object.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="rev" href="#rev"><span class="identifier">rev</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="rev" href="#rev"><span class="identifier">rev</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reverse link type. </p><span title="">Obsolete</span> in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="search" href="#search"><span class="identifier">search</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="search" href="#search"><span class="identifier">search</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The search element (including leading question mark (?)), if any, of the referenced URL</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="shape" href="#shape"><span class="identifier">shape</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="shape" href="#shape"><span class="identifier">shape</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The shape of the active area. </p><span title="">Obsolete</span> in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="target" href="#target"><span class="identifier">target</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="target" href="#target"><span class="identifier">target</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflectst the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/a#attr-target">target</a></code>
 HTML attribute, indicating where to display the linked resource.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="text" href="#text"><span class="identifier">text</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="text" href="#text"><span class="identifier">text</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Same as the <strong><a title="https://developer.mozilla.org/En/DOM/Node.textContent" rel="internal" href="https://developer.mozilla.org/En/DOM/Node.textContent">textContent</a></strong> property.</p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/a#attr-type">type</a></code>
 HTML attribute, indicating the MIME type of the linked resource.</div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

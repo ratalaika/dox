@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,16 +53,19 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxelib/hxjava/3,0,0-rc,1/lib/hxjava-std.jar@java/util/Map$Entry.class</span></code></div>
 <table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Implementors</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/dox/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/dox/java/util/Hashtable_Entry.html"><span class="type">Hashtable_Entry</span></a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/dox/java/util/Hashtable_Entry.html"><span class="type">Hashtable_Entry</span></a></td><td><p></p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-java">
 <a name="getKey"></a><h3><code><span class="keyword">function</span> <a name="getKey" href="#getKey"><span class="identifier">getKey</span></a>():<span class="type">K</span>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getValue"></a><h3><code><span class="keyword">function</span> <a name="getValue" href="#getValue"><span class="identifier">getValue</span></a>():<span class="type">V</span>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getValue"></a><h3><code><span class="keyword">function</span> <a name="getValue" href="#getValue"><span class="identifier">getValue</span></a>():<span class="type">V</span>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setValue"></a><h3><code><span class="keyword">function</span> <a name="setValue" href="#setValue"><span class="identifier">setValue</span></a>(<span class="identifier">param1</span>:<span class="type">V</span>):<span class="type">V</span>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setValue"></a><h3><code><span class="keyword">function</span> <a name="setValue" href="#setValue"><span class="identifier">setValue</span></a>(<span class="identifier">param1</span>:<span class="type">V</span>):<span class="type">V</span>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

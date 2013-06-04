@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,61 +52,78 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/macro/Compiler.hx</span></code></div>
 <div class="doc"><p>All these methods can be called for compiler configuration macros.</p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-neko">
 <a name="addClassPath"></a><h3><code><span class="keyword">function</span> <a name="addClassPath" href="#addClassPath"><span class="identifier">addClassPath</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="addMetadata"></a><h3><code><span class="keyword">function</span> <a name="addMetadata" href="#addMetadata"><span class="identifier">addMetadata</span></a>(<span class="identifier">meta</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">className</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">field</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">isStatic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="addMetadata"></a><h3><code><span class="keyword">function</span> <a name="addMetadata" href="#addMetadata"><span class="identifier">addMetadata</span></a>(<span class="identifier">meta</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">className</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">field</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">isStatic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="addNativeLib"></a><h3><code><span class="keyword">function</span> <a name="addNativeLib" href="#addNativeLib"><span class="identifier">addNativeLib</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="addNativeLib"></a><h3><code><span class="keyword">function</span> <a name="addNativeLib" href="#addNativeLib"><span class="identifier">addNativeLib</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Adds a native library depending on the platform (eg : -swf-lib for Flash)</p></div>
-<hr/><a name="allowPackage"></a><h3><code><span class="keyword">function</span> <a name="allowPackage" href="#allowPackage"><span class="identifier">allowPackage</span></a>(<span class="identifier">v</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="allowPackage"></a><h3><code><span class="keyword">function</span> <a name="allowPackage" href="#allowPackage"><span class="identifier">allowPackage</span></a>(<span class="identifier">v</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="define"></a><h3><code><span class="keyword">function</span> <a name="define" href="#define"><span class="identifier">define</span></a>(<span class="identifier">flag</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">value</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="define"></a><h3><code><span class="keyword">function</span> <a name="define" href="#define"><span class="identifier">define</span></a>(<span class="identifier">flag</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">value</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="exclude"></a><h3><code><span class="keyword">function</span> <a name="exclude" href="#exclude"><span class="identifier">exclude</span></a>(<span class="identifier">pack</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">rec</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="exclude"></a><h3><code><span class="keyword">function</span> <a name="exclude" href="#exclude"><span class="identifier">exclude</span></a>(<span class="identifier">pack</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">rec</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Exclude a given class or a complete package from being generated.</p></div>
-<hr/><a name="excludeFile"></a><h3><code><span class="keyword">function</span> <a name="excludeFile" href="#excludeFile"><span class="identifier">excludeFile</span></a>(<span class="identifier">fileName</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="excludeFile"></a><h3><code><span class="keyword">function</span> <a name="excludeFile" href="#excludeFile"><span class="identifier">excludeFile</span></a>(<span class="identifier">fileName</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Exclude classes listed in an extern file (one per line) from being generated.</p></div>
-<hr/><a name="getDefine"></a><h3><code><span class="keyword">function</span> <a name="getDefine" href="#getDefine"><span class="identifier">getDefine</span></a>(<span class="identifier">key</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="getDefine"></a><h3><code><span class="keyword">function</span> <a name="getDefine" href="#getDefine"><span class="identifier">getDefine</span></a>(<span class="identifier">key</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getDisplayPos"></a><h3><code><span class="keyword">function</span> <a name="getDisplayPos" href="#getDisplayPos"><span class="identifier">getDisplayPos</span></a>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;{ pos:<a href="/dox/Int.html"><span class="type">Int</span></a>, file:<a href="/dox/String.html"><span class="type">String</span></a> }&gt;;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="getDisplayPos"></a><h3><code><span class="keyword">function</span> <a name="getDisplayPos" href="#getDisplayPos"><span class="identifier">getDisplayPos</span></a>():<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;{ pos:<a href="/dox/Int.html"><span class="type">Int</span></a>, file:<a href="/dox/String.html"><span class="type">String</span></a> }&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getOutput"></a><h3><code><span class="keyword">function</span> <a name="getOutput" href="#getOutput"><span class="identifier">getOutput</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="getOutput"></a><h3><code><span class="keyword">function</span> <a name="getOutput" href="#getOutput"><span class="identifier">getOutput</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="include"></a><h3><code><span class="keyword">function</span> <a name="include" href="#include"><span class="identifier">include</span></a>(<span class="identifier">pack</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">rec</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">ignore</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;, ?<span class="identifier">classPaths</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="include"></a><h3><code><span class="keyword">function</span> <a name="include" href="#include"><span class="identifier">include</span></a>(<span class="identifier">pack</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">rec</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">ignore</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;, ?<span class="identifier">classPaths</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Include for compilation all classes defined in the given package excluding the ones referenced in the ignore list.</p></div>
-<hr/><a name="keep"></a><h3><code><span class="keyword">function</span> <a name="keep" href="#keep"><span class="identifier">keep</span></a>(?<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">paths</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;, ?<span class="identifier">rec</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="keep"></a><h3><code><span class="keyword">function</span> <a name="keep" href="#keep"><span class="identifier">keep</span></a>(?<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">paths</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;, ?<span class="identifier">rec</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Mark a class (or array of classes) with the metadata @:keep.</p>
 <p>Note that this does not imply inclusion of the class(es): If a class is
 neither referenced nor added via [Compiler.include], it will not be part
 of the output even if @:keep was added.</p></div>
-<hr/><a name="patchTypes"></a><h3><code><span class="keyword">function</span> <a name="patchTypes" href="#patchTypes"><span class="identifier">patchTypes</span></a>(<span class="identifier">file</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="patchTypes"></a><h3><code><span class="keyword">function</span> <a name="patchTypes" href="#patchTypes"><span class="identifier">patchTypes</span></a>(<span class="identifier">file</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Load a type patch file that can modify declared classes fields types</p></div>
-<hr/><a name="removeField"></a><h3><code><span class="keyword">function</span> <a name="removeField" href="#removeField"><span class="identifier">removeField</span></a>(<span class="identifier">className</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">field</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">isStatic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="removeField"></a><h3><code><span class="keyword">function</span> <a name="removeField" href="#removeField"><span class="identifier">removeField</span></a>(<span class="identifier">className</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">field</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">isStatic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setCustomJSGenerator"></a><h3><code><span class="keyword">function</span> <a name="setCustomJSGenerator" href="#setCustomJSGenerator"><span class="identifier">setCustomJSGenerator</span></a>(<span class="identifier">callb</span>:<a href="/dox/haxe/macro/JSGenApi.html"><span class="type">JSGenApi</span></a> -> <a href="/dox/Void.html"><span class="type">Void</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="setCustomJSGenerator"></a><h3><code><span class="keyword">function</span> <a name="setCustomJSGenerator" href="#setCustomJSGenerator"><span class="identifier">setCustomJSGenerator</span></a>(<span class="identifier">callb</span>:<a href="/dox/haxe/macro/JSGenApi.html"><span class="type">JSGenApi</span></a> -> <a href="/dox/Void.html"><span class="type">Void</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p>Change the default JS output by using a custom generator callback</p></div>
-<hr/><a name="setFieldType"></a><h3><code><span class="keyword">function</span> <a name="setFieldType" href="#setFieldType"><span class="identifier">setFieldType</span></a>(<span class="identifier">className</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">field</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">isStatic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="setFieldType"></a><h3><code><span class="keyword">function</span> <a name="setFieldType" href="#setFieldType"><span class="identifier">setFieldType</span></a>(<span class="identifier">className</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">field</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">isStatic</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setOutput"></a><h3><code><span class="keyword">function</span> <a name="setOutput" href="#setOutput"><span class="identifier">setOutput</span></a>(<span class="identifier">fileOrDir</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-neko">
+<a name="setOutput"></a><h3><code><span class="keyword">function</span> <a name="setOutput" href="#setOutput"><span class="identifier">setOutput</span></a>(<span class="identifier">fileOrDir</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on neko</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

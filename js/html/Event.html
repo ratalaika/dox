@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -63,120 +89,157 @@ Documentation for this class was provided by <a href="https://developer.mozilla.
 <p>There is an excellent diagram that clearly explains the three phases of event flow through the DOM in the <a class="external" title="http://www.w3.org/TR/DOM-Level-3-Events/#dom-event-architecture" rel="external" href="http://www.w3.org/TR/DOM-Level-3-Events/#dom-event-architecture" target="_blank">DOM Level 3 Events draft</a>.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/event">MDN</a>.</div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="AT_TARGET" href="#AT_TARGET"><span class="identifier">AT_TARGET</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BLUR" href="#BLUR"><span class="identifier">BLUR</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="BLUR" href="#BLUR"><span class="identifier">BLUR</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BUBBLING_PHASE" href="#BUBBLING_PHASE"><span class="identifier">BUBBLING_PHASE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="BUBBLING_PHASE" href="#BUBBLING_PHASE"><span class="identifier">BUBBLING_PHASE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CAPTURING_PHASE" href="#CAPTURING_PHASE"><span class="identifier">CAPTURING_PHASE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="CAPTURING_PHASE" href="#CAPTURING_PHASE"><span class="identifier">CAPTURING_PHASE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CHANGE" href="#CHANGE"><span class="identifier">CHANGE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="CHANGE" href="#CHANGE"><span class="identifier">CHANGE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CLICK" href="#CLICK"><span class="identifier">CLICK</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="CLICK" href="#CLICK"><span class="identifier">CLICK</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DBLCLICK" href="#DBLCLICK"><span class="identifier">DBLCLICK</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DBLCLICK" href="#DBLCLICK"><span class="identifier">DBLCLICK</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DRAGDROP" href="#DRAGDROP"><span class="identifier">DRAGDROP</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DRAGDROP" href="#DRAGDROP"><span class="identifier">DRAGDROP</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="FOCUS" href="#FOCUS"><span class="identifier">FOCUS</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="FOCUS" href="#FOCUS"><span class="identifier">FOCUS</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYDOWN" href="#KEYDOWN"><span class="identifier">KEYDOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="KEYDOWN" href="#KEYDOWN"><span class="identifier">KEYDOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYPRESS" href="#KEYPRESS"><span class="identifier">KEYPRESS</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="KEYPRESS" href="#KEYPRESS"><span class="identifier">KEYPRESS</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYUP" href="#KEYUP"><span class="identifier">KEYUP</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="KEYUP" href="#KEYUP"><span class="identifier">KEYUP</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MOUSEDOWN" href="#MOUSEDOWN"><span class="identifier">MOUSEDOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MOUSEDOWN" href="#MOUSEDOWN"><span class="identifier">MOUSEDOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MOUSEDRAG" href="#MOUSEDRAG"><span class="identifier">MOUSEDRAG</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MOUSEDRAG" href="#MOUSEDRAG"><span class="identifier">MOUSEDRAG</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MOUSEMOVE" href="#MOUSEMOVE"><span class="identifier">MOUSEMOVE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MOUSEMOVE" href="#MOUSEMOVE"><span class="identifier">MOUSEMOVE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MOUSEOUT" href="#MOUSEOUT"><span class="identifier">MOUSEOUT</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MOUSEOUT" href="#MOUSEOUT"><span class="identifier">MOUSEOUT</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MOUSEOVER" href="#MOUSEOVER"><span class="identifier">MOUSEOVER</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MOUSEOVER" href="#MOUSEOVER"><span class="identifier">MOUSEOVER</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MOUSEUP" href="#MOUSEUP"><span class="identifier">MOUSEUP</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="MOUSEUP" href="#MOUSEUP"><span class="identifier">MOUSEUP</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NONE" href="#NONE"><span class="identifier">NONE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="NONE" href="#NONE"><span class="identifier">NONE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SELECT" href="#SELECT"><span class="identifier">SELECT</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SELECT" href="#SELECT"><span class="identifier">SELECT</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">canBubble</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">cancelable</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="bubbles" href="#bubbles"><span class="identifier">bubbles</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="bubbles" href="#bubbles"><span class="identifier">bubbles</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A boolean indicating whether the event bubbles up through the DOM or not.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="cancelBubble" href="#cancelBubble"><span class="identifier">cancelBubble</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="cancelBubble" href="#cancelBubble"><span class="identifier">cancelBubble</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A boolean indicating whether the bubbling of the event has been canceled or not.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="cancelable" href="#cancelable"><span class="identifier">cancelable</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="cancelable" href="#cancelable"><span class="identifier">cancelable</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A boolean indicating whether the event is cancelable.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="clipboardData" href="#clipboardData"><span class="identifier">clipboardData</span></a>:<a href="/dox/js/html/Clipboard.html"><span class="type">Clipboard</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="clipboardData" href="#clipboardData"><span class="identifier">clipboardData</span></a>:<a href="/dox/js/html/Clipboard.html"><span class="type">Clipboard</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="currentTarget" href="#currentTarget"><span class="identifier">currentTarget</span></a>:<a href="/dox/js/html/EventTarget.html"><span class="type">EventTarget</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="currentTarget" href="#currentTarget"><span class="identifier">currentTarget</span></a>:<a href="/dox/js/html/EventTarget.html"><span class="type">EventTarget</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A reference to the currently registered target for the event.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultPrevented" href="#defaultPrevented"><span class="identifier">defaultPrevented</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultPrevented" href="#defaultPrevented"><span class="identifier">defaultPrevented</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates whether or not <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/event.preventDefault">event.preventDefault()</a></code>
 has been called on the event.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="eventPhase" href="#eventPhase"><span class="identifier">eventPhase</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="eventPhase" href="#eventPhase"><span class="identifier">eventPhase</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates which phase of the event flow is being processed.</p></div>
-<hr/><a name="initEvent"></a><h3><code><span class="keyword">function</span> <a name="initEvent" href="#initEvent"><span class="identifier">initEvent</span></a>(<span class="identifier">eventTypeArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">canBubbleArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">cancelableArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="initEvent"></a><h3><code><span class="keyword">function</span> <a name="initEvent" href="#initEvent"><span class="identifier">initEvent</span></a>(<span class="identifier">eventTypeArg</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">canBubbleArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">cancelableArg</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="preventDefault"></a><h3><code><span class="keyword">function</span> <a name="preventDefault" href="#preventDefault"><span class="identifier">preventDefault</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="preventDefault"></a><h3><code><span class="keyword">function</span> <a name="preventDefault" href="#preventDefault"><span class="identifier">preventDefault</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="returnValue" href="#returnValue"><span class="identifier">returnValue</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="returnValue" href="#returnValue"><span class="identifier">returnValue</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="srcElement" href="#srcElement"><span class="identifier">srcElement</span></a>:<a href="/dox/js/html/EventTarget.html"><span class="type">EventTarget</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="srcElement" href="#srcElement"><span class="identifier">srcElement</span></a>:<a href="/dox/js/html/EventTarget.html"><span class="type">EventTarget</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="stopImmediatePropagation"></a><h3><code><span class="keyword">function</span> <a name="stopImmediatePropagation" href="#stopImmediatePropagation"><span class="identifier">stopImmediatePropagation</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stopImmediatePropagation"></a><h3><code><span class="keyword">function</span> <a name="stopImmediatePropagation" href="#stopImmediatePropagation"><span class="identifier">stopImmediatePropagation</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="stopPropagation"></a><h3><code><span class="keyword">function</span> <a name="stopPropagation" href="#stopPropagation"><span class="identifier">stopPropagation</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stopPropagation"></a><h3><code><span class="keyword">function</span> <a name="stopPropagation" href="#stopPropagation"><span class="identifier">stopPropagation</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="target" href="#target"><span class="identifier">target</span></a>:<a href="/dox/js/html/EventTarget.html"><span class="type">EventTarget</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="target" href="#target"><span class="identifier">target</span></a>:<a href="/dox/js/html/EventTarget.html"><span class="type">EventTarget</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A reference to the target to which the event was originally dispatched.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="timeStamp" href="#timeStamp"><span class="identifier">timeStamp</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="timeStamp" href="#timeStamp"><span class="identifier">timeStamp</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The time that the event was created.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The name of the event (case-insensitive).</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

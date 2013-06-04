@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,65 +52,84 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/js/html/audio/PannerNode.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="EQUALPOWER" href="#EQUALPOWER"><span class="identifier">EQUALPOWER</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="EXPONENTIAL_DISTANCE" href="#EXPONENTIAL_DISTANCE"><span class="identifier">EXPONENTIAL_DISTANCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="EXPONENTIAL_DISTANCE" href="#EXPONENTIAL_DISTANCE"><span class="identifier">EXPONENTIAL_DISTANCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HRTF" href="#HRTF"><span class="identifier">HRTF</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="HRTF" href="#HRTF"><span class="identifier">HRTF</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="INVERSE_DISTANCE" href="#INVERSE_DISTANCE"><span class="identifier">INVERSE_DISTANCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="INVERSE_DISTANCE" href="#INVERSE_DISTANCE"><span class="identifier">INVERSE_DISTANCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="LINEAR_DISTANCE" href="#LINEAR_DISTANCE"><span class="identifier">LINEAR_DISTANCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="LINEAR_DISTANCE" href="#LINEAR_DISTANCE"><span class="identifier">LINEAR_DISTANCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SOUNDFIELD" href="#SOUNDFIELD"><span class="identifier">SOUNDFIELD</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SOUNDFIELD" href="#SOUNDFIELD"><span class="identifier">SOUNDFIELD</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="coneGain" href="#coneGain"><span class="identifier">coneGain</span></a>:<a href="/dox/js/html/audio/AudioGain.html"><span class="type">AudioGain</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="coneInnerAngle" href="#coneInnerAngle"><span class="identifier">coneInnerAngle</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="coneInnerAngle" href="#coneInnerAngle"><span class="identifier">coneInnerAngle</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="coneOuterAngle" href="#coneOuterAngle"><span class="identifier">coneOuterAngle</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="coneOuterAngle" href="#coneOuterAngle"><span class="identifier">coneOuterAngle</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="coneOuterGain" href="#coneOuterGain"><span class="identifier">coneOuterGain</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="coneOuterGain" href="#coneOuterGain"><span class="identifier">coneOuterGain</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="distanceGain" href="#distanceGain"><span class="identifier">distanceGain</span></a>:<a href="/dox/js/html/audio/AudioGain.html"><span class="type">AudioGain</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="distanceGain" href="#distanceGain"><span class="identifier">distanceGain</span></a>:<a href="/dox/js/html/audio/AudioGain.html"><span class="type">AudioGain</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="distanceModel" href="#distanceModel"><span class="identifier">distanceModel</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="distanceModel" href="#distanceModel"><span class="identifier">distanceModel</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="maxDistance" href="#maxDistance"><span class="identifier">maxDistance</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="maxDistance" href="#maxDistance"><span class="identifier">maxDistance</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="panningModel" href="#panningModel"><span class="identifier">panningModel</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="panningModel" href="#panningModel"><span class="identifier">panningModel</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="refDistance" href="#refDistance"><span class="identifier">refDistance</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="refDistance" href="#refDistance"><span class="identifier">refDistance</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="rolloffFactor" href="#rolloffFactor"><span class="identifier">rolloffFactor</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="rolloffFactor" href="#rolloffFactor"><span class="identifier">rolloffFactor</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setOrientation"></a><h3><code><span class="keyword">function</span> <a name="setOrientation" href="#setOrientation"><span class="identifier">setOrientation</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">z</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setOrientation"></a><h3><code><span class="keyword">function</span> <a name="setOrientation" href="#setOrientation"><span class="identifier">setOrientation</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">z</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setPosition"></a><h3><code><span class="keyword">function</span> <a name="setPosition" href="#setPosition"><span class="identifier">setPosition</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">z</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setPosition"></a><h3><code><span class="keyword">function</span> <a name="setPosition" href="#setPosition"><span class="identifier">setPosition</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">z</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setVelocity"></a><h3><code><span class="keyword">function</span> <a name="setVelocity" href="#setVelocity"><span class="identifier">setVelocity</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">z</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setVelocity"></a><h3><code><span class="keyword">function</span> <a name="setVelocity" href="#setVelocity"><span class="identifier">setVelocity</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">z</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

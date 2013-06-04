@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,151 +52,199 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/js/html/svg/ElementInstance.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="childNodes" href="#childNodes"><span class="identifier">childNodes</span></a>:<a href="/dox/js/html/svg/ElementInstanceList.html"><span class="type">ElementInstanceList</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="correspondingElement" href="#correspondingElement"><span class="identifier">correspondingElement</span></a>:<a href="/dox/js/html/svg/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="correspondingElement" href="#correspondingElement"><span class="identifier">correspondingElement</span></a>:<a href="/dox/js/html/svg/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="correspondingUseElement" href="#correspondingUseElement"><span class="identifier">correspondingUseElement</span></a>:<a href="/dox/js/html/svg/UseElement.html"><span class="type">UseElement</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="correspondingUseElement" href="#correspondingUseElement"><span class="identifier">correspondingUseElement</span></a>:<a href="/dox/js/html/svg/UseElement.html"><span class="type">UseElement</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="firstChild" href="#firstChild"><span class="identifier">firstChild</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="firstChild" href="#firstChild"><span class="identifier">firstChild</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lastChild" href="#lastChild"><span class="identifier">lastChild</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lastChild" href="#lastChild"><span class="identifier">lastChild</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="nextSibling" href="#nextSibling"><span class="identifier">nextSibling</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="nextSibling" href="#nextSibling"><span class="identifier">nextSibling</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onabort" href="#onabort"><span class="identifier">onabort</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onabort" href="#onabort"><span class="identifier">onabort</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onbeforecopy" href="#onbeforecopy"><span class="identifier">onbeforecopy</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onbeforecopy" href="#onbeforecopy"><span class="identifier">onbeforecopy</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onbeforecut" href="#onbeforecut"><span class="identifier">onbeforecut</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onbeforecut" href="#onbeforecut"><span class="identifier">onbeforecut</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onbeforepaste" href="#onbeforepaste"><span class="identifier">onbeforepaste</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onbeforepaste" href="#onbeforepaste"><span class="identifier">onbeforepaste</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onblur" href="#onblur"><span class="identifier">onblur</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onblur" href="#onblur"><span class="identifier">onblur</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onchange" href="#onchange"><span class="identifier">onchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onchange" href="#onchange"><span class="identifier">onchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onclick" href="#onclick"><span class="identifier">onclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onclick" href="#onclick"><span class="identifier">onclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oncontextmenu" href="#oncontextmenu"><span class="identifier">oncontextmenu</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oncontextmenu" href="#oncontextmenu"><span class="identifier">oncontextmenu</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oncopy" href="#oncopy"><span class="identifier">oncopy</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oncopy" href="#oncopy"><span class="identifier">oncopy</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oncut" href="#oncut"><span class="identifier">oncut</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oncut" href="#oncut"><span class="identifier">oncut</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondblclick" href="#ondblclick"><span class="identifier">ondblclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondblclick" href="#ondblclick"><span class="identifier">ondblclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondrag" href="#ondrag"><span class="identifier">ondrag</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondrag" href="#ondrag"><span class="identifier">ondrag</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragend" href="#ondragend"><span class="identifier">ondragend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragend" href="#ondragend"><span class="identifier">ondragend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragenter" href="#ondragenter"><span class="identifier">ondragenter</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragenter" href="#ondragenter"><span class="identifier">ondragenter</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragleave" href="#ondragleave"><span class="identifier">ondragleave</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragleave" href="#ondragleave"><span class="identifier">ondragleave</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragover" href="#ondragover"><span class="identifier">ondragover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragover" href="#ondragover"><span class="identifier">ondragover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragstart" href="#ondragstart"><span class="identifier">ondragstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragstart" href="#ondragstart"><span class="identifier">ondragstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondrop" href="#ondrop"><span class="identifier">ondrop</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondrop" href="#ondrop"><span class="identifier">ondrop</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onfocus" href="#onfocus"><span class="identifier">onfocus</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onfocus" href="#onfocus"><span class="identifier">onfocus</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oninput" href="#oninput"><span class="identifier">oninput</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oninput" href="#oninput"><span class="identifier">oninput</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeydown" href="#onkeydown"><span class="identifier">onkeydown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeydown" href="#onkeydown"><span class="identifier">onkeydown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeypress" href="#onkeypress"><span class="identifier">onkeypress</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeypress" href="#onkeypress"><span class="identifier">onkeypress</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeyup" href="#onkeyup"><span class="identifier">onkeyup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeyup" href="#onkeyup"><span class="identifier">onkeyup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onload" href="#onload"><span class="identifier">onload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onload" href="#onload"><span class="identifier">onload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmousedown" href="#onmousedown"><span class="identifier">onmousedown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmousedown" href="#onmousedown"><span class="identifier">onmousedown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmousemove" href="#onmousemove"><span class="identifier">onmousemove</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmousemove" href="#onmousemove"><span class="identifier">onmousemove</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmouseout" href="#onmouseout"><span class="identifier">onmouseout</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmouseout" href="#onmouseout"><span class="identifier">onmouseout</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmouseover" href="#onmouseover"><span class="identifier">onmouseover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmouseover" href="#onmouseover"><span class="identifier">onmouseover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmouseup" href="#onmouseup"><span class="identifier">onmouseup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmouseup" href="#onmouseup"><span class="identifier">onmouseup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmousewheel" href="#onmousewheel"><span class="identifier">onmousewheel</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmousewheel" href="#onmousewheel"><span class="identifier">onmousewheel</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onpaste" href="#onpaste"><span class="identifier">onpaste</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onpaste" href="#onpaste"><span class="identifier">onpaste</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onreset" href="#onreset"><span class="identifier">onreset</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onreset" href="#onreset"><span class="identifier">onreset</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onresize" href="#onresize"><span class="identifier">onresize</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onresize" href="#onresize"><span class="identifier">onresize</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onscroll" href="#onscroll"><span class="identifier">onscroll</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onscroll" href="#onscroll"><span class="identifier">onscroll</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsearch" href="#onsearch"><span class="identifier">onsearch</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsearch" href="#onsearch"><span class="identifier">onsearch</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onselect" href="#onselect"><span class="identifier">onselect</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onselect" href="#onselect"><span class="identifier">onselect</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onselectstart" href="#onselectstart"><span class="identifier">onselectstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onselectstart" href="#onselectstart"><span class="identifier">onselectstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsubmit" href="#onsubmit"><span class="identifier">onsubmit</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsubmit" href="#onsubmit"><span class="identifier">onsubmit</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onunload" href="#onunload"><span class="identifier">onunload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onunload" href="#onunload"><span class="identifier">onunload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="parentNode" href="#parentNode"><span class="identifier">parentNode</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="parentNode" href="#parentNode"><span class="identifier">parentNode</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="previousSibling" href="#previousSibling"><span class="identifier">previousSibling</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="previousSibling" href="#previousSibling"><span class="identifier">previousSibling</span></a>:<a href="/dox/js/html/svg/ElementInstance.html"><span class="type">ElementInstance</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

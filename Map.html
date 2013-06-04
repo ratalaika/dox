@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -33,49 +59,59 @@ will then determine the type parameters from the usage.</p>
 <p>Maps can also be created with <code>key1 =&gt; value1, key2 =&gt; value2</code> syntax.</p>
 <p>Map is an abstract type, it is not available at runtime.</p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-cpp">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>():<a href="/dox/IMap.html"><span class="type">IMap</span></a>&lt;<span class="type">K</span>, <span class="type">V</span>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Creates a new Map.</p>
 <p>This becomes a constructor call to one of the specialization types in
-the output. The rules for that are as follows:</p><ol><li>if K is a String, haxe.ds.StringMap is used</li><li>if K is an Int, haxe.ds.IntMap is used</li><li>if K is an enum, haxe.ds.EnumValueMap is used</li><li>if K is any other class or structure, haxe.ds.ObjectMap is used</li><li>if K is any other type, it causes a compile-time error</li></ol>
+the output. The rules for that are as follows:</p><ol><li>if K is a <code><a href="/dox/String.html">String</a></code>, <code><a href="/dox/haxe/ds/StringMap.html">haxe.ds.StringMap</a></code> is used</li><li>if K is an <code><a href="/dox/Int.html">Int</a></code>, <code><a href="/dox/haxe/ds/IntMap.html">haxe.ds.IntMap</a></code> is used</li><li>if K is an <code><a href="/dox/EnumValue.html">EnumValue</a></code>, <code><a href="/dox/haxe/ds/EnumValueMap.html">haxe.ds.EnumValueMap</a></code> is used</li><li>if K is any other class or structure, <code><a href="/dox/haxe/ds/ObjectMap.html">haxe.ds.ObjectMap</a></code> is used</li><li>if K is any other type, it causes a compile-time error</li></ol>
 <p>(Cpp) Map does not use weak keys on ObjectMap by default.</p></div>
-<hr/><a name="arrayWrite"></a><h3><code><span class="keyword">function</span> <a name="arrayWrite" href="#arrayWrite"><span class="identifier">arrayWrite</span></a>(<span class="identifier">k</span>:<span class="type">K</span>, <span class="identifier">v</span>:<span class="type">V</span>):<span class="type">V</span>;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="arrayWrite"></a><h3><code><span class="keyword">function</span> <a name="arrayWrite" href="#arrayWrite"><span class="identifier">arrayWrite</span></a>(<span class="identifier">k</span>:<span class="type">K</span>, <span class="identifier">v</span>:<span class="type">V</span>):<span class="type">V</span>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="exists"></a><h3><code><span class="keyword">function</span> <a name="exists" href="#exists"><span class="identifier">exists</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="exists"></a><h3><code><span class="keyword">function</span> <a name="exists" href="#exists"><span class="identifier">exists</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Returns true if <code>key</code> has a mapping, false otherwise.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Returns the current mapping of <code>key</code>.</p>
 <p>If no such mapping exists, null is returned.</p>
-<p>Note that a check like map.get(key) == null can hold for two reasons:</p><ol><li>the map has no mapping for <code>key</code></li><li>the map has a mapping with a value of null</li></ol>
-<p>If it is important to distinguish these cases, exists() should be used.</p>
+<p>Note that a check like <code>map.get(key) == <a href="/dox/Null.html">null</a></code> can hold for two reasons:</p><ol><li>the map has no mapping for <code>key</code></li><li>the map has a mapping with a value of <code><a href="/dox/Null.html">null</a></code></li></ol>
+<p>If it is important to distinguish these cases, <code>exists()</code> should be 
+used.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="iterator"></a><h3><code><span class="keyword">function</span> <a name="iterator" href="#iterator"><span class="identifier">iterator</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="iterator"></a><h3><code><span class="keyword">function</span> <a name="iterator" href="#iterator"><span class="identifier">iterator</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">V</span>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Returns an Iterator over the values of <code>this</code> Map.</p>
 <p>The order of values is undefined.</p></div>
-<hr/><a name="keys"></a><h3><code><span class="keyword">function</span> <a name="keys" href="#keys"><span class="identifier">keys</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">K</span>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="keys"></a><h3><code><span class="keyword">function</span> <a name="keys" href="#keys"><span class="identifier">keys</span></a>():<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<span class="type">K</span>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Returns an Iterator over the keys of <code>this</code> Map.</p>
 <p>The order of keys is undefined.</p></div>
-<hr/><a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">key</span>:<span class="type">K</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Removes the mapping of <code>key</code> and returns true if such a mapping existed,
 false otherwise.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="set"></a><h3><code><span class="keyword">function</span> <a name="set" href="#set"><span class="identifier">set</span></a>(<span class="identifier">key</span>:<span class="type">K</span>, <span class="identifier">value</span>:<span class="type">V</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="set"></a><h3><code><span class="keyword">function</span> <a name="set" href="#set"><span class="identifier">set</span></a>(<span class="identifier">key</span>:<span class="type">K</span>, <span class="identifier">value</span>:<span class="type">V</span>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Maps <code>key</code> to <code>value</code>.</p>
 <p>If <code>key</code> already has a mapping, the previous value disappears.</p>
 <p>If <code>key</code> is null, the result is unspecified.</p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp</span></code></div>
 <div class="doc"><p>Returns a String representation of <code>this</code> Map.</p>
 <p>The exact representation depends on the platform and key-type.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

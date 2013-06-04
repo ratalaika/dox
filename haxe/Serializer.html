@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -37,6 +63,7 @@ or may not work for instances of external/native classes.</p>
 <p>The specification of the serialization format can be found here:
 <code>http://haxe.org/manual/serialization/format</code></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <h3><code><span class="keyword">var</span> <a name="USE_CACHE" href="#USE_CACHE"><span class="identifier">USE_CACHE</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>If the values you are serializing can contain circular references or
 objects repetitions, you should set USE_CACHE to true to prevent
@@ -45,19 +72,22 @@ infinite loops.</p>
 performance.</p>
 <p>This value can be changed for individual instances of Serializer by
 setting their useCache field.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="USE_ENUM_INDEX" href="#USE_ENUM_INDEX"><span class="identifier">USE_ENUM_INDEX</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="USE_ENUM_INDEX" href="#USE_ENUM_INDEX"><span class="identifier">USE_ENUM_INDEX</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Use constructor indexes for enums instead of names.</p>
 <p>This may reduce the size of serialization Strings, but makes them less
 suited for long-term storage: If constructors are removed or added from
 the enum, the indices may no longer match.</p>
 <p>This value can be changed for individual instances of Serializer by
 setting their useEnumIndex field.</p></div>
-<hr/><a name="run"></a><h3><code><span class="keyword">function</span> <a name="run" href="#run"><span class="identifier">run</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="run"></a><h3><code><span class="keyword">function</span> <a name="run" href="#run"><span class="identifier">run</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Serializes <code>v</code> and returns the String representation.</p>
 <p>This is a convenience function for creating a new instance of
 Serializer, serialize <code>v</code> into it and obtain the result through a call
 to toString().</p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Creates a new Serializer instance.</p>
 <p>Subsequent calls to <code>this.<a href="#serialize">serialize</a></code> will append values to the
@@ -65,26 +95,31 @@ internal buffer of this String. Once complete, the contents can be
 retrieved through a call to <code>this.<a href="#toString">toString</a></code>.</p>
 <p>Each Serializer instance maintains its own cache if this.useCache` is
 true.</p></div>
-<hr/><a name="serialize"></a><h3><code><span class="keyword">function</span> <a name="serialize" href="#serialize"><span class="identifier">serialize</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="serialize"></a><h3><code><span class="keyword">function</span> <a name="serialize" href="#serialize"><span class="identifier">serialize</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Serializes <code>v</code>.</p>
 <p>All haxe-defined values and objects with the exception of functions can
 be serialized. Serialization of external/native objects is not
 guaranteed to work.</p>
 <p>The values of <code>this.<a href="#useCache">useCache</a></code> and <code>this.<a href="#useEnumIndex">useEnumIndex</a></code> may affect
 serialization output.</p></div>
-<hr/><a name="serializeException"></a><h3><code><span class="keyword">function</span> <a name="serializeException" href="#serializeException"><span class="identifier">serializeException</span></a>(<span class="identifier">e</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="serializeException"></a><h3><code><span class="keyword">function</span> <a name="serializeException" href="#serializeException"><span class="identifier">serializeException</span></a>(<span class="identifier">e</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Return the String representation of <code>this</code> Serializer.</p>
 <p>The exact format specification can be found here:
 http://haxe.org/manual/serialization/format</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="useCache" href="#useCache"><span class="identifier">useCache</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="useCache" href="#useCache"><span class="identifier">useCache</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>The individual cache setting for <code>this</code> Serializer instance.</p>
 <p>See USE_CACHE for a complete description.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="useEnumIndex" href="#useEnumIndex"><span class="identifier">useEnumIndex</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="useEnumIndex" href="#useEnumIndex"><span class="identifier">useEnumIndex</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>The individual enum index setting for <code>this</code> Serializer instance.</p>
 <p>See USE<em>ENUM</em>INDEX for a complete description.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

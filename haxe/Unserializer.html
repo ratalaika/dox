@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -33,6 +59,7 @@ extracted</p></li><li>
 <p>call Unserializer.run() to unserialize a single value from a given
 String</p></li></ul></div>
 <h2>Class Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <h3><code><span class="keyword">var</span> <a name="DEFAULT_RESOLVER" href="#DEFAULT_RESOLVER"><span class="identifier">DEFAULT_RESOLVER</span></a>:<a href="/dox/haxe/TypeResolver.html"><span class="type">TypeResolver</span></a>;</code></h3>
 <div class="doc"><p>This value can be set to use custom type resolvers.</p>
 <p>A type resolver finds a Class or Enum instance from a given String. By
@@ -44,27 +71,32 @@ Class from a class name</p></li><li>
 Enum from an enum name</p></li></ol>
 <p>This value is applied when a new Unserializer instance is created.
 Changing it afterwards has no effect on previously created instances.</p></div>
-<hr/><a name="run"></a><h3><code><span class="keyword">function</span> <a name="run" href="#run"><span class="identifier">run</span></a>(<span class="identifier">v</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="run"></a><h3><code><span class="keyword">function</span> <a name="run" href="#run"><span class="identifier">run</span></a>(<span class="identifier">v</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div class="doc"><p>Unserializes <code>v</code> and returns the according value.</p>
 <p>This is a convenience function for creating a new instance of
 Unserializer with <code>v</code> as buffer and calling its unserialize() method
 once.</p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">buf</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Creates a new Unserializer instance, with its internal buffer
 initialized to <code>buf</code>.</p>
 <p>This does not parse <code>buf</code> immediately. It is parsed only when calls to
 <code>this.<a href="#unserialize">unserialize</a></code> are made.</p>
 <p>Each Unserializer instance maintains its own cache.</p></div>
-<hr/><a name="getResolver"></a><h3><code><span class="keyword">function</span> <a name="getResolver" href="#getResolver"><span class="identifier">getResolver</span></a>():<a href="/dox/haxe/TypeResolver.html"><span class="type">TypeResolver</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="getResolver"></a><h3><code><span class="keyword">function</span> <a name="getResolver" href="#getResolver"><span class="identifier">getResolver</span></a>():<a href="/dox/haxe/TypeResolver.html"><span class="type">TypeResolver</span></a>;</code></h3>
 <div class="doc"><p>Gets the type resolver of <code>this</code> Unserializer instance.</p>
 <p>See DEFAULT_RESOLVER for more information on type resolvers.</p></div>
-<hr/><a name="setResolver"></a><h3><code><span class="keyword">function</span> <a name="setResolver" href="#setResolver"><span class="identifier">setResolver</span></a>(<span class="identifier">r</span>:<a href="/dox/haxe/TypeResolver.html"><span class="type">TypeResolver</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="setResolver"></a><h3><code><span class="keyword">function</span> <a name="setResolver" href="#setResolver"><span class="identifier">setResolver</span></a>(<span class="identifier">r</span>:<a href="/dox/haxe/TypeResolver.html"><span class="type">TypeResolver</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p>Sets the type resolver of <code>this</code> Unserializer instance to <code>r</code>.</p>
 <p>If <code>r</code> is null, a special resolver is used which returns null for all
 input values.</p>
 <p>See DEFAULT_RESOLVER for more information on type resolvers.</p></div>
-<hr/><a name="unserialize"></a><h3><code><span class="keyword">function</span> <a name="unserialize" href="#unserialize"><span class="identifier">unserialize</span></a>():<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="unserialize"></a><h3><code><span class="keyword">function</span> <a name="unserialize" href="#unserialize"><span class="identifier">unserialize</span></a>():<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div class="doc"><p>Unserializes the next part of <code>this</code> Unserializer instance and returns
 the according value.</p>
 <p>This function may call <code>this.<a href="#resolver">resolver</a>.resolveClass</code> to determine a
@@ -79,7 +111,7 @@ serialization side has to make sure not to include platform-specific
 data.</p>
 <p>Classes are created from Type.createEmptyInstance, which means their
 constructors are not called.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

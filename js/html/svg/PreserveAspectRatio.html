@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -29,68 +55,84 @@
 <p>An <code>SVGPreserveAspectRatio</code> object can be designated as read only, which means that attempts to modify the object will result in an exception being thrown.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/SVGPreserveAspectRatio">MDN</a>.</div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="SVG_MEETORSLICE_MEET" href="#SVG_MEETORSLICE_MEET"><span class="identifier">SVG_MEETORSLICE_MEET</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>meet</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_MEETORSLICE_SLICE" href="#SVG_MEETORSLICE_SLICE"><span class="identifier">SVG_MEETORSLICE_SLICE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_MEETORSLICE_SLICE" href="#SVG_MEETORSLICE_SLICE"><span class="identifier">SVG_MEETORSLICE_SLICE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>slice</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_MEETORSLICE_UNKNOWN" href="#SVG_MEETORSLICE_UNKNOWN"><span class="identifier">SVG_MEETORSLICE_UNKNOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_MEETORSLICE_UNKNOWN" href="#SVG_MEETORSLICE_UNKNOWN"><span class="identifier">SVG_MEETORSLICE_UNKNOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The enumeration was set to a value that is not one of predefined types. It is invalid to attempt to define a new value of this type or to attempt to switch an existing value to this type.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_NONE" href="#SVG_PRESERVEASPECTRATIO_NONE"><span class="identifier">SVG_PRESERVEASPECTRATIO_NONE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_NONE" href="#SVG_PRESERVEASPECTRATIO_NONE"><span class="identifier">SVG_PRESERVEASPECTRATIO_NONE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>none</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_UNKNOWN" href="#SVG_PRESERVEASPECTRATIO_UNKNOWN"><span class="identifier">SVG_PRESERVEASPECTRATIO_UNKNOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_UNKNOWN" href="#SVG_PRESERVEASPECTRATIO_UNKNOWN"><span class="identifier">SVG_PRESERVEASPECTRATIO_UNKNOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The enumeration was set to a value that is not one of predefined types. It is invalid to attempt to define a new value of this type or to attempt to switch an existing value to this type.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMAXYMAX" href="#SVG_PRESERVEASPECTRATIO_XMAXYMAX"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMAXYMAX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMAXYMAX" href="#SVG_PRESERVEASPECTRATIO_XMAXYMAX"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMAXYMAX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMaxYMax</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMAXYMID" href="#SVG_PRESERVEASPECTRATIO_XMAXYMID"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMAXYMID</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMAXYMID" href="#SVG_PRESERVEASPECTRATIO_XMAXYMID"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMAXYMID</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMaxYMid</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMAXYMIN" href="#SVG_PRESERVEASPECTRATIO_XMAXYMIN"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMAXYMIN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMAXYMIN" href="#SVG_PRESERVEASPECTRATIO_XMAXYMIN"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMAXYMIN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMaxYMin</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMIDYMAX" href="#SVG_PRESERVEASPECTRATIO_XMIDYMAX"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMIDYMAX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMIDYMAX" href="#SVG_PRESERVEASPECTRATIO_XMIDYMAX"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMIDYMAX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMidYMax</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMIDYMID" href="#SVG_PRESERVEASPECTRATIO_XMIDYMID"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMIDYMID</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMIDYMID" href="#SVG_PRESERVEASPECTRATIO_XMIDYMID"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMIDYMID</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMidYMid</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMIDYMIN" href="#SVG_PRESERVEASPECTRATIO_XMIDYMIN"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMIDYMIN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMIDYMIN" href="#SVG_PRESERVEASPECTRATIO_XMIDYMIN"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMIDYMIN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMidYMin</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMINYMAX" href="#SVG_PRESERVEASPECTRATIO_XMINYMAX"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMINYMAX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMINYMAX" href="#SVG_PRESERVEASPECTRATIO_XMINYMAX"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMINYMAX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMinYMax</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMINYMID" href="#SVG_PRESERVEASPECTRATIO_XMINYMID"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMINYMID</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMINYMID" href="#SVG_PRESERVEASPECTRATIO_XMINYMID"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMINYMID</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMinYMid</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMINYMIN" href="#SVG_PRESERVEASPECTRATIO_XMINYMIN"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMINYMIN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_PRESERVEASPECTRATIO_XMINYMIN" href="#SVG_PRESERVEASPECTRATIO_XMINYMIN"><span class="identifier">SVG_PRESERVEASPECTRATIO_XMINYMIN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Corresponds to value <code>xMinYMin</code> for attribute 
 <code><a rel="custom" href="https://developer.mozilla.org/en/SVG/Attribute/preserveAspectRatio">preserveAspectRatio</a></code>.</p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="align" href="#align"><span class="identifier">align</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The type of the alignment value as specified by one of the SVG<em>PRESERVEASPECTRATIO</em>* constants defined on this interface. Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="meetOrSlice" href="#meetOrSlice"><span class="identifier">meetOrSlice</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="meetOrSlice" href="#meetOrSlice"><span class="identifier">meetOrSlice</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The type of the meet-or-slice value as specified by one of the SVG<em>MEETORSLICE</em>* constants defined on this interface. Setter throws DOMException.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

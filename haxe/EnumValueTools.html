@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,27 +53,31 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/EnumTools.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="equals"></a><h3><code><span class="keyword">function</span> <a name="equals" href="#equals"><span class="identifier">equals</span></a>&lt;<span class="type">T</span>&gt;(<span class="identifier">a</span>:<span class="type">T</span>, <span class="identifier">b</span>:<span class="type">T</span>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc"><p>Recursively compares two enum instances <code>a</code> and <code>b</code> by value.</p>
 <p>Unlike <code>a == b</code>, this function performs a deep equality check on the
 arguments of the constructors, if exists.</p>
 <p>If <code>a</code> or <code>b</code> are null, the result is unspecified.</p></div>
-<hr/><a name="getIndex"></a><h3><code><span class="keyword">function</span> <a name="getIndex" href="#getIndex"><span class="identifier">getIndex</span></a>(<span class="identifier">e</span>:<a href="/dox/EnumValue.html"><span class="type">EnumValue</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="getIndex"></a><h3><code><span class="keyword">function</span> <a name="getIndex" href="#getIndex"><span class="identifier">getIndex</span></a>(<span class="identifier">e</span>:<a href="/dox/EnumValue.html"><span class="type">EnumValue</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div class="doc"><p>Returns the index of enum instance <code>e</code>.</p>
 <p>This corresponds to the original syntactic position of <code>e</code>. The index of
 the first declared constructor is 0, the next one is 1 etc.</p>
 <p>If <code>e</code> is null, the result is unspecified.</p></div>
-<hr/><a name="getName"></a><h3><code><span class="keyword">function</span> <a name="getName" href="#getName"><span class="identifier">getName</span></a>(<span class="identifier">e</span>:<a href="/dox/EnumValue.html"><span class="type">EnumValue</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="getName"></a><h3><code><span class="keyword">function</span> <a name="getName" href="#getName"><span class="identifier">getName</span></a>(<span class="identifier">e</span>:<a href="/dox/EnumValue.html"><span class="type">EnumValue</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc"><p>Returns the constructor name of enum instance <code>e</code>.</p>
 <p>The result String does not contain any constructor arguments.</p>
 <p>If <code>e</code> is null, the result is unspecified.</p></div>
-<hr/><a name="getParameters"></a><h3><code><span class="keyword">function</span> <a name="getParameters" href="#getParameters"><span class="identifier">getParameters</span></a>(<span class="identifier">e</span>:<a href="/dox/EnumValue.html"><span class="type">EnumValue</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<a name="getParameters"></a><h3><code><span class="keyword">function</span> <a name="getParameters" href="#getParameters"><span class="identifier">getParameters</span></a>(<span class="identifier">e</span>:<a href="/dox/EnumValue.html"><span class="type">EnumValue</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
 <div class="doc"><p>Returns a list of the constructor arguments of enum instance <code>e</code>.</p>
 <p>If <code>e</code> has no arguments, the result is [].</p>
 <p>Otherwise the result are the values that were used as arguments to <code>e</code>,
 in the order of their declaration.</p>
 <p>If <code>e</code> is null, the result is unspecified.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

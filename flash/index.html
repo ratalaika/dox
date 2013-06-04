@@ -14,14 +14,40 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
-				<div class="content"><h1><span class="directive">package</span> flash</h1><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/flash/Accessibility.html"><span class="type">Accessibility</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Boot.html"><span class="type">Boot</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Button.html"><span class="type">Button</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Camera.html"><span class="type">Camera</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Color.html"><span class="type">Color</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/ContextMenu.html"><span class="type">ContextMenu</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/ContextMenuItem.html"><span class="type">ContextMenuItem</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/ExtendedKey.html"><span class="type">ExtendedKey</span></a></td><td><p>flash lite only</p></td></tr><tr><td width="200"><a href="/dox/flash/Key.html"><span class="type">Key</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Lib.html"><span class="type">Lib</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/LoadVars.html"><span class="type">LoadVars</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/LocalConnection.html"><span class="type">LocalConnection</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Memory.html"><span class="type">Memory</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Microphone.html"><span class="type">Microphone</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Mouse.html"><span class="type">Mouse</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/MovieClip.html"><span class="type">MovieClip</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/MovieClipLoader.html"><span class="type">MovieClipLoader</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/NetConnection.html"><span class="type">NetConnection</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/NetStream.html"><span class="type">NetStream</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/PrintJob.html"><span class="type">PrintJob</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Selection.html"><span class="type">Selection</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/SelectionListener.html"><span class="type">SelectionListener</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/SharedObject.html"><span class="type">SharedObject</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Sound.html"><span class="type">Sound</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Stage.html"><span class="type">Stage</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/System.html"><span class="type">System</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/TextField.html"><span class="type">TextField</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/TextFormat.html"><span class="type">TextFormat</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/TextSnapshot.html"><span class="type">TextSnapshot</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Vector.html"><span class="type">Vector</span></a></td><td><p>The Vector class is very similar to Array but is only supported by the Flash Player 10+</p></td></tr><tr><td width="200"><a href="/dox/flash/Video.html"><span class="type">Video</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/XMLRequest.html"><span class="type">XMLRequest</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/XMLSocket.html"><span class="type">XMLSocket</span></a></td><td><p></p></td></tr></tbody></table></div>
+				<div class="content"><h1><span class="directive">package</span> flash</h1><table class="table table-condensed"><tbody><tr><td width="200"><a href="/dox/flash/Boot.html"><span class="type">Boot</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Lib.html"><span class="type">Lib</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Memory.html"><span class="type">Memory</span></a></td><td><p></p></td></tr><tr><td width="200"><a href="/dox/flash/Vector.html"><span class="type">Vector</span></a></td><td><p>The Vector class is very similar to Array but is only supported by the Flash Player 10+</p></td></tr></tbody></table></div>
 			</div>
 		</div>
 	</body>

@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -28,6 +54,7 @@
 <div class="doc"><p>MetaAccess is a wrapper for the <code><a href="/dox/Metadata.html">Metadata</a></code> array. It can be used to add
 metadata to and remove metadata from its origin.</p></div>
 <h2>Instance Fields</h2>
+<span class="">
 <a name="add"></a><h3><code><span class="keyword">function</span> <a name="add" href="#add"><span class="identifier">add</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">params</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/haxe/macro/Expr.html"><span class="type">Expr</span></a>&gt;, <span class="identifier">pos</span>:<a href="/dox/haxe/macro/Position.html"><span class="type">Position</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc">Adds the metadata specified by `name`, `params` and `pos` to the origin
 		of `this` MetaAccess.
@@ -39,16 +66,19 @@ metadata to and remove metadata from its origin.</p></div>
 		call to `add` has no effect on that array.
 		
 		If any argument is null, compilation fails with an error.</div>
-<hr/><a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>():<a href="/dox/haxe/macro/Metadata.html"><span class="type">Metadata</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>():<a href="/dox/haxe/macro/Metadata.html"><span class="type">Metadata</span></a>;</code></h3>
 <div class="doc">Return the wrapped `Metadata` array.
 		
 		Modifying this array has no effect on the origin of `this` MetaAccess.
 		The `add` and `remove` methods can be used for that.</div>
-<hr/><a name="has"></a><h3><code><span class="keyword">function</span> <a name="has" href="#has"><span class="identifier">has</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="has"></a><h3><code><span class="keyword">function</span> <a name="has" href="#has"><span class="identifier">has</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc">Tells if the origin of `this` MetaAccess has a `name` metadata entry.
 		
 		If `name` is null, compilation fails with an error.</div>
-<hr/><a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc">Removes all `name` metadata entries from the origin of `this`
 		MetaAccess.
 		
@@ -58,7 +88,7 @@ metadata to and remove metadata from its origin.</p></div>
 		call to `remove` has no effect on that array.
 		
 		If `name` is null, compilation fails with an error.</div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

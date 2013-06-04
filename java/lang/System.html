@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,91 +52,119 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxelib/hxjava/3,0,0-rc,1/lib/hxjava-std.jar@java/lang/System.class</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-java">
 <h3><code><span class="keyword">var</span> <a name="_in" href="#_in"><span class="identifier">_in</span></a>:<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="arraycopy"></a><h3><code><span class="keyword">function</span> <a name="arraycopy" href="#arraycopy"><span class="identifier">arraycopy</span></a>(<span class="identifier">param1</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">param2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">param3</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">param4</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">param5</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="arraycopy"></a><h3><code><span class="keyword">function</span> <a name="arraycopy" href="#arraycopy"><span class="identifier">arraycopy</span></a>(<span class="identifier">param1</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">param2</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">param3</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">param4</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">param5</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clearProperty"></a><h3><code><span class="keyword">function</span> <a name="clearProperty" href="#clearProperty"><span class="identifier">clearProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="clearProperty"></a><h3><code><span class="keyword">function</span> <a name="clearProperty" href="#clearProperty"><span class="identifier">clearProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="console"></a><h3><code><span class="keyword">function</span> <a name="console" href="#console"><span class="identifier">console</span></a>():<a href="/dox/java/io/Console.html"><span class="type">Console</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="console"></a><h3><code><span class="keyword">function</span> <a name="console" href="#console"><span class="identifier">console</span></a>():<a href="/dox/java/io/Console.html"><span class="type">Console</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="currentTimeMillis"></a><h3><code><span class="keyword">function</span> <a name="currentTimeMillis" href="#currentTimeMillis"><span class="identifier">currentTimeMillis</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="currentTimeMillis"></a><h3><code><span class="keyword">function</span> <a name="currentTimeMillis" href="#currentTimeMillis"><span class="identifier">currentTimeMillis</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="err" href="#err"><span class="identifier">err</span></a>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<h3><code><span class="keyword">var</span> <a name="err" href="#err"><span class="identifier">err</span></a>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="exit"></a><h3><code><span class="keyword">function</span> <a name="exit" href="#exit"><span class="identifier">exit</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="exit"></a><h3><code><span class="keyword">function</span> <a name="exit" href="#exit"><span class="identifier">exit</span></a>(<span class="identifier">param1</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="gc"></a><h3><code><span class="keyword">function</span> <a name="gc" href="#gc"><span class="identifier">gc</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="gc"></a><h3><code><span class="keyword">function</span> <a name="gc" href="#gc"><span class="identifier">gc</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getProperties"></a><h3><code><span class="keyword">function</span> <a name="getProperties" href="#getProperties"><span class="identifier">getProperties</span></a>():<a href="/dox/java/util/Properties.html"><span class="type">Properties</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getProperties"></a><h3><code><span class="keyword">function</span> <a name="getProperties" href="#getProperties"><span class="identifier">getProperties</span></a>():<a href="/dox/java/util/Properties.html"><span class="type">Properties</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getProperty"></a><h3><code><span class="keyword">function</span> <a name="getProperty" href="#getProperty"><span class="identifier">getProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getProperty"></a><h3><code><span class="keyword">function</span> <a name="getProperty" href="#getProperty"><span class="identifier">getProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSecurityManager"></a><h3><code><span class="keyword">function</span> <a name="getSecurityManager" href="#getSecurityManager"><span class="identifier">getSecurityManager</span></a>():<a href="/dox/java/lang/SecurityManager.html"><span class="type">SecurityManager</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getSecurityManager"></a><h3><code><span class="keyword">function</span> <a name="getSecurityManager" href="#getSecurityManager"><span class="identifier">getSecurityManager</span></a>():<a href="/dox/java/lang/SecurityManager.html"><span class="type">SecurityManager</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getenv"></a><h3><code><span class="keyword">function</span> <a name="getenv" href="#getenv"><span class="identifier">getenv</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="getenv"></a><h3><code><span class="keyword">function</span> <a name="getenv" href="#getenv"><span class="identifier">getenv</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="identityHashCode"></a><h3><code><span class="keyword">function</span> <a name="identityHashCode" href="#identityHashCode"><span class="identifier">identityHashCode</span></a>(<span class="identifier">param1</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="identityHashCode"></a><h3><code><span class="keyword">function</span> <a name="identityHashCode" href="#identityHashCode"><span class="identifier">identityHashCode</span></a>(<span class="identifier">param1</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="inheritedChannel"></a><h3><code><span class="keyword">function</span> <a name="inheritedChannel" href="#inheritedChannel"><span class="identifier">inheritedChannel</span></a>():<a href="/dox/java/nio/channels/Channel.html"><span class="type">Channel</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="inheritedChannel"></a><h3><code><span class="keyword">function</span> <a name="inheritedChannel" href="#inheritedChannel"><span class="identifier">inheritedChannel</span></a>():<a href="/dox/java/nio/channels/Channel.html"><span class="type">Channel</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="lineSeparator"></a><h3><code><span class="keyword">function</span> <a name="lineSeparator" href="#lineSeparator"><span class="identifier">lineSeparator</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="lineSeparator"></a><h3><code><span class="keyword">function</span> <a name="lineSeparator" href="#lineSeparator"><span class="identifier">lineSeparator</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="load"></a><h3><code><span class="keyword">function</span> <a name="load" href="#load"><span class="identifier">load</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="load"></a><h3><code><span class="keyword">function</span> <a name="load" href="#load"><span class="identifier">load</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="loadLibrary"></a><h3><code><span class="keyword">function</span> <a name="loadLibrary" href="#loadLibrary"><span class="identifier">loadLibrary</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="loadLibrary"></a><h3><code><span class="keyword">function</span> <a name="loadLibrary" href="#loadLibrary"><span class="identifier">loadLibrary</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="mapLibraryName"></a><h3><code><span class="keyword">function</span> <a name="mapLibraryName" href="#mapLibraryName"><span class="identifier">mapLibraryName</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="mapLibraryName"></a><h3><code><span class="keyword">function</span> <a name="mapLibraryName" href="#mapLibraryName"><span class="identifier">mapLibraryName</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="nanoTime"></a><h3><code><span class="keyword">function</span> <a name="nanoTime" href="#nanoTime"><span class="identifier">nanoTime</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="nanoTime"></a><h3><code><span class="keyword">function</span> <a name="nanoTime" href="#nanoTime"><span class="identifier">nanoTime</span></a>():<a href="/dox/haxe/Int64.html"><span class="type">Int64</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="out" href="#out"><span class="identifier">out</span></a>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<h3><code><span class="keyword">var</span> <a name="out" href="#out"><span class="identifier">out</span></a>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="runFinalization"></a><h3><code><span class="keyword">function</span> <a name="runFinalization" href="#runFinalization"><span class="identifier">runFinalization</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="runFinalization"></a><h3><code><span class="keyword">function</span> <a name="runFinalization" href="#runFinalization"><span class="identifier">runFinalization</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="runFinalizersOnExit"></a><h3><code><span class="keyword">function</span> <a name="runFinalizersOnExit" href="#runFinalizersOnExit"><span class="identifier">runFinalizersOnExit</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="runFinalizersOnExit"></a><h3><code><span class="keyword">function</span> <a name="runFinalizersOnExit" href="#runFinalizersOnExit"><span class="identifier">runFinalizersOnExit</span></a>(<span class="identifier">param1</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setErr"></a><h3><code><span class="keyword">function</span> <a name="setErr" href="#setErr"><span class="identifier">setErr</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setErr"></a><h3><code><span class="keyword">function</span> <a name="setErr" href="#setErr"><span class="identifier">setErr</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setIn"></a><h3><code><span class="keyword">function</span> <a name="setIn" href="#setIn"><span class="identifier">setIn</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setIn"></a><h3><code><span class="keyword">function</span> <a name="setIn" href="#setIn"><span class="identifier">setIn</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/InputStream.html"><span class="type">InputStream</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setOut"></a><h3><code><span class="keyword">function</span> <a name="setOut" href="#setOut"><span class="identifier">setOut</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setOut"></a><h3><code><span class="keyword">function</span> <a name="setOut" href="#setOut"><span class="identifier">setOut</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/io/PrintStream.html"><span class="type">PrintStream</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setProperties"></a><h3><code><span class="keyword">function</span> <a name="setProperties" href="#setProperties"><span class="identifier">setProperties</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/util/Properties.html"><span class="type">Properties</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setProperties"></a><h3><code><span class="keyword">function</span> <a name="setProperties" href="#setProperties"><span class="identifier">setProperties</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/util/Properties.html"><span class="type">Properties</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setProperty"></a><h3><code><span class="keyword">function</span> <a name="setProperty" href="#setProperty"><span class="identifier">setProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setProperty"></a><h3><code><span class="keyword">function</span> <a name="setProperty" href="#setProperty"><span class="identifier">setProperty</span></a>(<span class="identifier">param1</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">param2</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setSecurityManager"></a><h3><code><span class="keyword">function</span> <a name="setSecurityManager" href="#setSecurityManager"><span class="identifier">setSecurityManager</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/lang/SecurityManager.html"><span class="type">SecurityManager</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-java">
+<a name="setSecurityManager"></a><h3><code><span class="keyword">function</span> <a name="setSecurityManager" href="#setSecurityManager"><span class="identifier">setSecurityManager</span></a>(<span class="identifier">param1</span>:<a href="/dox/java/lang/SecurityManager.html"><span class="type">SecurityManager</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on java</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

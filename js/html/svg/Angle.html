@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -28,45 +54,56 @@
 <p>An <code>SVGAngle</code> object can be designated as read only, which means that attempts to modify the object will result in an exception being thrown.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/SVGAngle">MDN</a>.</div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_DEG" href="#SVG_ANGLETYPE_DEG"><span class="identifier">SVG_ANGLETYPE_DEG</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The unit type was explicitly set to degrees.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_GRAD" href="#SVG_ANGLETYPE_GRAD"><span class="identifier">SVG_ANGLETYPE_GRAD</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_GRAD" href="#SVG_ANGLETYPE_GRAD"><span class="identifier">SVG_ANGLETYPE_GRAD</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The unit type is gradians.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_RAD" href="#SVG_ANGLETYPE_RAD"><span class="identifier">SVG_ANGLETYPE_RAD</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_RAD" href="#SVG_ANGLETYPE_RAD"><span class="identifier">SVG_ANGLETYPE_RAD</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The unit type is radians.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_UNKNOWN" href="#SVG_ANGLETYPE_UNKNOWN"><span class="identifier">SVG_ANGLETYPE_UNKNOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_UNKNOWN" href="#SVG_ANGLETYPE_UNKNOWN"><span class="identifier">SVG_ANGLETYPE_UNKNOWN</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The unit type is not one of predefined unit types. It is invalid to attempt to define a new value of this type or to attempt to switch an existing value to this type.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_UNSPECIFIED" href="#SVG_ANGLETYPE_UNSPECIFIED"><span class="identifier">SVG_ANGLETYPE_UNSPECIFIED</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="SVG_ANGLETYPE_UNSPECIFIED" href="#SVG_ANGLETYPE_UNSPECIFIED"><span class="identifier">SVG_ANGLETYPE_UNSPECIFIED</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>No unit type was provided (i.e., a unitless value was specified). For angles, a unitless value is treated the same as if degrees were specified.</p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="convertToSpecifiedUnits"></a><h3><code><span class="keyword">function</span> <a name="convertToSpecifiedUnits" href="#convertToSpecifiedUnits"><span class="identifier">convertToSpecifiedUnits</span></a>(<span class="identifier">unitType</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="newValueSpecifiedUnits"></a><h3><code><span class="keyword">function</span> <a name="newValueSpecifiedUnits" href="#newValueSpecifiedUnits"><span class="identifier">newValueSpecifiedUnits</span></a>(<span class="identifier">unitType</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">valueInSpecifiedUnits</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="newValueSpecifiedUnits"></a><h3><code><span class="keyword">function</span> <a name="newValueSpecifiedUnits" href="#newValueSpecifiedUnits"><span class="identifier">newValueSpecifiedUnits</span></a>(<span class="identifier">unitType</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">valueInSpecifiedUnits</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="unitType" href="#unitType"><span class="identifier">unitType</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="unitType" href="#unitType"><span class="identifier">unitType</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The type of the value as specified by one of the SVG<em>ANGLETYPE</em>* constants defined on this interface.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="value" href="#value"><span class="identifier">value</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="value" href="#value"><span class="identifier">value</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The value as a floating point value, in user units. Setting this attribute will cause <code>valueInSpecifiedUnits</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
 with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="valueAsString" href="#valueAsString"><span class="identifier">valueAsString</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="valueAsString" href="#valueAsString"><span class="identifier">valueAsString</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The value as a string value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code>, <code>valueInSpecifiedUnits</code> and <code>unitType</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong></p> <ul> <li>a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
 with code <code>SYNTAX_ERR</code> is raised if the assigned string cannot be parsed as a valid <a title="https://developer.mozilla.org/en/SVG/Content_type#Angle" rel="internal" href="https://developer.mozilla.org/en/SVG/Content_type#Angle">&lt;angle&gt;</a>.</li> <li>a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
 with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</li> </ul> Setter throws DOMException.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="valueInSpecifiedUnits" href="#valueInSpecifiedUnits"><span class="identifier">valueInSpecifiedUnits</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="valueInSpecifiedUnits" href="#valueInSpecifiedUnits"><span class="identifier">valueInSpecifiedUnits</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The value as a floating point value, in the units expressed by <code>unitType</code>. Setting this attribute will cause <code>value</code> and <code>valueAsString</code> to be updated automatically to reflect this setting.</p> <p><strong>Exceptions on setting:</strong> a <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/DOMException">DOMException</a></code>
 with code <code>NO_MODIFICATION_ALLOWED_ERR</code> is raised when the length corresponds to a read only attribute or when the object itself is read only.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

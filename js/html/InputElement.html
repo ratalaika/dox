@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -28,54 +54,69 @@
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML">HTML 4</a></span> <a class=" external" rel="external" href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-6043025" title="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-6043025" target="_blank"><code>HTMLInputElement</code></a>) interface, which provides special properties and methods (beyond the regular <a rel="internal" href="/api/js/html/Element">element</a> object interface they also have available to them by inheritance) for manipulating the layout and presentation of input elements.<br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/HTMLInputElement">MDN</a>.</p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="accept" href="#accept"><span class="identifier">accept</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-accept">accept</a></code>
 HTML&nbsp;attribute, containing comma-separated list of file types accepted by the server when <strong>type</strong> is <code>file</code>.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="align" href="#align"><span class="identifier">align</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="align" href="#align"><span class="identifier">align</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Alignment of the element.</p><span title="">Obsolete</span>&nbsp;in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="alt" href="#alt"><span class="identifier">alt</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="alt" href="#alt"><span class="identifier">alt</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-alt">alt</a></code>
 &nbsp;HTML attribute, containing alternative text to use when <strong>type</strong> is <code>image.</code></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="autocomplete" href="#autocomplete"><span class="identifier">autocomplete</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="autocomplete" href="#autocomplete"><span class="identifier">autocomplete</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the {{htmlattrxref("autocomplete", "input)}} HTML attribute, indicating whether the value of the control can be automatically completed by the browser. Ignored if the value of the <strong>type</strong> attribute is <span>hidden</span>, <span>checkbox</span>, <span>radio</span>, <span>file</span>, or a button type (<span>button</span>, <span>submit</span>, <span>reset</span>, <span>image</span>). Possible values are: <ul> <li><span>off</span>: The user must explicitly enter a value into this field for every use, or the document provides its own auto-completion method; the browser does not automatically complete the entry.</li> <li><span>on</span>: The browser can automatically complete the value based on values that the user has entered during previous uses.</li> </ul></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="autofocus" href="#autofocus"><span class="identifier">autofocus</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="autofocus" href="#autofocus"><span class="identifier">autofocus</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-autofocus">autofocus</a></code>
 HTML&nbsp;attribute, which specifies that a form control should have input focus when the page loads, unless the user overrides it, for example by typing in a different control. Only one form element in a document can have the <strong>autofocus</strong> attribute. It cannot be applied if the <strong>type</strong> attribute is set to <code>hidden</code> (that is, you cannot automatically set focus to a hidden control).</div>
-<hr/><a name="checkValidity"></a><h3><code><span class="keyword">function</span> <a name="checkValidity" href="#checkValidity"><span class="identifier">checkValidity</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="checkValidity"></a><h3><code><span class="keyword">function</span> <a name="checkValidity" href="#checkValidity"><span class="identifier">checkValidity</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="checked" href="#checked"><span class="identifier">checked</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="checked" href="#checked"><span class="identifier">checked</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The current state of the element when <strong>type</strong> is <code>checkbox</code> or <code>radio</code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultChecked" href="#defaultChecked"><span class="identifier">defaultChecked</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultChecked" href="#defaultChecked"><span class="identifier">defaultChecked</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The default state of a radio button or checkbox as originally specified in HTML that created this object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultValue" href="#defaultValue"><span class="identifier">defaultValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultValue" href="#defaultValue"><span class="identifier">defaultValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The default value as originally specified in HTML that created this object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="dirName" href="#dirName"><span class="identifier">dirName</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="dirName" href="#dirName"><span class="identifier">dirName</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="directory" href="#directory"><span class="identifier">directory</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="directory" href="#directory"><span class="identifier">directory</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="disabled" href="#disabled"><span class="identifier">disabled</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="disabled" href="#disabled"><span class="identifier">disabled</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-disabled">disabled</a></code>
 HTML attribute, indicating that the control is not available for interaction.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="entries" href="#entries"><span class="identifier">entries</span></a>:<a href="/dox/js/html/fs/EntryArray.html"><span class="type">EntryArray</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="entries" href="#entries"><span class="identifier">entries</span></a>:<a href="/dox/js/html/fs/EntryArray.html"><span class="type">EntryArray</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="files" href="#files"><span class="identifier">files</span></a>:<a href="/dox/js/html/FileList.html"><span class="type">FileList</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="files" href="#files"><span class="identifier">files</span></a>:<a href="/dox/js/html/FileList.html"><span class="type">FileList</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A list of selected files.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="form" href="#form"><span class="identifier">form</span></a>:<a href="/dox/js/html/FormElement.html"><span class="type">FormElement</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="form" href="#form"><span class="identifier">form</span></a>:<a href="/dox/js/html/FormElement.html"><span class="type">FormElement</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The containing form element, if this element is in a form. If this element is not contained in a form element:</p> <ul> <li>
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span> this can be the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-id">id</a></code>
@@ -84,168 +125,211 @@ element in the same document. Even if the attribute is set on <code><a rel="cust
 , this property will be <code>null</code>, if it isn't the id of a <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form">&lt;form&gt;</a></code>
 element.</li> <li>
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML">HTML 4</a></span> this must be <code>null</code>.</li> </ul></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="formAction" href="#formAction"><span class="identifier">formAction</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="formAction" href="#formAction"><span class="identifier">formAction</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-formaction">formaction</a></code>
 HTML attribute, containing the URI&nbsp;of a program that processes information submitted by the element. If specified, this attribute overrides the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-action">action</a></code>
 attribute of the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form">&lt;form&gt;</a></code>
 element that owns this element.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="formEnctype" href="#formEnctype"><span class="identifier">formEnctype</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="formEnctype" href="#formEnctype"><span class="identifier">formEnctype</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="formMethod" href="#formMethod"><span class="identifier">formMethod</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="formMethod" href="#formMethod"><span class="identifier">formMethod</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-formmethod">formmethod</a></code>
 &nbsp;HTML&nbsp;attribute, containing the HTTP&nbsp;method that the browser uses to submit the form. If specified, this attribute overrides the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-method">method</a></code>
 attribute of the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form">&lt;form&gt;</a></code>
 element that owns this element.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="formNoValidate" href="#formNoValidate"><span class="identifier">formNoValidate</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="formNoValidate" href="#formNoValidate"><span class="identifier">formNoValidate</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-formnovalidate">formnovalidate</a></code>
 &nbsp;HTML&nbsp;attribute, indicating that the form is not to be validated when it is submitted. If specified, this attribute overrides the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-novalidate">novalidate</a></code>
 attribute of the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form">&lt;form&gt;</a></code>
 element that owns this element.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="formTarget" href="#formTarget"><span class="identifier">formTarget</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="formTarget" href="#formTarget"><span class="identifier">formTarget</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-formtarget">formtarget</a></code>
 HTML&nbsp;attribute, containing a name or keyword indicating where to display the response that is received after submitting the form. If specified, this attribute overrides the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form#attr-target">target</a></code>
 attribute of the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/form">&lt;form&gt;</a></code>
 element that owns this element.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="grammar" href="#grammar"><span class="identifier">grammar</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="grammar" href="#grammar"><span class="identifier">grammar</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="height" href="#height"><span class="identifier">height</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="height" href="#height"><span class="identifier">height</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-height">height</a></code>
 HTML attribute, which defines the height of the image displayed for the button, if the value of <strong>type</strong> is <span>image</span>.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="incremental" href="#incremental"><span class="identifier">incremental</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="incremental" href="#incremental"><span class="identifier">incremental</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="indeterminate" href="#indeterminate"><span class="identifier">indeterminate</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="indeterminate" href="#indeterminate"><span class="identifier">indeterminate</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates that a checkbox is neither on nor off.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="labels" href="#labels"><span class="identifier">labels</span></a>:<a href="/dox/js/html/NodeList.html"><span class="type">NodeList</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="labels" href="#labels"><span class="identifier">labels</span></a>:<a href="/dox/js/html/NodeList.html"><span class="type">NodeList</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A list of <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/label">&lt;label&gt;</a></code>
 elements that are labels for this element.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="list" href="#list"><span class="identifier">list</span></a>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="list" href="#list"><span class="identifier">list</span></a>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Identifies a list of pre-defined options to suggest to the user. The value must be the <strong>id</strong> of a <code><a class="new" href="https://developer.mozilla.org/en/HTML/Element/datalist" rel="internal">&lt;datalist&gt;</a></code> element in the same document. The browser displays only options that are valid values for this input element. This attribute is ignored when the <strong>type</strong> attribute's value is <span>hidden</span>, <span>checkbox</span>, <span>radio</span>, <span>file</span>, or a button type.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="max" href="#max"><span class="identifier">max</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="max" href="#max"><span class="identifier">max</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-max">max</a></code>
 HTML&nbsp;attribute, containing the maximum (numeric or date-time) value for this item, which must not be less than its minimum (<strong>min</strong> attribute) value.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="maxLength" href="#maxLength"><span class="identifier">maxLength</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="maxLength" href="#maxLength"><span class="identifier">maxLength</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-maxlength">maxlength</a></code>
 &nbsp;HTML attribute, containing the maximum length of text (in Unicode code points) that the value can be changed to. The constraint is evaluated only when the value is changed</p> <div class="note"><strong>Note:</strong> If you set <code>maxlength</code> to a negative value programmatically, an exception will be thrown.</div> Setter throws DOMException.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="min" href="#min"><span class="identifier">min</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="min" href="#min"><span class="identifier">min</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-min">min</a></code>
 HTML&nbsp;attribute, containing the minimum (numeric or date-time) value for this item, which must not be greater than its maximum (<strong>max</strong> attribute) value.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="multiple" href="#multiple"><span class="identifier">multiple</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="multiple" href="#multiple"><span class="identifier">multiple</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-multiple">multiple</a></code>
 HTML&nbsp;attribute, indicating whether more than one value is possible (e.g., multiple files).</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-name">name</a></code>
 HTML&nbsp;attribute, containing a name that identifies the element when submitting the form.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onspeechchange" href="#onspeechchange"><span class="identifier">onspeechchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onspeechchange" href="#onspeechchange"><span class="identifier">onspeechchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="pattern" href="#pattern"><span class="identifier">pattern</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="pattern" href="#pattern"><span class="identifier">pattern</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-pattern">pattern</a></code>
 HTML&nbsp;attribute, containing a regular expression that the control's value is checked against. The pattern must match the entire value, not just some subset. Use the <strong>title</strong> attribute to describe the pattern to help the user. This attribute applies when the value of the <strong>type</strong> attribute is <span>text</span>, <span>search</span>, <span>tel</span>, <span>url</span> or <span>email</span>; otherwise it is ignored.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="placeholder" href="#placeholder"><span class="identifier">placeholder</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="placeholder" href="#placeholder"><span class="identifier">placeholder</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-placeholder">placeholder</a></code>
 HTML&nbsp;attribute, containing a hint to the user of what can be entered in the control. The placeholder text must not contain carriage returns or line-feeds. This attribute applies when the value of the <strong>type</strong> attribute is <span>text</span>, <span>search</span>, <span>tel</span>, <span>url</span> or <span>email</span>; otherwise it is ignored.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="readOnly" href="#readOnly"><span class="identifier">readOnly</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="readOnly" href="#readOnly"><span class="identifier">readOnly</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-readonly">readonly</a></code>
 HTML&nbsp;attribute, indicating that the user cannot modify the value of the control.</p> <p><span><a href="https://developer.mozilla.org/en/HTML/HTML5" rel="custom nofollow">HTML 5</a></span> This is ignored if the value of the <strong>type</strong> attribute is <span>hidden</span>, <span>range</span>, <span>color</span>, <span>checkbox</span>, <span>radio</span>, <span>file</span>, or a button type.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="required" href="#required"><span class="identifier">required</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="required" href="#required"><span class="identifier">required</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-required">required</a></code>
 HTML&nbsp;attribute, indicating that the user must fill in a value before submitting a form.</div>
-<hr/><a name="select"></a><h3><code><span class="keyword">function</span> <a name="select" href="#select"><span class="identifier">select</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="select"></a><h3><code><span class="keyword">function</span> <a name="select" href="#select"><span class="identifier">select</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="selectionDirection" href="#selectionDirection"><span class="identifier">selectionDirection</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="selectionDirection" href="#selectionDirection"><span class="identifier">selectionDirection</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The direction in which selection occurred. This is "forward" if selection was performed in the start-to-end direction of the current locale, or "backward" for the opposite direction. This can also be "none"&nbsp;if the direction is unknown."</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="selectionEnd" href="#selectionEnd"><span class="identifier">selectionEnd</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="selectionEnd" href="#selectionEnd"><span class="identifier">selectionEnd</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The index of the end of selected text.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="selectionStart" href="#selectionStart"><span class="identifier">selectionStart</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="selectionStart" href="#selectionStart"><span class="identifier">selectionStart</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The index of the beginning of selected text.</p></div>
-<hr/><a name="setCustomValidity"></a><h3><code><span class="keyword">function</span> <a name="setCustomValidity" href="#setCustomValidity"><span class="identifier">setCustomValidity</span></a>(<span class="identifier">error</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setCustomValidity"></a><h3><code><span class="keyword">function</span> <a name="setCustomValidity" href="#setCustomValidity"><span class="identifier">setCustomValidity</span></a>(<span class="identifier">error</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setRangeText"></a><h3><code><span class="keyword">function</span> <a name="setRangeText" href="#setRangeText"><span class="identifier">setRangeText</span></a>(<span class="identifier">replacement</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">start</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">end</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">selectionMode</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setRangeText"></a><h3><code><span class="keyword">function</span> <a name="setRangeText" href="#setRangeText"><span class="identifier">setRangeText</span></a>(<span class="identifier">replacement</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">start</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">end</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">selectionMode</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Throws DOMException.</p></div>
-<hr/><a name="setSelectionRange"></a><h3><code><span class="keyword">function</span> <a name="setSelectionRange" href="#setSelectionRange"><span class="identifier">setSelectionRange</span></a>(<span class="identifier">start</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">end</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">direction</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setSelectionRange"></a><h3><code><span class="keyword">function</span> <a name="setSelectionRange" href="#setSelectionRange"><span class="identifier">setSelectionRange</span></a>(<span class="identifier">start</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">end</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">direction</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="size" href="#size"><span class="identifier">size</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="size" href="#size"><span class="identifier">size</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-size">size</a></code>
 HTML&nbsp;attribute, containing size of the control. This value is in pixels unless the value of <strong>type</strong> is <span>text</span> or <span>password</span>, in which case, it is an integer number of characters. 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span> Applies only when <strong>type</strong> is set to <span>text</span>, <span>search</span>, <span>tel</span>, <span>url</span>, <span>email</span>, or <span>password</span>; otherwise it is ignored. Setter throws DOMException.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="speech" href="#speech"><span class="identifier">speech</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="speech" href="#speech"><span class="identifier">speech</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="src" href="#src"><span class="identifier">src</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="src" href="#src"><span class="identifier">src</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-src">src</a></code>
 HTML&nbsp;attribute, which specifies a URI for the location of an image to display on the graphical submit button, if the value of <strong>type</strong> is <span>image</span>; otherwise it is ignored.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="step" href="#step"><span class="identifier">step</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="step" href="#step"><span class="identifier">step</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-step">step</a></code>
 HTML&nbsp;attribute, which works with<strong> min</strong> and <strong>max</strong> to limit the increments at which a numeric or date-time value can be set. It can be the string <span>any</span> or a positive floating point number. If this is not set to <span>any</span>, the control accepts only values at multiples of the step value greater than the minimum.</div>
-<hr/><a name="stepDown"></a><h3><code><span class="keyword">function</span> <a name="stepDown" href="#stepDown"><span class="identifier">stepDown</span></a>(?<span class="identifier">n</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stepDown"></a><h3><code><span class="keyword">function</span> <a name="stepDown" href="#stepDown"><span class="identifier">stepDown</span></a>(?<span class="identifier">n</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="stepUp"></a><h3><code><span class="keyword">function</span> <a name="stepUp" href="#stepUp"><span class="identifier">stepUp</span></a>(?<span class="identifier">n</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stepUp"></a><h3><code><span class="keyword">function</span> <a name="stepUp" href="#stepUp"><span class="identifier">stepUp</span></a>(?<span class="identifier">n</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="type" href="#type"><span class="identifier">type</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-type">type</a></code>
 HTML&nbsp;attribute, indicating the type of control to display. See <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-type">type</a></code>
 attribute of <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input">&lt;input&gt;</a></code>
 for possible values.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="useMap" href="#useMap"><span class="identifier">useMap</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="useMap" href="#useMap"><span class="identifier">useMap</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A client-side image map. </p><span title="">Obsolete</span> in 
 <span><a rel="custom" href="https://developer.mozilla.org/en/HTML/HTML5">HTML5</a></span></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="validationMessage" href="#validationMessage"><span class="identifier">validationMessage</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="validationMessage" href="#validationMessage"><span class="identifier">validationMessage</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A localized message that describes the validation constraints that the control does not satisfy (if any). This is the empty string if the control is not a candidate for constraint validation (<strong>willValidate</strong> is false), or it satisfies its constraints.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="validity" href="#validity"><span class="identifier">validity</span></a>:<a href="/dox/js/html/ValidityState.html"><span class="type">ValidityState</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="validity" href="#validity"><span class="identifier">validity</span></a>:<a href="/dox/js/html/ValidityState.html"><span class="type">ValidityState</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The validity states that this element is in.&nbsp;</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="value" href="#value"><span class="identifier">value</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="value" href="#value"><span class="identifier">value</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Current value in the control. Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="valueAsDate" href="#valueAsDate"><span class="identifier">valueAsDate</span></a>:<a href="/dox/Date.html"><span class="type">Date</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="valueAsDate" href="#valueAsDate"><span class="identifier">valueAsDate</span></a>:<a href="/dox/Date.html"><span class="type">Date</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The value of the element, interpreted as a date, or <code>null</code> if conversion is not possible. Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="valueAsNumber" href="#valueAsNumber"><span class="identifier">valueAsNumber</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="valueAsNumber" href="#valueAsNumber"><span class="identifier">valueAsNumber</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The value of the element, interpreted as one of the following in order:</p> <ol> <li>a time value</li> <li>a number</li> <li><code>null</code> if conversion is not possible</li> </ol> Setter throws DOMException.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="width" href="#width"><span class="identifier">width</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="width" href="#width"><span class="identifier">width</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/input#attr-width">width</a></code>
 HTML&nbsp;attribute, which defines the width of the image displayed for the button, if the value of <strong>type</strong> is <span>image</span>.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="willValidate" href="#willValidate"><span class="identifier">willValidate</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="willValidate" href="#willValidate"><span class="identifier">willValidate</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates whether the element is a candidate for constraint validation. It is false if any conditions bar it from constraint validation.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

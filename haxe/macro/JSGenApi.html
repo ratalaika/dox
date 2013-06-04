@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,27 +52,37 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/macro/JSGenApi.hx</span></code></div>
 <div class="doc"><p>This is the api that is passed to the custom JS generator.</p></div>
 <h2>Instance Fields</h2>
+<span class="">
 <a name="buildMetaData"></a><h3><code><span class="keyword">function</span> <a name="buildMetaData" href="#buildMetaData"><span class="identifier">buildMetaData</span></a>(<span class="identifier">t</span>:<a href="/dox/haxe/macro/BaseType.html"><span class="type">BaseType</span></a>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>&gt;;</code></h3>
 <div class="doc">create the metadata expression for the given type</div>
-<hr/><a name="generateStatement"></a><h3><code><span class="keyword">function</span> <a name="generateStatement" href="#generateStatement"><span class="identifier">generateStatement</span></a>(<span class="identifier">e</span>:<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="generateStatement"></a><h3><code><span class="keyword">function</span> <a name="generateStatement" href="#generateStatement"><span class="identifier">generateStatement</span></a>(<span class="identifier">e</span>:<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc">generate the JS code for any given typed expression</div>
-<hr/><a name="generateValue"></a><h3><code><span class="keyword">function</span> <a name="generateValue" href="#generateValue"><span class="identifier">generateValue</span></a>(<span class="identifier">e</span>:<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="generateValue"></a><h3><code><span class="keyword">function</span> <a name="generateValue" href="#generateValue"><span class="identifier">generateValue</span></a>(<span class="identifier">e</span>:<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc">generate the JS code for a given typed expression-value</div>
-<hr/><a name="isKeyword"></a><h3><code><span class="keyword">function</span> <a name="isKeyword" href="#isKeyword"><span class="identifier">isKeyword</span></a>(<span class="identifier">ident</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="isKeyword"></a><h3><code><span class="keyword">function</span> <a name="isKeyword" href="#isKeyword"><span class="identifier">isKeyword</span></a>(<span class="identifier">ident</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div class="doc">tells if the given identifier is a JS keyword</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="main" href="#main"><span class="identifier">main</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>&gt;;</code></h3>
+<hr/></span><span class="">
+<h3><code><span class="keyword">var</span> <a name="main" href="#main"><span class="identifier">main</span></a>:<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/haxe/macro/TypedExpr.html"><span class="type">TypedExpr</span></a>&gt;;</code></h3>
 <div class="doc">the main call expression, if a -main class is defined</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="outputFile" href="#outputFile"><span class="identifier">outputFile</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="">
+<h3><code><span class="keyword">var</span> <a name="outputFile" href="#outputFile"><span class="identifier">outputFile</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc">the file in which the JS code can be generated</div>
-<hr/><a name="quoteString"></a><h3><code><span class="keyword">function</span> <a name="quoteString" href="#quoteString"><span class="identifier">quoteString</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="quoteString"></a><h3><code><span class="keyword">function</span> <a name="quoteString" href="#quoteString"><span class="identifier">quoteString</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div class="doc">quote and escape the given string constant</div>
-<hr/><a name="setCurrentClass"></a><h3><code><span class="keyword">function</span> <a name="setCurrentClass" href="#setCurrentClass"><span class="identifier">setCurrentClass</span></a>(<span class="identifier">c</span>:<a href="/dox/haxe/macro/ClassType.html"><span class="type">ClassType</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="setCurrentClass"></a><h3><code><span class="keyword">function</span> <a name="setCurrentClass" href="#setCurrentClass"><span class="identifier">setCurrentClass</span></a>(<span class="identifier">c</span>:<a href="/dox/haxe/macro/ClassType.html"><span class="type">ClassType</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc">select the current classe</div>
-<hr/><a name="setTypeAccessor"></a><h3><code><span class="keyword">function</span> <a name="setTypeAccessor" href="#setTypeAccessor"><span class="identifier">setTypeAccessor</span></a>(<span class="identifier">callb</span>:<a href="/dox/haxe/macro/Type.html"><span class="type">Type</span></a> -> <a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="">
+<a name="setTypeAccessor"></a><h3><code><span class="keyword">function</span> <a name="setTypeAccessor" href="#setTypeAccessor"><span class="identifier">setTypeAccessor</span></a>(<span class="identifier">callb</span>:<a href="/dox/haxe/macro/Type.html"><span class="type">Type</span></a> -> <a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc">define the JS code that gets generated when a class or enum is accessed in a typed expression</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="types" href="#types"><span class="identifier">types</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/haxe/macro/Type.html"><span class="type">Type</span></a>&gt;;</code></h3>
+<hr/></span><span class="">
+<h3><code><span class="keyword">var</span> <a name="types" href="#types"><span class="identifier">types</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/haxe/macro/Type.html"><span class="type">Type</span></a>&gt;;</code></h3>
 <div class="doc">all the types that were compiled by Haxe</div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

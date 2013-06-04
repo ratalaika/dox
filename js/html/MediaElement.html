@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -32,173 +58,226 @@ and <code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/vi
 ) expose the <code>HTMLMediaElement</code> interface which provides special properties and methods (beyond the regular <a href="/api/js/html/Element" rel="internal">element</a> object interface they also have available to them by inheritance) for manipulating the layout and presentation of media elements.<br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/HTMLMediaElement">MDN</a>.</p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="HAVE_CURRENT_DATA" href="#HAVE_CURRENT_DATA"><span class="identifier">HAVE_CURRENT_DATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Data is available for the current playback position, but not enough to actually play more than one frame.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HAVE_ENOUGH_DATA" href="#HAVE_ENOUGH_DATA"><span class="identifier">HAVE_ENOUGH_DATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="HAVE_ENOUGH_DATA" href="#HAVE_ENOUGH_DATA"><span class="identifier">HAVE_ENOUGH_DATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Enough data is available—and the download rate is high enough—that the media can be played through to the end without interruption.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HAVE_FUTURE_DATA" href="#HAVE_FUTURE_DATA"><span class="identifier">HAVE_FUTURE_DATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="HAVE_FUTURE_DATA" href="#HAVE_FUTURE_DATA"><span class="identifier">HAVE_FUTURE_DATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Data for the current playback position as well as for at least a little bit of time into the future is available (in other words, at least two frames of video, for example).</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HAVE_METADATA" href="#HAVE_METADATA"><span class="identifier">HAVE_METADATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="HAVE_METADATA" href="#HAVE_METADATA"><span class="identifier">HAVE_METADATA</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Enough of the media resource has been retrieved that the metadata attributes are initialized.&nbsp; Seeking will no longer raise an exception.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HAVE_NOTHING" href="#HAVE_NOTHING"><span class="identifier">HAVE_NOTHING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="HAVE_NOTHING" href="#HAVE_NOTHING"><span class="identifier">HAVE_NOTHING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>No information is available about the media resource.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NETWORK_EMPTY" href="#NETWORK_EMPTY"><span class="identifier">NETWORK_EMPTY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="NETWORK_EMPTY" href="#NETWORK_EMPTY"><span class="identifier">NETWORK_EMPTY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NETWORK_IDLE" href="#NETWORK_IDLE"><span class="identifier">NETWORK_IDLE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="NETWORK_IDLE" href="#NETWORK_IDLE"><span class="identifier">NETWORK_IDLE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NETWORK_LOADING" href="#NETWORK_LOADING"><span class="identifier">NETWORK_LOADING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="NETWORK_LOADING" href="#NETWORK_LOADING"><span class="identifier">NETWORK_LOADING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NETWORK_NO_SOURCE" href="#NETWORK_NO_SOURCE"><span class="identifier">NETWORK_NO_SOURCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="NETWORK_NO_SOURCE" href="#NETWORK_NO_SOURCE"><span class="identifier">NETWORK_NO_SOURCE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="addKey"></a><h3><code><span class="keyword">function</span> <a name="addKey" href="#addKey"><span class="identifier">addKey</span></a>(<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">key</span>:<a href="/dox/js/html/Uint8Array.html"><span class="type">Uint8Array</span></a>, ?<span class="identifier">initData</span>:<a href="/dox/js/html/Uint8Array.html"><span class="type">Uint8Array</span></a>, <span class="identifier">sessionId</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="addTextTrack"></a><h3><code><span class="keyword">function</span> <a name="addTextTrack" href="#addTextTrack"><span class="identifier">addTextTrack</span></a>(<span class="identifier">kind</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">label</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">language</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/TextTrack.html"><span class="type">TextTrack</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="addTextTrack"></a><h3><code><span class="keyword">function</span> <a name="addTextTrack" href="#addTextTrack"><span class="identifier">addTextTrack</span></a>(<span class="identifier">kind</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">label</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">language</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/TextTrack.html"><span class="type">TextTrack</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="audioDecodedByteCount" href="#audioDecodedByteCount"><span class="identifier">audioDecodedByteCount</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="audioDecodedByteCount" href="#audioDecodedByteCount"><span class="identifier">audioDecodedByteCount</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="autoplay" href="#autoplay"><span class="identifier">autoplay</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="autoplay" href="#autoplay"><span class="identifier">autoplay</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video#attr-autoplay">autoplay</a></code>
 HTML&nbsp;attribute, indicating whether to begin playing as soon as enough media is available.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="buffered" href="#buffered"><span class="identifier">buffered</span></a>:<a href="/dox/js/html/TimeRanges.html"><span class="type">TimeRanges</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="buffered" href="#buffered"><span class="identifier">buffered</span></a>:<a href="/dox/js/html/TimeRanges.html"><span class="type">TimeRanges</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The ranges of the media source that the browser has buffered, if any.</p></div>
-<hr/><a name="canPlayType"></a><h3><code><span class="keyword">function</span> <a name="canPlayType" href="#canPlayType"><span class="identifier">canPlayType</span></a>(<span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="canPlayType"></a><h3><code><span class="keyword">function</span> <a name="canPlayType" href="#canPlayType"><span class="identifier">canPlayType</span></a>(<span class="identifier">type</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="cancelKeyRequest"></a><h3><code><span class="keyword">function</span> <a name="cancelKeyRequest" href="#cancelKeyRequest"><span class="identifier">cancelKeyRequest</span></a>(<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">sessionId</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="cancelKeyRequest"></a><h3><code><span class="keyword">function</span> <a name="cancelKeyRequest" href="#cancelKeyRequest"><span class="identifier">cancelKeyRequest</span></a>(<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">sessionId</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="closedCaptionsVisible" href="#closedCaptionsVisible"><span class="identifier">closedCaptionsVisible</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="closedCaptionsVisible" href="#closedCaptionsVisible"><span class="identifier">closedCaptionsVisible</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="controller" href="#controller"><span class="identifier">controller</span></a>:<a href="/dox/js/html/MediaController.html"><span class="type">MediaController</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="controller" href="#controller"><span class="identifier">controller</span></a>:<a href="/dox/js/html/MediaController.html"><span class="type">MediaController</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="controls" href="#controls"><span class="identifier">controls</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="controls" href="#controls"><span class="identifier">controls</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video#attr-controls">controls</a></code>
 HTML attribute, indicating whether user interface items for controlling the resource should be displayed.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="currentSrc" href="#currentSrc"><span class="identifier">currentSrc</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="currentSrc" href="#currentSrc"><span class="identifier">currentSrc</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The absolute URL of the chosen media resource (if, for example, the server selects a media file based on the resolution of the user's display), or an empty string if the <code>networkState</code> is <code>EMPTY</code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="currentTime" href="#currentTime"><span class="identifier">currentTime</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="currentTime" href="#currentTime"><span class="identifier">currentTime</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The current playback time, in seconds.&nbsp; Setting this value seeks the media to the new time. Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultMuted" href="#defaultMuted"><span class="identifier">defaultMuted</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultMuted" href="#defaultMuted"><span class="identifier">defaultMuted</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video#attr-muted">muted</a></code>
 HTML attribute, indicating whether the media element's audio output should be muted by default. Changing the value dynamically will not unmute the audio (it only controls the default state).</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultPlaybackRate" href="#defaultPlaybackRate"><span class="identifier">defaultPlaybackRate</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultPlaybackRate" href="#defaultPlaybackRate"><span class="identifier">defaultPlaybackRate</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The default playback rate for the media.&nbsp; The Ogg backend does not support this.&nbsp; 1.0 is "normal speed," values lower than 1.0 make the media play slower than normal, higher values make it play faster.&nbsp; The value 0.0 is invalid and throws a <code>NOT<em>SUPPORTED</em>ERR</code>&nbsp;exception.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="duration" href="#duration"><span class="identifier">duration</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="duration" href="#duration"><span class="identifier">duration</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The length of the media in seconds, or zero if no media data is available.&nbsp; If the media data is available but the length is unknown, this value is <code>NaN</code>.&nbsp; If the media is streamed and has no predefined length, the value is <code>Inf</code>.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ended" href="#ended"><span class="identifier">ended</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ended" href="#ended"><span class="identifier">ended</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates whether the media element has ended playback.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="error" href="#error"><span class="identifier">error</span></a>:<a href="/dox/js/html/MediaError.html"><span class="type">MediaError</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="error" href="#error"><span class="identifier">error</span></a>:<a href="/dox/js/html/MediaError.html"><span class="type">MediaError</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The media error object for the most recent error, or null if there has not been an error.</p></div>
-<hr/><a name="generateKeyRequest"></a><h3><code><span class="keyword">function</span> <a name="generateKeyRequest" href="#generateKeyRequest"><span class="identifier">generateKeyRequest</span></a>(<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">initData</span>:<a href="/dox/js/html/Uint8Array.html"><span class="type">Uint8Array</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="generateKeyRequest"></a><h3><code><span class="keyword">function</span> <a name="generateKeyRequest" href="#generateKeyRequest"><span class="identifier">generateKeyRequest</span></a>(<span class="identifier">keySystem</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">initData</span>:<a href="/dox/js/html/Uint8Array.html"><span class="type">Uint8Array</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hasClosedCaptions" href="#hasClosedCaptions"><span class="identifier">hasClosedCaptions</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="hasClosedCaptions" href="#hasClosedCaptions"><span class="identifier">hasClosedCaptions</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="initialTime" href="#initialTime"><span class="identifier">initialTime</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="initialTime" href="#initialTime"><span class="identifier">initialTime</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="load"></a><h3><code><span class="keyword">function</span> <a name="load" href="#load"><span class="identifier">load</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="load"></a><h3><code><span class="keyword">function</span> <a name="load" href="#load"><span class="identifier">load</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="loop" href="#loop"><span class="identifier">loop</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="loop" href="#loop"><span class="identifier">loop</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video#attr-loop">loop</a></code>
 HTML&nbsp;attribute, indicating whether the media element should start over when it reaches the end.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="mediaGroup" href="#mediaGroup"><span class="identifier">mediaGroup</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="mediaGroup" href="#mediaGroup"><span class="identifier">mediaGroup</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="muted" href="#muted"><span class="identifier">muted</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="muted" href="#muted"><span class="identifier">muted</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><code>true</code> if the audio is muted, and <code>false</code> otherwise.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="networkState" href="#networkState"><span class="identifier">networkState</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="networkState" href="#networkState"><span class="identifier">networkState</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The current state of fetching the media over the network.</p> <table class="standard-table"> <tbody> <tr> <td class="header">Constant</td> <td class="header">Value</td> <td class="header">Description</td> </tr> <tr> <td><code>EMPTY</code></td> <td>0</td> <td>There is no data yet.&nbsp; The <code>readyState</code> is also <code>HAVE_NOTHING</code>.</td> </tr> <tr> <td><code>LOADING</code></td> <td>1</td> <td>The media is loading.</td> </tr> <tr> <td><code>LOADED_METADATA</code></td> <td>2</td> <td>The media's metadata has been loaded.</td> </tr> <tr> <td><code>LOADED_FIRST_FRAME</code></td> <td>3</td> <td>The media's first frame has been loaded.</td> </tr> <tr> <td><code>LOADED</code></td> <td>4</td> <td>The media has been fully loaded.</td> </tr> </tbody> </table></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeyadded" href="#onkeyadded"><span class="identifier">onkeyadded</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeyadded" href="#onkeyadded"><span class="identifier">onkeyadded</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeyerror" href="#onkeyerror"><span class="identifier">onkeyerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeyerror" href="#onkeyerror"><span class="identifier">onkeyerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeymessage" href="#onkeymessage"><span class="identifier">onkeymessage</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeymessage" href="#onkeymessage"><span class="identifier">onkeymessage</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onneedkey" href="#onneedkey"><span class="identifier">onneedkey</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onneedkey" href="#onneedkey"><span class="identifier">onneedkey</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="pause"></a><h3><code><span class="keyword">function</span> <a name="pause" href="#pause"><span class="identifier">pause</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="pause"></a><h3><code><span class="keyword">function</span> <a name="pause" href="#pause"><span class="identifier">pause</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="paused" href="#paused"><span class="identifier">paused</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="paused" href="#paused"><span class="identifier">paused</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates whether the media element is paused.</p></div>
-<hr/><a name="play"></a><h3><code><span class="keyword">function</span> <a name="play" href="#play"><span class="identifier">play</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="play"></a><h3><code><span class="keyword">function</span> <a name="play" href="#play"><span class="identifier">play</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="playbackRate" href="#playbackRate"><span class="identifier">playbackRate</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="playbackRate" href="#playbackRate"><span class="identifier">playbackRate</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The current rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.&nbsp; Not supported by the Ogg backend.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="played" href="#played"><span class="identifier">played</span></a>:<a href="/dox/js/html/TimeRanges.html"><span class="type">TimeRanges</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="played" href="#played"><span class="identifier">played</span></a>:<a href="/dox/js/html/TimeRanges.html"><span class="type">TimeRanges</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The ranges of the media source that the browser has played, if any.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="preload" href="#preload"><span class="identifier">preload</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="preload" href="#preload"><span class="identifier">preload</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video#attr-preload">preload</a></code>
 HTML attribute, indicating what data should be preloaded at page-load time, if any.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="preservesPitch" href="#preservesPitch"><span class="identifier">preservesPitch</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="preservesPitch" href="#preservesPitch"><span class="identifier">preservesPitch</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="readyState" href="#readyState"><span class="identifier">readyState</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="readyState" href="#readyState"><span class="identifier">readyState</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The readiness state of the media:</p> <table class="standard-table"> <tbody> <tr> <td class="header">Constant</td> <td class="header">Value</td> <td class="header">Description</td> </tr> <tr> <td><code>HAVE_NOTHING</code></td> <td>0</td> <td>No information is available about the media resource.</td> </tr> <tr> <td><code>HAVE_METADATA</code></td> <td>1</td> <td>Enough of the media resource has been retrieved that the metadata attributes are initialized.&nbsp; Seeking will no longer raise an exception.</td> </tr> <tr> <td><code>HAVE_CURRENT_DATA</code></td> <td>2</td> <td>Data is available for the current playback position, but not enough to actually play more than one frame.</td> </tr> <tr> <td><code>HAVE_FUTURE_DATA</code></td> <td>3</td> <td>Data for the current playback position as well as for at least a little bit of time into the future is available (in other words, at least two frames of video, for example).</td> </tr> <tr> <td><code>HAVE_ENOUGH_DATA</code></td> <td>4</td> <td>Enough data is available—and the download rate is high enough—that the media can be played through to the end without interruption.</td> </tr> </tbody> </table></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="seekable" href="#seekable"><span class="identifier">seekable</span></a>:<a href="/dox/js/html/TimeRanges.html"><span class="type">TimeRanges</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="seekable" href="#seekable"><span class="identifier">seekable</span></a>:<a href="/dox/js/html/TimeRanges.html"><span class="type">TimeRanges</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The time ranges that the user is able to seek to, if any.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="seeking" href="#seeking"><span class="identifier">seeking</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="seeking" href="#seeking"><span class="identifier">seeking</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Indicates whether the media is in the process of seeking to a new position.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="src" href="#src"><span class="identifier">src</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="src" href="#src"><span class="identifier">src</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Reflects the </p><code><a rel="custom" href="https://developer.mozilla.org/en/HTML/Element/video#attr-src">src</a></code>
 HTML attribute, containing the URL of a media resource to use.</div>
-<hr/><h3><code><span class="keyword">var</span> <a name="startTime" href="#startTime"><span class="identifier">startTime</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="startTime" href="#startTime"><span class="identifier">startTime</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The earliest possible position in the media, in seconds.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="textTracks" href="#textTracks"><span class="identifier">textTracks</span></a>:<a href="/dox/js/html/TextTrackList.html"><span class="type">TextTrackList</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="textTracks" href="#textTracks"><span class="identifier">textTracks</span></a>:<a href="/dox/js/html/TextTrackList.html"><span class="type">TextTrackList</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="videoDecodedByteCount" href="#videoDecodedByteCount"><span class="identifier">videoDecodedByteCount</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="videoDecodedByteCount" href="#videoDecodedByteCount"><span class="identifier">videoDecodedByteCount</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="volume" href="#volume"><span class="identifier">volume</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="volume" href="#volume"><span class="identifier">volume</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>The audio volume, from 0.0 (silent) to 1.0 (loudest). Setter throws DOMException.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

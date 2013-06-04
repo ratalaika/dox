@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,10 +53,11 @@
 <table class="related-types toggle" style="margin-top:16px;"><tbody><tr><td colspan="2">Subclasses</td></tr><tr><td width="12" style="vertical-align:top;"><a href="#" onclick="toggleInherited(this)"><img style="padding-top:4px;" src="/dox/triangle-closed.png"></a></td><td class="toggle-hide"><a href="/dox/js/html/SharedWorker.html"><span class="type">SharedWorker</span></a>, <a href="/dox/js/html/Worker.html"><span class="type">Worker</span></a></td><td class="toggle-show"><table class='table table-condensed'><tbody><tr><td width="200"><a href="/dox/js/html/SharedWorker.html"><span class="type">SharedWorker</span></a></td><td><p>Not yet implemented by Firefox.<br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/En/DOM/SharedWorker">MDN</a>.</p></td></tr><tr><td width="200"><a href="/dox/js/html/Worker.html"><span class="type">Worker</span></a></td><td><p>Workers are background tasks that can be easily created and can send messages back to their creators. Creating a worker is as simple as calling the <code>Worker()</code>&nbsp;constructor, specifying a script to be run in the worker thread.</p></td></tr></tbody></table></td></tr></tbody></table><div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

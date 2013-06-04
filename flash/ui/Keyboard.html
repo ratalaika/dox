@@ -14,862 +14,1169 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/flash/ui/Keyboard.html"><span class="type">Keyboard</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash/ui/Keyboard.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-flash">
 <h3><code><span class="keyword">var</span> <a name="A" href="#A"><span class="identifier">A</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="ALTERNATE" href="#ALTERNATE"><span class="identifier">ALTERNATE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="AUDIO" href="#AUDIO"><span class="identifier">AUDIO</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="B" href="#B"><span class="identifier">B</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="BACK" href="#BACK"><span class="identifier">BACK</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="BACKQUOTE" href="#BACKQUOTE"><span class="identifier">BACKQUOTE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="BACKSLASH" href="#BACKSLASH"><span class="identifier">BACKSLASH</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="BACKSPACE" href="#BACKSPACE"><span class="identifier">BACKSPACE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="BLUE" href="#BLUE"><span class="identifier">BLUE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="C" href="#C"><span class="identifier">C</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="CAPS_LOCK" href="#CAPS_LOCK"><span class="identifier">CAPS_LOCK</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="CHANNEL_DOWN" href="#CHANNEL_DOWN"><span class="identifier">CHANNEL_DOWN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="CHANNEL_UP" href="#CHANNEL_UP"><span class="identifier">CHANNEL_UP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="COMMA" href="#COMMA"><span class="identifier">COMMA</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="COMMAND" href="#COMMAND"><span class="identifier">COMMAND</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="CONTROL" href="#CONTROL"><span class="identifier">CONTROL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="CharCodeStrings" href="#CharCodeStrings"><span class="identifier">CharCodeStrings</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="D" href="#D"><span class="identifier">D</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="DELETE" href="#DELETE"><span class="identifier">DELETE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="DOWN" href="#DOWN"><span class="identifier">DOWN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="DVR" href="#DVR"><span class="identifier">DVR</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="E" href="#E"><span class="identifier">E</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="END" href="#END"><span class="identifier">END</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="ENTER" href="#ENTER"><span class="identifier">ENTER</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="EQUAL" href="#EQUAL"><span class="identifier">EQUAL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="ESCAPE" href="#ESCAPE"><span class="identifier">ESCAPE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="EXIT" href="#EXIT"><span class="identifier">EXIT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F" href="#F"><span class="identifier">F</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F1" href="#F1"><span class="identifier">F1</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F10" href="#F10"><span class="identifier">F10</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F11" href="#F11"><span class="identifier">F11</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F12" href="#F12"><span class="identifier">F12</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F13" href="#F13"><span class="identifier">F13</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F14" href="#F14"><span class="identifier">F14</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F15" href="#F15"><span class="identifier">F15</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F2" href="#F2"><span class="identifier">F2</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F3" href="#F3"><span class="identifier">F3</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F4" href="#F4"><span class="identifier">F4</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F5" href="#F5"><span class="identifier">F5</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F6" href="#F6"><span class="identifier">F6</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F7" href="#F7"><span class="identifier">F7</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F8" href="#F8"><span class="identifier">F8</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="F9" href="#F9"><span class="identifier">F9</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="FAST_FORWARD" href="#FAST_FORWARD"><span class="identifier">FAST_FORWARD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="G" href="#G"><span class="identifier">G</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="GREEN" href="#GREEN"><span class="identifier">GREEN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="GUIDE" href="#GUIDE"><span class="identifier">GUIDE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="H" href="#H"><span class="identifier">H</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="HELP" href="#HELP"><span class="identifier">HELP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="HOME" href="#HOME"><span class="identifier">HOME</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="I" href="#I"><span class="identifier">I</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="INFO" href="#INFO"><span class="identifier">INFO</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="INPUT" href="#INPUT"><span class="identifier">INPUT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="INSERT" href="#INSERT"><span class="identifier">INSERT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="J" href="#J"><span class="identifier">J</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="K" href="#K"><span class="identifier">K</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_BEGIN" href="#KEYNAME_BEGIN"><span class="identifier">KEYNAME_BEGIN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_BREAK" href="#KEYNAME_BREAK"><span class="identifier">KEYNAME_BREAK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_CLEARDISPLAY" href="#KEYNAME_CLEARDISPLAY"><span class="identifier">KEYNAME_CLEARDISPLAY</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_CLEARLINE" href="#KEYNAME_CLEARLINE"><span class="identifier">KEYNAME_CLEARLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_DELETE" href="#KEYNAME_DELETE"><span class="identifier">KEYNAME_DELETE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_DELETECHAR" href="#KEYNAME_DELETECHAR"><span class="identifier">KEYNAME_DELETECHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_DELETELINE" href="#KEYNAME_DELETELINE"><span class="identifier">KEYNAME_DELETELINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_DOWNARROW" href="#KEYNAME_DOWNARROW"><span class="identifier">KEYNAME_DOWNARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_END" href="#KEYNAME_END"><span class="identifier">KEYNAME_END</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_EXECUTE" href="#KEYNAME_EXECUTE"><span class="identifier">KEYNAME_EXECUTE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F1" href="#KEYNAME_F1"><span class="identifier">KEYNAME_F1</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F10" href="#KEYNAME_F10"><span class="identifier">KEYNAME_F10</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F11" href="#KEYNAME_F11"><span class="identifier">KEYNAME_F11</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F12" href="#KEYNAME_F12"><span class="identifier">KEYNAME_F12</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F13" href="#KEYNAME_F13"><span class="identifier">KEYNAME_F13</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F14" href="#KEYNAME_F14"><span class="identifier">KEYNAME_F14</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F15" href="#KEYNAME_F15"><span class="identifier">KEYNAME_F15</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F16" href="#KEYNAME_F16"><span class="identifier">KEYNAME_F16</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F17" href="#KEYNAME_F17"><span class="identifier">KEYNAME_F17</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F18" href="#KEYNAME_F18"><span class="identifier">KEYNAME_F18</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F19" href="#KEYNAME_F19"><span class="identifier">KEYNAME_F19</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F2" href="#KEYNAME_F2"><span class="identifier">KEYNAME_F2</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F20" href="#KEYNAME_F20"><span class="identifier">KEYNAME_F20</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F21" href="#KEYNAME_F21"><span class="identifier">KEYNAME_F21</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F22" href="#KEYNAME_F22"><span class="identifier">KEYNAME_F22</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F23" href="#KEYNAME_F23"><span class="identifier">KEYNAME_F23</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F24" href="#KEYNAME_F24"><span class="identifier">KEYNAME_F24</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F25" href="#KEYNAME_F25"><span class="identifier">KEYNAME_F25</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F26" href="#KEYNAME_F26"><span class="identifier">KEYNAME_F26</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F27" href="#KEYNAME_F27"><span class="identifier">KEYNAME_F27</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F28" href="#KEYNAME_F28"><span class="identifier">KEYNAME_F28</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F29" href="#KEYNAME_F29"><span class="identifier">KEYNAME_F29</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F3" href="#KEYNAME_F3"><span class="identifier">KEYNAME_F3</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F30" href="#KEYNAME_F30"><span class="identifier">KEYNAME_F30</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F31" href="#KEYNAME_F31"><span class="identifier">KEYNAME_F31</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F32" href="#KEYNAME_F32"><span class="identifier">KEYNAME_F32</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F33" href="#KEYNAME_F33"><span class="identifier">KEYNAME_F33</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F34" href="#KEYNAME_F34"><span class="identifier">KEYNAME_F34</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F35" href="#KEYNAME_F35"><span class="identifier">KEYNAME_F35</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F4" href="#KEYNAME_F4"><span class="identifier">KEYNAME_F4</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F5" href="#KEYNAME_F5"><span class="identifier">KEYNAME_F5</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F6" href="#KEYNAME_F6"><span class="identifier">KEYNAME_F6</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F7" href="#KEYNAME_F7"><span class="identifier">KEYNAME_F7</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F8" href="#KEYNAME_F8"><span class="identifier">KEYNAME_F8</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_F9" href="#KEYNAME_F9"><span class="identifier">KEYNAME_F9</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_FIND" href="#KEYNAME_FIND"><span class="identifier">KEYNAME_FIND</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_HELP" href="#KEYNAME_HELP"><span class="identifier">KEYNAME_HELP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_HOME" href="#KEYNAME_HOME"><span class="identifier">KEYNAME_HOME</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_INSERT" href="#KEYNAME_INSERT"><span class="identifier">KEYNAME_INSERT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_INSERTCHAR" href="#KEYNAME_INSERTCHAR"><span class="identifier">KEYNAME_INSERTCHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_INSERTLINE" href="#KEYNAME_INSERTLINE"><span class="identifier">KEYNAME_INSERTLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_LEFTARROW" href="#KEYNAME_LEFTARROW"><span class="identifier">KEYNAME_LEFTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_MENU" href="#KEYNAME_MENU"><span class="identifier">KEYNAME_MENU</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_MODESWITCH" href="#KEYNAME_MODESWITCH"><span class="identifier">KEYNAME_MODESWITCH</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_NEXT" href="#KEYNAME_NEXT"><span class="identifier">KEYNAME_NEXT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_PAGEDOWN" href="#KEYNAME_PAGEDOWN"><span class="identifier">KEYNAME_PAGEDOWN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_PAGEUP" href="#KEYNAME_PAGEUP"><span class="identifier">KEYNAME_PAGEUP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_PAUSE" href="#KEYNAME_PAUSE"><span class="identifier">KEYNAME_PAUSE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_PREV" href="#KEYNAME_PREV"><span class="identifier">KEYNAME_PREV</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_PRINT" href="#KEYNAME_PRINT"><span class="identifier">KEYNAME_PRINT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_PRINTSCREEN" href="#KEYNAME_PRINTSCREEN"><span class="identifier">KEYNAME_PRINTSCREEN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_REDO" href="#KEYNAME_REDO"><span class="identifier">KEYNAME_REDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_RESET" href="#KEYNAME_RESET"><span class="identifier">KEYNAME_RESET</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_RIGHTARROW" href="#KEYNAME_RIGHTARROW"><span class="identifier">KEYNAME_RIGHTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_SCROLLLOCK" href="#KEYNAME_SCROLLLOCK"><span class="identifier">KEYNAME_SCROLLLOCK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_SELECT" href="#KEYNAME_SELECT"><span class="identifier">KEYNAME_SELECT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_STOP" href="#KEYNAME_STOP"><span class="identifier">KEYNAME_STOP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_SYSREQ" href="#KEYNAME_SYSREQ"><span class="identifier">KEYNAME_SYSREQ</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_SYSTEM" href="#KEYNAME_SYSTEM"><span class="identifier">KEYNAME_SYSTEM</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_UNDO" href="#KEYNAME_UNDO"><span class="identifier">KEYNAME_UNDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_UPARROW" href="#KEYNAME_UPARROW"><span class="identifier">KEYNAME_UPARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="KEYNAME_USER" href="#KEYNAME_USER"><span class="identifier">KEYNAME_USER</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="L" href="#L"><span class="identifier">L</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="LAST" href="#LAST"><span class="identifier">LAST</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="LEFT" href="#LEFT"><span class="identifier">LEFT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="LEFTBRACKET" href="#LEFTBRACKET"><span class="identifier">LEFTBRACKET</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="LIVE" href="#LIVE"><span class="identifier">LIVE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="M" href="#M"><span class="identifier">M</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="MASTER_SHELL" href="#MASTER_SHELL"><span class="identifier">MASTER_SHELL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="MENU" href="#MENU"><span class="identifier">MENU</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="MINUS" href="#MINUS"><span class="identifier">MINUS</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="N" href="#N"><span class="identifier">N</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NEXT" href="#NEXT"><span class="identifier">NEXT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_0" href="#NUMBER_0"><span class="identifier">NUMBER_0</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_1" href="#NUMBER_1"><span class="identifier">NUMBER_1</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_2" href="#NUMBER_2"><span class="identifier">NUMBER_2</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_3" href="#NUMBER_3"><span class="identifier">NUMBER_3</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_4" href="#NUMBER_4"><span class="identifier">NUMBER_4</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_5" href="#NUMBER_5"><span class="identifier">NUMBER_5</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_6" href="#NUMBER_6"><span class="identifier">NUMBER_6</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_7" href="#NUMBER_7"><span class="identifier">NUMBER_7</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_8" href="#NUMBER_8"><span class="identifier">NUMBER_8</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMBER_9" href="#NUMBER_9"><span class="identifier">NUMBER_9</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD" href="#NUMPAD"><span class="identifier">NUMPAD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_0" href="#NUMPAD_0"><span class="identifier">NUMPAD_0</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_1" href="#NUMPAD_1"><span class="identifier">NUMPAD_1</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_2" href="#NUMPAD_2"><span class="identifier">NUMPAD_2</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_3" href="#NUMPAD_3"><span class="identifier">NUMPAD_3</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_4" href="#NUMPAD_4"><span class="identifier">NUMPAD_4</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_5" href="#NUMPAD_5"><span class="identifier">NUMPAD_5</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_6" href="#NUMPAD_6"><span class="identifier">NUMPAD_6</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_7" href="#NUMPAD_7"><span class="identifier">NUMPAD_7</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_8" href="#NUMPAD_8"><span class="identifier">NUMPAD_8</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_9" href="#NUMPAD_9"><span class="identifier">NUMPAD_9</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_ADD" href="#NUMPAD_ADD"><span class="identifier">NUMPAD_ADD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_DECIMAL" href="#NUMPAD_DECIMAL"><span class="identifier">NUMPAD_DECIMAL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_DIVIDE" href="#NUMPAD_DIVIDE"><span class="identifier">NUMPAD_DIVIDE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_ENTER" href="#NUMPAD_ENTER"><span class="identifier">NUMPAD_ENTER</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_MULTIPLY" href="#NUMPAD_MULTIPLY"><span class="identifier">NUMPAD_MULTIPLY</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="NUMPAD_SUBTRACT" href="#NUMPAD_SUBTRACT"><span class="identifier">NUMPAD_SUBTRACT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="O" href="#O"><span class="identifier">O</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="P" href="#P"><span class="identifier">P</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="PAGE_DOWN" href="#PAGE_DOWN"><span class="identifier">PAGE_DOWN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="PAGE_UP" href="#PAGE_UP"><span class="identifier">PAGE_UP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="PAUSE" href="#PAUSE"><span class="identifier">PAUSE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="PERIOD" href="#PERIOD"><span class="identifier">PERIOD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="PLAY" href="#PLAY"><span class="identifier">PLAY</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="PREVIOUS" href="#PREVIOUS"><span class="identifier">PREVIOUS</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="Q" href="#Q"><span class="identifier">Q</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="QUOTE" href="#QUOTE"><span class="identifier">QUOTE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="R" href="#R"><span class="identifier">R</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="RECORD" href="#RECORD"><span class="identifier">RECORD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="RED" href="#RED"><span class="identifier">RED</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="REWIND" href="#REWIND"><span class="identifier">REWIND</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="RIGHT" href="#RIGHT"><span class="identifier">RIGHT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="RIGHTBRACKET" href="#RIGHTBRACKET"><span class="identifier">RIGHTBRACKET</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="S" href="#S"><span class="identifier">S</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SEARCH" href="#SEARCH"><span class="identifier">SEARCH</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SEMICOLON" href="#SEMICOLON"><span class="identifier">SEMICOLON</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SETUP" href="#SETUP"><span class="identifier">SETUP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SHIFT" href="#SHIFT"><span class="identifier">SHIFT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SKIP_BACKWARD" href="#SKIP_BACKWARD"><span class="identifier">SKIP_BACKWARD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SKIP_FORWARD" href="#SKIP_FORWARD"><span class="identifier">SKIP_FORWARD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SLASH" href="#SLASH"><span class="identifier">SLASH</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SPACE" href="#SPACE"><span class="identifier">SPACE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STOP" href="#STOP"><span class="identifier">STOP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_BEGIN" href="#STRING_BEGIN"><span class="identifier">STRING_BEGIN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_BREAK" href="#STRING_BREAK"><span class="identifier">STRING_BREAK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_CLEARDISPLAY" href="#STRING_CLEARDISPLAY"><span class="identifier">STRING_CLEARDISPLAY</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_CLEARLINE" href="#STRING_CLEARLINE"><span class="identifier">STRING_CLEARLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_DELETE" href="#STRING_DELETE"><span class="identifier">STRING_DELETE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_DELETECHAR" href="#STRING_DELETECHAR"><span class="identifier">STRING_DELETECHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_DELETELINE" href="#STRING_DELETELINE"><span class="identifier">STRING_DELETELINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_DOWNARROW" href="#STRING_DOWNARROW"><span class="identifier">STRING_DOWNARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_END" href="#STRING_END"><span class="identifier">STRING_END</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_EXECUTE" href="#STRING_EXECUTE"><span class="identifier">STRING_EXECUTE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F1" href="#STRING_F1"><span class="identifier">STRING_F1</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F10" href="#STRING_F10"><span class="identifier">STRING_F10</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F11" href="#STRING_F11"><span class="identifier">STRING_F11</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F12" href="#STRING_F12"><span class="identifier">STRING_F12</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F13" href="#STRING_F13"><span class="identifier">STRING_F13</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F14" href="#STRING_F14"><span class="identifier">STRING_F14</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F15" href="#STRING_F15"><span class="identifier">STRING_F15</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F16" href="#STRING_F16"><span class="identifier">STRING_F16</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F17" href="#STRING_F17"><span class="identifier">STRING_F17</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F18" href="#STRING_F18"><span class="identifier">STRING_F18</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F19" href="#STRING_F19"><span class="identifier">STRING_F19</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F2" href="#STRING_F2"><span class="identifier">STRING_F2</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F20" href="#STRING_F20"><span class="identifier">STRING_F20</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F21" href="#STRING_F21"><span class="identifier">STRING_F21</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F22" href="#STRING_F22"><span class="identifier">STRING_F22</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F23" href="#STRING_F23"><span class="identifier">STRING_F23</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F24" href="#STRING_F24"><span class="identifier">STRING_F24</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F25" href="#STRING_F25"><span class="identifier">STRING_F25</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F26" href="#STRING_F26"><span class="identifier">STRING_F26</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F27" href="#STRING_F27"><span class="identifier">STRING_F27</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F28" href="#STRING_F28"><span class="identifier">STRING_F28</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F29" href="#STRING_F29"><span class="identifier">STRING_F29</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F3" href="#STRING_F3"><span class="identifier">STRING_F3</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F30" href="#STRING_F30"><span class="identifier">STRING_F30</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F31" href="#STRING_F31"><span class="identifier">STRING_F31</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F32" href="#STRING_F32"><span class="identifier">STRING_F32</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F33" href="#STRING_F33"><span class="identifier">STRING_F33</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F34" href="#STRING_F34"><span class="identifier">STRING_F34</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F35" href="#STRING_F35"><span class="identifier">STRING_F35</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F4" href="#STRING_F4"><span class="identifier">STRING_F4</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F5" href="#STRING_F5"><span class="identifier">STRING_F5</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F6" href="#STRING_F6"><span class="identifier">STRING_F6</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F7" href="#STRING_F7"><span class="identifier">STRING_F7</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F8" href="#STRING_F8"><span class="identifier">STRING_F8</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_F9" href="#STRING_F9"><span class="identifier">STRING_F9</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_FIND" href="#STRING_FIND"><span class="identifier">STRING_FIND</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_HELP" href="#STRING_HELP"><span class="identifier">STRING_HELP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_HOME" href="#STRING_HOME"><span class="identifier">STRING_HOME</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_INSERT" href="#STRING_INSERT"><span class="identifier">STRING_INSERT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_INSERTCHAR" href="#STRING_INSERTCHAR"><span class="identifier">STRING_INSERTCHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_INSERTLINE" href="#STRING_INSERTLINE"><span class="identifier">STRING_INSERTLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_LEFTARROW" href="#STRING_LEFTARROW"><span class="identifier">STRING_LEFTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_MENU" href="#STRING_MENU"><span class="identifier">STRING_MENU</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_MODESWITCH" href="#STRING_MODESWITCH"><span class="identifier">STRING_MODESWITCH</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_NEXT" href="#STRING_NEXT"><span class="identifier">STRING_NEXT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_PAGEDOWN" href="#STRING_PAGEDOWN"><span class="identifier">STRING_PAGEDOWN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_PAGEUP" href="#STRING_PAGEUP"><span class="identifier">STRING_PAGEUP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_PAUSE" href="#STRING_PAUSE"><span class="identifier">STRING_PAUSE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_PREV" href="#STRING_PREV"><span class="identifier">STRING_PREV</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_PRINT" href="#STRING_PRINT"><span class="identifier">STRING_PRINT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_PRINTSCREEN" href="#STRING_PRINTSCREEN"><span class="identifier">STRING_PRINTSCREEN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_REDO" href="#STRING_REDO"><span class="identifier">STRING_REDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_RESET" href="#STRING_RESET"><span class="identifier">STRING_RESET</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_RIGHTARROW" href="#STRING_RIGHTARROW"><span class="identifier">STRING_RIGHTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
+<div class="doc"><p></p></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_SCROLLLOCK" href="#STRING_SCROLLLOCK"><span class="identifier">STRING_SCROLLLOCK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ALTERNATE" href="#ALTERNATE"><span class="identifier">ALTERNATE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_SELECT" href="#STRING_SELECT"><span class="identifier">STRING_SELECT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="AUDIO" href="#AUDIO"><span class="identifier">AUDIO</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_STOP" href="#STRING_STOP"><span class="identifier">STRING_STOP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="B" href="#B"><span class="identifier">B</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_SYSREQ" href="#STRING_SYSREQ"><span class="identifier">STRING_SYSREQ</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BACK" href="#BACK"><span class="identifier">BACK</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_SYSTEM" href="#STRING_SYSTEM"><span class="identifier">STRING_SYSTEM</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BACKQUOTE" href="#BACKQUOTE"><span class="identifier">BACKQUOTE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_UNDO" href="#STRING_UNDO"><span class="identifier">STRING_UNDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BACKSLASH" href="#BACKSLASH"><span class="identifier">BACKSLASH</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_UPARROW" href="#STRING_UPARROW"><span class="identifier">STRING_UPARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BACKSPACE" href="#BACKSPACE"><span class="identifier">BACKSPACE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="STRING_USER" href="#STRING_USER"><span class="identifier">STRING_USER</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="BLUE" href="#BLUE"><span class="identifier">BLUE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="SUBTITLE" href="#SUBTITLE"><span class="identifier">SUBTITLE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="C" href="#C"><span class="identifier">C</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="T" href="#T"><span class="identifier">T</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CAPS_LOCK" href="#CAPS_LOCK"><span class="identifier">CAPS_LOCK</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="TAB" href="#TAB"><span class="identifier">TAB</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CHANNEL_DOWN" href="#CHANNEL_DOWN"><span class="identifier">CHANNEL_DOWN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="U" href="#U"><span class="identifier">U</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CHANNEL_UP" href="#CHANNEL_UP"><span class="identifier">CHANNEL_UP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="UP" href="#UP"><span class="identifier">UP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="COMMA" href="#COMMA"><span class="identifier">COMMA</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="V" href="#V"><span class="identifier">V</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="COMMAND" href="#COMMAND"><span class="identifier">COMMAND</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="VOD" href="#VOD"><span class="identifier">VOD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CONTROL" href="#CONTROL"><span class="identifier">CONTROL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="W" href="#W"><span class="identifier">W</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CharCodeStrings" href="#CharCodeStrings"><span class="identifier">CharCodeStrings</span></a>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="X" href="#X"><span class="identifier">X</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="D" href="#D"><span class="identifier">D</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="Y" href="#Y"><span class="identifier">Y</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DELETE" href="#DELETE"><span class="identifier">DELETE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="YELLOW" href="#YELLOW"><span class="identifier">YELLOW</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOWN" href="#DOWN"><span class="identifier">DOWN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="Z" href="#Z"><span class="identifier">Z</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DVR" href="#DVR"><span class="identifier">DVR</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="capsLock" href="#capsLock"><span class="identifier">capsLock</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="E" href="#E"><span class="identifier">E</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="hasVirtualKeyboard" href="#hasVirtualKeyboard"><span class="identifier">hasVirtualKeyboard</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="END" href="#END"><span class="identifier">END</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="isAccessible"></a><h3><code><span class="keyword">function</span> <a name="isAccessible" href="#isAccessible"><span class="identifier">isAccessible</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ENTER" href="#ENTER"><span class="identifier">ENTER</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="numLock" href="#numLock"><span class="identifier">numLock</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="EQUAL" href="#EQUAL"><span class="identifier">EQUAL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="physicalKeyboardType" href="#physicalKeyboardType"><span class="identifier">physicalKeyboardType</span></a>:<a href="/dox/flash/ui/KeyboardType.html"><span class="type">KeyboardType</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ESCAPE" href="#ESCAPE"><span class="identifier">ESCAPE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="EXIT" href="#EXIT"><span class="identifier">EXIT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F" href="#F"><span class="identifier">F</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F1" href="#F1"><span class="identifier">F1</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F10" href="#F10"><span class="identifier">F10</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F11" href="#F11"><span class="identifier">F11</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F12" href="#F12"><span class="identifier">F12</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F13" href="#F13"><span class="identifier">F13</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F14" href="#F14"><span class="identifier">F14</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F15" href="#F15"><span class="identifier">F15</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F2" href="#F2"><span class="identifier">F2</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F3" href="#F3"><span class="identifier">F3</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F4" href="#F4"><span class="identifier">F4</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F5" href="#F5"><span class="identifier">F5</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F6" href="#F6"><span class="identifier">F6</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F7" href="#F7"><span class="identifier">F7</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F8" href="#F8"><span class="identifier">F8</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="F9" href="#F9"><span class="identifier">F9</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="FAST_FORWARD" href="#FAST_FORWARD"><span class="identifier">FAST_FORWARD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="G" href="#G"><span class="identifier">G</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="GREEN" href="#GREEN"><span class="identifier">GREEN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="GUIDE" href="#GUIDE"><span class="identifier">GUIDE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="H" href="#H"><span class="identifier">H</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HELP" href="#HELP"><span class="identifier">HELP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="HOME" href="#HOME"><span class="identifier">HOME</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="I" href="#I"><span class="identifier">I</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="INFO" href="#INFO"><span class="identifier">INFO</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="INPUT" href="#INPUT"><span class="identifier">INPUT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="INSERT" href="#INSERT"><span class="identifier">INSERT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="J" href="#J"><span class="identifier">J</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="K" href="#K"><span class="identifier">K</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_BEGIN" href="#KEYNAME_BEGIN"><span class="identifier">KEYNAME_BEGIN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_BREAK" href="#KEYNAME_BREAK"><span class="identifier">KEYNAME_BREAK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_CLEARDISPLAY" href="#KEYNAME_CLEARDISPLAY"><span class="identifier">KEYNAME_CLEARDISPLAY</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_CLEARLINE" href="#KEYNAME_CLEARLINE"><span class="identifier">KEYNAME_CLEARLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_DELETE" href="#KEYNAME_DELETE"><span class="identifier">KEYNAME_DELETE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_DELETECHAR" href="#KEYNAME_DELETECHAR"><span class="identifier">KEYNAME_DELETECHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_DELETELINE" href="#KEYNAME_DELETELINE"><span class="identifier">KEYNAME_DELETELINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_DOWNARROW" href="#KEYNAME_DOWNARROW"><span class="identifier">KEYNAME_DOWNARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_END" href="#KEYNAME_END"><span class="identifier">KEYNAME_END</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_EXECUTE" href="#KEYNAME_EXECUTE"><span class="identifier">KEYNAME_EXECUTE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F1" href="#KEYNAME_F1"><span class="identifier">KEYNAME_F1</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F10" href="#KEYNAME_F10"><span class="identifier">KEYNAME_F10</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F11" href="#KEYNAME_F11"><span class="identifier">KEYNAME_F11</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F12" href="#KEYNAME_F12"><span class="identifier">KEYNAME_F12</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F13" href="#KEYNAME_F13"><span class="identifier">KEYNAME_F13</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F14" href="#KEYNAME_F14"><span class="identifier">KEYNAME_F14</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F15" href="#KEYNAME_F15"><span class="identifier">KEYNAME_F15</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F16" href="#KEYNAME_F16"><span class="identifier">KEYNAME_F16</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F17" href="#KEYNAME_F17"><span class="identifier">KEYNAME_F17</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F18" href="#KEYNAME_F18"><span class="identifier">KEYNAME_F18</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F19" href="#KEYNAME_F19"><span class="identifier">KEYNAME_F19</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F2" href="#KEYNAME_F2"><span class="identifier">KEYNAME_F2</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F20" href="#KEYNAME_F20"><span class="identifier">KEYNAME_F20</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F21" href="#KEYNAME_F21"><span class="identifier">KEYNAME_F21</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F22" href="#KEYNAME_F22"><span class="identifier">KEYNAME_F22</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F23" href="#KEYNAME_F23"><span class="identifier">KEYNAME_F23</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F24" href="#KEYNAME_F24"><span class="identifier">KEYNAME_F24</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F25" href="#KEYNAME_F25"><span class="identifier">KEYNAME_F25</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F26" href="#KEYNAME_F26"><span class="identifier">KEYNAME_F26</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F27" href="#KEYNAME_F27"><span class="identifier">KEYNAME_F27</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F28" href="#KEYNAME_F28"><span class="identifier">KEYNAME_F28</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F29" href="#KEYNAME_F29"><span class="identifier">KEYNAME_F29</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F3" href="#KEYNAME_F3"><span class="identifier">KEYNAME_F3</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F30" href="#KEYNAME_F30"><span class="identifier">KEYNAME_F30</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F31" href="#KEYNAME_F31"><span class="identifier">KEYNAME_F31</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F32" href="#KEYNAME_F32"><span class="identifier">KEYNAME_F32</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F33" href="#KEYNAME_F33"><span class="identifier">KEYNAME_F33</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F34" href="#KEYNAME_F34"><span class="identifier">KEYNAME_F34</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F35" href="#KEYNAME_F35"><span class="identifier">KEYNAME_F35</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F4" href="#KEYNAME_F4"><span class="identifier">KEYNAME_F4</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F5" href="#KEYNAME_F5"><span class="identifier">KEYNAME_F5</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F6" href="#KEYNAME_F6"><span class="identifier">KEYNAME_F6</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F7" href="#KEYNAME_F7"><span class="identifier">KEYNAME_F7</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F8" href="#KEYNAME_F8"><span class="identifier">KEYNAME_F8</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_F9" href="#KEYNAME_F9"><span class="identifier">KEYNAME_F9</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_FIND" href="#KEYNAME_FIND"><span class="identifier">KEYNAME_FIND</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_HELP" href="#KEYNAME_HELP"><span class="identifier">KEYNAME_HELP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_HOME" href="#KEYNAME_HOME"><span class="identifier">KEYNAME_HOME</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_INSERT" href="#KEYNAME_INSERT"><span class="identifier">KEYNAME_INSERT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_INSERTCHAR" href="#KEYNAME_INSERTCHAR"><span class="identifier">KEYNAME_INSERTCHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_INSERTLINE" href="#KEYNAME_INSERTLINE"><span class="identifier">KEYNAME_INSERTLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_LEFTARROW" href="#KEYNAME_LEFTARROW"><span class="identifier">KEYNAME_LEFTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_MENU" href="#KEYNAME_MENU"><span class="identifier">KEYNAME_MENU</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_MODESWITCH" href="#KEYNAME_MODESWITCH"><span class="identifier">KEYNAME_MODESWITCH</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_NEXT" href="#KEYNAME_NEXT"><span class="identifier">KEYNAME_NEXT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_PAGEDOWN" href="#KEYNAME_PAGEDOWN"><span class="identifier">KEYNAME_PAGEDOWN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_PAGEUP" href="#KEYNAME_PAGEUP"><span class="identifier">KEYNAME_PAGEUP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_PAUSE" href="#KEYNAME_PAUSE"><span class="identifier">KEYNAME_PAUSE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_PREV" href="#KEYNAME_PREV"><span class="identifier">KEYNAME_PREV</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_PRINT" href="#KEYNAME_PRINT"><span class="identifier">KEYNAME_PRINT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_PRINTSCREEN" href="#KEYNAME_PRINTSCREEN"><span class="identifier">KEYNAME_PRINTSCREEN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_REDO" href="#KEYNAME_REDO"><span class="identifier">KEYNAME_REDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_RESET" href="#KEYNAME_RESET"><span class="identifier">KEYNAME_RESET</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_RIGHTARROW" href="#KEYNAME_RIGHTARROW"><span class="identifier">KEYNAME_RIGHTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_SCROLLLOCK" href="#KEYNAME_SCROLLLOCK"><span class="identifier">KEYNAME_SCROLLLOCK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_SELECT" href="#KEYNAME_SELECT"><span class="identifier">KEYNAME_SELECT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_STOP" href="#KEYNAME_STOP"><span class="identifier">KEYNAME_STOP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_SYSREQ" href="#KEYNAME_SYSREQ"><span class="identifier">KEYNAME_SYSREQ</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_SYSTEM" href="#KEYNAME_SYSTEM"><span class="identifier">KEYNAME_SYSTEM</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_UNDO" href="#KEYNAME_UNDO"><span class="identifier">KEYNAME_UNDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_UPARROW" href="#KEYNAME_UPARROW"><span class="identifier">KEYNAME_UPARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="KEYNAME_USER" href="#KEYNAME_USER"><span class="identifier">KEYNAME_USER</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="L" href="#L"><span class="identifier">L</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="LAST" href="#LAST"><span class="identifier">LAST</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="LEFT" href="#LEFT"><span class="identifier">LEFT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="LEFTBRACKET" href="#LEFTBRACKET"><span class="identifier">LEFTBRACKET</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="LIVE" href="#LIVE"><span class="identifier">LIVE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="M" href="#M"><span class="identifier">M</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MASTER_SHELL" href="#MASTER_SHELL"><span class="identifier">MASTER_SHELL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MENU" href="#MENU"><span class="identifier">MENU</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="MINUS" href="#MINUS"><span class="identifier">MINUS</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="N" href="#N"><span class="identifier">N</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NEXT" href="#NEXT"><span class="identifier">NEXT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_0" href="#NUMBER_0"><span class="identifier">NUMBER_0</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_1" href="#NUMBER_1"><span class="identifier">NUMBER_1</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_2" href="#NUMBER_2"><span class="identifier">NUMBER_2</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_3" href="#NUMBER_3"><span class="identifier">NUMBER_3</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_4" href="#NUMBER_4"><span class="identifier">NUMBER_4</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_5" href="#NUMBER_5"><span class="identifier">NUMBER_5</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_6" href="#NUMBER_6"><span class="identifier">NUMBER_6</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_7" href="#NUMBER_7"><span class="identifier">NUMBER_7</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_8" href="#NUMBER_8"><span class="identifier">NUMBER_8</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMBER_9" href="#NUMBER_9"><span class="identifier">NUMBER_9</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD" href="#NUMPAD"><span class="identifier">NUMPAD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_0" href="#NUMPAD_0"><span class="identifier">NUMPAD_0</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_1" href="#NUMPAD_1"><span class="identifier">NUMPAD_1</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_2" href="#NUMPAD_2"><span class="identifier">NUMPAD_2</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_3" href="#NUMPAD_3"><span class="identifier">NUMPAD_3</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_4" href="#NUMPAD_4"><span class="identifier">NUMPAD_4</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_5" href="#NUMPAD_5"><span class="identifier">NUMPAD_5</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_6" href="#NUMPAD_6"><span class="identifier">NUMPAD_6</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_7" href="#NUMPAD_7"><span class="identifier">NUMPAD_7</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_8" href="#NUMPAD_8"><span class="identifier">NUMPAD_8</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_9" href="#NUMPAD_9"><span class="identifier">NUMPAD_9</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_ADD" href="#NUMPAD_ADD"><span class="identifier">NUMPAD_ADD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_DECIMAL" href="#NUMPAD_DECIMAL"><span class="identifier">NUMPAD_DECIMAL</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_DIVIDE" href="#NUMPAD_DIVIDE"><span class="identifier">NUMPAD_DIVIDE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_ENTER" href="#NUMPAD_ENTER"><span class="identifier">NUMPAD_ENTER</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_MULTIPLY" href="#NUMPAD_MULTIPLY"><span class="identifier">NUMPAD_MULTIPLY</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NUMPAD_SUBTRACT" href="#NUMPAD_SUBTRACT"><span class="identifier">NUMPAD_SUBTRACT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="O" href="#O"><span class="identifier">O</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="P" href="#P"><span class="identifier">P</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PAGE_DOWN" href="#PAGE_DOWN"><span class="identifier">PAGE_DOWN</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PAGE_UP" href="#PAGE_UP"><span class="identifier">PAGE_UP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PAUSE" href="#PAUSE"><span class="identifier">PAUSE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PERIOD" href="#PERIOD"><span class="identifier">PERIOD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PLAY" href="#PLAY"><span class="identifier">PLAY</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PREVIOUS" href="#PREVIOUS"><span class="identifier">PREVIOUS</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="Q" href="#Q"><span class="identifier">Q</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="QUOTE" href="#QUOTE"><span class="identifier">QUOTE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="R" href="#R"><span class="identifier">R</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="RECORD" href="#RECORD"><span class="identifier">RECORD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="RED" href="#RED"><span class="identifier">RED</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="REWIND" href="#REWIND"><span class="identifier">REWIND</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="RIGHT" href="#RIGHT"><span class="identifier">RIGHT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="RIGHTBRACKET" href="#RIGHTBRACKET"><span class="identifier">RIGHTBRACKET</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="S" href="#S"><span class="identifier">S</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SEARCH" href="#SEARCH"><span class="identifier">SEARCH</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SEMICOLON" href="#SEMICOLON"><span class="identifier">SEMICOLON</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SETUP" href="#SETUP"><span class="identifier">SETUP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SHIFT" href="#SHIFT"><span class="identifier">SHIFT</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SKIP_BACKWARD" href="#SKIP_BACKWARD"><span class="identifier">SKIP_BACKWARD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SKIP_FORWARD" href="#SKIP_FORWARD"><span class="identifier">SKIP_FORWARD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SLASH" href="#SLASH"><span class="identifier">SLASH</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SPACE" href="#SPACE"><span class="identifier">SPACE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STOP" href="#STOP"><span class="identifier">STOP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_BEGIN" href="#STRING_BEGIN"><span class="identifier">STRING_BEGIN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_BREAK" href="#STRING_BREAK"><span class="identifier">STRING_BREAK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_CLEARDISPLAY" href="#STRING_CLEARDISPLAY"><span class="identifier">STRING_CLEARDISPLAY</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_CLEARLINE" href="#STRING_CLEARLINE"><span class="identifier">STRING_CLEARLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_DELETE" href="#STRING_DELETE"><span class="identifier">STRING_DELETE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_DELETECHAR" href="#STRING_DELETECHAR"><span class="identifier">STRING_DELETECHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_DELETELINE" href="#STRING_DELETELINE"><span class="identifier">STRING_DELETELINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_DOWNARROW" href="#STRING_DOWNARROW"><span class="identifier">STRING_DOWNARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_END" href="#STRING_END"><span class="identifier">STRING_END</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_EXECUTE" href="#STRING_EXECUTE"><span class="identifier">STRING_EXECUTE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F1" href="#STRING_F1"><span class="identifier">STRING_F1</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F10" href="#STRING_F10"><span class="identifier">STRING_F10</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F11" href="#STRING_F11"><span class="identifier">STRING_F11</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F12" href="#STRING_F12"><span class="identifier">STRING_F12</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F13" href="#STRING_F13"><span class="identifier">STRING_F13</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F14" href="#STRING_F14"><span class="identifier">STRING_F14</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F15" href="#STRING_F15"><span class="identifier">STRING_F15</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F16" href="#STRING_F16"><span class="identifier">STRING_F16</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F17" href="#STRING_F17"><span class="identifier">STRING_F17</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F18" href="#STRING_F18"><span class="identifier">STRING_F18</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F19" href="#STRING_F19"><span class="identifier">STRING_F19</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F2" href="#STRING_F2"><span class="identifier">STRING_F2</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F20" href="#STRING_F20"><span class="identifier">STRING_F20</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F21" href="#STRING_F21"><span class="identifier">STRING_F21</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F22" href="#STRING_F22"><span class="identifier">STRING_F22</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F23" href="#STRING_F23"><span class="identifier">STRING_F23</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F24" href="#STRING_F24"><span class="identifier">STRING_F24</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F25" href="#STRING_F25"><span class="identifier">STRING_F25</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F26" href="#STRING_F26"><span class="identifier">STRING_F26</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F27" href="#STRING_F27"><span class="identifier">STRING_F27</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F28" href="#STRING_F28"><span class="identifier">STRING_F28</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F29" href="#STRING_F29"><span class="identifier">STRING_F29</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F3" href="#STRING_F3"><span class="identifier">STRING_F3</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F30" href="#STRING_F30"><span class="identifier">STRING_F30</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F31" href="#STRING_F31"><span class="identifier">STRING_F31</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F32" href="#STRING_F32"><span class="identifier">STRING_F32</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F33" href="#STRING_F33"><span class="identifier">STRING_F33</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F34" href="#STRING_F34"><span class="identifier">STRING_F34</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F35" href="#STRING_F35"><span class="identifier">STRING_F35</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F4" href="#STRING_F4"><span class="identifier">STRING_F4</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F5" href="#STRING_F5"><span class="identifier">STRING_F5</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F6" href="#STRING_F6"><span class="identifier">STRING_F6</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F7" href="#STRING_F7"><span class="identifier">STRING_F7</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F8" href="#STRING_F8"><span class="identifier">STRING_F8</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_F9" href="#STRING_F9"><span class="identifier">STRING_F9</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_FIND" href="#STRING_FIND"><span class="identifier">STRING_FIND</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_HELP" href="#STRING_HELP"><span class="identifier">STRING_HELP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_HOME" href="#STRING_HOME"><span class="identifier">STRING_HOME</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_INSERT" href="#STRING_INSERT"><span class="identifier">STRING_INSERT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_INSERTCHAR" href="#STRING_INSERTCHAR"><span class="identifier">STRING_INSERTCHAR</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_INSERTLINE" href="#STRING_INSERTLINE"><span class="identifier">STRING_INSERTLINE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_LEFTARROW" href="#STRING_LEFTARROW"><span class="identifier">STRING_LEFTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_MENU" href="#STRING_MENU"><span class="identifier">STRING_MENU</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_MODESWITCH" href="#STRING_MODESWITCH"><span class="identifier">STRING_MODESWITCH</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_NEXT" href="#STRING_NEXT"><span class="identifier">STRING_NEXT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_PAGEDOWN" href="#STRING_PAGEDOWN"><span class="identifier">STRING_PAGEDOWN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_PAGEUP" href="#STRING_PAGEUP"><span class="identifier">STRING_PAGEUP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_PAUSE" href="#STRING_PAUSE"><span class="identifier">STRING_PAUSE</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_PREV" href="#STRING_PREV"><span class="identifier">STRING_PREV</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_PRINT" href="#STRING_PRINT"><span class="identifier">STRING_PRINT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_PRINTSCREEN" href="#STRING_PRINTSCREEN"><span class="identifier">STRING_PRINTSCREEN</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_REDO" href="#STRING_REDO"><span class="identifier">STRING_REDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_RESET" href="#STRING_RESET"><span class="identifier">STRING_RESET</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_RIGHTARROW" href="#STRING_RIGHTARROW"><span class="identifier">STRING_RIGHTARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_SCROLLLOCK" href="#STRING_SCROLLLOCK"><span class="identifier">STRING_SCROLLLOCK</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_SELECT" href="#STRING_SELECT"><span class="identifier">STRING_SELECT</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_STOP" href="#STRING_STOP"><span class="identifier">STRING_STOP</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_SYSREQ" href="#STRING_SYSREQ"><span class="identifier">STRING_SYSREQ</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_SYSTEM" href="#STRING_SYSTEM"><span class="identifier">STRING_SYSTEM</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_UNDO" href="#STRING_UNDO"><span class="identifier">STRING_UNDO</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_UPARROW" href="#STRING_UPARROW"><span class="identifier">STRING_UPARROW</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="STRING_USER" href="#STRING_USER"><span class="identifier">STRING_USER</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="SUBTITLE" href="#SUBTITLE"><span class="identifier">SUBTITLE</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="T" href="#T"><span class="identifier">T</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="TAB" href="#TAB"><span class="identifier">TAB</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="U" href="#U"><span class="identifier">U</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="UP" href="#UP"><span class="identifier">UP</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="V" href="#V"><span class="identifier">V</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="VOD" href="#VOD"><span class="identifier">VOD</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="W" href="#W"><span class="identifier">W</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="X" href="#X"><span class="identifier">X</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="Y" href="#Y"><span class="identifier">Y</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="YELLOW" href="#YELLOW"><span class="identifier">YELLOW</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="Z" href="#Z"><span class="identifier">Z</span></a>:<a href="/dox/UInt.html"><span class="type">UInt</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="capsLock" href="#capsLock"><span class="identifier">capsLock</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hasVirtualKeyboard" href="#hasVirtualKeyboard"><span class="identifier">hasVirtualKeyboard</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><a name="isAccessible"></a><h3><code><span class="keyword">function</span> <a name="isAccessible" href="#isAccessible"><span class="identifier">isAccessible</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="numLock" href="#numLock"><span class="identifier">numLock</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="physicalKeyboardType" href="#physicalKeyboardType"><span class="identifier">physicalKeyboardType</span></a>:<a href="/dox/flash/ui/KeyboardType.html"><span class="type">KeyboardType</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
-<div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

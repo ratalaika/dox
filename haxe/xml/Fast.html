@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -26,29 +52,40 @@
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/xml/Fast.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">x</span>:<a href="/dox/Xml.html"><span class="type">Xml</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="att" href="#att"><span class="identifier">att</span></a>:<a href="/dox/haxe/xml/_Fast/AttribAccess.html"><span class="type">AttribAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="att" href="#att"><span class="identifier">att</span></a>:<a href="/dox/haxe/xml/_Fast/AttribAccess.html"><span class="type">AttribAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="elements" href="#elements"><span class="identifier">elements</span></a>:<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<a href="/dox/haxe/xml/Fast.html"><span class="type">Fast</span></a>&gt;;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="elements" href="#elements"><span class="identifier">elements</span></a>:<a href="/dox/Iterator.html"><span class="type">Iterator</span></a>&lt;<a href="/dox/haxe/xml/Fast.html"><span class="type">Fast</span></a>&gt;;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="has" href="#has"><span class="identifier">has</span></a>:<a href="/dox/haxe/xml/_Fast/HasAttribAccess.html"><span class="type">HasAttribAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="has" href="#has"><span class="identifier">has</span></a>:<a href="/dox/haxe/xml/_Fast/HasAttribAccess.html"><span class="type">HasAttribAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="hasNode" href="#hasNode"><span class="identifier">hasNode</span></a>:<a href="/dox/haxe/xml/_Fast/HasNodeAccess.html"><span class="type">HasNodeAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="hasNode" href="#hasNode"><span class="identifier">hasNode</span></a>:<a href="/dox/haxe/xml/_Fast/HasNodeAccess.html"><span class="type">HasNodeAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="innerData" href="#innerData"><span class="identifier">innerData</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="innerData" href="#innerData"><span class="identifier">innerData</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="innerHTML" href="#innerHTML"><span class="identifier">innerHTML</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="innerHTML" href="#innerHTML"><span class="identifier">innerHTML</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="node" href="#node"><span class="identifier">node</span></a>:<a href="/dox/haxe/xml/_Fast/NodeAccess.html"><span class="type">NodeAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="node" href="#node"><span class="identifier">node</span></a>:<a href="/dox/haxe/xml/_Fast/NodeAccess.html"><span class="type">NodeAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="nodes" href="#nodes"><span class="identifier">nodes</span></a>:<a href="/dox/haxe/xml/_Fast/NodeListAccess.html"><span class="type">NodeListAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="nodes" href="#nodes"><span class="identifier">nodes</span></a>:<a href="/dox/haxe/xml/_Fast/NodeListAccess.html"><span class="type">NodeListAccess</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="x" href="#x"><span class="identifier">x</span></a>:<a href="/dox/Xml.html"><span class="type">Xml</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
+<h3><code><span class="keyword">var</span> <a name="x" href="#x"><span class="identifier">x</span></a>:<a href="/dox/Xml.html"><span class="type">Xml</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

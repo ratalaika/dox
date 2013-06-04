@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -27,57 +53,66 @@
 <div class="doc"><p>This class allows you to get information about the files and directories.</p>
 <p>See <code><a href="/dox/sys/io/File.html">sys.io.File</a></code> for the complementary file API.</p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-cpp platform-neko platform-php">
 <a name="createDirectory"></a><h3><code><span class="keyword">function</span> <a name="createDirectory" href="#createDirectory"><span class="identifier">createDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Creates a directory specified by <code>path</code>.</p>
 <p>This method is not recursive: All parent directories must exist.</p>
 <p>If the directory cannot be created, an exception is thrown.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="deleteDirectory"></a><h3><code><span class="keyword">function</span> <a name="deleteDirectory" href="#deleteDirectory"><span class="identifier">deleteDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="deleteDirectory"></a><h3><code><span class="keyword">function</span> <a name="deleteDirectory" href="#deleteDirectory"><span class="identifier">deleteDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Deletes the directory specified by <code>path</code>.</p>
 <p>If <code>path</code> does not denote a valid directory, or if that directory cannot
 be deleted, an exception is thrown.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="deleteFile"></a><h3><code><span class="keyword">function</span> <a name="deleteFile" href="#deleteFile"><span class="identifier">deleteFile</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="deleteFile"></a><h3><code><span class="keyword">function</span> <a name="deleteFile" href="#deleteFile"><span class="identifier">deleteFile</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Deletes the file specified by <code>path</code>.</p>
 <p>If <code>path</code> does not denote a valid file, or if that file cannot be
 deleted, an exception is thrown.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="exists"></a><h3><code><span class="keyword">function</span> <a name="exists" href="#exists"><span class="identifier">exists</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="exists"></a><h3><code><span class="keyword">function</span> <a name="exists" href="#exists"><span class="identifier">exists</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Tells if the file or directory specified by <code>path</code> exists.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="fullPath"></a><h3><code><span class="keyword">function</span> <a name="fullPath" href="#fullPath"><span class="identifier">fullPath</span></a>(<span class="identifier">relPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="fullPath"></a><h3><code><span class="keyword">function</span> <a name="fullPath" href="#fullPath"><span class="identifier">fullPath</span></a>(<span class="identifier">relPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Returns the full path of the file or directory specified by <code>relPath</code>,
 which is relative to the current working directory.</p>
 <p>If <code>relPath</code> is null, the result is unspecified.</p></div>
-<hr/><a name="isDirectory"></a><h3><code><span class="keyword">function</span> <a name="isDirectory" href="#isDirectory"><span class="identifier">isDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="isDirectory"></a><h3><code><span class="keyword">function</span> <a name="isDirectory" href="#isDirectory"><span class="identifier">isDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Tells if the file or directory specified by <code>path</code> is a directory.</p>
 <p>If <code>path</code> is not a valid file system entry or if its destination is no
 accessible, an exception is thrown.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="readDirectory"></a><h3><code><span class="keyword">function</span> <a name="readDirectory" href="#readDirectory"><span class="identifier">readDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="readDirectory"></a><h3><code><span class="keyword">function</span> <a name="readDirectory" href="#readDirectory"><span class="identifier">readDirectory</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Returns the names of all files and directory in the directory specified
 by <code>path</code>.</p>
 <p>If <code>path</code> does not denote a valid directory, an exception is thrown.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/><a name="rename"></a><h3><code><span class="keyword">function</span> <a name="rename" href="#rename"><span class="identifier">rename</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">newPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="rename"></a><h3><code><span class="keyword">function</span> <a name="rename" href="#rename"><span class="identifier">rename</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">newPath</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Renames/moves the file or directory specified by <code>path</code> to <code>newPath</code>.</p>
 <p>If <code>path</code> is not a valid file system entry, or if it is not accessible,
 or if <code>newPath</code> is not accessible, an exception is thrown.</p>
 <p>If <code>path</code> or <code>newPath</code> are null, the result is unspecified.</p></div>
-<hr/><a name="stat"></a><h3><code><span class="keyword">function</span> <a name="stat" href="#stat"><span class="identifier">stat</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/sys/FileStat.html"><span class="type">FileStat</span></a>;</code></h3>
+<hr/></span><span class="platform platform-cpp platform-neko platform-php">
+<a name="stat"></a><h3><code><span class="keyword">function</span> <a name="stat" href="#stat"><span class="identifier">stat</span></a>(<span class="identifier">path</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/sys/FileStat.html"><span class="type">FileStat</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on cpp, neko, php</span></code></div>
 <div class="doc"><p>Returns <code><a href="/dox/FileStat.html">FileStat</a></code> information on the file or directory specified by
 <code>path</code>.</p>
 <p>If <code>path</code> is null, the result is unspecified.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

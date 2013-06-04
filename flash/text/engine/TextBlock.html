@@ -14,94 +14,145 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/flash/text/engine/TextBlock.html"><span class="type">TextBlock</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/flash/text/engine/TextBlock.hx</span></code></div>
 <div class="doc"><p></p></div>
 <h2>Instance Fields</h2>
+<span class="platform platform-flash">
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(?<span class="identifier">content</span>:<a href="/dox/flash/text/engine/ContentElement.html"><span class="type">ContentElement</span></a>, ?<span class="identifier">tabStops</span>:<a href="/dox/flash/Vector.html"><span class="type">Vector</span></a>&lt;<a href="/dox/flash/text/engine/TabStop.html"><span class="type">TabStop</span></a>&gt;, ?<span class="identifier">textJustifier</span>:<a href="/dox/flash/text/engine/TextJustifier.html"><span class="type">TextJustifier</span></a>, ?<span class="identifier">lineRotation</span>:<a href="/dox/flash/text/engine/TextRotation.html"><span class="type">TextRotation</span></a>, ?<span class="identifier">baselineZero</span>:<a href="/dox/flash/text/engine/TextBaseline.html"><span class="type">TextBaseline</span></a>, ?<span class="identifier">bidiLevel</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">applyNonLinearFontScaling</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, ?<span class="identifier">baselineFontDescription</span>:<a href="/dox/flash/text/engine/FontDescription.html"><span class="type">FontDescription</span></a>, ?<span class="identifier">baselineFontSize</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="applyNonLinearFontScaling" href="#applyNonLinearFontScaling"><span class="identifier">applyNonLinearFontScaling</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="applyNonLinearFontScaling" href="#applyNonLinearFontScaling"><span class="identifier">applyNonLinearFontScaling</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="baselineFontDescription" href="#baselineFontDescription"><span class="identifier">baselineFontDescription</span></a>:<a href="/dox/flash/text/engine/FontDescription.html"><span class="type">FontDescription</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="baselineFontDescription" href="#baselineFontDescription"><span class="identifier">baselineFontDescription</span></a>:<a href="/dox/flash/text/engine/FontDescription.html"><span class="type">FontDescription</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="baselineFontSize" href="#baselineFontSize"><span class="identifier">baselineFontSize</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="baselineFontSize" href="#baselineFontSize"><span class="identifier">baselineFontSize</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="baselineZero" href="#baselineZero"><span class="identifier">baselineZero</span></a>:<a href="/dox/flash/text/engine/TextBaseline.html"><span class="type">TextBaseline</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="baselineZero" href="#baselineZero"><span class="identifier">baselineZero</span></a>:<a href="/dox/flash/text/engine/TextBaseline.html"><span class="type">TextBaseline</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="bidiLevel" href="#bidiLevel"><span class="identifier">bidiLevel</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="bidiLevel" href="#bidiLevel"><span class="identifier">bidiLevel</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="content" href="#content"><span class="identifier">content</span></a>:<a href="/dox/flash/text/engine/ContentElement.html"><span class="type">ContentElement</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="content" href="#content"><span class="identifier">content</span></a>:<a href="/dox/flash/text/engine/ContentElement.html"><span class="type">ContentElement</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="createTextLine"></a><h3><code><span class="keyword">function</span> <a name="createTextLine" href="#createTextLine"><span class="identifier">createTextLine</span></a>(?<span class="identifier">previousLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, ?<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">lineOffset</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">fitSomething</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="createTextLine"></a><h3><code><span class="keyword">function</span> <a name="createTextLine" href="#createTextLine"><span class="identifier">createTextLine</span></a>(?<span class="identifier">previousLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, ?<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">lineOffset</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">fitSomething</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="dump"></a><h3><code><span class="keyword">function</span> <a name="dump" href="#dump"><span class="identifier">dump</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="dump"></a><h3><code><span class="keyword">function</span> <a name="dump" href="#dump"><span class="identifier">dump</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="findNextAtomBoundary"></a><h3><code><span class="keyword">function</span> <a name="findNextAtomBoundary" href="#findNextAtomBoundary"><span class="identifier">findNextAtomBoundary</span></a>(<span class="identifier">afterCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="findNextAtomBoundary"></a><h3><code><span class="keyword">function</span> <a name="findNextAtomBoundary" href="#findNextAtomBoundary"><span class="identifier">findNextAtomBoundary</span></a>(<span class="identifier">afterCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="findNextWordBoundary"></a><h3><code><span class="keyword">function</span> <a name="findNextWordBoundary" href="#findNextWordBoundary"><span class="identifier">findNextWordBoundary</span></a>(<span class="identifier">afterCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="findNextWordBoundary"></a><h3><code><span class="keyword">function</span> <a name="findNextWordBoundary" href="#findNextWordBoundary"><span class="identifier">findNextWordBoundary</span></a>(<span class="identifier">afterCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="findPreviousAtomBoundary"></a><h3><code><span class="keyword">function</span> <a name="findPreviousAtomBoundary" href="#findPreviousAtomBoundary"><span class="identifier">findPreviousAtomBoundary</span></a>(<span class="identifier">beforeCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="findPreviousAtomBoundary"></a><h3><code><span class="keyword">function</span> <a name="findPreviousAtomBoundary" href="#findPreviousAtomBoundary"><span class="identifier">findPreviousAtomBoundary</span></a>(<span class="identifier">beforeCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="findPreviousWordBoundary"></a><h3><code><span class="keyword">function</span> <a name="findPreviousWordBoundary" href="#findPreviousWordBoundary"><span class="identifier">findPreviousWordBoundary</span></a>(<span class="identifier">beforeCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="findPreviousWordBoundary"></a><h3><code><span class="keyword">function</span> <a name="findPreviousWordBoundary" href="#findPreviousWordBoundary"><span class="identifier">findPreviousWordBoundary</span></a>(<span class="identifier">beforeCharIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="firstInvalidLine" href="#firstInvalidLine"><span class="identifier">firstInvalidLine</span></a>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="firstInvalidLine" href="#firstInvalidLine"><span class="identifier">firstInvalidLine</span></a>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="firstLine" href="#firstLine"><span class="identifier">firstLine</span></a>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="firstLine" href="#firstLine"><span class="identifier">firstLine</span></a>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getTextLineAtCharIndex"></a><h3><code><span class="keyword">function</span> <a name="getTextLineAtCharIndex" href="#getTextLineAtCharIndex"><span class="identifier">getTextLineAtCharIndex</span></a>(<span class="identifier">charIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="getTextLineAtCharIndex"></a><h3><code><span class="keyword">function</span> <a name="getTextLineAtCharIndex" href="#getTextLineAtCharIndex"><span class="identifier">getTextLineAtCharIndex</span></a>(<span class="identifier">charIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lastLine" href="#lastLine"><span class="identifier">lastLine</span></a>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="lastLine" href="#lastLine"><span class="identifier">lastLine</span></a>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lineRotation" href="#lineRotation"><span class="identifier">lineRotation</span></a>:<a href="/dox/flash/text/engine/TextRotation.html"><span class="type">TextRotation</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="lineRotation" href="#lineRotation"><span class="identifier">lineRotation</span></a>:<a href="/dox/flash/text/engine/TextRotation.html"><span class="type">TextRotation</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="recreateTextLine"></a><h3><code><span class="keyword">function</span> <a name="recreateTextLine" href="#recreateTextLine"><span class="identifier">recreateTextLine</span></a>(<span class="identifier">textLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, ?<span class="identifier">previousLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, ?<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">lineOffset</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">fitSomething</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="recreateTextLine"></a><h3><code><span class="keyword">function</span> <a name="recreateTextLine" href="#recreateTextLine"><span class="identifier">recreateTextLine</span></a>(<span class="identifier">textLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, ?<span class="identifier">previousLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, ?<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">lineOffset</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, ?<span class="identifier">fitSomething</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="releaseLineCreationData"></a><h3><code><span class="keyword">function</span> <a name="releaseLineCreationData" href="#releaseLineCreationData"><span class="identifier">releaseLineCreationData</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="releaseLineCreationData"></a><h3><code><span class="keyword">function</span> <a name="releaseLineCreationData" href="#releaseLineCreationData"><span class="identifier">releaseLineCreationData</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="releaseLines"></a><h3><code><span class="keyword">function</span> <a name="releaseLines" href="#releaseLines"><span class="identifier">releaseLines</span></a>(<span class="identifier">firstLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, <span class="identifier">lastLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<a name="releaseLines"></a><h3><code><span class="keyword">function</span> <a name="releaseLines" href="#releaseLines"><span class="identifier">releaseLines</span></a>(<span class="identifier">firstLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>, <span class="identifier">lastLine</span>:<a href="/dox/flash/text/engine/TextLine.html"><span class="type">TextLine</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="tabStops" href="#tabStops"><span class="identifier">tabStops</span></a>:<a href="/dox/flash/Vector.html"><span class="type">Vector</span></a>&lt;<a href="/dox/flash/text/engine/TabStop.html"><span class="type">TabStop</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="tabStops" href="#tabStops"><span class="identifier">tabStops</span></a>:<a href="/dox/flash/Vector.html"><span class="type">Vector</span></a>&lt;<a href="/dox/flash/text/engine/TabStop.html"><span class="type">TabStop</span></a>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="textJustifier" href="#textJustifier"><span class="identifier">textJustifier</span></a>:<a href="/dox/flash/text/engine/TextJustifier.html"><span class="type">TextJustifier</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="textJustifier" href="#textJustifier"><span class="identifier">textJustifier</span></a>:<a href="/dox/flash/text/engine/TextJustifier.html"><span class="type">TextJustifier</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="textLineCreationResult" href="#textLineCreationResult"><span class="identifier">textLineCreationResult</span></a>:<a href="/dox/flash/text/engine/TextLineCreationResult.html"><span class="type">TextLineCreationResult</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="textLineCreationResult" href="#textLineCreationResult"><span class="identifier">textLineCreationResult</span></a>:<a href="/dox/flash/text/engine/TextLineCreationResult.html"><span class="type">TextLineCreationResult</span></a>;<span class="comment"> // readonly</span></code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="userData" href="#userData"><span class="identifier">userData</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on flash9</span></code></div>
+<hr/></span><span class="platform platform-flash">
+<h3><code><span class="keyword">var</span> <a name="userData" href="#userData"><span class="identifier">userData</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on flash</span></code></div>
 <div class="doc"><p></p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

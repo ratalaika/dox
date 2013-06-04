@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -282,161 +308,212 @@ inherit), <code><a rel="custom" href="/api/js/html/ProcessingInstruction">Proces
 , <code><a rel="custom" href="/api/js/html/EntityReference">EntityReference</a></code><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/Node">MDN</a>.</p></div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="ATTRIBUTE_NODE" href="#ATTRIBUTE_NODE"><span class="identifier">ATTRIBUTE_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="CDATA_SECTION_NODE" href="#CDATA_SECTION_NODE"><span class="identifier">CDATA_SECTION_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="CDATA_SECTION_NODE" href="#CDATA_SECTION_NODE"><span class="identifier">CDATA_SECTION_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="COMMENT_NODE" href="#COMMENT_NODE"><span class="identifier">COMMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="COMMENT_NODE" href="#COMMENT_NODE"><span class="identifier">COMMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_FRAGMENT_NODE" href="#DOCUMENT_FRAGMENT_NODE"><span class="identifier">DOCUMENT_FRAGMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_FRAGMENT_NODE" href="#DOCUMENT_FRAGMENT_NODE"><span class="identifier">DOCUMENT_FRAGMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_NODE" href="#DOCUMENT_NODE"><span class="identifier">DOCUMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_NODE" href="#DOCUMENT_NODE"><span class="identifier">DOCUMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_CONTAINED_BY" href="#DOCUMENT_POSITION_CONTAINED_BY"><span class="identifier">DOCUMENT_POSITION_CONTAINED_BY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_CONTAINED_BY" href="#DOCUMENT_POSITION_CONTAINED_BY"><span class="identifier">DOCUMENT_POSITION_CONTAINED_BY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_CONTAINS" href="#DOCUMENT_POSITION_CONTAINS"><span class="identifier">DOCUMENT_POSITION_CONTAINS</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_CONTAINS" href="#DOCUMENT_POSITION_CONTAINS"><span class="identifier">DOCUMENT_POSITION_CONTAINS</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_DISCONNECTED" href="#DOCUMENT_POSITION_DISCONNECTED"><span class="identifier">DOCUMENT_POSITION_DISCONNECTED</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_DISCONNECTED" href="#DOCUMENT_POSITION_DISCONNECTED"><span class="identifier">DOCUMENT_POSITION_DISCONNECTED</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_FOLLOWING" href="#DOCUMENT_POSITION_FOLLOWING"><span class="identifier">DOCUMENT_POSITION_FOLLOWING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_FOLLOWING" href="#DOCUMENT_POSITION_FOLLOWING"><span class="identifier">DOCUMENT_POSITION_FOLLOWING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC" href="#DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"><span class="identifier">DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC" href="#DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"><span class="identifier">DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_PRECEDING" href="#DOCUMENT_POSITION_PRECEDING"><span class="identifier">DOCUMENT_POSITION_PRECEDING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_POSITION_PRECEDING" href="#DOCUMENT_POSITION_PRECEDING"><span class="identifier">DOCUMENT_POSITION_PRECEDING</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="DOCUMENT_TYPE_NODE" href="#DOCUMENT_TYPE_NODE"><span class="identifier">DOCUMENT_TYPE_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="DOCUMENT_TYPE_NODE" href="#DOCUMENT_TYPE_NODE"><span class="identifier">DOCUMENT_TYPE_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ELEMENT_NODE" href="#ELEMENT_NODE"><span class="identifier">ELEMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ELEMENT_NODE" href="#ELEMENT_NODE"><span class="identifier">ELEMENT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ENTITY_NODE" href="#ENTITY_NODE"><span class="identifier">ENTITY_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ENTITY_NODE" href="#ENTITY_NODE"><span class="identifier">ENTITY_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ENTITY_REFERENCE_NODE" href="#ENTITY_REFERENCE_NODE"><span class="identifier">ENTITY_REFERENCE_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ENTITY_REFERENCE_NODE" href="#ENTITY_REFERENCE_NODE"><span class="identifier">ENTITY_REFERENCE_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="NOTATION_NODE" href="#NOTATION_NODE"><span class="identifier">NOTATION_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="NOTATION_NODE" href="#NOTATION_NODE"><span class="identifier">NOTATION_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="PROCESSING_INSTRUCTION_NODE" href="#PROCESSING_INSTRUCTION_NODE"><span class="identifier">PROCESSING_INSTRUCTION_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="PROCESSING_INSTRUCTION_NODE" href="#PROCESSING_INSTRUCTION_NODE"><span class="identifier">PROCESSING_INSTRUCTION_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="TEXT_NODE" href="#TEXT_NODE"><span class="identifier">TEXT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="TEXT_NODE" href="#TEXT_NODE"><span class="identifier">TEXT_NODE</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="appendChild"></a><h3><code><span class="keyword">function</span> <a name="appendChild" href="#appendChild"><span class="identifier">appendChild</span></a>(<span class="identifier">newChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="attributes" href="#attributes"><span class="identifier">attributes</span></a>:<a href="/dox/js/html/NamedNodeMap.html"><span class="type">NamedNodeMap</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="attributes" href="#attributes"><span class="identifier">attributes</span></a>:<a href="/dox/js/html/NamedNodeMap.html"><span class="type">NamedNodeMap</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="baseURI" href="#baseURI"><span class="identifier">baseURI</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="baseURI" href="#baseURI"><span class="identifier">baseURI</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="childNodes" href="#childNodes"><span class="identifier">childNodes</span></a>:<a href="/dox/js/html/NodeList.html"><span class="type">NodeList</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="childNodes" href="#childNodes"><span class="identifier">childNodes</span></a>:<a href="/dox/js/html/NodeList.html"><span class="type">NodeList</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="cloneNode"></a><h3><code><span class="keyword">function</span> <a name="cloneNode" href="#cloneNode"><span class="identifier">cloneNode</span></a>(<span class="identifier">deep</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="cloneNode"></a><h3><code><span class="keyword">function</span> <a name="cloneNode" href="#cloneNode"><span class="identifier">cloneNode</span></a>(<span class="identifier">deep</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="compareDocumentPosition"></a><h3><code><span class="keyword">function</span> <a name="compareDocumentPosition" href="#compareDocumentPosition"><span class="identifier">compareDocumentPosition</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="compareDocumentPosition"></a><h3><code><span class="keyword">function</span> <a name="compareDocumentPosition" href="#compareDocumentPosition"><span class="identifier">compareDocumentPosition</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="contains"></a><h3><code><span class="keyword">function</span> <a name="contains" href="#contains"><span class="identifier">contains</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="contains"></a><h3><code><span class="keyword">function</span> <a name="contains" href="#contains"><span class="identifier">contains</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="firstChild" href="#firstChild"><span class="identifier">firstChild</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="firstChild" href="#firstChild"><span class="identifier">firstChild</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="hasAttributes"></a><h3><code><span class="keyword">function</span> <a name="hasAttributes" href="#hasAttributes"><span class="identifier">hasAttributes</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="hasAttributes"></a><h3><code><span class="keyword">function</span> <a name="hasAttributes" href="#hasAttributes"><span class="identifier">hasAttributes</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="hasChildNodes"></a><h3><code><span class="keyword">function</span> <a name="hasChildNodes" href="#hasChildNodes"><span class="identifier">hasChildNodes</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="hasChildNodes"></a><h3><code><span class="keyword">function</span> <a name="hasChildNodes" href="#hasChildNodes"><span class="identifier">hasChildNodes</span></a>():<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="insertBefore"></a><h3><code><span class="keyword">function</span> <a name="insertBefore" href="#insertBefore"><span class="identifier">insertBefore</span></a>(<span class="identifier">newChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">refChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="insertBefore"></a><h3><code><span class="keyword">function</span> <a name="insertBefore" href="#insertBefore"><span class="identifier">insertBefore</span></a>(<span class="identifier">newChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">refChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="isDefaultNamespace"></a><h3><code><span class="keyword">function</span> <a name="isDefaultNamespace" href="#isDefaultNamespace"><span class="identifier">isDefaultNamespace</span></a>(?<span class="identifier">namespaceURI</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="isDefaultNamespace"></a><h3><code><span class="keyword">function</span> <a name="isDefaultNamespace" href="#isDefaultNamespace"><span class="identifier">isDefaultNamespace</span></a>(?<span class="identifier">namespaceURI</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="isEqualNode"></a><h3><code><span class="keyword">function</span> <a name="isEqualNode" href="#isEqualNode"><span class="identifier">isEqualNode</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="isEqualNode"></a><h3><code><span class="keyword">function</span> <a name="isEqualNode" href="#isEqualNode"><span class="identifier">isEqualNode</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="isSameNode"></a><h3><code><span class="keyword">function</span> <a name="isSameNode" href="#isSameNode"><span class="identifier">isSameNode</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="isSameNode"></a><h3><code><span class="keyword">function</span> <a name="isSameNode" href="#isSameNode"><span class="identifier">isSameNode</span></a>(<span class="identifier">other</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="isSupported"></a><h3><code><span class="keyword">function</span> <a name="isSupported" href="#isSupported"><span class="identifier">isSupported</span></a>(<span class="identifier">feature</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">version</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="isSupported"></a><h3><code><span class="keyword">function</span> <a name="isSupported" href="#isSupported"><span class="identifier">isSupported</span></a>(<span class="identifier">feature</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">version</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="lastChild" href="#lastChild"><span class="identifier">lastChild</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="lastChild" href="#lastChild"><span class="identifier">lastChild</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="localName" href="#localName"><span class="identifier">localName</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="localName" href="#localName"><span class="identifier">localName</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="lookupNamespaceURI"></a><h3><code><span class="keyword">function</span> <a name="lookupNamespaceURI" href="#lookupNamespaceURI"><span class="identifier">lookupNamespaceURI</span></a>(?<span class="identifier">prefix</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="lookupNamespaceURI"></a><h3><code><span class="keyword">function</span> <a name="lookupNamespaceURI" href="#lookupNamespaceURI"><span class="identifier">lookupNamespaceURI</span></a>(?<span class="identifier">prefix</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="lookupPrefix"></a><h3><code><span class="keyword">function</span> <a name="lookupPrefix" href="#lookupPrefix"><span class="identifier">lookupPrefix</span></a>(?<span class="identifier">namespaceURI</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="lookupPrefix"></a><h3><code><span class="keyword">function</span> <a name="lookupPrefix" href="#lookupPrefix"><span class="identifier">lookupPrefix</span></a>(?<span class="identifier">namespaceURI</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="namespaceURI" href="#namespaceURI"><span class="identifier">namespaceURI</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="namespaceURI" href="#namespaceURI"><span class="identifier">namespaceURI</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="nextSibling" href="#nextSibling"><span class="identifier">nextSibling</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="nextSibling" href="#nextSibling"><span class="identifier">nextSibling</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="nodeName" href="#nodeName"><span class="identifier">nodeName</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="nodeName" href="#nodeName"><span class="identifier">nodeName</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="nodeType" href="#nodeType"><span class="identifier">nodeType</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="nodeType" href="#nodeType"><span class="identifier">nodeType</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="nodeValue" href="#nodeValue"><span class="identifier">nodeValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="nodeValue" href="#nodeValue"><span class="identifier">nodeValue</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Setter throws DOMException.</p></div>
-<hr/><a name="normalize"></a><h3><code><span class="keyword">function</span> <a name="normalize" href="#normalize"><span class="identifier">normalize</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="normalize"></a><h3><code><span class="keyword">function</span> <a name="normalize" href="#normalize"><span class="identifier">normalize</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ownerDocument" href="#ownerDocument"><span class="identifier">ownerDocument</span></a>:<a href="/dox/js/html/Document.html"><span class="type">Document</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ownerDocument" href="#ownerDocument"><span class="identifier">ownerDocument</span></a>:<a href="/dox/js/html/Document.html"><span class="type">Document</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="parentElement" href="#parentElement"><span class="identifier">parentElement</span></a>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="parentElement" href="#parentElement"><span class="identifier">parentElement</span></a>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="parentNode" href="#parentNode"><span class="identifier">parentNode</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="parentNode" href="#parentNode"><span class="identifier">parentNode</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="prefix" href="#prefix"><span class="identifier">prefix</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="prefix" href="#prefix"><span class="identifier">prefix</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Setter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="previousSibling" href="#previousSibling"><span class="identifier">previousSibling</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="previousSibling" href="#previousSibling"><span class="identifier">previousSibling</span></a>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="removeChild"></a><h3><code><span class="keyword">function</span> <a name="removeChild" href="#removeChild"><span class="identifier">removeChild</span></a>(<span class="identifier">oldChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="removeChild"></a><h3><code><span class="keyword">function</span> <a name="removeChild" href="#removeChild"><span class="identifier">removeChild</span></a>(<span class="identifier">oldChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="replaceChild"></a><h3><code><span class="keyword">function</span> <a name="replaceChild" href="#replaceChild"><span class="identifier">replaceChild</span></a>(<span class="identifier">newChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">oldChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="replaceChild"></a><h3><code><span class="keyword">function</span> <a name="replaceChild" href="#replaceChild"><span class="identifier">replaceChild</span></a>(<span class="identifier">newChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">oldChild</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>):<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="textContent" href="#textContent"><span class="identifier">textContent</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="textContent" href="#textContent"><span class="identifier">textContent</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Setter throws DOMException.</p></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>

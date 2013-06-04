@@ -14,8 +14,34 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
 					<ul class="nav">
-						<li class="active"><a href="#">API</a></li>
+						<li id="select-version" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="3_0"><a href="#">3.0</a></li>
+								<li data="3_1"><a href="#">3.1</a></li>
+								<li data="3_2"><a href="#">3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li id="select-platform" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li data="all"><a href="#">All Platforms</a></li>
+								<li data="sys"><a href="#">System</a></li>
+								<li data="neko"><a href="#">Neko</a></li>
+								<li data="php"><a href="#">PHP</a></li>
+								<li data="java"><a href="#">Java</a></li>
+								<li data="cs"><a href="#">C Sharp</a></li>
+								<li data="flash8"><a href="#">Flash 8</a></li>
+								<li data="flash"><a href="#">Flash 9+</a></li>
+								<li data="js"><a href="#">Javascript</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -32,511 +58,676 @@ and <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.resi
 apply to the whole window and not to the specific tab the <code>window</code> object belongs to. Generally, anything that can't reasonably pertain to a tab pertains to the window instead.</p><br><br>
 Documentation for this class was provided by <a href="https://developer.mozilla.org/en/DOM/window">MDN</a>.</div>
 <h2>Class Fields</h2>
+<span class="platform platform-js">
 <h3><code><span class="keyword">var</span> <a name="PERSISTENT" href="#PERSISTENT"><span class="identifier">PERSISTENT</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="TEMPORARY" href="#TEMPORARY"><span class="identifier">TEMPORARY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="TEMPORARY" href="#TEMPORARY"><span class="identifier">TEMPORARY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h2>Instance Fields</h2>
+<hr/></span><h2>Instance Fields</h2>
+<span class="platform platform-js">
 <a name="alert"></a><h3><code><span class="keyword">function</span> <a name="alert" href="#alert"><span class="identifier">alert</span></a>(<span class="identifier">message</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="applicationCache" href="#applicationCache"><span class="identifier">applicationCache</span></a>:<a href="/dox/js/html/DOMApplicationCache.html"><span class="type">DOMApplicationCache</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="applicationCache" href="#applicationCache"><span class="identifier">applicationCache</span></a>:<a href="/dox/js/html/DOMApplicationCache.html"><span class="type">DOMApplicationCache</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An <code><a rel="custom" href="https://developer.mozilla.org/en/nsIDOMOfflineResourceList">nsIDOMOfflineResourceList</a></code>
 object providing access to the offline resources for the window.</p></div>
-<hr/><a name="atob"></a><h3><code><span class="keyword">function</span> <a name="atob" href="#atob"><span class="identifier">atob</span></a>(?<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="atob"></a><h3><code><span class="keyword">function</span> <a name="atob" href="#atob"><span class="identifier">atob</span></a>(?<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="blur"></a><h3><code><span class="keyword">function</span> <a name="blur" href="#blur"><span class="identifier">blur</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="blur"></a><h3><code><span class="keyword">function</span> <a name="blur" href="#blur"><span class="identifier">blur</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="btoa"></a><h3><code><span class="keyword">function</span> <a name="btoa" href="#btoa"><span class="identifier">btoa</span></a>(?<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="btoa"></a><h3><code><span class="keyword">function</span> <a name="btoa" href="#btoa"><span class="identifier">btoa</span></a>(?<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="cancelAnimationFrame"></a><h3><code><span class="keyword">function</span> <a name="cancelAnimationFrame" href="#cancelAnimationFrame"><span class="identifier">cancelAnimationFrame</span></a>(<span class="identifier">id</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="cancelAnimationFrame"></a><h3><code><span class="keyword">function</span> <a name="cancelAnimationFrame" href="#cancelAnimationFrame"><span class="identifier">cancelAnimationFrame</span></a>(<span class="identifier">id</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="cancelRequestAnimationFrame"></a><h3><code><span class="keyword">function</span> <a name="cancelRequestAnimationFrame" href="#cancelRequestAnimationFrame"><span class="identifier">cancelRequestAnimationFrame</span></a>(<span class="identifier">id</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="cancelRequestAnimationFrame"></a><h3><code><span class="keyword">function</span> <a name="cancelRequestAnimationFrame" href="#cancelRequestAnimationFrame"><span class="identifier">cancelRequestAnimationFrame</span></a>(<span class="identifier">id</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="captureEvents"></a><h3><code><span class="keyword">function</span> <a name="captureEvents" href="#captureEvents"><span class="identifier">captureEvents</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="captureEvents"></a><h3><code><span class="keyword">function</span> <a name="captureEvents" href="#captureEvents"><span class="identifier">captureEvents</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clearInterval"></a><h3><code><span class="keyword">function</span> <a name="clearInterval" href="#clearInterval"><span class="identifier">clearInterval</span></a>(<span class="identifier">handle</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="clearInterval"></a><h3><code><span class="keyword">function</span> <a name="clearInterval" href="#clearInterval"><span class="identifier">clearInterval</span></a>(<span class="identifier">handle</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="clearTimeout"></a><h3><code><span class="keyword">function</span> <a name="clearTimeout" href="#clearTimeout"><span class="identifier">clearTimeout</span></a>(<span class="identifier">handle</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="clearTimeout"></a><h3><code><span class="keyword">function</span> <a name="clearTimeout" href="#clearTimeout"><span class="identifier">clearTimeout</span></a>(<span class="identifier">handle</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="clientInformation" href="#clientInformation"><span class="identifier">clientInformation</span></a>:<a href="/dox/js/html/Navigator.html"><span class="type">Navigator</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="clientInformation" href="#clientInformation"><span class="identifier">clientInformation</span></a>:<a href="/dox/js/html/Navigator.html"><span class="type">Navigator</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="close"></a><h3><code><span class="keyword">function</span> <a name="close" href="#close"><span class="identifier">close</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="close"></a><h3><code><span class="keyword">function</span> <a name="close" href="#close"><span class="identifier">close</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="closed" href="#closed"><span class="identifier">closed</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="closed" href="#closed"><span class="identifier">closed</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><dd>This property indicates whether the current window is closed or not.</dd> <dt><a title="en/Components_object" rel="internal" href="https://developer.mozilla.org/en/Components_object">window.Components</a></dt> <dd>The entry point to many <a title="en/XPCOM" rel="internal" href="https://developer.mozilla.org/en/XPCOM">XPCOM</a> features. Some properties, e.g. <a title="en/Components.classes" rel="internal" href="https://developer.mozilla.org/en/Components.classes">classes</a>, are only available to sufficiently privileged code.</dd></div>
-<hr/><a name="confirm"></a><h3><code><span class="keyword">function</span> <a name="confirm" href="#confirm"><span class="identifier">confirm</span></a>(<span class="identifier">message</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="confirm"></a><h3><code><span class="keyword">function</span> <a name="confirm" href="#confirm"><span class="identifier">confirm</span></a>(<span class="identifier">message</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="console" href="#console"><span class="identifier">console</span></a>:<a href="/dox/js/html/Console.html"><span class="type">Console</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="console" href="#console"><span class="identifier">console</span></a>:<a href="/dox/js/html/Console.html"><span class="type">Console</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="convertPointFromNodeToPage"></a><h3><code><span class="keyword">function</span> <a name="convertPointFromNodeToPage" href="#convertPointFromNodeToPage"><span class="identifier">convertPointFromNodeToPage</span></a>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">p</span>:<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>):<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="convertPointFromNodeToPage"></a><h3><code><span class="keyword">function</span> <a name="convertPointFromNodeToPage" href="#convertPointFromNodeToPage"><span class="identifier">convertPointFromNodeToPage</span></a>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">p</span>:<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>):<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="convertPointFromPageToNode"></a><h3><code><span class="keyword">function</span> <a name="convertPointFromPageToNode" href="#convertPointFromPageToNode"><span class="identifier">convertPointFromPageToNode</span></a>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">p</span>:<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>):<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="convertPointFromPageToNode"></a><h3><code><span class="keyword">function</span> <a name="convertPointFromPageToNode" href="#convertPointFromPageToNode"><span class="identifier">convertPointFromPageToNode</span></a>(<span class="identifier">node</span>:<a href="/dox/js/html/Node.html"><span class="type">Node</span></a>, <span class="identifier">p</span>:<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>):<a href="/dox/js/html/Point.html"><span class="type">Point</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="crypto" href="#crypto"><span class="identifier">crypto</span></a>:<a href="/dox/js/html/Crypto.html"><span class="type">Crypto</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="crypto" href="#crypto"><span class="identifier">crypto</span></a>:<a href="/dox/js/html/Crypto.html"><span class="type">Crypto</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the browser crypto object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultStatus" href="#defaultStatus"><span class="identifier">defaultStatus</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultStatus" href="#defaultStatus"><span class="identifier">defaultStatus</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets/sets the status bar text for the given window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="defaultstatus" href="#defaultstatus"><span class="identifier">defaultstatus</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="defaultstatus" href="#defaultstatus"><span class="identifier">defaultstatus</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="devicePixelRatio" href="#devicePixelRatio"><span class="identifier">devicePixelRatio</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="devicePixelRatio" href="#devicePixelRatio"><span class="identifier">devicePixelRatio</span></a>:<a href="/dox/Float.html"><span class="type">Float</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="document" href="#document"><span class="identifier">document</span></a>:<a href="/dox/js/html/Document.html"><span class="type">Document</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="document" href="#document"><span class="identifier">document</span></a>:<a href="/dox/js/html/Document.html"><span class="type">Document</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the document that the window contains.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="event" href="#event"><span class="identifier">event</span></a>:<a href="/dox/js/html/Event.html"><span class="type">Event</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="event" href="#event"><span class="identifier">event</span></a>:<a href="/dox/js/html/Event.html"><span class="type">Event</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="find"></a><h3><code><span class="keyword">function</span> <a name="find" href="#find"><span class="identifier">find</span></a>(<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">caseSensitive</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">backwards</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">wrap</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">wholeWord</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">searchInFrames</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">showDialog</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="find"></a><h3><code><span class="keyword">function</span> <a name="find" href="#find"><span class="identifier">find</span></a>(<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">caseSensitive</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">backwards</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">wrap</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">wholeWord</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">searchInFrames</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">showDialog</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="focus"></a><h3><code><span class="keyword">function</span> <a name="focus" href="#focus"><span class="identifier">focus</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="focus"></a><h3><code><span class="keyword">function</span> <a name="focus" href="#focus"><span class="identifier">focus</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="frameElement" href="#frameElement"><span class="identifier">frameElement</span></a>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="frameElement" href="#frameElement"><span class="identifier">frameElement</span></a>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the element in which the window is embedded, or null if the window is not embedded.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="frames" href="#frames"><span class="identifier">frames</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="frames" href="#frames"><span class="identifier">frames</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns an array of the subframes in the current window.</p></div>
-<hr/><a name="getComputedStyle"></a><h3><code><span class="keyword">function</span> <a name="getComputedStyle" href="#getComputedStyle"><span class="identifier">getComputedStyle</span></a>(<span class="identifier">element</span>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>, ?<span class="identifier">pseudoElement</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/CSSStyleDeclaration.html"><span class="type">CSSStyleDeclaration</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="getComputedStyle"></a><h3><code><span class="keyword">function</span> <a name="getComputedStyle" href="#getComputedStyle"><span class="identifier">getComputedStyle</span></a>(<span class="identifier">element</span>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>, ?<span class="identifier">pseudoElement</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/CSSStyleDeclaration.html"><span class="type">CSSStyleDeclaration</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getMatchedCSSRules"></a><h3><code><span class="keyword">function</span> <a name="getMatchedCSSRules" href="#getMatchedCSSRules"><span class="identifier">getMatchedCSSRules</span></a>(<span class="identifier">element</span>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>, ?<span class="identifier">pseudoElement</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/CSSRuleList.html"><span class="type">CSSRuleList</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="getMatchedCSSRules"></a><h3><code><span class="keyword">function</span> <a name="getMatchedCSSRules" href="#getMatchedCSSRules"><span class="identifier">getMatchedCSSRules</span></a>(<span class="identifier">element</span>:<a href="/dox/js/html/Element.html"><span class="type">Element</span></a>, ?<span class="identifier">pseudoElement</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/CSSRuleList.html"><span class="type">CSSRuleList</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="getSelection"></a><h3><code><span class="keyword">function</span> <a name="getSelection" href="#getSelection"><span class="identifier">getSelection</span></a>():<a href="/dox/js/html/DOMSelection.html"><span class="type">DOMSelection</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="getSelection"></a><h3><code><span class="keyword">function</span> <a name="getSelection" href="#getSelection"><span class="identifier">getSelection</span></a>():<a href="/dox/js/html/DOMSelection.html"><span class="type">DOMSelection</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="history" href="#history"><span class="identifier">history</span></a>:<a href="/dox/js/html/History.html"><span class="type">History</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="history" href="#history"><span class="identifier">history</span></a>:<a href="/dox/js/html/History.html"><span class="type">History</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the history object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="indexedDB" href="#indexedDB"><span class="identifier">indexedDB</span></a>:<a href="/dox/js/html/idb/Factory.html"><span class="type">Factory</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="indexedDB" href="#indexedDB"><span class="identifier">indexedDB</span></a>:<a href="/dox/js/html/idb/Factory.html"><span class="type">Factory</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="innerHeight" href="#innerHeight"><span class="identifier">innerHeight</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="innerHeight" href="#innerHeight"><span class="identifier">innerHeight</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets the height of the content area of the browser window including, if rendered, the horizontal scrollbar.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="innerWidth" href="#innerWidth"><span class="identifier">innerWidth</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="innerWidth" href="#innerWidth"><span class="identifier">innerWidth</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets the width of the content area of the browser window including, if rendered, the vertical scrollbar.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="length" href="#length"><span class="identifier">length</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="length" href="#length"><span class="identifier">length</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the number of frames in the window. See also <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.frames">window.frames</a></code>
 .</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="localStorage" href="#localStorage"><span class="identifier">localStorage</span></a>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="localStorage" href="#localStorage"><span class="identifier">localStorage</span></a>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the local storage object used to store data that may only be accessed by the origin that created it. Getter throws DOMException.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="location" href="#location"><span class="identifier">location</span></a>:<a href="/dox/js/html/Location.html"><span class="type">Location</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="location" href="#location"><span class="identifier">location</span></a>:<a href="/dox/js/html/Location.html"><span class="type">Location</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets/sets the location, or current URL, of the window object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="locationbar" href="#locationbar"><span class="identifier">locationbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="locationbar" href="#locationbar"><span class="identifier">locationbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the locationbar object, whose visibility can be toggled in the window.</p></div>
-<hr/><a name="matchMedia"></a><h3><code><span class="keyword">function</span> <a name="matchMedia" href="#matchMedia"><span class="identifier">matchMedia</span></a>(<span class="identifier">query</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/MediaQueryList.html"><span class="type">MediaQueryList</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="matchMedia"></a><h3><code><span class="keyword">function</span> <a name="matchMedia" href="#matchMedia"><span class="identifier">matchMedia</span></a>(<span class="identifier">query</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/MediaQueryList.html"><span class="type">MediaQueryList</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="menubar" href="#menubar"><span class="identifier">menubar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="menubar" href="#menubar"><span class="identifier">menubar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the menubar object, whose visibility can be toggled in the window.</p></div>
-<hr/><a name="moveBy"></a><h3><code><span class="keyword">function</span> <a name="moveBy" href="#moveBy"><span class="identifier">moveBy</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="moveBy"></a><h3><code><span class="keyword">function</span> <a name="moveBy" href="#moveBy"><span class="identifier">moveBy</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="moveTo"></a><h3><code><span class="keyword">function</span> <a name="moveTo" href="#moveTo"><span class="identifier">moveTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="moveTo"></a><h3><code><span class="keyword">function</span> <a name="moveTo" href="#moveTo"><span class="identifier">moveTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="name" href="#name"><span class="identifier">name</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets/sets the name of the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="navigator" href="#navigator"><span class="identifier">navigator</span></a>:<a href="/dox/js/html/Navigator.html"><span class="type">Navigator</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="navigator" href="#navigator"><span class="identifier">navigator</span></a>:<a href="/dox/js/html/Navigator.html"><span class="type">Navigator</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the navigator object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="notifications" href="#notifications"><span class="identifier">notifications</span></a>:<a href="/dox/js/html/NotificationCenter.html"><span class="type">NotificationCenter</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="notifications" href="#notifications"><span class="identifier">notifications</span></a>:<a href="/dox/js/html/NotificationCenter.html"><span class="type">NotificationCenter</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="offscreenBuffering" href="#offscreenBuffering"><span class="identifier">offscreenBuffering</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="offscreenBuffering" href="#offscreenBuffering"><span class="identifier">offscreenBuffering</span></a>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onabort" href="#onabort"><span class="identifier">onabort</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onabort" href="#onabort"><span class="identifier">onabort</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for abort events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onanimationend" href="#onanimationend"><span class="identifier">onanimationend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onanimationend" href="#onanimationend"><span class="identifier">onanimationend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onanimationiteration" href="#onanimationiteration"><span class="identifier">onanimationiteration</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onanimationiteration" href="#onanimationiteration"><span class="identifier">onanimationiteration</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onanimationstart" href="#onanimationstart"><span class="identifier">onanimationstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onanimationstart" href="#onanimationstart"><span class="identifier">onanimationstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onbeforeunload" href="#onbeforeunload"><span class="identifier">onbeforeunload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onbeforeunload" href="#onbeforeunload"><span class="identifier">onbeforeunload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for before-unload events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onblur" href="#onblur"><span class="identifier">onblur</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onblur" href="#onblur"><span class="identifier">onblur</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for blur events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oncanplay" href="#oncanplay"><span class="identifier">oncanplay</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oncanplay" href="#oncanplay"><span class="identifier">oncanplay</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oncanplaythrough" href="#oncanplaythrough"><span class="identifier">oncanplaythrough</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oncanplaythrough" href="#oncanplaythrough"><span class="identifier">oncanplaythrough</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onchange" href="#onchange"><span class="identifier">onchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onchange" href="#onchange"><span class="identifier">onchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for change events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onclick" href="#onclick"><span class="identifier">onclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onclick" href="#onclick"><span class="identifier">onclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for click events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oncontextmenu" href="#oncontextmenu"><span class="identifier">oncontextmenu</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oncontextmenu" href="#oncontextmenu"><span class="identifier">oncontextmenu</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for right-click events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondblclick" href="#ondblclick"><span class="identifier">ondblclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondblclick" href="#ondblclick"><span class="identifier">ondblclick</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondevicemotion" href="#ondevicemotion"><span class="identifier">ondevicemotion</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondevicemotion" href="#ondevicemotion"><span class="identifier">ondevicemotion</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondeviceorientation" href="#ondeviceorientation"><span class="identifier">ondeviceorientation</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondeviceorientation" href="#ondeviceorientation"><span class="identifier">ondeviceorientation</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondrag" href="#ondrag"><span class="identifier">ondrag</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondrag" href="#ondrag"><span class="identifier">ondrag</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragend" href="#ondragend"><span class="identifier">ondragend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragend" href="#ondragend"><span class="identifier">ondragend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragenter" href="#ondragenter"><span class="identifier">ondragenter</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragenter" href="#ondragenter"><span class="identifier">ondragenter</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragleave" href="#ondragleave"><span class="identifier">ondragleave</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragleave" href="#ondragleave"><span class="identifier">ondragleave</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragover" href="#ondragover"><span class="identifier">ondragover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragover" href="#ondragover"><span class="identifier">ondragover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondragstart" href="#ondragstart"><span class="identifier">ondragstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondragstart" href="#ondragstart"><span class="identifier">ondragstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondrop" href="#ondrop"><span class="identifier">ondrop</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondrop" href="#ondrop"><span class="identifier">ondrop</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ondurationchange" href="#ondurationchange"><span class="identifier">ondurationchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ondurationchange" href="#ondurationchange"><span class="identifier">ondurationchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onemptied" href="#onemptied"><span class="identifier">onemptied</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onemptied" href="#onemptied"><span class="identifier">onemptied</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onended" href="#onended"><span class="identifier">onended</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onended" href="#onended"><span class="identifier">onended</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onerror" href="#onerror"><span class="identifier">onerror</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for errors raised on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onfocus" href="#onfocus"><span class="identifier">onfocus</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onfocus" href="#onfocus"><span class="identifier">onfocus</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for focus events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onhashchange" href="#onhashchange"><span class="identifier">onhashchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onhashchange" href="#onhashchange"><span class="identifier">onhashchange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for hash change events on the window; called when the part of the URL after the hash mark ("#") changes.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oninput" href="#oninput"><span class="identifier">oninput</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oninput" href="#oninput"><span class="identifier">oninput</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="oninvalid" href="#oninvalid"><span class="identifier">oninvalid</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="oninvalid" href="#oninvalid"><span class="identifier">oninvalid</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeydown" href="#onkeydown"><span class="identifier">onkeydown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeydown" href="#onkeydown"><span class="identifier">onkeydown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for keydown events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeypress" href="#onkeypress"><span class="identifier">onkeypress</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeypress" href="#onkeypress"><span class="identifier">onkeypress</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for keypress events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onkeyup" href="#onkeyup"><span class="identifier">onkeyup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onkeyup" href="#onkeyup"><span class="identifier">onkeyup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for keyup events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onload" href="#onload"><span class="identifier">onload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onload" href="#onload"><span class="identifier">onload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for window loading.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onloadeddata" href="#onloadeddata"><span class="identifier">onloadeddata</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onloadeddata" href="#onloadeddata"><span class="identifier">onloadeddata</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onloadedmetadata" href="#onloadedmetadata"><span class="identifier">onloadedmetadata</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onloadedmetadata" href="#onloadedmetadata"><span class="identifier">onloadedmetadata</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onloadstart" href="#onloadstart"><span class="identifier">onloadstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onloadstart" href="#onloadstart"><span class="identifier">onloadstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmessage" href="#onmessage"><span class="identifier">onmessage</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmessage" href="#onmessage"><span class="identifier">onmessage</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmousedown" href="#onmousedown"><span class="identifier">onmousedown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmousedown" href="#onmousedown"><span class="identifier">onmousedown</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for mousedown events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmousemove" href="#onmousemove"><span class="identifier">onmousemove</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmousemove" href="#onmousemove"><span class="identifier">onmousemove</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for mousemove events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmouseout" href="#onmouseout"><span class="identifier">onmouseout</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmouseout" href="#onmouseout"><span class="identifier">onmouseout</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for mouseout events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmouseover" href="#onmouseover"><span class="identifier">onmouseover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmouseover" href="#onmouseover"><span class="identifier">onmouseover</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for mouseover events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmouseup" href="#onmouseup"><span class="identifier">onmouseup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmouseup" href="#onmouseup"><span class="identifier">onmouseup</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for mouseup events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onmousewheel" href="#onmousewheel"><span class="identifier">onmousewheel</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onmousewheel" href="#onmousewheel"><span class="identifier">onmousewheel</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onoffline" href="#onoffline"><span class="identifier">onoffline</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onoffline" href="#onoffline"><span class="identifier">onoffline</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ononline" href="#ononline"><span class="identifier">ononline</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ononline" href="#ononline"><span class="identifier">ononline</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onpagehide" href="#onpagehide"><span class="identifier">onpagehide</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onpagehide" href="#onpagehide"><span class="identifier">onpagehide</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for pagehide events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onpageshow" href="#onpageshow"><span class="identifier">onpageshow</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onpageshow" href="#onpageshow"><span class="identifier">onpageshow</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for pageshow events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onpause" href="#onpause"><span class="identifier">onpause</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onpause" href="#onpause"><span class="identifier">onpause</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onplay" href="#onplay"><span class="identifier">onplay</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onplay" href="#onplay"><span class="identifier">onplay</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onplaying" href="#onplaying"><span class="identifier">onplaying</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onplaying" href="#onplaying"><span class="identifier">onplaying</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onpopstate" href="#onpopstate"><span class="identifier">onpopstate</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onpopstate" href="#onpopstate"><span class="identifier">onpopstate</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for popstate events, which are fired when navigating to a session history entry representing a state object.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onprogress" href="#onprogress"><span class="identifier">onprogress</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onprogress" href="#onprogress"><span class="identifier">onprogress</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onratechange" href="#onratechange"><span class="identifier">onratechange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onratechange" href="#onratechange"><span class="identifier">onratechange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onreset" href="#onreset"><span class="identifier">onreset</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onreset" href="#onreset"><span class="identifier">onreset</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for reset events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onresize" href="#onresize"><span class="identifier">onresize</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onresize" href="#onresize"><span class="identifier">onresize</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for window resizing.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onscroll" href="#onscroll"><span class="identifier">onscroll</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onscroll" href="#onscroll"><span class="identifier">onscroll</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for window scrolling.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsearch" href="#onsearch"><span class="identifier">onsearch</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsearch" href="#onsearch"><span class="identifier">onsearch</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onseeked" href="#onseeked"><span class="identifier">onseeked</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onseeked" href="#onseeked"><span class="identifier">onseeked</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onseeking" href="#onseeking"><span class="identifier">onseeking</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onseeking" href="#onseeking"><span class="identifier">onseeking</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onselect" href="#onselect"><span class="identifier">onselect</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onselect" href="#onselect"><span class="identifier">onselect</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for window selection.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onstalled" href="#onstalled"><span class="identifier">onstalled</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onstalled" href="#onstalled"><span class="identifier">onstalled</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onstorage" href="#onstorage"><span class="identifier">onstorage</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onstorage" href="#onstorage"><span class="identifier">onstorage</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsubmit" href="#onsubmit"><span class="identifier">onsubmit</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsubmit" href="#onsubmit"><span class="identifier">onsubmit</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for submits on window forms.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onsuspend" href="#onsuspend"><span class="identifier">onsuspend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onsuspend" href="#onsuspend"><span class="identifier">onsuspend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ontimeupdate" href="#ontimeupdate"><span class="identifier">ontimeupdate</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ontimeupdate" href="#ontimeupdate"><span class="identifier">ontimeupdate</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ontouchcancel" href="#ontouchcancel"><span class="identifier">ontouchcancel</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ontouchcancel" href="#ontouchcancel"><span class="identifier">ontouchcancel</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ontouchend" href="#ontouchend"><span class="identifier">ontouchend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ontouchend" href="#ontouchend"><span class="identifier">ontouchend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ontouchmove" href="#ontouchmove"><span class="identifier">ontouchmove</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ontouchmove" href="#ontouchmove"><span class="identifier">ontouchmove</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ontouchstart" href="#ontouchstart"><span class="identifier">ontouchstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ontouchstart" href="#ontouchstart"><span class="identifier">ontouchstart</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="ontransitionend" href="#ontransitionend"><span class="identifier">ontransitionend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="ontransitionend" href="#ontransitionend"><span class="identifier">ontransitionend</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onunload" href="#onunload"><span class="identifier">onunload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onunload" href="#onunload"><span class="identifier">onunload</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An event handler property for unload events on the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onvolumechange" href="#onvolumechange"><span class="identifier">onvolumechange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onvolumechange" href="#onvolumechange"><span class="identifier">onvolumechange</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="onwaiting" href="#onwaiting"><span class="identifier">onwaiting</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="onwaiting" href="#onwaiting"><span class="identifier">onwaiting</span></a>:<a href="/dox/js/html/EventListener.html"><span class="type">EventListener</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="open"></a><h3><code><span class="keyword">function</span> <a name="open" href="#open"><span class="identifier">open</span></a>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">options</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="open"></a><h3><code><span class="keyword">function</span> <a name="open" href="#open"><span class="identifier">open</span></a>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">options</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="openDatabase"></a><h3><code><span class="keyword">function</span> <a name="openDatabase" href="#openDatabase"><span class="identifier">openDatabase</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">version</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">displayName</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">estimatedSize</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">creationCallback</span>:<a href="/dox/js/html/sql/DatabaseCallback.html"><span class="type">DatabaseCallback</span></a>):<a href="/dox/js/html/sql/Database.html"><span class="type">Database</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="openDatabase"></a><h3><code><span class="keyword">function</span> <a name="openDatabase" href="#openDatabase"><span class="identifier">openDatabase</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">version</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">displayName</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">estimatedSize</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">creationCallback</span>:<a href="/dox/js/html/sql/DatabaseCallback.html"><span class="type">DatabaseCallback</span></a>):<a href="/dox/js/html/sql/Database.html"><span class="type">Database</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="opener" href="#opener"><span class="identifier">opener</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="opener" href="#opener"><span class="identifier">opener</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the window that opened this current window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="outerHeight" href="#outerHeight"><span class="identifier">outerHeight</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="outerHeight" href="#outerHeight"><span class="identifier">outerHeight</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets the height of the outside of the browser window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="outerWidth" href="#outerWidth"><span class="identifier">outerWidth</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="outerWidth" href="#outerWidth"><span class="identifier">outerWidth</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets the width of the outside of the browser window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="pagePopupController" href="#pagePopupController"><span class="identifier">pagePopupController</span></a>:<a href="/dox/js/html/PagePopupController.html"><span class="type">PagePopupController</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="pagePopupController" href="#pagePopupController"><span class="identifier">pagePopupController</span></a>:<a href="/dox/js/html/PagePopupController.html"><span class="type">PagePopupController</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="pageXOffset" href="#pageXOffset"><span class="identifier">pageXOffset</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="pageXOffset" href="#pageXOffset"><span class="identifier">pageXOffset</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An alias for <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.scrollX">window.scrollX</a></code>
 .</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="pageYOffset" href="#pageYOffset"><span class="identifier">pageYOffset</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="pageYOffset" href="#pageYOffset"><span class="identifier">pageYOffset</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>An alias for <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.scrollY">window.scrollY</a></code></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="parent" href="#parent"><span class="identifier">parent</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="parent" href="#parent"><span class="identifier">parent</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the parent of the current window or subframe.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="performance" href="#performance"><span class="identifier">performance</span></a>:<a href="/dox/js/html/Performance.html"><span class="type">Performance</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="performance" href="#performance"><span class="identifier">performance</span></a>:<a href="/dox/js/html/Performance.html"><span class="type">Performance</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="personalbar" href="#personalbar"><span class="identifier">personalbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="personalbar" href="#personalbar"><span class="identifier">personalbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the personalbar object, whose visibility can be toggled in the window.</p></div>
-<hr/><a name="postMessage"></a><h3><code><span class="keyword">function</span> <a name="postMessage" href="#postMessage"><span class="identifier">postMessage</span></a>(<span class="identifier">message</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">targetOrigin</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">messagePorts</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="postMessage"></a><h3><code><span class="keyword">function</span> <a name="postMessage" href="#postMessage"><span class="identifier">postMessage</span></a>(<span class="identifier">message</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">targetOrigin</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">messagePorts</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>&gt;):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Provides a secure means for one window to send a string of data to another window, which need not be within the same domain as the first, in a secure manner. Throws DOMException.</p></div>
-<hr/><a name="print"></a><h3><code><span class="keyword">function</span> <a name="print" href="#print"><span class="identifier">print</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="print"></a><h3><code><span class="keyword">function</span> <a name="print" href="#print"><span class="identifier">print</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="prompt"></a><h3><code><span class="keyword">function</span> <a name="prompt" href="#prompt"><span class="identifier">prompt</span></a>(<span class="identifier">message</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">defaultValue</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="prompt"></a><h3><code><span class="keyword">function</span> <a name="prompt" href="#prompt"><span class="identifier">prompt</span></a>(<span class="identifier">message</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">defaultValue</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="releaseEvents"></a><h3><code><span class="keyword">function</span> <a name="releaseEvents" href="#releaseEvents"><span class="identifier">releaseEvents</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="releaseEvents"></a><h3><code><span class="keyword">function</span> <a name="releaseEvents" href="#releaseEvents"><span class="identifier">releaseEvents</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="requestAnimationFrame"></a><h3><code><span class="keyword">function</span> <a name="requestAnimationFrame" href="#requestAnimationFrame"><span class="identifier">requestAnimationFrame</span></a>(<span class="identifier">callback_</span>:<a href="/dox/js/html/RequestAnimationFrameCallback.html"><span class="type">RequestAnimationFrameCallback</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="requestAnimationFrame"></a><h3><code><span class="keyword">function</span> <a name="requestAnimationFrame" href="#requestAnimationFrame"><span class="identifier">requestAnimationFrame</span></a>(<span class="identifier">callback_</span>:<a href="/dox/js/html/RequestAnimationFrameCallback.html"><span class="type">RequestAnimationFrameCallback</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="requestFileSystem"></a><h3><code><span class="keyword">function</span> <a name="requestFileSystem" href="#requestFileSystem"><span class="identifier">requestFileSystem</span></a>(<span class="identifier">type</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">size</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">successCallback</span>:<a href="/dox/js/html/fs/FileSystemCallback.html"><span class="type">FileSystemCallback</span></a>, ?<span class="identifier">errorCallback</span>:<a href="/dox/js/html/fs/ErrorCallback.html"><span class="type">ErrorCallback</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="requestFileSystem"></a><h3><code><span class="keyword">function</span> <a name="requestFileSystem" href="#requestFileSystem"><span class="identifier">requestFileSystem</span></a>(<span class="identifier">type</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">size</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">successCallback</span>:<a href="/dox/js/html/fs/FileSystemCallback.html"><span class="type">FileSystemCallback</span></a>, ?<span class="identifier">errorCallback</span>:<a href="/dox/js/html/fs/ErrorCallback.html"><span class="type">ErrorCallback</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="resizeBy"></a><h3><code><span class="keyword">function</span> <a name="resizeBy" href="#resizeBy"><span class="identifier">resizeBy</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="resizeBy"></a><h3><code><span class="keyword">function</span> <a name="resizeBy" href="#resizeBy"><span class="identifier">resizeBy</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">y</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="resizeTo"></a><h3><code><span class="keyword">function</span> <a name="resizeTo" href="#resizeTo"><span class="identifier">resizeTo</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="resizeTo"></a><h3><code><span class="keyword">function</span> <a name="resizeTo" href="#resizeTo"><span class="identifier">resizeTo</span></a>(<span class="identifier">width</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>, <span class="identifier">height</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="resolveLocalFileSystemURL"></a><h3><code><span class="keyword">function</span> <a name="resolveLocalFileSystemURL" href="#resolveLocalFileSystemURL"><span class="identifier">resolveLocalFileSystemURL</span></a>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">successCallback</span>:<a href="/dox/js/html/fs/EntryCallback.html"><span class="type">EntryCallback</span></a>, ?<span class="identifier">errorCallback</span>:<a href="/dox/js/html/fs/ErrorCallback.html"><span class="type">ErrorCallback</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="resolveLocalFileSystemURL"></a><h3><code><span class="keyword">function</span> <a name="resolveLocalFileSystemURL" href="#resolveLocalFileSystemURL"><span class="identifier">resolveLocalFileSystemURL</span></a>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">successCallback</span>:<a href="/dox/js/html/fs/EntryCallback.html"><span class="type">EntryCallback</span></a>, ?<span class="identifier">errorCallback</span>:<a href="/dox/js/html/fs/ErrorCallback.html"><span class="type">ErrorCallback</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="screen" href="#screen"><span class="identifier">screen</span></a>:<a href="/dox/js/html/Screen.html"><span class="type">Screen</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="screen" href="#screen"><span class="identifier">screen</span></a>:<a href="/dox/js/html/Screen.html"><span class="type">Screen</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns a reference to the screen object associated with the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="screenLeft" href="#screenLeft"><span class="identifier">screenLeft</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="screenLeft" href="#screenLeft"><span class="identifier">screenLeft</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="screenTop" href="#screenTop"><span class="identifier">screenTop</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="screenTop" href="#screenTop"><span class="identifier">screenTop</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="screenX" href="#screenX"><span class="identifier">screenX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="screenX" href="#screenX"><span class="identifier">screenX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the horizontal distance of the left border of the user's browser from the left side of the screen.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="screenY" href="#screenY"><span class="identifier">screenY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="screenY" href="#screenY"><span class="identifier">screenY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the vertical distance of the top border of the user's browser from the top side of the screen.</p></div>
-<hr/><a name="scroll"></a><h3><code><span class="keyword">function</span> <a name="scroll" href="#scroll"><span class="identifier">scroll</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">y</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="scroll"></a><h3><code><span class="keyword">function</span> <a name="scroll" href="#scroll"><span class="identifier">scroll</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">y</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="scrollBy"></a><h3><code><span class="keyword">function</span> <a name="scrollBy" href="#scrollBy"><span class="identifier">scrollBy</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">y</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="scrollBy"></a><h3><code><span class="keyword">function</span> <a name="scrollBy" href="#scrollBy"><span class="identifier">scrollBy</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">y</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="scrollTo"></a><h3><code><span class="keyword">function</span> <a name="scrollTo" href="#scrollTo"><span class="identifier">scrollTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">y</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="scrollTo"></a><h3><code><span class="keyword">function</span> <a name="scrollTo" href="#scrollTo"><span class="identifier">scrollTo</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, <span class="identifier">y</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="scrollX" href="#scrollX"><span class="identifier">scrollX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="scrollX" href="#scrollX"><span class="identifier">scrollX</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the number of pixels that the document has already been scrolled horizontally.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="scrollY" href="#scrollY"><span class="identifier">scrollY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="scrollY" href="#scrollY"><span class="identifier">scrollY</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the number of pixels that the document has already been scrolled vertically.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="scrollbars" href="#scrollbars"><span class="identifier">scrollbars</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="scrollbars" href="#scrollbars"><span class="identifier">scrollbars</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the scrollbars object, whose visibility can be toggled in the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="self" href="#self"><span class="identifier">self</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="self" href="#self"><span class="identifier">self</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns an object reference to the window object itself.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="sessionStorage" href="#sessionStorage"><span class="identifier">sessionStorage</span></a>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="sessionStorage" href="#sessionStorage"><span class="identifier">sessionStorage</span></a>:<a href="/dox/js/html/Storage.html"><span class="type">Storage</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>A storage object for storing data within a single page session. Getter throws DOMException.</p></div>
-<hr/><a name="setInterval"></a><h3><code><span class="keyword">function</span> <a name="setInterval" href="#setInterval"><span class="identifier">setInterval</span></a>(<span class="identifier">handler</span>:<a href="/dox/Void.html"><span class="type">Void</span></a>, <span class="identifier">timeout</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setInterval"></a><h3><code><span class="keyword">function</span> <a name="setInterval" href="#setInterval"><span class="identifier">setInterval</span></a>(<span class="identifier">handler</span>:<a href="/dox/Void.html"><span class="type">Void</span></a>, <span class="identifier">timeout</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="setTimeout"></a><h3><code><span class="keyword">function</span> <a name="setTimeout" href="#setTimeout"><span class="identifier">setTimeout</span></a>(<span class="identifier">handler</span>:<a href="/dox/Void.html"><span class="type">Void</span></a>, <span class="identifier">timeout</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="setTimeout"></a><h3><code><span class="keyword">function</span> <a name="setTimeout" href="#setTimeout"><span class="identifier">setTimeout</span></a>(<span class="identifier">handler</span>:<a href="/dox/Void.html"><span class="type">Void</span></a>, <span class="identifier">timeout</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><a name="showModalDialog"></a><h3><code><span class="keyword">function</span> <a name="showModalDialog" href="#showModalDialog"><span class="identifier">showModalDialog</span></a>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">dialogArgs</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, ?<span class="identifier">featureArgs</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="showModalDialog"></a><h3><code><span class="keyword">function</span> <a name="showModalDialog" href="#showModalDialog"><span class="identifier">showModalDialog</span></a>(<span class="identifier">url</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">dialogArgs</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, ?<span class="identifier">featureArgs</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="status" href="#status"><span class="identifier">status</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="status" href="#status"><span class="identifier">status</span></a>:<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Gets/sets the text in the statusbar at the bottom of the browser.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="statusbar" href="#statusbar"><span class="identifier">statusbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="statusbar" href="#statusbar"><span class="identifier">statusbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the statusbar object, whose visibility can be toggled in the window.</p></div>
-<hr/><a name="stop"></a><h3><code><span class="keyword">function</span> <a name="stop" href="#stop"><span class="identifier">stop</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<hr/></span><span class="platform platform-js">
+<a name="stop"></a><h3><code><span class="keyword">function</span> <a name="stop" href="#stop"><span class="identifier">stop</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="storageInfo" href="#storageInfo"><span class="identifier">storageInfo</span></a>:<a href="/dox/js/html/StorageInfo.html"><span class="type">StorageInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="storageInfo" href="#storageInfo"><span class="identifier">storageInfo</span></a>:<a href="/dox/js/html/StorageInfo.html"><span class="type">StorageInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="styleMedia" href="#styleMedia"><span class="identifier">styleMedia</span></a>:<a href="/dox/js/html/StyleMedia.html"><span class="type">StyleMedia</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="styleMedia" href="#styleMedia"><span class="identifier">styleMedia</span></a>:<a href="/dox/js/html/StyleMedia.html"><span class="type">StyleMedia</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p></p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="toolbar" href="#toolbar"><span class="identifier">toolbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="toolbar" href="#toolbar"><span class="identifier">toolbar</span></a>:<a href="/dox/js/html/BarInfo.html"><span class="type">BarInfo</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><p>Returns the toolbar object, whose visibility can be toggled in the window.</p></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="top" href="#top"><span class="identifier">top</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="top" href="#top"><span class="identifier">top</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><dd>Returns a reference to the topmost window in the window hierarchy. This property is read only.</dd> <dt><code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.URL">window.URL</a></code><span title="(Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1)
 ">Requires Gecko 2.0</span>
 </dt> <dd>A DOM&nbsp;URL&nbsp;object, which provides the <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.URL.createObjectURL">window.URL.createObjectURL()</a></code>
 and <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.URL.revokeObjectURL">window.URL.revokeObjectURL()</a></code>
 methods.</dd></div>
-<hr/><h3><code><span class="keyword">var</span> <a name="window" href="#window"><span class="identifier">window</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
+<hr/></span><span class="platform platform-js">
+<h3><code><span class="keyword">var</span> <a name="window" href="#window"><span class="identifier">window</span></a>:<a href="/dox/js/html/DOMWindow.html"><span class="type">DOMWindow</span></a>;<span class="comment"> // readonly</span></code></h3>
 <div><code class="dark"><span class="macro">Available on js</span></code></div>
 <div class="doc"><dd>Returns a reference to the current window.</dd> <dt>window[0], window[1], etc.</dt> <dd>Returns a reference to the <code>window</code> object in the frames. See <code><a rel="custom" href="https://developer.mozilla.org/en/DOM/window.frames">window.frames</a></code>
 for more details.</dd></div>
-<hr/></div>
+<hr/></span></div>
 			</div>
 		</div>
 	</body>
