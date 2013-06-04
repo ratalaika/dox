@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+		<link href="/dox/styles.css" rel="stylesheet">
+		<script type="text/javascript">var baseUrl = "/dox";</script>
+		<script type="text/javascript" src="/dox/nav.js"></script>
+		<script type="text/javascript" src="/dox/index.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="active"><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="packages" id="nav"></div>
+				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/java/Lib.html"><span class="type">Lib</span></a></code></h1>
+<div><code class="dark"><span class="macro">Available on java</span></code></div>
+<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/java/Lib.hx</span></code></div>
+<div class="doc"><p>Platform-specific Java Library. Provides some platform-specific functions for the Java target,
+such as conversion from haxe types to native types and vice-versa.</p></div>
+<h2>Class Fields</h2>
+<a name="array"></a><h3><code><span class="keyword">function</span> <a name="array" href="#array"><span class="identifier">array</span></a>&lt;<span class="type">T</span>&gt;(<span class="identifier">native</span>:<a href="/dox/java/NativeArray.html"><span class="type">NativeArray</span></a>&lt;<span class="type">T</span>&gt;):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on java</span></code></div>
+<div class="doc"><p>Returns a Haxe Array of a native Array.
+It won't copy the contents of the native array, so unless any operation triggers an array resize,
+all changes made to the Haxe array will affect the native array argument.</p></div>
+<hr/><a name="arrayAlloc"></a><h3><code><span class="keyword">function</span> <a name="arrayAlloc" href="#arrayAlloc"><span class="identifier">arrayAlloc</span></a>&lt;<span class="type">T</span>&gt;(<span class="identifier">size</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on java</span></code></div>
+<div class="doc"><p>Allocates a new Haxe Array with a predetermined size</p></div>
+<hr/><a name="lock"></a><h3><code><span class="keyword">function</span> <a name="lock" href="#lock"><span class="identifier">lock</span></a>(<span class="identifier">obj</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">block</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
+<div><code class="dark"><span class="macro">Available on java</span></code></div>
+<div class="doc"><p>Ensures that one thread does not enter a critical section of code while another thread
+is in the critical section. If another thread attempts to enter a locked code, it
+will wait, block, until the object is released.
+This is the equivalent to "synchronized" in java code.</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.</p></div>
+<hr/><a name="nativeArray"></a><h3><code><span class="keyword">function</span> <a name="nativeArray" href="#nativeArray"><span class="identifier">nativeArray</span></a>&lt;<span class="type">T</span>&gt;(<span class="identifier">arr</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;, <span class="identifier">equalLengthRequired</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/java/NativeArray.html"><span class="type">NativeArray</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on java</span></code></div>
+<div class="doc"><p>Returns a native array from the supplied Array. This native array is unsafe to be written on,
+as it may or may not be linked to the actual Array implementation.</p>
+<p>If equalLengthRequired is true, the result might be a copy of an array with the correct size.</p></div>
+<hr/><a name="nativeType"></a><h3><code><span class="keyword">function</span> <a name="nativeType" href="#nativeType"><span class="identifier">nativeType</span></a>&lt;<span class="type">T</span>&gt;(<span class="identifier">obj</span>:<span class="type">T</span>):<a href="/dox/java/lang/Class.html"><span class="type">Class</span></a>&lt;<span class="type">T</span>&gt;;</code></h3>
+<div><code class="dark"><span class="macro">Available on java</span></code></div>
+<div class="doc"><p>Gets the native System.Type from the supplied object. Will throw an exception in case of null being passed.</p></div>
+<hr/></div>
+			</div>
+		</div>
+	</body>
+</html>

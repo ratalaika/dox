@@ -22,12 +22,12 @@
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/cpp/_std/sys/net/Socket.hx</span></code></div>
 <div class="doc"><p>A TCP socket class : allow you to both connect to a given server and exchange messages or start your own server and wait for connections.</p></div>
 <h2>Class Fields</h2>
 <a name="select"></a><h3><code><span class="keyword">function</span> <a name="select" href="#select"><span class="identifier">select</span></a>(<span class="identifier">read</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>&gt;, <span class="identifier">write</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>&gt;, <span class="identifier">others</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>&gt;, ?<span class="identifier">timeout</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):{ write:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>&gt;, read:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>&gt;, others:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>&gt; };</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Wait until one of the sockets groups is ready for the given operation :
 [read] contains sockets on which we want to wait for available data to be read,
 [write] contains sockets on which we want to wait until we are allowed to write some data to their output buffers,
@@ -36,59 +36,59 @@
 In case a [timeout] (in seconds) is specified, select might wait at worse until the timeout expires.</p></div>
 <hr/><h2>Instance Fields</h2>
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Creates a new unconnected socket.</p></div>
 <hr/><a name="accept"></a><h3><code><span class="keyword">function</span> <a name="accept" href="#accept"><span class="identifier">accept</span></a>():<a href="/dox/sys/net/Socket.html"><span class="type">Socket</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Accept a new connected client. This will return a connected socket on which you can read/write some data.</p></div>
 <hr/><a name="bind"></a><h3><code><span class="keyword">function</span> <a name="bind" href="#bind"><span class="identifier">bind</span></a>(<span class="identifier">host</span>:<a href="/dox/sys/net/Host.html"><span class="type">Host</span></a>, <span class="identifier">port</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Bind the socket to the given host/port so it can afterwards listen for connections there.</p></div>
 <hr/><a name="close"></a><h3><code><span class="keyword">function</span> <a name="close" href="#close"><span class="identifier">close</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Closes the socket : make sure to properly close all your sockets or you will crash when you run out of file descriptors.</p></div>
 <hr/><a name="connect"></a><h3><code><span class="keyword">function</span> <a name="connect" href="#connect"><span class="identifier">connect</span></a>(<span class="identifier">host</span>:<a href="/dox/sys/net/Host.html"><span class="type">Host</span></a>, <span class="identifier">port</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Connect to the given server host/port. Throw an exception in case we couldn't sucessfully connect.</p></div>
 <hr/><h3><code><span class="keyword">var</span> <a name="custom" href="#custom"><span class="identifier">custom</span></a>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>A custom value that can be associated with the socket. Can be used to retreive your custom infos after a [select].</p></div>
 <hr/><a name="host"></a><h3><code><span class="keyword">function</span> <a name="host" href="#host"><span class="identifier">host</span></a>():{ port:<a href="/dox/Int.html"><span class="type">Int</span></a>, host:<a href="/dox/sys/net/Host.html"><span class="type">Host</span></a> };</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Return the informations about our side of a connected socket.</p></div>
 <hr/><h3><code><span class="keyword">var</span> <a name="input" href="#input"><span class="identifier">input</span></a>:<a href="/dox/haxe/io/Input.html"><span class="type">Input</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>The stream on which you can read available data. By default the stream is blocking until the requested data is available,
 use [setBlocking(false)] or [setTimeout] to prevent infinite waiting.</p></div>
 <hr/><a name="listen"></a><h3><code><span class="keyword">function</span> <a name="listen" href="#listen"><span class="identifier">listen</span></a>(<span class="identifier">connections</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Allow the socket to listen for incoming questions. The parameter tells how many pending connections we can have until they get refused. Use [accept()] to accept incoming connections.</p></div>
 <hr/><h3><code><span class="keyword">var</span> <a name="output" href="#output"><span class="identifier">output</span></a>:<a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>The stream on which you can send data. Please note that in case the output buffer you will block while writing the data, use [setBlocking(false)] or [setTimeout] to prevent that.</p></div>
 <hr/><a name="peer"></a><h3><code><span class="keyword">function</span> <a name="peer" href="#peer"><span class="identifier">peer</span></a>():{ port:<a href="/dox/Int.html"><span class="type">Int</span></a>, host:<a href="/dox/sys/net/Host.html"><span class="type">Host</span></a> };</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Return the informations about the other side of a connected socket.</p></div>
 <hr/><a name="read"></a><h3><code><span class="keyword">function</span> <a name="read" href="#read"><span class="identifier">read</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Read the whole data available on the socket.</p></div>
 <hr/><a name="setBlocking"></a><h3><code><span class="keyword">function</span> <a name="setBlocking" href="#setBlocking"><span class="identifier">setBlocking</span></a>(<span class="identifier">b</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Change the blocking mode of the socket. A blocking socket is the default behavior. A non-blocking socket will abort blocking operations immediatly by throwing a haxe.io.Error.Blocking value.</p></div>
 <hr/><a name="setFastSend"></a><h3><code><span class="keyword">function</span> <a name="setFastSend" href="#setFastSend"><span class="identifier">setFastSend</span></a>(<span class="identifier">b</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Allows the socket to immediatly send the data when written to its output : this will cause less ping but might increase the number of packets / data size, especially when doing a lot of small writes.</p></div>
 <hr/><a name="setTimeout"></a><h3><code><span class="keyword">function</span> <a name="setTimeout" href="#setTimeout"><span class="identifier">setTimeout</span></a>(<span class="identifier">timeout</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Gives a timeout after which blocking socket operations (such as reading and writing) will abort and throw an exception.</p></div>
 <hr/><a name="shutdown"></a><h3><code><span class="keyword">function</span> <a name="shutdown" href="#shutdown"><span class="identifier">shutdown</span></a>(<span class="identifier">read</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>, <span class="identifier">write</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Shutdown the socket, either for reading or writing.</p></div>
 <hr/><a name="waitForRead"></a><h3><code><span class="keyword">function</span> <a name="waitForRead" href="#waitForRead"><span class="identifier">waitForRead</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Block until some data is available for read on the socket.</p></div>
 <hr/><a name="write"></a><h3><code><span class="keyword">function</span> <a name="write" href="#write"><span class="identifier">write</span></a>(<span class="identifier">content</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Write the whole data to the socket output.</p></div>
 <hr/></div>
 			</div>

@@ -33,7 +33,7 @@ eventually call stop() to stop the Timer.</p>
 the child class.</p></div>
 <h2>Class Fields</h2>
 <a name="delay"></a><h3><code><span class="keyword">function</span> <a name="delay" href="#delay"><span class="identifier">delay</span></a>(<span class="identifier">f</span>:<a href="/dox/Void.html"><span class="type">Void</span></a>, <span class="identifier">time_ms</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/haxe/Timer.html"><span class="type">Timer</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js</span></code></div>
+<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js, java</span></code></div>
 <div class="doc"><p>Invokes <code>f</code> after <code>time_ms</code> milliseconds.</p>
 <p>This is a convenience function for creating a new Timer instance with
 <code>time_ms</code> as argument, binding its run() method to <code>f</code> and then stopping
@@ -52,7 +52,7 @@ to denote the unit. The optional <code>pos</code> argument is passed through.</p
 between two values make sense.</p></div>
 <hr/><h2>Instance Fields</h2>
 <a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">time_ms</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js</span></code></div>
+<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js, java</span></code></div>
 <div class="doc"><p>Creates a new timer that will run every <code>time_ms</code> milliseconds.</p>
 <p>After creating the Timer instance, it calls <code>this].run</code> repeatedly,
 with delays of <code>time_ms</code> milliseconds, until <code>this.<a href="#stop">stop</a></code> is called.</p>
@@ -60,7 +60,7 @@ with delays of <code>time_ms</code> milliseconds, until <code>this.<a href="#sto
 immediately.</p>
 <p>The accuracy of this may be platform-dependent.</p></div>
 <hr/><a name="run"></a><h3><code><span class="keyword">function</span> <a name="run" href="#run"><span class="identifier">run</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js</span></code></div>
+<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js, java</span></code></div>
 <div class="doc"><p>This method is invoked repeatedly on <code>this</code> Timer.</p>
 <p>It can be overridden in a subclass, or rebound directly to a custom
 function:
@@ -69,7 +69,7 @@ timer.run = function() { ... }</p>
 <p>Once bound, it can still be rebound to different functions until <code>this</code>
 Timer is stopped through a call to <code>this.<a href="#stop">stop</a></code>.</p></div>
 <hr/><a name="stop"></a><h3><code><span class="keyword">function</span> <a name="stop" href="#stop"><span class="identifier">stop</span></a>():<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js</span></code></div>
+<div><code class="dark"><span class="macro">Available on cs, flash8, flash9, js, java</span></code></div>
 <div class="doc"><p>Stops <code>this</code> Timer.</p>
 <p>After calling this method, no additional invocations of <code>this.<a href="#run">run</a></code>
 will occur.</p>

@@ -22,73 +22,73 @@
 			<div class="row-fluid">
 				<div class="packages" id="nav"></div>
 				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/Sys.html"><span class="type">Sys</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div><code class="dark"><span class="macro">Defined in /ws/haxe/std/cpp/_std/Sys.hx</span></code></div>
 <div class="doc"><p>This class gives you access to many base functionalities of system platforms. Looks in [sys] sub packages for more system APIs.</p></div>
 <h2>Class Fields</h2>
 <a name="args"></a><h3><code><span class="keyword">function</span> <a name="args" href="#args"><span class="identifier">args</span></a>():<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns all the arguments that were passed by the commandline.</p></div>
 <hr/><a name="command"></a><h3><code><span class="keyword">function</span> <a name="command" href="#command"><span class="identifier">command</span></a>(<span class="identifier">cmd</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">args</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Run the given command with the list of arguments. The command output will be printed on the same output as the current process.
 The current process will block until the command terminates and it will return the command result (0 if there was no error).
 Read the [sys.io.Process] api for a more complete way to start background processes.</p></div>
 <hr/><a name="cpuTime"></a><h3><code><span class="keyword">function</span> <a name="cpuTime" href="#cpuTime"><span class="identifier">cpuTime</span></a>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Gives the most precise timestamp value (in seconds) but only account for the actual time spent running on the CPU for the current thread/process.</p></div>
 <hr/><a name="environment"></a><h3><code><span class="keyword">function</span> <a name="environment" href="#environment"><span class="identifier">environment</span></a>():<a href="/dox/haxe/ds/StringMap.html"><span class="type">StringMap</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the whole environement variables.</p></div>
 <hr/><a name="executablePath"></a><h3><code><span class="keyword">function</span> <a name="executablePath" href="#executablePath"><span class="identifier">executablePath</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the path to the current executable that we are running.</p></div>
 <hr/><a name="exit"></a><h3><code><span class="keyword">function</span> <a name="exit" href="#exit"><span class="identifier">exit</span></a>(<span class="identifier">code</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Exit the current process with the given error code.</p></div>
 <hr/><a name="getChar"></a><h3><code><span class="keyword">function</span> <a name="getChar" href="#getChar"><span class="identifier">getChar</span></a>(<span class="identifier">echo</span>:<a href="/dox/Bool.html"><span class="type">Bool</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Read a single input character from the standard input (without blocking) and returns it. Setting [echo] to true will also display it on the output.</p></div>
 <hr/><a name="getCwd"></a><h3><code><span class="keyword">function</span> <a name="getCwd" href="#getCwd"><span class="identifier">getCwd</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Get the current working directory (usually the one in which the program was started)</p></div>
 <hr/><a name="getEnv"></a><h3><code><span class="keyword">function</span> <a name="getEnv" href="#getEnv"><span class="identifier">getEnv</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the value of the given environment variable.</p></div>
 <hr/><a name="print"></a><h3><code><span class="keyword">function</span> <a name="print" href="#print"><span class="identifier">print</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Print any value on the standard output.</p></div>
 <hr/><a name="println"></a><h3><code><span class="keyword">function</span> <a name="println" href="#println"><span class="identifier">println</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Print any value on the standard output, followed by a newline</p></div>
 <hr/><a name="putEnv"></a><h3><code><span class="keyword">function</span> <a name="putEnv" href="#putEnv"><span class="identifier">putEnv</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">v</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Set the value of the given environment variable.</p></div>
 <hr/><a name="setCwd"></a><h3><code><span class="keyword">function</span> <a name="setCwd" href="#setCwd"><span class="identifier">setCwd</span></a>(<span class="identifier">s</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Change the current working directory.</p></div>
 <hr/><a name="setTimeLocale"></a><h3><code><span class="keyword">function</span> <a name="setTimeLocale" href="#setTimeLocale"><span class="identifier">setTimeLocale</span></a>(<span class="identifier">loc</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Change the current time locale, which will affect [DateTools.format] date formating.
 Returns true if the locale was successfully changed</p></div>
 <hr/><a name="sleep"></a><h3><code><span class="keyword">function</span> <a name="sleep" href="#sleep"><span class="identifier">sleep</span></a>(<span class="identifier">seconds</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Suspend the current execution for the given time (in seconds).</p></div>
 <hr/><a name="stderr"></a><h3><code><span class="keyword">function</span> <a name="stderr" href="#stderr"><span class="identifier">stderr</span></a>():<a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the process standard error on which you can write.</p></div>
 <hr/><a name="stdin"></a><h3><code><span class="keyword">function</span> <a name="stdin" href="#stdin"><span class="identifier">stdin</span></a>():<a href="/dox/haxe/io/Input.html"><span class="type">Input</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the process standard input, from which you can read what user enters. Usually it will block until the user send a full input line. See [getChar] for an alternative.</p></div>
 <hr/><a name="stdout"></a><h3><code><span class="keyword">function</span> <a name="stdout" href="#stdout"><span class="identifier">stdout</span></a>():<a href="/dox/haxe/io/Output.html"><span class="type">Output</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the process standard output on which you can write.</p></div>
 <hr/><a name="systemName"></a><h3><code><span class="keyword">function</span> <a name="systemName" href="#systemName"><span class="identifier">systemName</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Returns the name of the system you are running on. For instance :
 "Windows", "Linux", "BSD" and "Mac" depending on your desktop OS.</p></div>
 <hr/><a name="time"></a><h3><code><span class="keyword">function</span> <a name="time" href="#time"><span class="identifier">time</span></a>():<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php</span></code></div>
+<div><code class="dark"><span class="macro">Available on cpp, cs, neko, php, java</span></code></div>
 <div class="doc"><p>Gives the most precise timestamp value (in seconds).</p></div>
 <hr/></div>
 			</div>
