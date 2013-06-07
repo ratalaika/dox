@@ -1,73 +1,15 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"> 
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-		<link href="/dox/styles.css" rel="stylesheet">
-		<script type="text/javascript">var baseUrl = "/dox";</script>
-		<script type="text/javascript" src="/dox/nav.js"></script>
-		<script type="text/javascript" src="/dox/index.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="navbar-inner">
-					<form class="navbar-search pull-left">
-						<input type="text" class="search-query" placeholder="Search">
-					</form>
-					<ul class="nav">
-						<li id="select-version" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="3_0"><a href="#">3.0</a></li>
-								<li data="3_1"><a href="#">3.1</a></li>
-								<li data="3_2"><a href="#">3.2</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav">
-						<li id="select-platform" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="all"><a href="#">All Platforms</a></li>
-								<li data="sys"><a href="#">System</a></li>
-								<li data="neko"><a href="#">Neko</a></li>
-								<li data="php"><a href="#">PHP</a></li>
-								<li data="java"><a href="#">Java</a></li>
-								<li data="cs"><a href="#">C Sharp</a></li>
-								<li data="flash8"><a href="#">Flash 8</a></li>
-								<li data="flash"><a href="#">Flash 9+</a></li>
-								<li data="js"><a href="#">Javascript</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="packages" id="nav"></div>
-				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/Std.html"><span class="type">Std</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on all platforms</span></code></div>
-<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/cpp/_std/Std.hx</span></code></div>
-<div class="doc"><p>The Std class provides standard methods for manipulating basic types.</p></div>
-<h2>Class Fields</h2>
-<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="int"></a><h3><code><span class="keyword">function</span> <a name="int" href="#int"><span class="identifier">int</span></a>(<span class="identifier">x</span>:<a href="/dox/Float.html"><span class="type">Float</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div class="doc"><p>Converts a <code><a href="/dox/Float.html">Float</a></code> to an <code><a href="/dox/Int.html">Int</a></code>, rounded towards 0.</p>
-<p>If <code>x</code> is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="is"></a><h3><code><span class="keyword">function</span> <a name="is" href="#is"><span class="identifier">is</span></a>(<span class="identifier">v</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>, <span class="identifier">t</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div class="doc"><p>Tells if a value v is of the type t. Returns false if v or t are null.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="parseFloat"></a><h3><code><span class="keyword">function</span> <a name="parseFloat" href="#parseFloat"><span class="identifier">parseFloat</span></a>(<span class="identifier">x</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Float.html"><span class="type">Float</span></a>;</code></h3>
-<div class="doc"><p>Converts a <code><a href="/dox/String.html">String</a></code> to a <code><a href="/dox/Float.html">Float</a></code>.</p>
-<p>The parsing rules for <code>parseInt</code> apply here as well, with the exception of invalid input
-resulting in a NaN value instead of null.</p>
-<p>Additionally, decimal notation may contain a single <code>.</code> to denote the start of the fractions.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="parseInt"></a><h3><code><span class="keyword">function</span> <a name="parseInt" href="#parseInt"><span class="identifier">parseInt</span></a>(<span class="identifier">x</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;;</code></h3>
-<div class="doc"><p>Converts a <code><a href="/dox/String.html">String</a></code> to an <code><a href="/dox/Int.html">Int</a></code>.</p>
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var rootPath = "/dox";</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input type="text" class="search-query" placeholder="Search"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div class="packages" id="nav"></div><div class="content"><h1><code><span class="directive">class </span>Std</code></h1><div><code class="dark"><span class="macro">Available on all platforms</span></code></div><div class="doc"><p>The Std class provides standard methods for manipulating basic types.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="is"></a><h3><code><span class="keyword">function</span> <a href="#is">is</a>(v:Dynamic, t:Dynamic):<a class="type" href="/dox/Bool.html">Bool</a></code></h3><p>Tells if a value v is of the type t. Returns false if v or t are null.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="string"></a><h3><code><span class="keyword">function</span> <a href="#string">string</a>(s:Dynamic):<a class="type" href="/dox/String.html">String</a></code></h3><p>Converts any value to a String.</p>
+<p>If <code>s</code> is of <code><a href="/dox/String.html">String</a></code>, <code><a href="/dox/Int.html">Int</a></code>, <code><a href="/dox/Float.html">Float</a></code> or <code><a href="/dox/Bool.html">Bool</a></code>, its value is returned.</p>
+<p>If <code>s</code> is an instance of a class and that class or one of its parent classes has
+a <code>toString</code> method, that method is called. If no such method is present, the result
+is unspecified.</p>
+<p>If <code>s</code> is an enum constructor without argument, the constructor's name is returned. If
+arguments exists, the constructor's name followed by the String representations of
+the arguments is returned.</p>
+<p>If <code>s</code> is a structure, the field names along with their values are returned. The field order
+and the operator separating field names and values are unspecified.</p>
+<p>If s is null, "null" is returned.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="int"></a><h3><code><span class="keyword">function</span> <a href="#int">int</a>(x:<a class="type" href="/dox/Float.html">Float</a>):<a class="type" href="/dox/Int.html">Int</a></code></h3><p>Converts a <code><a href="/dox/Float.html">Float</a></code> to an <code><a href="/dox/Int.html">Int</a></code>, rounded towards 0.</p>
+<p>If <code>x</code> is outside of the signed Int32 range, or is NaN, NEGATIVE<em>INFINITY or POSITIVE</em>INFINITY, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="parseInt"></a><h3><code><span class="keyword">function</span> <a href="#parseInt">parseInt</a>(x:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Null.html">Null</a>&lt;<a class="type" href="/dox/Int.html">Int</a>&gt;</code></h3><p>Converts a <code><a href="/dox/String.html">String</a></code> to an <code><a href="/dox/Int.html">Int</a></code>.</p>
 <p>Leading whitespaces are ignored.</p>
 <p>If <code>x</code> starts with 0x or 0X, hexadecimal notation is recognized where the following digits may
 contain 0-9 and A-F.</p>
@@ -78,26 +20,8 @@ result up to that point is returned. For hexadecimal notation, the effect of inv
 is unspecified.</p>
 <p>Leading 0s that are not part of the 0x/0X hexadecimal notation are ignored, which means octal
 notation is not supported.</p>
-<p>If the input cannot be recognized, the result is null.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="random"></a><h3><code><span class="keyword">function</span> <a name="random" href="#random"><span class="identifier">random</span></a>(<span class="identifier">x</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div class="doc"><p>Return a random integer between 0 included and <code>x</code> excluded.</p>
-<p>If <code>x &lt;= 1</code>, the result is always 0.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="string"></a><h3><code><span class="keyword">function</span> <a name="string" href="#string"><span class="identifier">string</span></a>(<span class="identifier">s</span>:<a href="/dox/Dynamic.html"><span class="type">Dynamic</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Converts any value to a String.</p>
-<p>If <code>s</code> is of <code><a href="/dox/String.html">String</a></code>, <code><a href="/dox/Int.html">Int</a></code>, <code><a href="/dox/Float.html">Float</a></code> or <code><a href="/dox/Bool.html">Bool</a></code>, its value is returned.</p>
-<p>If <code>s</code> is an instance of a class and that class or one of its parent classes has
-a <code>toString</code> method, that method is called. If no such method is present, the result
-is unspecified.</p>
-<p>If <code>s</code> is an enum constructor without argument, the constructor's name is returned. If
-arguments exists, the constructor's name followed by the String representations of
-the arguments is returned.</p>
-<p>If <code>s</code> is a structure, the field names along with their values are returned. The field order
-and the operator separating field names and values are unspecified.</p>
-<p>If s is null, "null" is returned.</p></div>
-<hr/></span></div>
-			</div>
-		</div>
-	</body>
-</html>
+<p>If the input cannot be recognized, the result is null.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="parseFloat"></a><h3><code><span class="keyword">function</span> <a href="#parseFloat">parseFloat</a>(x:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Float.html">Float</a></code></h3><p>Converts a <code><a href="/dox/String.html">String</a></code> to a <code><a href="/dox/Float.html">Float</a></code>.</p>
+<p>The parsing rules for <code>parseInt</code> apply here as well, with the exception of invalid input
+resulting in a NaN value instead of null.</p>
+<p>Additionally, decimal notation may contain a single <code>.</code> to denote the start of the fractions.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="random"></a><h3><code><span class="keyword">function</span> <a href="#random">random</a>(x:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Int.html">Int</a></code></h3><p>Return a random integer between 0 included and <code>x</code> excluded.</p>
+<p>If <code>x &lt;= 1</code>, the result is always 0.</p></div></div></div></div></body></html>

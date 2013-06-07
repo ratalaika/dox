@@ -1,68 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"> 
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-		<link href="/dox/styles.css" rel="stylesheet">
-		<script type="text/javascript">var baseUrl = "/dox";</script>
-		<script type="text/javascript" src="/dox/nav.js"></script>
-		<script type="text/javascript" src="/dox/index.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="navbar-inner">
-					<form class="navbar-search pull-left">
-						<input type="text" class="search-query" placeholder="Search">
-					</form>
-					<ul class="nav">
-						<li id="select-version" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="3_0"><a href="#">3.0</a></li>
-								<li data="3_1"><a href="#">3.1</a></li>
-								<li data="3_2"><a href="#">3.2</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav">
-						<li id="select-platform" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="all"><a href="#">All Platforms</a></li>
-								<li data="sys"><a href="#">System</a></li>
-								<li data="neko"><a href="#">Neko</a></li>
-								<li data="php"><a href="#">PHP</a></li>
-								<li data="java"><a href="#">Java</a></li>
-								<li data="cs"><a href="#">C Sharp</a></li>
-								<li data="flash8"><a href="#">Flash 8</a></li>
-								<li data="flash"><a href="#">Flash 9+</a></li>
-								<li data="js"><a href="#">Javascript</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="packages" id="nav"></div>
-				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/js/html/Float32Array.html"><span class="type">Float32Array</span></a> <span class="keyword">extends</span> <a href="/dox/js/html/ArrayBufferView.html"><span class="type">ArrayBufferView</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on js</span></code></div>
-<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/js/html/Float32Array.hx</span></code></div>
-<div class="doc"><p>The <code>Float32Array</code> type represents an array of 32-bit floating point numbers (corresponding to the C <code>float</code> data type).</p>
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var rootPath = "/dox";</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input type="text" class="search-query" placeholder="Search"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div class="packages" id="nav"></div><div class="content"><h1><code><span class="directive">class </span>js.html.Float32Array<span class="keyword"> extends</span> <a class="type" href="/dox/js/html/ArrayBufferView.html">ArrayBufferView</a></code></h1><div><code class="dark"><span class="macro">Available on js</span></code></div><div class="doc"><p>The <code>Float32Array</code> type represents an array of 32-bit floating point numbers (corresponding to the C <code>float</code> data type).</p>
 <p>Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).</p><br><br>
-Documentation for this class was provided by <a href="https://developer.mozilla.org/en/JavaScript_typed_arrays/Float32Array">MDN</a>.</div>
-<h2>Class Fields</h2>
-<span class="platform platform-js">
-<h3><code><span class="keyword">var</span> <a name="BYTES_PER_ELEMENT" href="#BYTES_PER_ELEMENT"><span class="identifier">BYTES_PER_ELEMENT</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on js</span></code></div>
-<div class="doc"><p>The size, in bytes, of each array element.</p></div>
-<hr/></span><h2>Instance Fields</h2>
-<span class="platform platform-js">
-<a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">buffer</span>:<a href="/dox/js/html/ArrayBuffer.html"><span class="type">ArrayBuffer</span></a>, ?<span class="identifier">byteOffset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">length</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on js</span></code></div>
-<div class="doc"><div class="note"><strong>Note:</strong> In these methods, <code><em>TypedArray</em></code> represents any of the <a title="en/JavaScript typed arrays/ArrayBufferView#Typed array subclasses" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/ArrayBufferView#Typed_array_subclasses">typed array object types</a>.</div>
+Documentation for this class was provided by <a href="https://developer.mozilla.org/en/JavaScript_typed_arrays/Float32Array">MDN</a>.</div><h2>Class Fields</h2><div class="platform platform-js"><a name="BYTES_PER_ELEMENT"></a><h3><code><span class="keyword">var</span> <a href="#BYTES_PER_ELEMENT">BYTES_PER_ELEMENT</a>:<a class="type" href="/dox/Int.html">Int</a></code></h3><p>The size, in bytes, of each array element.</p></div><h2>Instance Fields</h2><div class="platform platform-js"><a name="subarray"></a><h3><code><span class="keyword">function</span> <a href="#subarray">subarray</a>(start:<a class="type" href="/dox/Int.html">Int</a>, end:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/js/html/Float32Array.html">Float32Array</a></code></h3><p></p></div><div class="platform platform-js"><a name="set"></a><h3><code><span class="keyword">function</span> <a href="#set">set</a>(array:<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/Int.html">Int</a>&gt;, offset:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><p>Sets multiple values in the typed array, reading input values from a specified array.</p><div id="section_13"><span id="Parameters_2"></span><h6 class="editable">Parameters</h6>
+<dl> <dt><code>array</code></dt> <dd>An array from which to copy values. All values from the source array are copied into the target array, unless the length of the source array plus the offset exceeds the length of the target array, in which case an exception is thrown. If the source array is a typed array, the two arrays may share the same underlying <code><a title="en/JavaScript typed arrays/ArrayBuffer" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/ArrayBuffer">ArrayBuffer</a></code>; the browser will intelligently copy the source range of the buffer to the destination range.</dd> <dt>offset 
+<span title="">Optional</span>
+</dt> <dd>The offset into the target array at which to begin writing values from the source <code>array</code>. If you omit this value, 0 is assumed (that is, the source <code>array</code> will overwrite values in the target array starting at index 0).</dd>
+</dl>
+</div></div><div class="platform platform-js"><a name="length"></a><h3><code><span class="keyword">var</span> <a href="#length">length</a>:<a class="type" href="/dox/Int.html">Int</a></code></h3><p>The number of entries in the array. <strong>Read only.</strong></p></div><div class="platform platform-js"><a name="new"></a><h3><code><span class="keyword">function</span> <a href="#new">new</a>(buffer:<a class="type" href="/dox/js/html/ArrayBuffer.html">ArrayBuffer</a>, byteOffset:<a class="type" href="/dox/Int.html">Int</a>, length:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><div class="note"><strong>Note:</strong> In these methods, <code><em>TypedArray</em></code> represents any of the <a title="en/JavaScript typed arrays/ArrayBufferView#Typed array subclasses" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/ArrayBufferView#Typed_array_subclasses">typed array object types</a>.</div>
 <table class="standard-table"> <tbody> <tr> <td><code>Float32Array <a title="en/JavaScript typed arrays/Float32Array#Float32Array()" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/Float32Array#Float32Array()">Float32Array</a>(unsigned long length);<br> </code></td> </tr> <tr> <td><code>Float32Array </code><code><a title="en/JavaScript typed arrays/Float32Array#Float32Array()" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/Float32Array#Float32Array%28%29">Float32Array</a></code><code>(<em>TypedArray</em> array);<br> </code></td> </tr> <tr> <td><code>Float32Array </code><code><a title="en/JavaScript typed arrays/Float32Array#Float32Array()" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/Float32Array#Float32Array%28%29">Float32Array</a></code><code>(sequence&lt;type&gt; array);<br> </code></td> </tr> <tr> <td><code>Float32Array </code><code><a title="en/JavaScript typed arrays/Float32Array#Float32Array()" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/Float32Array#Float32Array%28%29">Float32Array</a></code><code>(ArrayBuffer buffer, optional unsigned long byteOffset, optional unsigned long length);<br> </code></td> </tr> </tbody>
 </table><p>Returns a new <code>Float32Array</code> object.</p>
 <pre>Float32Array Float32Array(
@@ -85,26 +28,4 @@ Documentation for this class was provided by <a href="https://developer.mozilla.
 </dl>
 </div><div id="section_8"><span id="Return_value"></span><h6 class="editable">Return value</h6>
 <p>A new <code>Float32Array</code> object representing the specified data buffer.</p>
-</div></p></div>
-<hr/></span><span class="platform platform-js">
-<h3><code><span class="keyword">var</span> <a name="length" href="#length"><span class="identifier">length</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div><code class="dark"><span class="macro">Available on js</span></code></div>
-<div class="doc"><p>The number of entries in the array. <strong>Read only.</strong></p></div>
-<hr/></span><span class="platform platform-js">
-<a name="set"></a><h3><code><span class="keyword">function</span> <a name="set" href="#set"><span class="identifier">set</span></a>(<span class="identifier">array</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;, ?<span class="identifier">offset</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on js</span></code></div>
-<div class="doc"><p>Sets multiple values in the typed array, reading input values from a specified array.</p><div id="section_13"><span id="Parameters_2"></span><h6 class="editable">Parameters</h6>
-<dl> <dt><code>array</code></dt> <dd>An array from which to copy values. All values from the source array are copied into the target array, unless the length of the source array plus the offset exceeds the length of the target array, in which case an exception is thrown. If the source array is a typed array, the two arrays may share the same underlying <code><a title="en/JavaScript typed arrays/ArrayBuffer" rel="internal" href="https://developer.mozilla.org/en/JavaScript_typed_arrays/ArrayBuffer">ArrayBuffer</a></code>; the browser will intelligently copy the source range of the buffer to the destination range.</dd> <dt>offset 
-<span title="">Optional</span>
-</dt> <dd>The offset into the target array at which to begin writing values from the source <code>array</code>. If you omit this value, 0 is assumed (that is, the source <code>array</code> will overwrite values in the target array starting at index 0).</dd>
-</dl>
-</div></div>
-<hr/></span><span class="platform platform-js">
-<a name="subarray"></a><h3><code><span class="keyword">function</span> <a name="subarray" href="#subarray"><span class="identifier">subarray</span></a>(<span class="identifier">start</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">end</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/js/html/Float32Array.html"><span class="type">Float32Array</span></a>;</code></h3>
-<div><code class="dark"><span class="macro">Available on js</span></code></div>
-<div class="doc"><p></p></div>
-<hr/></span></div>
-			</div>
-		</div>
-	</body>
-</html>
+</div></p></div></div></div></div></body></html>

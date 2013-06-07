@@ -1,69 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"> 
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-		<link href="/dox/styles.css" rel="stylesheet">
-		<script type="text/javascript">var baseUrl = "/dox";</script>
-		<script type="text/javascript" src="/dox/nav.js"></script>
-		<script type="text/javascript" src="/dox/index.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="navbar-inner">
-					<form class="navbar-search pull-left">
-						<input type="text" class="search-query" placeholder="Search">
-					</form>
-					<ul class="nav">
-						<li id="select-version" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="3_0"><a href="#">3.0</a></li>
-								<li data="3_1"><a href="#">3.1</a></li>
-								<li data="3_2"><a href="#">3.2</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav">
-						<li id="select-platform" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="all"><a href="#">All Platforms</a></li>
-								<li data="sys"><a href="#">System</a></li>
-								<li data="neko"><a href="#">Neko</a></li>
-								<li data="php"><a href="#">PHP</a></li>
-								<li data="java"><a href="#">Java</a></li>
-								<li data="cs"><a href="#">C Sharp</a></li>
-								<li data="flash8"><a href="#">Flash 8</a></li>
-								<li data="flash"><a href="#">Flash 9+</a></li>
-								<li data="js"><a href="#">Javascript</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="packages" id="nav"></div>
-				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/haxe/ds/ArraySort.html"><span class="type">ArraySort</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on all platforms</span></code></div>
-<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/ds/ArraySort.hx</span></code></div>
-<div class="doc"><p>ArraySort provides a stable implementation of merge sort through its <code>sort</code>
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var rootPath = "/dox";</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input type="text" class="search-query" placeholder="Search"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div class="packages" id="nav"></div><div class="content"><h1><code><span class="directive">class </span>haxe.ds.ArraySort</code></h1><div><code class="dark"><span class="macro">Available on all platforms</span></code></div><div class="doc"><p>ArraySort provides a stable implementation of merge sort through its <code>sort</code>
 method. It should be used instead of <code><a href="/dox/Array.html#sort">Array.sort</a></code> in cases where the order
-of equal elements has to be retained on all targets.</p></div>
-<h2>Class Fields</h2>
-<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="sort"></a><h3><code><span class="keyword">function</span> <a name="sort" href="#sort"><span class="identifier">sort</span></a>&lt;<span class="type">T</span>&gt;(<span class="identifier">a</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<span class="type">T</span>&gt;, <span class="identifier">cmp</span>:<span class="type">T</span> -> <span class="type">T</span> -> <a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div class="doc"><p>Sorts Array <code>a</code> according to the comparison function <code>cmp</code>, where
+of equal elements has to be retained on all targets.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="sort"></a><h3><code><span class="keyword">function</span> <a href="#sort">sort</a>&lt;T&gt;(a:<a class="type" href="/dox/Array.html">Array</a>&lt;<span class="type">T</span>&gt;, cmp:<span class="type">T</span> -&gt;<span class="type">T</span> -&gt;<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><p>Sorts Array <code>a</code> according to the comparison function <code>cmp</code>, where
 <code>cmp(x,y)</code> returns 0 if <code>x == y</code>, a positive Int if <code>x &gt; y</code> and a
 negative Int if <code>x &lt; y</code>.</p>
 <p>This operation modifies Array <code>a</code> in place.</p>
 <p>This operation is stable: The order of equal elements is preserved.</p>
-<p>If <code>a</code> or <code>cmp</code> are null, the result is unspecified.</p></div>
-<hr/></span></div>
-			</div>
-		</div>
-	</body>
-</html>
+<p>If <code>a</code> or <code>cmp</code> are null, the result is unspecified.</p></div></div></div></div></body></html>

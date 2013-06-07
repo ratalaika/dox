@@ -1,62 +1,18 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"> 
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-		<link href="/dox/styles.css" rel="stylesheet">
-		<script type="text/javascript">var baseUrl = "/dox";</script>
-		<script type="text/javascript" src="/dox/nav.js"></script>
-		<script type="text/javascript" src="/dox/index.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="navbar-inner">
-					<form class="navbar-search pull-left">
-						<input type="text" class="search-query" placeholder="Search">
-					</form>
-					<ul class="nav">
-						<li id="select-version" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="3_0"><a href="#">3.0</a></li>
-								<li data="3_1"><a href="#">3.1</a></li>
-								<li data="3_2"><a href="#">3.2</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav">
-						<li id="select-platform" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="all"><a href="#">All Platforms</a></li>
-								<li data="sys"><a href="#">System</a></li>
-								<li data="neko"><a href="#">Neko</a></li>
-								<li data="php"><a href="#">PHP</a></li>
-								<li data="java"><a href="#">Java</a></li>
-								<li data="cs"><a href="#">C Sharp</a></li>
-								<li data="flash8"><a href="#">Flash 8</a></li>
-								<li data="flash"><a href="#">Flash 9+</a></li>
-								<li data="js"><a href="#">Javascript</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="packages" id="nav"></div>
-				<div class="content"><h1><code><span class="directive">typedef</span> <a href="/dox/haxe/macro/MetaAccess.html"><span class="type">MetaAccess</span></a></code></h1>
-<div><code class="dark"><span class="directive">import</span> <span class="type">haxe.macro.Type</span>;</code></div>
-<div><code class="dark"><span class="macro">Available on all platforms</span></code></div>
-<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/haxe/macro/Type.hx</span></code></div>
-<div class="doc"><p>MetaAccess is a wrapper for the <code><a href="/dox/Metadata.html">Metadata</a></code> array. It can be used to add
-metadata to and remove metadata from its origin.</p></div>
-<h2>Instance Fields</h2>
-<span class="">
-<a name="add"></a><h3><code><span class="keyword">function</span> <a name="add" href="#add"><span class="identifier">add</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>, <span class="identifier">params</span>:<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/haxe/macro/Expr.html"><span class="type">Expr</span></a>&gt;, <span class="identifier">pos</span>:<a href="/dox/haxe/macro/Position.html"><span class="type">Position</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div class="doc">Adds the metadata specified by `name`, `params` and `pos` to the origin
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var rootPath = "/dox";</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input type="text" class="search-query" placeholder="Search"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div class="packages" id="nav"></div><div class="content"><h1><code><span class="directive">typedef</span> haxe.macro.MetaAccess</code></h1><div class="doc"><p>MetaAccess is a wrapper for the <code><a href="/dox/Metadata.html">Metadata</a></code> array. It can be used to add
+metadata to and remove metadata from its origin.</p></div><div><a name="remove"></a><h3><code><span class="keyword">function</span> <a href="#remove">remove</a>(name:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3>Removes all `name` metadata entries from the origin of `this`
+		MetaAccess.
+		
+		This method might clear several metadata entries of the same name.
+		
+		If a `Metadata` array is obtained through a call to `get`, a subsequent
+		call to `remove` has no effect on that array.
+		
+		If `name` is null, compilation fails with an error.</div><div><a name="has"></a><h3><code><span class="keyword">function</span> <a href="#has">has</a>(name:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Bool.html">Bool</a></code></h3>Tells if the origin of `this` MetaAccess has a `name` metadata entry.
+		
+		If `name` is null, compilation fails with an error.</div><div><a name="get"></a><h3><code><span class="keyword">function</span> <a href="#get">get</a>():<a class="type" href="/dox/haxe/macro/Metadata.html">Metadata</a></code></h3>Return the wrapped `Metadata` array.
+		
+		Modifying this array has no effect on the origin of `this` MetaAccess.
+		The `add` and `remove` methods can be used for that.</div><div><a name="add"></a><h3><code><span class="keyword">function</span> <a href="#add">add</a>(name:<a class="type" href="/dox/String.html">String</a>, params:<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>&gt;, pos:<a class="type" href="/dox/haxe/macro/Position.html">Position</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3>Adds the metadata specified by `name`, `params` and `pos` to the origin
 		of `this` MetaAccess.
 		
 		Metadata names are not unique during compilation, so this method never
@@ -65,31 +21,4 @@ metadata to and remove metadata from its origin.</p></div>
 		If a `Metadata` array is obtained through a call to `get`, a subsequent
 		call to `add` has no effect on that array.
 		
-		If any argument is null, compilation fails with an error.</div>
-<hr/></span><span class="">
-<a name="get"></a><h3><code><span class="keyword">function</span> <a name="get" href="#get"><span class="identifier">get</span></a>():<a href="/dox/haxe/macro/Metadata.html"><span class="type">Metadata</span></a>;</code></h3>
-<div class="doc">Return the wrapped `Metadata` array.
-		
-		Modifying this array has no effect on the origin of `this` MetaAccess.
-		The `add` and `remove` methods can be used for that.</div>
-<hr/></span><span class="">
-<a name="has"></a><h3><code><span class="keyword">function</span> <a name="has" href="#has"><span class="identifier">has</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Bool.html"><span class="type">Bool</span></a>;</code></h3>
-<div class="doc">Tells if the origin of `this` MetaAccess has a `name` metadata entry.
-		
-		If `name` is null, compilation fails with an error.</div>
-<hr/></span><span class="">
-<a name="remove"></a><h3><code><span class="keyword">function</span> <a name="remove" href="#remove"><span class="identifier">remove</span></a>(<span class="identifier">name</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div class="doc">Removes all `name` metadata entries from the origin of `this`
-		MetaAccess.
-		
-		This method might clear several metadata entries of the same name.
-		
-		If a `Metadata` array is obtained through a call to `get`, a subsequent
-		call to `remove` has no effect on that array.
-		
-		If `name` is null, compilation fails with an error.</div>
-<hr/></span></div>
-			</div>
-		</div>
-	</body>
-</html>
+		If any argument is null, compilation fails with an error.</div></div></div></div></body></html>

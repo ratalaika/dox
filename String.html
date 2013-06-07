@@ -1,107 +1,25 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"> 
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-		<link href="/dox/styles.css" rel="stylesheet">
-		<script type="text/javascript">var baseUrl = "/dox";</script>
-		<script type="text/javascript" src="/dox/nav.js"></script>
-		<script type="text/javascript" src="/dox/index.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="navbar-inner">
-					<form class="navbar-search pull-left">
-						<input type="text" class="search-query" placeholder="Search">
-					</form>
-					<ul class="nav">
-						<li id="select-version" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="3_0"><a href="#">3.0</a></li>
-								<li data="3_1"><a href="#">3.1</a></li>
-								<li data="3_2"><a href="#">3.2</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav">
-						<li id="select-platform" class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li data="all"><a href="#">All Platforms</a></li>
-								<li data="sys"><a href="#">System</a></li>
-								<li data="neko"><a href="#">Neko</a></li>
-								<li data="php"><a href="#">PHP</a></li>
-								<li data="java"><a href="#">Java</a></li>
-								<li data="cs"><a href="#">C Sharp</a></li>
-								<li data="flash8"><a href="#">Flash 8</a></li>
-								<li data="flash"><a href="#">Flash 9+</a></li>
-								<li data="js"><a href="#">Javascript</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="packages" id="nav"></div>
-				<div class="content"><h1><code><span class="directive">class</span> <a href="/dox/String.html"><span class="type">String</span></a></code></h1>
-<div><code class="dark"><span class="macro">Available on all platforms</span></code></div>
-<div><code class="dark"><span class="macro">Defined in /ws/haxe/std/String.hx</span></code></div>
-<div class="doc"><p>The basic String class.</p>
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var rootPath = "/dox";</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input type="text" class="search-query" placeholder="Search"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div class="packages" id="nav"></div><div class="content"><h1><code><span class="directive">class </span>String</code></h1><div><code class="dark"><span class="macro">Available on all platforms</span></code></div><div class="doc"><p>The basic String class.</p>
 <p>A haxe String is immutable, it is not possible to modify individual
 characters. No method of this class changes the state of <code>this</code> String.</p>
 <p>Strings can be constructed using the string literal syntax "string value".</p>
 <p>String can be concatenated by using the + operator. If an operand is not a
-String, it is passed through Std.string() first.</p></div>
-<h2>Class Fields</h2>
-<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="fromCharCode"></a><h3><code><span class="keyword">function</span> <a name="fromCharCode" href="#fromCharCode"><span class="identifier">fromCharCode</span></a>(<span class="identifier">code</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns the String corresponding to the character code <code>code</code>.</p>
+String, it is passed through Std.string() first.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="fromCharCode"></a><h3><code><span class="keyword">function</span> <a href="#fromCharCode">fromCharCode</a>(code:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the String corresponding to the character code <code>code</code>.</p>
 <p>If <code>code</code> is negative or has another invalid value, the result is
-unspecified.</p></div>
-<hr/></span><h2>Instance Fields</h2>
-<span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="new"></a><h3><code><span class="keyword">function</span> <a name="new" href="#new"><span class="identifier">new</span></a>(<span class="identifier">string</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Void.html"><span class="type">Void</span></a>;</code></h3>
-<div class="doc"><p>Creates a copy from a given String.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="charAt"></a><h3><code><span class="keyword">function</span> <a name="charAt" href="#charAt"><span class="identifier">charAt</span></a>(<span class="identifier">index</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns the character at position <code>index</code> of <code>this</code> String.</p>
-<p>If <code>index</code> is negative or exceeds <code>this.<a href="#length">length</a></code>, the empty String ""
-is returned.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="charCodeAt"></a><h3><code><span class="keyword">function</span> <a name="charCodeAt" href="#charCodeAt"><span class="identifier">charCodeAt</span></a>(<span class="identifier">index</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Null.html"><span class="type">Null</span></a>&lt;<a href="/dox/Int.html"><span class="type">Int</span></a>&gt;;</code></h3>
-<div class="doc"><p>Returns the character code at position <code>index</code> of <code>this</code> String.</p>
-<p>If <code>index</code> is negative or exceeds <code>this.<a href="#length">length</a></code>, null is returned.</p>
-<p>To obtain the character code of a single character, "x".code can be used
-instead to inline the character code at compile time. Note that this
-only works on String literals of length 1.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="indexOf"></a><h3><code><span class="keyword">function</span> <a name="indexOf" href="#indexOf"><span class="identifier">indexOf</span></a>(<span class="identifier">str</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">startIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div class="doc"><p>Returns the position of the leftmost occurence of <code>str</code> within <code>this</code>
-String.</p>
-<p>If <code>startIndex</code> is given, the search is performed within the substring
-of <code>this</code> String starting from <code>startIndex</code>. Otherwise the search is
-performed within <code>this</code> String. In either case, the returned position
-is relative to the beginning of <code>this</code> String.</p>
-<p>If <code>str</code> cannot be found, -1 is returned.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="lastIndexOf"></a><h3><code><span class="keyword">function</span> <a name="lastIndexOf" href="#lastIndexOf"><span class="identifier">lastIndexOf</span></a>(<span class="identifier">str</span>:<a href="/dox/String.html"><span class="type">String</span></a>, ?<span class="identifier">startIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/Int.html"><span class="type">Int</span></a>;</code></h3>
-<div class="doc"><p>Returns the position of the rightmost occurence of <code>str</code> within <code>this</code>
-String.</p>
-<p>If <code>startIndex</code> is given, the search is performed within the substring
-of <code>this</code> String from 0 to <code>startIndex</code>. Otherwise the search is
-performed within <code>this</code> String. In either case, the returned position
-is relative to the beginning of <code>this</code> String.</p>
-<p>If <code>str</code> cannot be found, -1 is returned.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<h3><code><span class="keyword">var</span> <a name="length" href="#length"><span class="identifier">length</span></a>:<a href="/dox/Int.html"><span class="type">Int</span></a>;<span class="comment"> // readonly</span></code></h3>
-<div class="doc"><p>The number of characters in <code>this</code> String.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="split"></a><h3><code><span class="keyword">function</span> <a name="split" href="#split"><span class="identifier">split</span></a>(<span class="identifier">delimiter</span>:<a href="/dox/String.html"><span class="type">String</span></a>):<a href="/dox/Array.html"><span class="type">Array</span></a>&lt;<a href="/dox/String.html"><span class="type">String</span></a>&gt;;</code></h3>
-<div class="doc"><p>Splits <code>this</code> String at each occurence of <code>delimiter</code>.</p>
+unspecified.</p></div><h2>Instance Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="toString"></a><h3><code><span class="keyword">function</span> <a href="#toString">toString</a>():<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the String itself.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="substring"></a><h3><code><span class="keyword">function</span> <a href="#substring">substring</a>(startIndex:<a class="type" href="/dox/Int.html">Int</a>, endIndex:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the part of <code>this</code> String from <code>startIndex</code> to <code>endIndex</code>.</p>
+<p>If <code>startIndex</code> or <code>endIndex</code> are negative, 0 is used instead.</p>
+<p>If <code>startIndex</code> exceeds <code>endIndex</code>, they are swapped.</p>
+<p>If the (possibly swapped) <code>endIndex</code> is omitted or exceeds
+<code>this.<a href="#length">length</a></code>, <code>this.<a href="#length">length</a></code> is used instead.</p>
+<p>If the (possibly swapped) <code>startIndex</code> exceeds <code>this.<a href="#length">length</a></code>, the empty
+String "" is returned.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="substr"></a><h3><code><span class="keyword">function</span> <a href="#substr">substr</a>(pos:<a class="type" href="/dox/Int.html">Int</a>, len:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns <code>len</code> characters of <code>this</code> String, starting at position <code>pos</code>.</p>
+<p>If <code>len</code> is omitted, all characters from position <code>pos</code> to the end of
+<code>this</code> String are included.</p>
+<p>If <code>pos</code> is negative, its value is calculated from the end of <code>this</code>
+String by <code>this.<a href="#length">length</a> + pos</code>. If this yields a negative value, 0 is
+used instead.</p>
+<p>If the calculated position + <code>len</code> exceeds <code>this.<a href="#length">length</a></code>, the characters
+from that position to the end of <code>this</code> String are returned.</p>
+<p>If <code>len</code> is negative, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="split"></a><h3><code><span class="keyword">function</span> <a href="#split">split</a>(delimiter:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/String.html">String</a>&gt;</code></h3><p>Splits <code>this</code> String at each occurence of <code>delimiter</code>.</p>
 <p>If <code>delimiter</code> is the empty String "", <code>this</code> String is split into an
 Array of <code>this.<a href="#length">length</a></code> elements, where the elements correspond to the
 characters of <code>this</code> String.</p>
@@ -111,40 +29,24 @@ with one element, which equals <code>this</code> String.</p>
 <p>Otherwise, <code>this</code> String is split into parts at each occurence of
 <code>delimiter</code>. If <code>this</code> String starts (or ends) with [delimiter}, the
 result Array contains a leading (or trailing) empty String "" element.
-Two subsequent delimiters also result in an empty String "" element.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="substr"></a><h3><code><span class="keyword">function</span> <a name="substr" href="#substr"><span class="identifier">substr</span></a>(<span class="identifier">pos</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">len</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns <code>len</code> characters of <code>this</code> String, starting at position <code>pos</code>.</p>
-<p>If <code>len</code> is omitted, all characters from position <code>pos</code> to the end of
-<code>this</code> String are included.</p>
-<p>If <code>pos</code> is negative, its value is calculated from the end of <code>this</code>
-String by <code>this.<a href="#length">length</a> + pos</code>. If this yields a negative value, 0 is
-used instead.</p>
-<p>If the calculated position + <code>len</code> exceeds <code>this.<a href="#length">length</a></code>, the characters
-from that position to the end of <code>this</code> String are returned.</p>
-<p>If <code>len</code> is negative, the result is unspecified.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="substring"></a><h3><code><span class="keyword">function</span> <a name="substring" href="#substring"><span class="identifier">substring</span></a>(<span class="identifier">startIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>, ?<span class="identifier">endIndex</span>:<a href="/dox/Int.html"><span class="type">Int</span></a>):<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns the part of <code>this</code> String from <code>startIndex</code> to <code>endIndex</code>.</p>
-<p>If <code>startIndex</code> or <code>endIndex</code> are negative, 0 is used instead.</p>
-<p>If <code>startIndex</code> exceeds <code>endIndex</code>, they are swapped.</p>
-<p>If the (possibly swapped) <code>endIndex</code> is omitted or exceeds
-<code>this.<a href="#length">length</a></code>, <code>this.<a href="#length">length</a></code> is used instead.</p>
-<p>If the (possibly swapped) <code>startIndex</code> exceeds <code>this.<a href="#length">length</a></code>, the empty
-String "" is returned.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="toLowerCase"></a><h3><code><span class="keyword">function</span> <a name="toLowerCase" href="#toLowerCase"><span class="identifier">toLowerCase</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns a String where all characters of <code>this</code> String are lower case.</p>
-<p>Affects the characters <code>A-Z</code>. Other characters remain unchanged.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="toString"></a><h3><code><span class="keyword">function</span> <a name="toString" href="#toString"><span class="identifier">toString</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns the String itself.</p></div>
-<hr/></span><span class="platform platform-cpp platform-cs platform-flash8 platform-flash platform-js platform-neko platform-php platform-java">
-<a name="toUpperCase"></a><h3><code><span class="keyword">function</span> <a name="toUpperCase" href="#toUpperCase"><span class="identifier">toUpperCase</span></a>():<a href="/dox/String.html"><span class="type">String</span></a>;</code></h3>
-<div class="doc"><p>Returns a String where all characters of <code>this</code> String are upper case.</p>
-<p>Affects the characters <code>a-z</code>. Other characters remain unchanged.</p></div>
-<hr/></span></div>
-			</div>
-		</div>
-	</body>
-</html>
+Two subsequent delimiters also result in an empty String "" element.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="lastIndexOf"></a><h3><code><span class="keyword">function</span> <a href="#lastIndexOf">lastIndexOf</a>(str:<a class="type" href="/dox/String.html">String</a>, startIndex:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Int.html">Int</a></code></h3><p>Returns the position of the rightmost occurence of <code>str</code> within <code>this</code>
+String.</p>
+<p>If <code>startIndex</code> is given, the search is performed within the substring
+of <code>this</code> String from 0 to <code>startIndex</code>. Otherwise the search is
+performed within <code>this</code> String. In either case, the returned position
+is relative to the beginning of <code>this</code> String.</p>
+<p>If <code>str</code> cannot be found, -1 is returned.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="indexOf"></a><h3><code><span class="keyword">function</span> <a href="#indexOf">indexOf</a>(str:<a class="type" href="/dox/String.html">String</a>, startIndex:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Int.html">Int</a></code></h3><p>Returns the position of the leftmost occurence of <code>str</code> within <code>this</code>
+String.</p>
+<p>If <code>startIndex</code> is given, the search is performed within the substring
+of <code>this</code> String starting from <code>startIndex</code>. Otherwise the search is
+performed within <code>this</code> String. In either case, the returned position
+is relative to the beginning of <code>this</code> String.</p>
+<p>If <code>str</code> cannot be found, -1 is returned.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="charCodeAt"></a><h3><code><span class="keyword">function</span> <a href="#charCodeAt">charCodeAt</a>(index:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Null.html">Null</a>&lt;<a class="type" href="/dox/Int.html">Int</a>&gt;</code></h3><p>Returns the character code at position <code>index</code> of <code>this</code> String.</p>
+<p>If <code>index</code> is negative or exceeds <code>this.<a href="#length">length</a></code>, null is returned.</p>
+<p>To obtain the character code of a single character, "x".code can be used
+instead to inline the character code at compile time. Note that this
+only works on String literals of length 1.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="charAt"></a><h3><code><span class="keyword">function</span> <a href="#charAt">charAt</a>(index:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the character at position <code>index</code> of <code>this</code> String.</p>
+<p>If <code>index</code> is negative or exceeds <code>this.<a href="#length">length</a></code>, the empty String ""
+is returned.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="toLowerCase"></a><h3><code><span class="keyword">function</span> <a href="#toLowerCase">toLowerCase</a>():<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns a String where all characters of <code>this</code> String are lower case.</p>
+<p>Affects the characters <code>A-Z</code>. Other characters remain unchanged.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="toUpperCase"></a><h3><code><span class="keyword">function</span> <a href="#toUpperCase">toUpperCase</a>():<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns a String where all characters of <code>this</code> String are upper case.</p>
+<p>Affects the characters <code>a-z</code>. Other characters remain unchanged.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="length"></a><h3><code><span class="keyword">var</span> <a href="#length">length</a>:<a class="type" href="/dox/Int.html">Int</a></code></h3><p>The number of characters in <code>this</code> String.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="new"></a><h3><code><span class="keyword">function</span> <a href="#new">new</a>(string:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><p>Creates a copy from a given String.</p></div></div></div></div></body></html>
