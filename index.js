@@ -136,25 +136,28 @@ $(document).ready(function(){
 
 function searchQuery(query) {
 	query = query.toLowerCase();
-	console.log("Searching: "+query);
+	$("#nav").removeClass("filtering");
 	if (query == "") {
 		$("#nav").removeClass("searching");
 		$("#nav li").each(function(index, element){
 			var e = $(element);
-			if (e.hasClass("expando")) return;
 			e.css("display", "");
 		});
-	} else {
-		$("#nav").addClass("searching");
-		$("#nav li").each(function(index, element){
-			var e = $(element);
-			if (e.hasClass("expando")) return;
+		return;
+	}
+	
+	console.log("Searching: "+query);
 
-			var content = e.text().toLowerCase();
+	$("#nav").addClass("searching");
+	$("#nav li").each(function(index, element){
+		var e = $(element);
+		if (!e.hasClass("expando")) {
+			var content = e.attr("data_path").toLowerCase();
 			var match = searchMatch(content, query);
 			e.css("display", match ? "" : "none");
-		});
-	}
+		}
+	});
+	
 }
 
 function searchMatch(text, query) {
