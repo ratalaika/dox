@@ -1,41 +1,27 @@
-<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var rootPath = "/dox";</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input type="text" class="search-query" placeholder="Search"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div class="packages" id="nav"></div><div class="content"><h1><code><span class="directive">class </span>Type</code></h1><div><code class="dark"><span class="macro">Available on all platforms</span></code></div><div class="doc"><p>The haxe Reflection API allows retrieval of type information at runtime.</p>
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/pages/styles.css" rel="stylesheet"></link><script type="text/javascript">var dox = {rootPath: "/dox/pages",platforms: ["cpp","cs","flash","flash8","java","js","neko","php"]};</script><script type="text/javascript" src="/dox/pages/nav.js"></script><script type="text/javascript" src="/dox/pages/index.js"></script><link rel="icon" href="favicon.ico" type="image/x-icon"></link><title>Type</title></head><body><div class="container-fluid"><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input id="search" type="text" class="search-query" placeholder="Search" autocomplete="off"></input></form><ul class="nav"><li id="select-version" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Version<b class="caret"></b></a><ul class="dropdown-menu"><li data="3_0"><a href="#">3.0</a></li><li data="3_1"><a href="#">3.1</a></li><li data="3_2"><a href="#">3.2</a></li></ul></li></ul><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div class="row-fluid"><div id="nav"></div><div id="content"><h1><code><span class="directive">class </span>Type</code></h1><div><code class="dark"><span class="macro">Available on all platforms</span></code></div><div class="doc"><p>The haxe Reflection API allows retrieval of type information at runtime.</p>
 <p>This class complements the more lightweight Reflect class, with a focus on
-class and enum instances.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getClass"></a><h3><code><span class="keyword">function</span> <a href="#getClass">getClass</a>&lt;T&gt;(o:<span class="type">T</span>):<a class="type" href="/dox/Class.html">Class</a>&lt;<span class="type">T</span>&gt;</code></h3><p>Returns the class of <code>o</code>, if <code>o</code> is a class instance.</p>
-<p>If <code>o</code> is null or of a different type, null is returned.</p>
-<p>In general, type parameter information cannot be obtained at runtime.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getEnum"></a><h3><code><span class="keyword">function</span> <a href="#getEnum">getEnum</a>(o:<a class="type" href="/dox/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/Enum.html">Enum</a>&lt;Dynamic&gt;</code></h3><p>Returns the enum of enum instance <code>o</code>.</p>
-<p>An enum instance is the result of using an enum constructor. Given an
-<code>enum <a href="/dox/Color.html">Color</a> { <a href="/dox/Red.html">Red</a>; }</code>, <code>getEnum(<a href="/dox/Red.html">Red</a>)</code> returns <code><a href="/dox/Enum.html">Enum</a>&lt;<a href="/dox/Color.html">Color</a>&gt;</code>.</p>
-<p>If <code>o</code> is null, null is returned.</p>
-<p>In general, type parameter information cannot be obtained at runtime.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getSuperClass"></a><h3><code><span class="keyword">function</span> <a href="#getSuperClass">getSuperClass</a>(c:<a class="type" href="/dox/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/Class.html">Class</a>&lt;Dynamic&gt;</code></h3><p>Returns the super-class of class <code>c</code>.</p>
-<p>If <code>c</code> has no super class, null is returned.</p>
-<p>If <code>c</code> is null, the result is unspecified.</p>
-<p>In general, type parameter information cannot be obtained at runtime.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getClassName"></a><h3><code><span class="keyword">function</span> <a href="#getClassName">getClassName</a>(c:<a class="type" href="/dox/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the name of class <code>c</code>, including its path.</p>
-<p>If <code>c</code> is inside a package, the package structure is returned dot-
-separated, with another dot separating the class name:
-<code>pack1.pack2.(...).<a href="/dox/packN/ClassName.html">packN.ClassName</a></code>
-If <code>c</code> is a sub-type of a haxe module, that module is not part of the
-package structure.</p>
-<p>If <code>c</code> has no package, the class name is returned.</p>
-<p>If <code>c</code> is null, the result is unspecified.</p>
-<p>The class name does not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getEnumName"></a><h3><code><span class="keyword">function</span> <a href="#getEnumName">getEnumName</a>(e:<a class="type" href="/dox/Enum.html">Enum</a>&lt;Dynamic&gt;):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the name of enum <code>e</code>, including its path.</p>
-<p>If <code>e</code> is inside a package, the package structure is returned dot-
-separated, with another dot separating the enum name:
-<code>pack1.pack2.(...).<a href="/dox/packN/EnumName.html">packN.EnumName</a></code>
-If <code>e</code> is a sub-type of a haxe module, that module is not part of the
-package structure.</p>
-<p>If <code>e</code> has no package, the enum name is returned.</p>
-<p>If <code>e</code> is null, the result is unspecified.</p>
-<p>The enum name does not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="resolveClass"></a><h3><code><span class="keyword">function</span> <a href="#resolveClass">resolveClass</a>(name:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Class.html">Class</a>&lt;Dynamic&gt;</code></h3><p>Resolves a class by name.</p>
-<p>If <code>name</code> is the path of an existing class, that class is returned.</p>
-<p>Otherwise null is returned.</p>
-<p>If <code>name</code> is null or the path to a different type, the result is
-unspecified.</p>
-<p>The class name must not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="resolveEnum"></a><h3><code><span class="keyword">function</span> <a href="#resolveEnum">resolveEnum</a>(name:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Enum.html">Enum</a>&lt;Dynamic&gt;</code></h3><p>Resolves an enum by name.</p>
-<p>If <code>name</code> is the path of an existing enum, that enum is returned.</p>
-<p>Otherwise null is returned.</p>
-<p>If <code>name</code> is null the result is unspecified.</p>
-<p>If <code>name</code> is the path to a different type, null is returned.</p>
-<p>The enum name must not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createInstance"></a><h3><code><span class="keyword">function</span> <a href="#createInstance">createInstance</a>&lt;T&gt;(cl:<a class="type" href="/dox/Class.html">Class</a>&lt;<span class="type">T</span>&gt;, args:<a class="type" href="/dox/Array.html">Array</a>&lt;Dynamic&gt;):<span class="type">T</span></code></h3><p>Creates an instance of class <code>cl</code>, using <code>args</code> as arguments to the
+class and enum instances.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="allEnums"></a><h3><code><span class="keyword">function</span> <a href="#allEnums">allEnums</a>&lt;T&gt;(e:<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;<span class="type">T</span>&gt;):<a class="type" href="/dox/pages/Array.html">Array</a>&lt;<span class="type">T</span>&gt;</code></h3><p>Returns a list of all constructors of enum <code>e</code> that require no
+arguments.</p>
+<p>This may return the empty Array [] if all constructors of <code>e</code> require
+arguments.</p>
+<p>Otherwise an instance of <code>e</code> constructed through each of its non-
+argument constructors is returned, in the order of the constructor
+declaration.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createEmptyInstance"></a><h3><code><span class="keyword">function</span> <a href="#createEmptyInstance">createEmptyInstance</a>&lt;T&gt;(cl:<a class="type" href="/dox/pages/Class.html">Class</a>&lt;<span class="type">T</span>&gt;):<span class="type">T</span></code></h3><p>Creates an instance of class <code>cl</code>.</p>
+<p>This function guarantees that the class constructor is not called.</p>
+<p>If <code>cl</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createEnum"></a><h3><code><span class="keyword">function</span> <a href="#createEnum">createEnum</a>&lt;T&gt;(e:<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;<span class="type">T</span>&gt;, constr:<a class="type" href="/dox/pages/String.html">String</a>, params:<a class="type" href="/dox/pages/Array.html">Array</a>&lt;Dynamic&gt;):<span class="type">T</span></code></h3><p>Creates an instance of enum <code>e</code> by calling its constructor <code>constr</code> with
+arguments <code>params</code>.</p>
+<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
+<code>constr</code>, or if the number of elements in <code>params</code> does not match the
+expected number of constructor arguments, or if any argument has an
+invalid type, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createEnumIndex"></a><h3><code><span class="keyword">function</span> <a href="#createEnumIndex">createEnumIndex</a>&lt;T&gt;(e:<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;<span class="type">T</span>&gt;, index:<a class="type" href="/dox/pages/Int.html">Int</a>, params:<a class="type" href="/dox/pages/Array.html">Array</a>&lt;Dynamic&gt;):<span class="type">T</span></code></h3><p>Creates an instance of enum <code>e</code> by calling its constructor number
+<code>index</code> with arguments <code>params</code>.</p>
+<p>The constructor indices are preserved from haxe syntax, so the first
+declared is index 0, the next index 1 etc.</p>
+<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
+<code>constr</code>, or if the number of elements in <code>params</code> does not match the
+expected number of constructor arguments, or if any argument has an
+invalid type, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createInstance"></a><h3><code><span class="keyword">function</span> <a href="#createInstance">createInstance</a>&lt;T&gt;(cl:<a class="type" href="/dox/pages/Class.html">Class</a>&lt;<span class="type">T</span>&gt;, args:<a class="type" href="/dox/pages/Array.html">Array</a>&lt;Dynamic&gt;):<span class="type">T</span></code></h3><p>Creates an instance of class <code>cl</code>, using <code>args</code> as arguments to the
 class constructor.</p>
 <p>This function guarantees that the class constructor is called.</p>
 <p>Default values of constructors arguments are not guaranteed to be
@@ -45,53 +31,67 @@ not match the expected number of constructor arguments, or if any
 argument has an invalid type,  or if <code>cl</code> has no own constructor, the
 result is unspecified.</p>
 <p>In particular, default values of constructor arguments are not
-guaranteed to be taken into account.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createEmptyInstance"></a><h3><code><span class="keyword">function</span> <a href="#createEmptyInstance">createEmptyInstance</a>&lt;T&gt;(cl:<a class="type" href="/dox/Class.html">Class</a>&lt;<span class="type">T</span>&gt;):<span class="type">T</span></code></h3><p>Creates an instance of class <code>cl</code>.</p>
-<p>This function guarantees that the class constructor is not called.</p>
-<p>If <code>cl</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createEnum"></a><h3><code><span class="keyword">function</span> <a href="#createEnum">createEnum</a>&lt;T&gt;(e:<a class="type" href="/dox/Enum.html">Enum</a>&lt;<span class="type">T</span>&gt;, constr:<a class="type" href="/dox/String.html">String</a>, params:<a class="type" href="/dox/Array.html">Array</a>&lt;Dynamic&gt;):<span class="type">T</span></code></h3><p>Creates an instance of enum <code>e</code> by calling its constructor <code>constr</code> with
-arguments <code>params</code>.</p>
-<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
-<code>constr</code>, or if the number of elements in <code>params</code> does not match the
-expected number of constructor arguments, or if any argument has an
-invalid type, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="createEnumIndex"></a><h3><code><span class="keyword">function</span> <a href="#createEnumIndex">createEnumIndex</a>&lt;T&gt;(e:<a class="type" href="/dox/Enum.html">Enum</a>&lt;<span class="type">T</span>&gt;, index:<a class="type" href="/dox/Int.html">Int</a>, params:<a class="type" href="/dox/Array.html">Array</a>&lt;Dynamic&gt;):<span class="type">T</span></code></h3><p>Creates an instance of enum <code>e</code> by calling its constructor number
-<code>index</code> with arguments <code>params</code>.</p>
-<p>The constructor indices are preserved from haxe syntax, so the first
-declared is index 0, the next index 1 etc.</p>
-<p>If <code>e</code> or <code>constr</code> is null, or if enum <code>e</code> has no constructor named
-<code>constr</code>, or if the number of elements in <code>params</code> does not match the
-expected number of constructor arguments, or if any argument has an
-invalid type, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getInstanceFields"></a><h3><code><span class="keyword">function</span> <a href="#getInstanceFields">getInstanceFields</a>(c:<a class="type" href="/dox/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/String.html">String</a>&gt;</code></h3><p>Returns a list of the instance fields of class <code>c</code>.</p>
+guaranteed to be taken into account.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumConstructor"></a><h3><code><span class="keyword">function</span> <a href="#enumConstructor">enumConstructor</a>(e:<a class="type" href="/dox/pages/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/pages/String.html">String</a></code></h3><p>Returns the constructor name of enum instance <code>e</code>.</p>
+<p>The result String does not contain any constructor arguments.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumEq"></a><h3><code><span class="keyword">function</span> <a href="#enumEq">enumEq</a>&lt;T&gt;(a:<span class="type">T</span>, b:<span class="type">T</span>):<a class="type" href="/dox/pages/Bool.html">Bool</a></code></h3><p>Recursively compares two enum instances <code>a</code> and <code>b</code> by value.</p>
+<p>Unlike <code>a == b</code>, this function performs a deep equality check on the
+arguments of the constructors, if exists.</p>
+<p>If <code>a</code> or <code>b</code> are null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumIndex"></a><h3><code><span class="keyword">function</span> <a href="#enumIndex">enumIndex</a>(e:<a class="type" href="/dox/pages/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/pages/Int.html">Int</a></code></h3><p>Returns the index of enum instance <code>e</code>.</p>
+<p>This corresponds to the original syntactic position of <code>e</code>. The index of
+the first declared constructor is 0, the next one is 1 etc.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumParameters"></a><h3><code><span class="keyword">function</span> <a href="#enumParameters">enumParameters</a>(e:<a class="type" href="/dox/pages/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/pages/Array.html">Array</a>&lt;Dynamic&gt;</code></h3><p>Returns a list of the constructor arguments of enum instance <code>e</code>.</p>
+<p>If <code>e</code> has no arguments, the result is [].</p>
+<p>Otherwise the result are the values that were used as arguments to <code>e</code>,
+in the order of their declaration.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getClass"></a><h3><code><span class="keyword">function</span> <a href="#getClass">getClass</a>&lt;T&gt;(o:<span class="type">T</span>):<a class="type" href="/dox/pages/Class.html">Class</a>&lt;<span class="type">T</span>&gt;</code></h3><p>Returns the class of <code>o</code>, if <code>o</code> is a class instance.</p>
+<p>If <code>o</code> is null or of a different type, null is returned.</p>
+<p>In general, type parameter information cannot be obtained at runtime.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getClassFields"></a><h3><code><span class="keyword">function</span> <a href="#getClassFields">getClassFields</a>(c:<a class="type" href="/dox/pages/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/pages/Array.html">Array</a>&lt;<a class="type" href="/dox/pages/String.html">String</a>&gt;</code></h3><p>Returns a list of static fields of class <code>c</code>.</p>
+<p>This does not include static fields of parent classes.</p>
+<p>The order of the fields in the returned Array is unspecified.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p>
+<p>(As3) This method only returns class fields that are public.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getClassName"></a><h3><code><span class="keyword">function</span> <a href="#getClassName">getClassName</a>(c:<a class="type" href="/dox/pages/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/pages/String.html">String</a></code></h3><p>Returns the name of class <code>c</code>, including its path.</p>
+<p>If <code>c</code> is inside a package, the package structure is returned dot-
+separated, with another dot separating the class name:
+<code>pack1.pack2.(...).<a href="/dox/pages/packN/ClassName.html">packN.ClassName</a></code>
+If <code>c</code> is a sub-type of a haxe module, that module is not part of the
+package structure.</p>
+<p>If <code>c</code> has no package, the class name is returned.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p>
+<p>The class name does not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getEnum"></a><h3><code><span class="keyword">function</span> <a href="#getEnum">getEnum</a>(o:<a class="type" href="/dox/pages/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;Dynamic&gt;</code></h3><p>Returns the enum of enum instance <code>o</code>.</p>
+<p>An enum instance is the result of using an enum constructor. Given an
+<code>enum <a href="/dox/pages/Color.html">Color</a> { <a href="/dox/pages/Red.html">Red</a>; }</code>, <code>getEnum(<a href="/dox/pages/Red.html">Red</a>)</code> returns <code><a href="/dox/pages/Enum.html">Enum</a>&lt;<a href="/dox/pages/Color.html">Color</a>&gt;</code>.</p>
+<p>If <code>o</code> is null, null is returned.</p>
+<p>In general, type parameter information cannot be obtained at runtime.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getEnumConstructs"></a><h3><code><span class="keyword">function</span> <a href="#getEnumConstructs">getEnumConstructs</a>(e:<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;Dynamic&gt;):<a class="type" href="/dox/pages/Array.html">Array</a>&lt;<a class="type" href="/dox/pages/String.html">String</a>&gt;</code></h3><p>Returns a list of the names of all constructors of enum <code>e</code>.</p>
+<p>The order of the constructor names in the returned Array is preserved
+from the original syntax.</p>
+<p>If <code>c</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getEnumName"></a><h3><code><span class="keyword">function</span> <a href="#getEnumName">getEnumName</a>(e:<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;Dynamic&gt;):<a class="type" href="/dox/pages/String.html">String</a></code></h3><p>Returns the name of enum <code>e</code>, including its path.</p>
+<p>If <code>e</code> is inside a package, the package structure is returned dot-
+separated, with another dot separating the enum name:
+<code>pack1.pack2.(...).<a href="/dox/pages/packN/EnumName.html">packN.EnumName</a></code>
+If <code>e</code> is a sub-type of a haxe module, that module is not part of the
+package structure.</p>
+<p>If <code>e</code> has no package, the enum name is returned.</p>
+<p>If <code>e</code> is null, the result is unspecified.</p>
+<p>The enum name does not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getInstanceFields"></a><h3><code><span class="keyword">function</span> <a href="#getInstanceFields">getInstanceFields</a>(c:<a class="type" href="/dox/pages/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/pages/Array.html">Array</a>&lt;<a class="type" href="/dox/pages/String.html">String</a>&gt;</code></h3><p>Returns a list of the instance fields of class <code>c</code>.</p>
 <p>This only includes fields which are known at compile-time. In
 particular, using getInstanceFields(getClass(obj)) will not include
 any fields which were added to obj at runtime.</p>
 <p>The order of the fields in the returned Array is unspecified.</p>
 <p>If <code>c</code> is null, the result is unspecified.</p>
-<p>(As3) This method only returns instance fields that are public.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getClassFields"></a><h3><code><span class="keyword">function</span> <a href="#getClassFields">getClassFields</a>(c:<a class="type" href="/dox/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/String.html">String</a>&gt;</code></h3><p>Returns a list of static fields of class <code>c</code>.</p>
-<p>This does not include static fields of parent classes.</p>
-<p>The order of the fields in the returned Array is unspecified.</p>
+<p>(As3) This method only returns instance fields that are public.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getSuperClass"></a><h3><code><span class="keyword">function</span> <a href="#getSuperClass">getSuperClass</a>(c:<a class="type" href="/dox/pages/Class.html">Class</a>&lt;Dynamic&gt;):<a class="type" href="/dox/pages/Class.html">Class</a>&lt;Dynamic&gt;</code></h3><p>Returns the super-class of class <code>c</code>.</p>
+<p>If <code>c</code> has no super class, null is returned.</p>
 <p>If <code>c</code> is null, the result is unspecified.</p>
-<p>(As3) This method only returns class fields that are public.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="getEnumConstructs"></a><h3><code><span class="keyword">function</span> <a href="#getEnumConstructs">getEnumConstructs</a>(e:<a class="type" href="/dox/Enum.html">Enum</a>&lt;Dynamic&gt;):<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/String.html">String</a>&gt;</code></h3><p>Returns a list of the names of all constructors of enum <code>e</code>.</p>
-<p>The order of the constructor names in the returned Array is preserved
-from the original syntax.</p>
-<p>If <code>c</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="typeof"></a><h3><code><span class="keyword">function</span> <a href="#typeof">typeof</a>(v:Dynamic):<a class="type" href="/dox/ValueType.html">ValueType</a></code></h3><p>Returns the runtime type of value <code>v</code>.</p>
+<p>In general, type parameter information cannot be obtained at runtime.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="resolveClass"></a><h3><code><span class="keyword">function</span> <a href="#resolveClass">resolveClass</a>(name:<a class="type" href="/dox/pages/String.html">String</a>):<a class="type" href="/dox/pages/Class.html">Class</a>&lt;Dynamic&gt;</code></h3><p>Resolves a class by name.</p>
+<p>If <code>name</code> is the path of an existing class, that class is returned.</p>
+<p>Otherwise null is returned.</p>
+<p>If <code>name</code> is null or the path to a different type, the result is
+unspecified.</p>
+<p>The class name must not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="resolveEnum"></a><h3><code><span class="keyword">function</span> <a href="#resolveEnum">resolveEnum</a>(name:<a class="type" href="/dox/pages/String.html">String</a>):<a class="type" href="/dox/pages/Enum.html">Enum</a>&lt;Dynamic&gt;</code></h3><p>Resolves an enum by name.</p>
+<p>If <code>name</code> is the path of an existing enum, that enum is returned.</p>
+<p>Otherwise null is returned.</p>
+<p>If <code>name</code> is null the result is unspecified.</p>
+<p>If <code>name</code> is the path to a different type, null is returned.</p>
+<p>The enum name must not include any type parameters.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="typeof"></a><h3><code><span class="keyword">function</span> <a href="#typeof">typeof</a>(v:Dynamic):<a class="type" href="/dox/pages/ValueType.html">ValueType</a></code></h3><p>Returns the runtime type of value <code>v</code>.</p>
 <p>The result corresponds to the type <code>v</code> has at runtime, which may vary
 per platform. Assumptions regarding this should be minimized to avoid
-surprises.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumEq"></a><h3><code><span class="keyword">function</span> <a href="#enumEq">enumEq</a>&lt;T&gt;(a:<span class="type">T</span>, b:<span class="type">T</span>):<a class="type" href="/dox/Bool.html">Bool</a></code></h3><p>Recursively compares two enum instances <code>a</code> and <code>b</code> by value.</p>
-<p>Unlike <code>a == b</code>, this function performs a deep equality check on the
-arguments of the constructors, if exists.</p>
-<p>If <code>a</code> or <code>b</code> are null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumConstructor"></a><h3><code><span class="keyword">function</span> <a href="#enumConstructor">enumConstructor</a>(e:<a class="type" href="/dox/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/String.html">String</a></code></h3><p>Returns the constructor name of enum instance <code>e</code>.</p>
-<p>The result String does not contain any constructor arguments.</p>
-<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumParameters"></a><h3><code><span class="keyword">function</span> <a href="#enumParameters">enumParameters</a>(e:<a class="type" href="/dox/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/Array.html">Array</a>&lt;Dynamic&gt;</code></h3><p>Returns a list of the constructor arguments of enum instance <code>e</code>.</p>
-<p>If <code>e</code> has no arguments, the result is [].</p>
-<p>Otherwise the result are the values that were used as arguments to <code>e</code>,
-in the order of their declaration.</p>
-<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="enumIndex"></a><h3><code><span class="keyword">function</span> <a href="#enumIndex">enumIndex</a>(e:<a class="type" href="/dox/EnumValue.html">EnumValue</a>):<a class="type" href="/dox/Int.html">Int</a></code></h3><p>Returns the index of enum instance <code>e</code>.</p>
-<p>This corresponds to the original syntactic position of <code>e</code>. The index of
-the first declared constructor is 0, the next one is 1 etc.</p>
-<p>If <code>e</code> is null, the result is unspecified.</p></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="allEnums"></a><h3><code><span class="keyword">function</span> <a href="#allEnums">allEnums</a>&lt;T&gt;(e:<a class="type" href="/dox/Enum.html">Enum</a>&lt;<span class="type">T</span>&gt;):<a class="type" href="/dox/Array.html">Array</a>&lt;<span class="type">T</span>&gt;</code></h3><p>Returns a list of all constructors of enum <code>e</code> that require no
-arguments.</p>
-<p>This may return the empty Array [] if all constructors of <code>e</code> require
-arguments.</p>
-<p>Otherwise an instance of <code>e</code> constructed through each of its non-
-argument constructors is returned, in the order of the constructor
-declaration.</p>
-<p>If <code>e</code> is null, the result is unspecified.</p></div></div></div></div></body></html>
+surprises.</p></div></div></div></div></body></html>

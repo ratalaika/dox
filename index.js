@@ -1,30 +1,30 @@
 function createCookie(name, value, days) {
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        var expires = "; expires=" + date.toGMTString();
-    } else var expires = "";
-    document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		var expires = "; expires=" + date.toGMTString();
+	} else var expires = "";
+	document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
 }
 
 function readCookie(name) {
-    var nameEQ = escape(name) + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return unescape(c.substring(nameEQ.length, c.length));
-    }
-    return null;
+	var nameEQ = escape(name) + "=";
+	var ca = document.cookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0) return unescape(c.substring(nameEQ.length, c.length));
+	}
+	return null;
 }
 
 function toggleInherited(el) {
 	var toggle = $(el).closest(".toggle");
 	toggle.toggleClass("toggle-on");
 	if (toggle.hasClass("toggle-on")) {
-		$("img", toggle).attr("src", rootPath + "/triangle-opened.png");
+		$("img", toggle).attr("src", dox.rootPath + "/triangle-opened.png");
 	} else {
-		$("img", toggle).attr("src", rootPath + "/triangle-closed.png");
+		$("img", toggle).attr("src", dox.rootPath + "/triangle-closed.png");
 	}
 }
 
@@ -34,16 +34,16 @@ function toggleCollapsed(el) {
 	toggle.toggleClass("expanded");
 
 	if (toggle.hasClass("expanded")) {
-		$("img", toggle).first().attr("src", rootPath + "/triangle-opened.png");
+		$("img", toggle).first().attr("src", dox.rootPath + "/triangle-opened.png");
 	} else {
-		$("img", toggle).first().attr("src", rootPath + "/triangle-closed.png");
+		$("img", toggle).first().attr("src", dox.rootPath + "/triangle-closed.png");
 	}
 	updateTreeState();
 }
 
 function updateTreeState(){
 	var states = [];
-	$(".packages .expando").each(function(i, e){
+	$("#nav .expando").each(function(i, e){
 		states.push($(e).hasClass("expanded") ? 1 : 0);
 	});
 	var treeState = JSON.stringify(states);
@@ -64,7 +64,7 @@ function setPlatform(platform) {
 	selectItem("platform", platform);
 	
 	var styles = ".platform { display:none }";
-	var platforms = ["js", "flash8", "flash", "cs", "java", "php", "neko", "cpp"];
+	var platforms = dox.platforms;
 
 	for (var i = 0; i < platforms.length; i++)
 	{
@@ -115,10 +115,10 @@ $(document).ready(function(){
 	if (treeState != null)
 	{
 		var states = JSON.parse(treeState);
-		$(".packages .expando").each(function(i, e){
+		$("#nav .expando").each(function(i, e){
 			if (states[i]) {
 				$(e).addClass("expanded");
-				$("img", e).first().attr("src", rootPath + "/triangle-opened.png");
+				$("img", e).first().attr("src", dox.rootPath + "/triangle-opened.png");
 			}
 		});
 	}
@@ -128,4 +128,36 @@ $(document).ready(function(){
 
 	setPlatform(readCookie("platform") == null ? "all" : readCookie("platform"));
 	setVersion(readCookie("version") == null ? "3_0" : readCookie("version"));
+
+	$("#search").on("keyup", function(e){
+		searchQuery(e.target.value);
+	});
 });
+
+function searchQuery(query) {
+	query = query.toLowerCase();
+	console.log("Searching: "+query);
+	if (query == "") {
+		$("#nav").removeClass("searching");
+		$("#nav li").each(function(index, element){
+			var e = $(element);
+			if (e.hasClass("expando")) return;
+			e.css("display", "");
+		});
+	} else {
+		$("#nav").addClass("searching");
+		$("#nav li").each(function(index, element){
+			var e = $(element);
+			if (e.hasClass("expando")) return;
+
+			var content = e.text().toLowerCase();
+			var match = searchMatch(content, query);
+			e.css("display", match ? "" : "none");
+		});
+	}
+}
+
+function searchMatch(text, query) {
+	// I should be working at Google.
+	return text.indexOf(query) > -1;
+}
