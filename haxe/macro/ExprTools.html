@@ -13,7 +13,7 @@
 best used through 'using haxe.macro.ExprTools' syntax and then provides
 additional methods on haxe.macro.Expr instances.</p>
 <p>While mainly intended to be used in macros, it works in non-macro code as
-well.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="iter"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#iter"><span class="identifier">iter</span></a>(e:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>, f:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a> -&gt;<a class="type" href="/dox/Void.html">Void</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><div class="doc"><p>Calls function [f] on each sub-expression of [e].</p>
+well.</p></div><h2>Class Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="iter"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#iter"><span class="identifier">iter</span></a>(e:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>, f:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a> -&gt; <a class="type" href="/dox/Void.html">Void</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><div class="doc"><p>Calls function [f] on each sub-expression of [e].</p>
 <p>If [e] has no sub-expressions, this operation has no effect.</p>
 <p>Otherwise [f] is called once per sub-expression of [e], with the
 sub-expression as argument. These calls are done in order of the
@@ -28,7 +28,7 @@ case EConst(CString(s)):
 case _:
 ExprTools.iter(e, findStrings);
 }
-}</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="map"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#map"><span class="identifier">map</span></a>(e:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>, f:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a> -&gt;<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>):<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a></code></h3><div class="doc"><p>Transforms the sub-expressions of [e] by calling [f] on each of them.</p>
+}</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="map"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#map"><span class="identifier">map</span></a>(e:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>, f:<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a> -&gt; <a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>):<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a></code></h3><div class="doc"><p>Transforms the sub-expressions of [e] by calling [f] on each of them.</p>
 <p>If [e] has no sub-expressions, this operation returns [e] unchanged.</p>
 <p>Otherwise [f] is called once per sub-expression of [e], with the
 sub-expression as argument. These calls are done in order of the
