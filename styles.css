@@ -1,15 +1,21 @@
-#nav { position:fixed; top:40px; left:0px; bottom:0px; width:220px !important; overflow-y:scroll; padding:12px;}
-#nav li { list-style-type: none; }
-#content { position:fixed; top:40px; left:240px; right:0px; bottom:0px; overflow-y:scroll; padding:12px;}
+body, html { height:100%; padding:0px !important; overflow:hidden; }
+.navbar { position:static !important; margin:0px !important;}
+#container { height:95%; }
+#nav { overflow-y:scroll; height:100%; float:left; width:250px; }
+#content { overflow-y:scroll; height:100%; padding:0px 12px; }
+#content .header { position:absolute; background:rgba(255,255,255,0.9); left:250px; right:15px; padding:0px 12px; border-bottom:1px solid #EEE;}
+#content .body { padding-top:80px;}
+
 .doc { margin-top:16px; }
 .toggle-hide { display:block; }
 .toggle-show { display:none; }
 .toggle-on .toggle-hide { display:none !important; }
 .toggle-on .toggle-show { display:block !important; }
 .related-types .toggle-hide { padding-top:4px; }
-.availability { color:#93a1a1; }
+.availability { margin-left:14px; color:#93a1a1; }
 .doc { margin-left:14px; }
 
+#nav li { list-style-type: none; }
 #nav .expando > ul { display:none; }
 #nav .expando.expanded > ul { display:block; }
 #nav ul { margin-left:14px; }
