@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var dox = {rootPath: "/dox",platforms: ["cpp","cs","flash","flash8","java","js","neko","php"]};</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script><link rel="icon" href="/dox/favicon.ico" type="image/x-icon"></link><title>MetaAccess</title></head><body><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input id="search" type="text" class="search-query" placeholder="Search" autocomplete="off"></input></form><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div id="container"><div id="nav"></div><div id="content"><div class="header"><h1><code><span class="directive">typedef </span><span class="type">haxe.macro.MetaAccess</span></code></h1></div><div class="body"><p class="availability">Available on  all platforms</p><div class="doc"><p>MetaAccess is a wrapper for the <code>Metadata</code> array. It can be used to add
+metadata to and remove metadata from its origin.</p></div><div><a name="remove"></a><h3><code><span class="keyword">function</span> <a href="#remove"><span class="identifier">remove</span></a>(name:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><div class="doc">Removes all `name` metadata entries from the origin of `this`
+		MetaAccess.
+		
+		This method might clear several metadata entries of the same name.
+		
+		If a `Metadata` array is obtained through a call to `get`, a subsequent
+		call to `remove` has no effect on that array.
+		
+		If `name` is null, compilation fails with an error.</div></div><div><a name="has"></a><h3><code><span class="keyword">function</span> <a href="#has"><span class="identifier">has</span></a>(name:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Bool.html">Bool</a></code></h3><div class="doc">Tells if the origin of `this` MetaAccess has a `name` metadata entry.
+		
+		If `name` is null, compilation fails with an error.</div></div><div><a name="get"></a><h3><code><span class="keyword">function</span> <a href="#get"><span class="identifier">get</span></a>():<a class="type" href="/dox/haxe/macro/Metadata.html">Metadata</a></code></h3><div class="doc">Return the wrapped `Metadata` array.
+		
+		Modifying this array has no effect on the origin of `this` MetaAccess.
+		The `add` and `remove` methods can be used for that.</div></div><div><a name="add"></a><h3><code><span class="keyword">function</span> <a href="#add"><span class="identifier">add</span></a>(name:<a class="type" href="/dox/String.html">String</a>, params:<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/haxe/macro/Expr.html">Expr</a>&gt;, pos:<a class="type" href="/dox/haxe/macro/Position.html">Position</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><div class="doc">Adds the metadata specified by `name`, `params` and `pos` to the origin
+		of `this` MetaAccess.
+		
+		Metadata names are not unique during compilation, so this method never
+		overwrites a previous metadata.
+		
+		If a `Metadata` array is obtained through a call to `get`, a subsequent
+		call to `add` has no effect on that array.
+		
+		If any argument is null, compilation fails with an error.</div></div></div></div></div></body></html>

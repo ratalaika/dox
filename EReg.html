@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var dox = {rootPath: "/dox",platforms: ["cpp","cs","flash","flash8","java","js","neko","php"]};</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script><link rel="icon" href="/dox/favicon.ico" type="image/x-icon"></link><title>EReg</title></head><body><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input id="search" type="text" class="search-query" placeholder="Search" autocomplete="off"></input></form><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div id="container"><div id="nav"></div><div id="content"><div class="header"><h1><code><span class="directive">class </span><span class="type">EReg</span></code></h1></div><div class="body"><p class="availability">Available on  all platforms</p><div class="doc"><p>The EReg class represents regular expressions.</p>
+<p>While basic usage and patterns consistently work across platforms, some more
+complex operations may yield different results. This is a necessary trade-
+off to retain a certain level of performance.</p>
+<p>EReg instances can be created by calling the constructor, or with the
+special syntax ~/pattern/modifier</p>
+<p>EReg instances maintain an internal state, which is affected by several of
+its methods.</p>
+<p>A detailed explanation of the supported operations is available at
+http://haxe.org/doc/cross/regexp</p></div><h2>Instance Fields</h2><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="new"></a><h3><code><span class="keyword">function</span> <a href="#new"><span class="identifier">new</span></a>(r:<a class="type" href="/dox/String.html">String</a>, opt:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Void.html">Void</a></code></h3><div class="doc"><p>Creates a new regular expression with pattern <code>r</code> and modifiers <code>opt</code>.</p>
+<p>This is equivalent to the shorthand syntax <code>~/r/opt</code></p>
+<p>If <code>r</code> or <code>opt</code> are null, the result is unspecified.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="map"></a><h3><code><span class="keyword">function</span> <a href="#map"><span class="identifier">map</span></a>(s:<a class="type" href="/dox/String.html">String</a>, f:<a class="type" href="/dox/EReg.html">EReg</a> -&gt; <a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/String.html">String</a></code></h3><div class="doc"><p>For each occurence of the pattern in the string <code>s</code>, the function <code>f</code> is called and
+can return the string that needs to be replaced. All occurences are matched anyway,
+and setting the <code>g</code> flag might cause some incorrect behavior on some platforms.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="match"></a><h3><code><span class="keyword">function</span> <a href="#match"><span class="identifier">match</span></a>(s:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Bool.html">Bool</a></code></h3><div class="doc"><p>Tells if <code>this</code> regular expression matches String <code>s</code>.</p>
+<p>This method modifies the internal state.</p>
+<p>If <code>s</code> is <code><a href="/dox/Null.html">null</a></code>, the result is unspecified.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="matchSub"></a><h3><code><span class="keyword">function</span> <a href="#matchSub"><span class="identifier">matchSub</span></a>(s:<a class="type" href="/dox/String.html">String</a>, pos:<a class="type" href="/dox/Int.html">Int</a>, len:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/Bool.html">Bool</a></code></h3><div class="doc"><p>Tells if <code>this</code> regular expression matches a substring of String <code>s</code>.</p>
+<p>This function expects <code>pos</code> and <code>len</code> to describe a valid substring of
+<code>s</code>, or else the result is unspecified. To get more robust behavior,
+<code>this.<a href="#matchSub">matchSub</a>(s.substr(pos,len))</code> can be used instead.</p>
+<p>This method modifies the internal state.</p>
+<p>If <code>s</code> is null, the result is unspecified.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="matched"></a><h3><code><span class="keyword">function</span> <a href="#matched"><span class="identifier">matched</span></a>(n:<a class="type" href="/dox/Int.html">Int</a>):<a class="type" href="/dox/String.html">String</a></code></h3><div class="doc"><p>Returns the matched sub-group <code>n</code> of <code>this</code> EReg.</p>
+<p>This method should only be called after <code>this.<a href="#match">match</a></code> or
+<code>this.<a href="#matchSub">matchSub</a></code>, and then operates on the String of that operation.</p>
+<p>The index <code>n</code> corresponds to the n-th set of parentheses in the pattern
+of <code>this</code> EReg. If no such sub-group exists, an exception is thrown.</p>
+<p>If <code>n</code> equals 0, the whole matched substring is returned.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="matchedLeft"></a><h3><code><span class="keyword">function</span> <a href="#matchedLeft"><span class="identifier">matchedLeft</span></a>():<a class="type" href="/dox/String.html">String</a></code></h3><div class="doc"><p>Returns the part to the left of the last matched substring.</p>
+<p>If the most recent call to <code>this.<a href="#match">match</a></code> or <code>this.<a href="#matchSub">matchSub</a></code> did not
+match anything, the result is unspecified.</p>
+<p>If the global g modifier was in place for the matching, only the
+substring to the left of the leftmost match is returned.</p>
+<p>The result does not include the matched part.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="matchedPos"></a><h3><code><span class="keyword">function</span> <a href="#matchedPos"><span class="identifier">matchedPos</span></a>():{pos:<a class="type" href="/dox/Int.html">Int</a>, len:<a class="type" href="/dox/Int.html">Int</a>}</code></h3><div class="doc"><p>Returns the position and length of the last matched substring, within
+the String which was last used as argument to <code>this.<a href="#match">match</a></code> or
+<code>this.<a href="#matchSub">matchSub</a></code>.</p>
+<p>If the most recent call to <code>this.<a href="#match">match</a></code> or <code>this.<a href="#matchSub">matchSub</a></code> did not
+match anything, the result is unspecified.</p>
+<p>If the global g modifier was in place for the matching, the position and
+length of the leftmost substring is returned.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="matchedRight"></a><h3><code><span class="keyword">function</span> <a href="#matchedRight"><span class="identifier">matchedRight</span></a>():<a class="type" href="/dox/String.html">String</a></code></h3><div class="doc"><p>Returns the part to the right of the last matched substring.</p>
+<p>If the most recent call to <code>this.<a href="#match">match</a></code> or <code>this.<a href="#matchSub">matchSub</a></code> did not
+match anything, the result is unspecified.</p>
+<p>If the global g modifier was in place for the matching, only the
+substring to the right of the leftmost match is returned.</p>
+<p>The result does not include the matched part.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="replace"></a><h3><code><span class="keyword">function</span> <a href="#replace"><span class="identifier">replace</span></a>(s:<a class="type" href="/dox/String.html">String</a>, by:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/String.html">String</a></code></h3><div class="doc"><p>Replaces the first substring of <code>s</code> which <code>this</code> EReg matches with <code>by</code>.</p>
+<p>If <code>this</code> EReg does not match any substring, the result is <code>s</code>.</p>
+<p>By default, this method replaces only the first matched substring. If
+the global g modifier is in place, all matched substrings are replaced.</p>
+<p>If <code>by</code> contains <code>$1</code> to <code>$9</code>, the digit corresponds to number of a
+matched sub-group and its value is used instead. If no such sub-group
+exists, the replacement is unspecified. The string <code>$$</code> becomes <code>$</code>.</p>
+<p>If <code>s</code> or <code>by</code> are null, the result is unspecified.</p></div></div><div class="platform platform-cpp platform-cs platform-flash platform-flash8 platform-java platform-js platform-neko platform-php"><a name="split"></a><h3><code><span class="keyword">function</span> <a href="#split"><span class="identifier">split</span></a>(s:<a class="type" href="/dox/String.html">String</a>):<a class="type" href="/dox/Array.html">Array</a>&lt;<a class="type" href="/dox/String.html">String</a>&gt;</code></h3><div class="doc"><p>Splits String <code>s</code> at all substrings <code>this</code> EReg matches.</p>
+<p>If a match is found at the start of <code>s</code>, the result contains a leading
+empty String "" entry.</p>
+<p>If a match is found at the end of <code>s</code>, the result contains a trailing
+empty String "" entry.</p>
+<p>If two matching substrings appear next to each other, the result
+contains the empty String "" between them.</p>
+<p>By default, this method splits <code>s</code> into two parts at the first matched
+substring. If the global g modifier is in place, <code>s</code> is split at each
+matched substring.</p>
+<p>If <code>s</code> is null, the result is unspecified.</p></div></div></div></div></div></body></html>
