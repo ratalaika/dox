@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script><script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script><link href="/dox/styles.css" rel="stylesheet"></link><script type="text/javascript">var dox = {rootPath: "/dox",platforms: ["cpp","cs","flash","flash8","java","js","neko","php"]};</script><script type="text/javascript" src="/dox/nav.js"></script><script type="text/javascript" src="/dox/index.js"></script><link rel="icon" href="/dox/favicon.ico" type="image/x-icon"></link><title>Lib</title></head><body><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left"><input id="search" type="text" class="search-query" placeholder="Search" autocomplete="off"></input></form><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="cpp"><a href="#">cpp</a></li><li data="cs"><a href="#">cs</a></li><li data="flash"><a href="#">flash</a></li><li data="flash8"><a href="#">flash8</a></li><li data="java"><a href="#">java</a></li><li data="js"><a href="#">js</a></li><li data="neko"><a href="#">neko</a></li><li data="php"><a href="#">php</a></li></ul></li></ul></div></div><div id="container"><div id="nav"></div><div id="content"><div class="header"><h1><code><span class="directive">class </span><span class="type">cs.Lib</span></code></h1></div><div class="body"><p class="availability"> cs</p><div class="doc"><p>Platform-specific C# Library. Provides some platform-specific functions for the C# target,
+such as conversion from haxe types to native types and vice-versa.</p></div><h2>Class Fields</h2><div class="platform platform-cs"><a name="addressOf"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#addressOf"><span class="identifier">addressOf</span></a>&lt;<span class="type">T</span>&gt;(variable:<span class="type">T</span>):<a class="type" href="/dox/cs/Pointer">Pointer</a>&lt;<span class="type">T</span>&gt;</code></h3><div class="doc"><p>Gets the pointer to the address of current local. Equivalent to the "&amp;" operator in C#
+Usage:
+var x:Int = 0;
+cs.Lib.unsafe({
+var addr = cs.Lib.addressOf(x);
+x[0] = 42;
+});
+trace(x); //42</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.
+Warning: This method will only work if a local variable is passed as an argument.</p></div></div><div class="platform platform-cs"><a name="applyCultureChanges"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#applyCultureChanges"><span class="identifier">applyCultureChanges</span></a>():<a class="type" href="/dox/Void">Void</a></code></h3><div class="doc"><p>Changes the current culture settings to allow a consistent cross-target behavior.
+Currently the only change made is in regard to the decimal separator, which is always set to "."</p></div></div><div class="platform platform-cs"><a name="array"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#array"><span class="identifier">array</span></a>&lt;<span class="type">T</span>&gt;(native:<a class="type" href="/dox/cs/NativeArray">NativeArray</a>&lt;<span class="type">T</span>&gt;):<a class="type" href="/dox/Array">Array</a>&lt;<span class="type">T</span>&gt;</code></h3><div class="doc"><p>Returns a Haxe Array of a native Array.
+It won't copy the contents of the native array, so unless any operation triggers an array resize,
+all changes made to the Haxe array will affect the native array argument.</p></div></div><div class="platform platform-cs"><a name="arrayAlloc"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#arrayAlloc"><span class="identifier">arrayAlloc</span></a>&lt;<span class="type">T</span>&gt;(size:<a class="type" href="/dox/Int">Int</a>):<a class="type" href="/dox/Array">Array</a>&lt;<span class="type">T</span>&gt;</code></h3><div class="doc"><p>Allocates a new Haxe Array with a predetermined size</p></div></div><div class="platform platform-cs"><a name="as"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#as"><span class="identifier">as</span></a>&lt;<span class="type">T</span>&gt;(obj:<a class="type" href="/dox/Dynamic">Dynamic</a>, cl:<a class="type" href="/dox/Class">Class</a>&lt;<span class="type">T</span>&gt;):<span class="type">T</span></code></h3><div class="doc"><p>Provides support for the "as" keyword in C#.
+If the object is not of the supplied type "T", it will return null instead of rasing an exception.</p>
+<p>This function will not work with Value Types (such as Int, Float, Bool...)</p></div></div><div class="platform platform-cs"><a name="checked"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#checked"><span class="identifier">checked</span></a>&lt;<span class="type">V</span>&gt;(block:<span class="type">V</span>):<a class="type" href="/dox/Void">Void</a></code></h3><div class="doc"><p>Creates a "checked" block, which throws exceptions for overflows.</p>
+<p>Usage:
+cs.Lib.checked({
+var x = 1000;
+while(true)
+{
+x *= x;
+}
+});
+This method only exists at compile-time, so it can't be called via reflection.</p></div></div><div class="platform platform-cs"><a name="fixed"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#fixed"><span class="identifier">fixed</span></a>&lt;<span class="type">V</span>&gt;(block:<span class="type">V</span>):<a class="type" href="/dox/Void">Void</a></code></h3><div class="doc"><p>Marks its parameters as fixed objects inside the defined block.
+The first variable declarations that use cs.Lib.pointerOfArray() will be the fixed definitions.
+Usage:
+cs.Lib.fixed({
+var obj1 = cs.Lib.pointerOfArray(someArray);
+var obj2 = cs.Lib.pointerOfArray(someArray2);
+var obj3 = cs.Lib.pointerOfArray(someArray3);
+//from now on, obj1, obj2 and obj3 are fixed
+//we cannot change obj1, obj2 or obj3 variables like this:
+//obj1++;
+});</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.</p></div></div><div class="platform platform-cs"><a name="fromNativeType"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#fromNativeType"><span class="identifier">fromNativeType</span></a>(t:<a class="type" href="/dox/cs/system/Type">Type</a>):<a class="type" href="/dox/Class">Class</a>&lt;<a class="type" href="/dox/Dynamic">Dynamic</a>&gt;</code></h3><div class="doc"><p>Returns a Class&lt;> equivalent to the native System.Type type.</p>
+<p>Currently Haxe's Class&lt;> is equivalent to System.Type, but this is an implementation detail.
+This may change in the future, so use this function whenever you need to perform such conversion.</p></div></div><div class="platform platform-cs"><a name="lock"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#lock"><span class="identifier">lock</span></a>&lt;<span class="type">O</span>, <span class="type">V</span>&gt;(obj:<span class="type">O</span>, block:<span class="type">V</span>):<a class="type" href="/dox/Void">Void</a></code></h3><div class="doc"><p>Ensures that one thread does not enter a critical section of code while another thread
+is in the critical section. If another thread attempts to enter a locked code, it
+will wait, block, until the object is released.</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.</p></div></div><div class="platform platform-cs"><a name="nativeArray"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#nativeArray"><span class="identifier">nativeArray</span></a>&lt;<span class="type">T</span>&gt;(arr:<a class="type" href="/dox/Array">Array</a>&lt;<span class="type">T</span>&gt;, equalLengthRequired:<a class="type" href="/dox/Bool">Bool</a>):<a class="type" href="/dox/cs/NativeArray">NativeArray</a>&lt;<span class="type">T</span>&gt;</code></h3><div class="doc"><p>Returns a native array from the supplied Array. This native array is unsafe to be written on,
+as it may or may not be linked to the actual Array implementation.</p>
+<p>If equalLengthRequired is true, the result might be a copy of an array with the correct size.</p></div></div><div class="platform platform-cs"><a name="nativeType"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#nativeType"><span class="identifier">nativeType</span></a>(obj:<a class="type" href="/dox/Dynamic">Dynamic</a>):<a class="type" href="/dox/cs/system/Type">Type</a></code></h3><div class="doc"><p>Gets the native System.Type from the supplied object. Will throw an exception in case of null being passed.</p></div></div><div class="platform platform-cs"><a name="pointerOfArray"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#pointerOfArray"><span class="identifier">pointerOfArray</span></a>&lt;<span class="type">T</span>&gt;(array:<a class="type" href="/dox/cs/NativeArray">NativeArray</a>&lt;<span class="type">T</span>&gt;):<a class="type" href="/dox/cs/Pointer">Pointer</a>&lt;<span class="type">T</span>&gt;</code></h3><div class="doc"><p>Transforms a managed native array into a Pointer. Must be inside a fixed statement
+Usage:
+var x:cs.NativeArray<Int> = new cs.NativeArray(1);
+cs.Lib.unsafe({
+cs.Lib.fixed({
+var addr = cs.Lib.pointerOfArray(x);
+trace(cs.Lib.valueOf(addr)); //0
+addr[0] = 42;
+trace(cs.Lib.valueOf(addr)); //42
+});
+});
+trace(x[0]); //42</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.</p></div></div><div class="platform platform-cs"><a name="revertDefaultCulture"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#revertDefaultCulture"><span class="identifier">revertDefaultCulture</span></a>():<a class="type" href="/dox/Void">Void</a></code></h3><div class="doc"><p>Reverts the culture changes to the default settings.</p></div></div><div class="platform platform-cs"><a name="sizeof"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#sizeof"><span class="identifier">sizeof</span></a>(struct:<a class="type" href="/dox/Class">Class</a>&lt;<a class="type" href="/dox/Dynamic">Dynamic</a>&gt;):<a class="type" href="/dox/Int">Int</a></code></h3><div class="doc"><p>Returns the byte size of the given struct. Only works with structs and basic types.</p></div></div><div class="platform platform-cs"><a name="toNativeType"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#toNativeType"><span class="identifier">toNativeType</span></a>(cl:<a class="type" href="/dox/Class">Class</a>&lt;<a class="type" href="/dox/Dynamic">Dynamic</a>&gt;):<a class="type" href="/dox/cs/system/Type">Type</a></code></h3><div class="doc"><p>Returns a System.Type equivalent to the Haxe Class&lt;> type.</p>
+<p>Currently Haxe's Class&lt;> is equivalent to System.Type, but this is an implementation detail.
+This may change in the future, so use this function whenever you need to perform such conversion.</p></div></div><div class="platform platform-cs"><a name="unsafe"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#unsafe"><span class="identifier">unsafe</span></a>&lt;<span class="type">V</span>&gt;(block:<span class="type">V</span>):<a class="type" href="/dox/Void">Void</a></code></h3><div class="doc"><p>Marks the contained block as an unsafe block, meaning that it can contain unsafe code.
+Usage:
+cs.Lib.unsafe({
+//unsafe code is allowed inside here
+});</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.</p></div></div><div class="platform platform-cs"><a name="valueOf"></a><h3><code><span class="keyword">static</span> <span class="keyword">function</span> <a href="#valueOf"><span class="identifier">valueOf</span></a>&lt;<span class="type">T</span>&gt;(pointer:<a class="type" href="/dox/cs/Pointer">Pointer</a>&lt;<span class="type">T</span>&gt;):<span class="type">T</span></code></h3><div class="doc"><p>Gets the value of the pointer address.
+Usage:
+var x:Int = 0;
+cs.Lib.unsafe({
+var addr = cs.Lib.addressOf(x);
+trace(cs.Lib.valueOf(addr)); //0
+addr[0] = 42;
+trace(cs.Lib.valueOf(addr)); //42
+});
+trace(x); //42</p>
+<p>This method only exists at compile-time, so it can't be called via reflection.</p></div></div></div></div></div></body></html>
